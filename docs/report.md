@@ -66,4 +66,4 @@ record per output, `engine_pairs` the cross-engine comparisons, `contact_support
 residue–nucleotide contact), `contacts_by_output.json`, and a self-contained HTML page (figures need the `html`
 extra). The same contract run twice gives a byte-identical `result.json` apart from the timing field.
 
-Component reference: [components/report/README.md](components/report/README.md).
+The schema identifiers above are historical and unchanged ([identifiers.md](identifiers.md)).

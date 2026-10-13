@@ -51,11 +51,10 @@ in their last digits (on macOS arm64 by at most 1.4 × 10⁻⁶ Å, in an LRMSD)
 tolerances; every rounded value, class, count and label must match exactly. `--profile reference` demands
 bit-identical values and is meaningful only on the reference platform.
 
-## Compatibility commands
+## Commands installed
 
-The component commands of the qualified toolkit are installed as well and behave exactly as before:
-`rnpbench`, `rnpbench-evaluate`, `rnpbench-report`, `rnpbench-diagnose`, and `python -m rnpbench_evaluate`,
-`python -m rnpbench_report` (alias `python -m rnpbench_predict`), `python -m rnpbench_diagnose`.
+One command, `rnplens`. The internal modules behind it (see [identifiers.md](identifiers.md)) are not a public
+interface.
 
 ## Troubleshooting
 

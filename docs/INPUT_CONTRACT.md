@@ -1,4 +1,6 @@
-# Input contract `RNPBENCH_EVALUATE_INPUT_V1` (frozen for rnpbench-evaluate 0.1.1)
+# Input contract of RNPLens Evaluate (`RNPBENCH_EVALUATE_INPUT_V1`)
+
+The contract identifier is historical and unchanged since it was frozen (see [identifiers.md](identifiers.md)).
 
 **Record notes.**
 - In v0.1.0.dev0 this contract was implemented before it was documented; that order is disclosed in the record.
@@ -48,7 +50,7 @@ Relative paths are resolved against the directory containing the JSON file.
 
 ## Command-line form
 
-`rnpbench evaluate` accepts these options. A sequence option takes either a string or a FASTA file.
+`rnplens evaluate run` accepts these options. A sequence option takes either a string or a FASTA file.
 
 | option | meaning |
 |---|---|
@@ -61,9 +63,9 @@ Relative paths are resolved against the directory containing the JSON file.
 | `--allow-unpinned` | run with a DockQ version other than 2.1.3. The result is labelled as outside the frozen configuration |
 
 Other commands:
-- `rnpbench validate --input` checks an input without scoring it.
-- `rnpbench selftest [--profile] [--internal-fixtures] [--out]` runs the regression fixtures.
-- `rnpbench provenance [--full]` reports the pinned frozen sources and every statement executed from them.
+- `rnplens evaluate validate --input` checks an input without scoring it.
+- `rnplens evaluate selftest [--profile] [--internal-fixtures] [--out]` runs the regression fixtures.
+- `rnplens evaluate provenance [--full]` reports the pinned frozen sources and every statement executed from them.
 
 **Configurable dependencies and paths.** No path is built in. DockQ is used as a pinned Python package rather than through a binary path. Staging uses `--workdir`, or else the system temporary directory, which follows `TMPDIR`. Internal fixtures are found through `--internal-fixtures` or `RNPBENCH_INTERNAL_FIXTURES`.
 

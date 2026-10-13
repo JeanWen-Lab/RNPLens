@@ -1,6 +1,6 @@
 # Expected outputs of the two worked examples
 
-Produced by `bash examples/run_examples.sh expected_output` with RNPLens 0.2.0rc1 installed from its wheel, on the
+Produced by `bash examples/run_examples.sh expected_output` with RNPLens 0.2.0rc2 installed from its wheel, on the
 reference platform (Linux x86-64, CPython 3.11.17; DockQ 2.1.3, gemmi 0.6.5, biopython 1.84, numpy 1.26.4,
 scipy 1.13.1, matplotlib 3.9.2), from a clone at `/tmp/RNPLens_example_clone`.
 

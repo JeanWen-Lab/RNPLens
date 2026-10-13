@@ -57,5 +57,5 @@ alphabets, both polymers present, and an explicit declaration of MSA/template us
 `measured_but_not_attributed`, `limits`, `sampling_budget_note`, `preflight`) and a self-contained `report.html`.
 A directory that already holds a report is refused.
 
-Component reference: [components/diagnose/](components/diagnose/), including the preregistered out-of-sample
-protocol and its results.
+The preregistered out-of-sample evaluation of the protein-side statement, its protocol and results are in
+[validation/](validation/).

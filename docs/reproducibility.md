@@ -4,26 +4,35 @@
 
 | item | identifier |
 |---|---|
-| RNPLens release candidate | `0.2.0rc1` (distribution `rnplens`) |
-| implementation distributed | RNPBench toolkit `0.2.0.dev1` (internally qualified 2026-10-10; never released) |
+| RNPLens release candidate | `0.2.0rc2` (distribution `rnplens`) |
+| qualified component set | `0.2.0.dev1` (internally qualified 2026-10-10 under the internal identifier "RNPBench toolkit"; never released) |
 | components inside it | `rnpbench_core` 0.2.0.dev1, `rnpbench_evaluate` 0.2.0.dev1 (contract `RNPBENCH_EVALUATE_INPUT_V1`, scoring configuration `RNPBENCH_SCORING_V3_CONSTRUCT_POSITION_DOCKQ_2_1_3`), `rnpbench_report` (analysis `rnpbench-predict-1.0.0`, contract `rnpbench-predict-contract-1`), `rnpbench_diagnose` 0.2.1 |
 | manuscript evidence build | a separate identifier of the study's frozen evidence; it is **not** a software version and is not changed by any software release |
 
 `rnplens provenance` prints all of these together with the dependency versions and the SHA-256 of each of the
 eight frozen scorer files, which the code verifies at run time.
 
-## What changed from the qualified toolkit
+## What changed from the qualified component set
 
-- **Packaging only.** The five internal distributions became one distribution, `rnplens`, with a new
-  dispatch-only `rnplens` command. The 93 files of the six component import packages in the RNPLens wheel are
+- **Packaging (0.2.0rc1).** The five internal distributions became one distribution, `rnplens`, with a
+  dispatch-only `rnplens` command; in 0.2.0rc1 the 93 files of the six component import packages were
   byte-identical to those of the five qualified 0.2.0.dev1 wheels.
+- **Public name (0.2.0rc2).** Human-readable text was changed to the name RNPLens by an enumerated table of 33
+  exact-match replacements in 11 component files and 2 in the `rnplens` wrapper, plus the same three replacements
+  in Report's stored example page
+  (`selftest_data/expected/report_7K9D_example.html`). It covers command names in help and messages, self-test
+  lines, the first two lines of Evaluate's `summary.txt`, one text value in Evaluate's `result.json`
+  (`provenance.frozen_execution_record`, which names the provenance command), and the titles, headings and
+  provenance line of the Report and Diagnose HTML pages. No computation, JSON key, identifier or frozen file
+  changed. The compatibility commands `rnpbench`, `rnpbench-evaluate`, `rnpbench-report` and
+  `rnpbench-diagnose` are no longer installed.
 - **One recorded difference.** Because the components are no longer separate distributions, version fields that
   the components look up by distribution name are now `null`: the `distribution_version` entries of
-  `rnpbench toolkit provenance` and the `versions.rnpbench-report` entry of Report's self-test record. No analysis
+  the internal component provenance record and the `versions.rnpbench-report` entry of Report's self-test record. No analysis
   output (Evaluate `result.*`, Report `result.json`, Diagnose `report.json`, HTML pages) contains these fields.
   `rnplens provenance` records the component versions by module.
 
-## Release-candidate qualification (2026-10-13)
+## Release-candidate 1 qualification (2026-10-13)
 
 On the reference platform (Linux x86-64), each from a clean environment built with only the wheel or sdist:
 
@@ -43,7 +52,7 @@ On the reference platform (Linux x86-64), each from a clean environment built wi
 **Parity with the qualified toolkit** (same interpreter, same inputs, identical third-party package versions):
 the two worked examples, the Diagnose validity record, Evaluate's 13 regression fixtures (9 public, 4 internal:
 AlphaFold 3, Chai-1, RF2NA, RF3), Report's and Diagnose's self-tests, and an internal five-engine Report and
-four-engine cross-engine Diagnose on 7K9D were run through `rnplens` and through the qualified `rnpbench`
+four-engine cross-engine Diagnose on 7K9D were run through `rnplens` and through the qualified internal
 command and compared after removing run time and output paths. All analysis outputs were identical; the only
 other differences were the input paths inside each installation's own site-packages, the names of temporary
 directories, and the Report self-test version field described above.
@@ -56,3 +65,9 @@ installation found the same behaviour.
 
 The complete qualification records are kept with the release-preparation records; they are not part of the
 repository because they reference internal fixtures and the benchmark's development store.
+
+## Release-candidate 2 parity (display names)
+
+The rc2 outputs were compared with rc1 outputs from the same inputs; the record is kept with the release-preparation
+records. Result: every number, status, class, count, label and JSON key is identical; the only differences are the
+display strings of the table above.

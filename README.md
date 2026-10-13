@@ -2,9 +2,8 @@
 
 **Evaluation and diagnostic tools for protein–RNA complex predictions.**
 
-> **Status: release candidate `0.2.0rc1` — not yet publicly released.** No licence has been chosen yet, so this
-> repository grants no reuse rights until a `LICENSE` file is added. The software accompanies a manuscript in
-> preparation; see [Citation](#citation).
+> **Status: release candidate `0.2.0rc2` — not yet publicly released.** MIT licence. The software accompanies a
+> manuscript in preparation; see [Citation](#citation).
 
 RNPLens helps researchers examine protein–RNA complex structures that have **already been predicted** (for example by
 AlphaFold 3, Boltz-2, Chai-1, RoseTTAFold-family models or docking), identify where a prediction may be limited,
@@ -67,7 +66,7 @@ Outputs: `result.json` (full record, including correspondence, chain mapping, SH
 frozen scorer sources), `result.csv` (one row), `summary.txt`:
 
 ```
-DockQ (released RNPBench configuration, construct-position correspondence)
+DockQ (frozen RNPLens scoring configuration, construct-position correspondence)
   DockQ 0.936  [high]   fnat 0.927   iRMSD 0.434 A   LRMSD 1.780 A
   chain mapping AB:AB (best of 1 admissible); residue pairs in frame 148, out of frame 0, indeterminate 0
 
@@ -146,16 +145,18 @@ See [docs/interpretation.md](docs/interpretation.md) and [docs/limitations.md](d
 [installation](docs/installation.md) · [quick start](docs/quickstart.md) · [Evaluate](docs/evaluate.md) ·
 [Report](docs/report.md) · [Diagnose](docs/diagnose.md) · [output formats](docs/output_formats.md) ·
 [interpretation](docs/interpretation.md) · [limitations](docs/limitations.md) ·
-[reproducibility](docs/reproducibility.md) · [Evaluate input contract](docs/INPUT_CONTRACT.md)
+[reproducibility](docs/reproducibility.md) · [Evaluate input contract](docs/INPUT_CONTRACT.md) ·
+[identifiers](docs/identifiers.md) · [validation records](docs/validation/)
 
-## Relationship to RNPBench
+## Provenance of the implementation
 
-RNPLens is the software distribution of the evaluation, reporting and diagnostic procedures developed for the
-RNPBench benchmark study. The three tools are the internally qualified RNPBench toolkit 0.2.0.dev1, distributed
-unchanged; their outputs therefore still name the components "RNPBench Evaluate", "RNPBench Report/Predict" and
-"RNPBench Diagnose", and the frozen scorer files are verified by SHA-256 at run time. The RNPBench benchmark
-resource (its entries, partitions and score stores) is **not** part of this repository, and the software version is
-independent of the manuscript's evidence build identifier. See [docs/reproducibility.md](docs/reproducibility.md).
+RNPLens distributes the evaluation, reporting and diagnostic procedures developed and qualified for the
+accompanying study. Their computations are unchanged from the internally qualified component set, and the frozen
+scorer files are verified by SHA-256 at run time. A few machine-readable identifiers keep the project's earlier
+internal prefix so that this stays verifiable; they are listed in [docs/identifiers.md](docs/identifiers.md). The
+study's benchmark resource (its entries, partitions and score stores) is **not** part of this repository, and the
+software version is independent of the manuscript's evidence build identifier. See
+[docs/reproducibility.md](docs/reproducibility.md).
 
 ## Citation
 
@@ -164,5 +165,5 @@ publication) and the software release. See [`CITATION.cff`](CITATION.cff). No DO
 
 ## Licence
 
-**Not yet chosen.** Until a licence is added, no permission to use, modify or redistribute is granted. Third-party
-dependencies keep their own licences (see [docs/dependencies.md](docs/dependencies.md)).
+RNPLens is released under the [MIT licence](LICENSE). Third-party dependencies keep their own licences, and the
+example and test structures carry the terms listed in [docs/dependencies.md](docs/dependencies.md).

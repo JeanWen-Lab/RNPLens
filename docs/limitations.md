@@ -19,8 +19,9 @@
   by default.
 - **Platforms.** Qualified on Linux x86-64 (reference platform, bit-identical) and macOS arm64 (portable profile).
   Windows is untested. Python 3.13 is not supported by the pinned numpy/scipy.
-- **Component naming in outputs.** Output files still name the components "RNPBench Evaluate", "RNPBench
-  Predict/Report" and "RNPBench Diagnose" and record the component versions; `rnplens provenance` records the RNPLens
-  release. This is kept so that outputs stay byte-identical to the qualified implementation.
+- **Historical identifiers in machine-readable fields.** Schema, contract and configuration identifiers and two
+  version keys in the output files keep the project's earlier internal prefix (`RNPBENCH_…`, `rnpbench-…`,
+  `rnpbench_…_version`); they are listed in [identifiers.md](identifiers.md). Output files record component
+  versions; `rnplens provenance` records the RNPLens release.
 - **Known cosmetic issue.** Diagnose prints ordinal percentiles as, for example, "52th"; the text is part of the
   qualified output and is unchanged in this release.

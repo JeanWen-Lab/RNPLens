@@ -54,4 +54,4 @@ structure are unknown, not confirmed non-contacts.
 - These are accuracy measurements of one prediction against one reference, not a confidence estimate, and they
   depend on the reference representation chosen (for example one NMR model rather than the ensemble).
 
-Component reference: [components/evaluate/](components/evaluate/).
+Frozen numerical tolerances of the portable profile: [validation/PORTABLE_QUALIFICATION_CONTRACT.md](validation/PORTABLE_QUALIFICATION_CONTRACT.md).
