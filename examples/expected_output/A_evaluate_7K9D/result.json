@@ -1,6 +1,6 @@
 {
  "rnpbench_evaluate_version": "0.2.0.dev1",
- "created_utc": "2026-10-13T10:47:43+00:00",
+ "created_utc": "2026-10-13T20:05:22+00:00",
  "target_id": "7K9D",
  "input": {
   "prediction": {
@@ -178,6 +178,6 @@
    "decomp/score_decomp.py": "17d2976e9770f81d60369b172bff8d5a16dcfe63a676a9f7c8f47f07db18fb6b"
   },
   "frozen_origin": "copied byte-for-byte from the RNPBench development host on 2026-10-10; every SHA-256 below was checked against the original file on that host",
-  "frozen_execution_record": "rnpbench provenance --full prints every executed top-level statement and its hash"
+  "frozen_execution_record": "rnplens evaluate provenance --full prints every executed top-level statement and its hash"
  }
 }

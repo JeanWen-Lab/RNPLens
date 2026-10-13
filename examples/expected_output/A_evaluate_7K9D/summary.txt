@@ -1,9 +1,9 @@
-RNPBench Evaluate 0.2.0.dev1  --  target 7K9D
+RNPLens Evaluate (component 0.2.0.dev1)  --  target 7K9D
 prediction  7K9D_prediction.pdb  (sha256 9c1a6659f60fa280)
 reference   7K9D_reference.cif  (sha256 75fa157147f8e721)
 construct   protein 98 aa, RNA 60 nt
 
-DockQ (released RNPBench configuration, construct-position correspondence)
+DockQ (frozen RNPLens scoring configuration, construct-position correspondence)
   DockQ 0.936  [high]   fnat 0.927   iRMSD 0.434 A   LRMSD 1.780 A
   chain mapping AB:AB (best of 1 admissible); residue pairs in frame 148, out of frame 0, indeterminate 0
 

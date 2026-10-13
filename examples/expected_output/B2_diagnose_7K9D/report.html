@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>RNPBench-Diagnose 7K9D</title>
+<html lang="en"><head><meta charset="utf-8"><title>RNPLens Diagnose: 7K9D</title>
 <style>
 body{font:14px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:52em;margin:2.2em auto;padding:0 1.2em;color:#1d1d1f}
 h1{font-size:1.5em;margin:0 0 .15em} h2{font-size:1.05em;margin:1.8em 0 .5em;border-bottom:1px solid #e3e3e6;padding-bottom:.25em}
@@ -12,7 +12,7 @@ th{font-weight:600;color:#3d3d42;white-space:nowrap} ul{list-style:none;padding:
 code{background:#f4f4f6;padding:.05em .3em;border-radius:3px}
 </style></head><body>
 <h1>Predicted protein&ndash;RNA complex: diagnostic report</h1>
-<p class="sub">Target <code>7K9D</code> &middot; within engine &middot; rnpbench-diagnose 0.2.1</p>
+<p class="sub">Target <code>7K9D</code> &middot; within engine &middot; RNPLens Diagnose (component 0.2.1)</p>
 <h2>Output validity</h2><table><tr><th>n_total</th><td>5</td></tr><tr><th>VALID</th><td>5</td></tr><tr><th>TECHNICAL_FAILURE</th><td>0</td></tr><tr><th>STRUCTURAL_FAILURE</th><td>0</td></tr></table>
 <h2>What the structures agree about</h2><ul><li><p class='stmt'>The protein is variable across the candidates: disagreement 0.89 A, high relative to the frozen development reference (52th percentile of 65 development targets).</p><p class='meta'>component-specific &middot; Spearman &rho; 0.869 [0.765, 0.927] on 65 targets, 58 protein clusters, one engine, 50 candidates each &middot; reference cohortP_disagreement.tsv (n = 65)</p></li><li><p class='stmt'>The RNA (this mode cannot separate its shape from its placement) is consistent across the candidates: disagreement 0.56 A, typical relative to the frozen development reference (25th percentile of 65 development targets).</p><p class='meta'>not component-specific in this mode &middot; Spearman &rho; 0.843 [0.740, 0.906] on 65 targets, 58 protein clusters, one engine, 50 candidates each &middot; reference cohortP_disagreement.tsv (n = 65)</p></li></ul>
 <h2>Measured, not attributed</h2><p>RNA placement disagreement <b>1.93 &Aring;</b>. This value is reported without interpretation.</p><p class='meta'>placement attribution is not licensed: placement disagreement failed to beat RNA-conformation error in both cohorts (paired difference -0.008 [-0.092, +0.069] within engine and -0.084 [-0.277, +0.109] across engines). The value is reported under &#x27;measured_but_not_attributed&#x27;.</p>
