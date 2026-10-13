@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: >-
+  If you use RNPLens, please cite the accompanying manuscript (in preparation) and this software release.
+  Author list, repository URL, licence, release date and DOI are to be supplied at release.
+title: "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
+type: software
+version: 0.2.0rc1
+authors:
+  - name: "RNPLens authors (to be supplied)"
+abstract: >-
+  RNPLens assesses existing protein-RNA complex predictions: reference-based structural evaluation (Evaluate),
+  reference-free descriptive agreement among predictions (Report), and output-validity and candidate-disagreement
+  diagnostics (Diagnose). It does not predict structures and gives no calibrated probability of correctness.
+keywords:
+  - protein-RNA complex
+  - structure prediction
+  - model evaluation
+  - DockQ
+  - structural biology
