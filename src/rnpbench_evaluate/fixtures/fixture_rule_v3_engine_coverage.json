@@ -1,0 +1,32 @@
+{
+ "rule_id": "RNPBENCH_EVALUATE_FIXTURE_RULE_V3_ENGINE_COVERAGE",
+ "frozen_utc": "2026-10-10T08:56:59+00:00",
+ "authorised_by": "owner instruction pasted-text-2026-10-10T08-54-57.txt, section 3.2",
+ "adds_to": "RNPBENCH_EVALUATE_FIXTURE_RULE_V2 (the six existing fixtures are kept unchanged)",
+ "purpose": "software regression fixtures for scored AlphaFold 3, Chai-1 and RF2NA outputs; not a scientific selection; no fixture value is a benchmark result",
+ "engines_in_order": [
+  "AF3",
+  "CHAI1",
+  "RF2NA"
+ ],
+ "pool_per_engine": {
+  "source": "the released score_v3 stores (AF3: score_v3_released/released_AF3_exec_A.json; CHAI1: score_v3_released_chai/released_CHAI1_all_samples.json, execution A; RF2NA: score_v3_released_rf2na/released_RF2NA_exec_A.json)",
+  "designated_output_only": "AF3: the frozen is_top1 flag of the per-sample score store, joined by structure_checksum (the governing rule of the AF3 reconciliation, 2026-10-08); CHAI1: is_the_selected_output == true; RF2NA: the single designated official output per invocation",
+  "eligibility": [
+   "released status SCORED",
+   "target in the 59-target five-engine common population",
+   "a frozen four-axis geometry row exists for the same engine and structure_checksum",
+   "the reference holds exactly one protein chain and one RNA chain (frozen native label map)",
+   "n_admissible_candidates == 1",
+   "target not already used by an existing fixture or by an earlier engine in engines_in_order"
+  ]
+ },
+ "selection": "smallest protein + RNA construct length; ties by target identifier",
+ "if_a_pool_is_empty": "report the empty pool and stop for review; no criterion is relaxed",
+ "values_not_used": [
+  "DockQ",
+  "any geometry value",
+  "structure appearance"
+ ],
+ "checks_required_per_fixture": "status, rounded DockQ, unrounded DockQ, DockQ class, selected mapping, admissible candidates, interfaces, residue correspondence counts, per-interface DockQ terms and contact counts, four-axis geometry values and counts, exclusion"
+}

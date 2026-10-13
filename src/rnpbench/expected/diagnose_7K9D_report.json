@@ -1,0 +1,123 @@
+{
+ "diagnosis": {
+  "measured_but_not_attributed": {
+   "rna_placement_c4_rmsd": 1.933,
+   "why": "placement attribution is not licensed: placement disagreement failed to beat RNA-conformation error in both cohorts (paired difference -0.008 [-0.092, +0.069] within engine and -0.084 [-0.277, +0.109] across engines). The value is reported under 'measured_but_not_attributed'."
+  },
+  "mode": "within_engine",
+  "refused_statements": [
+   "placement_attribution",
+   "probability_of_correctness",
+   "best_engine_recommendation"
+  ],
+  "statements": [
+   {
+    "available": true,
+    "axis": "prot_internal_ca_rmsd",
+    "band": "high",
+    "component_specific": true,
+    "disagreement_angstrom": 0.885,
+    "evidence": {
+     "ci": [
+      0.765,
+      0.927
+     ],
+     "cohort": "65 targets, 58 protein clusters, one engine, 50 candidates each",
+     "margin_over_off_diagonals": [
+      0.452,
+      0.53
+     ],
+     "out_of_sample": {
+      "ci": [
+       0.45,
+       0.593
+      ],
+      "cohort": "807 targets, 456 protein clusters, disjoint from development",
+      "margin_over_off_diagonals": [
+       0.234,
+       0.129
+      ],
+      "note": "smaller than the development estimate; transport shrinkage of 0.344 with identical definitions and a matched five-candidate development control. Plan with 0.5, not 0.87.",
+      "rho": 0.525,
+      "verdict": "PASS on the same frozen criterion"
+     },
+     "rho": 0.869,
+     "specific": true
+    },
+    "mode": "within_engine",
+    "percentile_in_reference": 52.3,
+    "reference": {
+     "median": 0.853,
+     "n": 65,
+     "q1": 0.441,
+     "q3": 1.711,
+     "sha256": "fe7dd6cd7d78e5da02f2bce4a639b3bf48c3aa404bdc10e3d6bf501049b5192a",
+     "source": "cohortP_disagreement.tsv"
+    },
+    "statement": "protein_side",
+    "text": "The protein is variable across the candidates: disagreement 0.89 A, high relative to the frozen development reference (52th percentile of 65 development targets)."
+   },
+   {
+    "available": true,
+    "axis": "rna_internal_c4_rmsd",
+    "band": "typical",
+    "component_specific": false,
+    "disagreement_angstrom": 0.564,
+    "evidence": {
+     "ci": [
+      0.74,
+      0.906
+     ],
+     "cohort": "65 targets, 58 protein clusters, one engine, 50 candidates each",
+     "not_separable_from": "rna_placement (paired difference +0.080 [-0.012, +0.213])",
+     "rho": 0.843,
+     "specific": false
+    },
+    "mode": "within_engine",
+    "percentile_in_reference": 24.6,
+    "reference": {
+     "median": 1.352,
+     "n": 65,
+     "q1": 0.555,
+     "q3": 10.989,
+     "sha256": "fe7dd6cd7d78e5da02f2bce4a639b3bf48c3aa404bdc10e3d6bf501049b5192a",
+     "source": "cohortP_disagreement.tsv"
+    },
+    "statement": "rna_side",
+    "text": "The RNA (this mode cannot separate its shape from its placement) is consistent across the candidates: disagreement 0.56 A, typical relative to the frozen development reference (25th percentile of 65 development targets)."
+   }
+  ]
+ },
+ "disagreement": {
+  "exclusions": {},
+  "n_pairs": 10,
+  "pair_exclusions": {},
+  "prot_internal_ca_rmsd": 0.8852051742940279,
+  "refused": null,
+  "rna_internal_c4_rmsd": 0.564030074907825,
+  "rna_placement_c4_rmsd": 1.9332614065703115,
+  "usable": 5
+ },
+ "engines": null,
+ "limits": [
+  "These statements describe DISAGREEMENT among structures, not correctness. No probability of correctness is offered, and none should be inferred.",
+  "Disagreement measures variance, not bias. Candidates that are all wrong in the same way will look consistent here. This is the failure mode the diagnostic cannot see.",
+  "The correlations behind each statement were measured on cohorts used in the benchmark's own development. They are not blind validation.",
+  "Error is not attributed to RNA placement separately from RNA shape: that attribution was measured and did not hold. The placement disagreement is reported without interpretation.",
+  "A band names where a value sits in the frozen development reference, not where it sits among the structures you are looking at. Out of sample that reference did not reproduce the new cohort's distribution, and the boundaries were deliberately not recalibrated.",
+  "The protein-side statement has been validated out of sample (807 targets, 456 clusters, rho 0.525 [0.450, 0.593]) at an effect substantially smaller than its development estimate. The RNA-side statement rests on its development cohort and awaits prospective validation.",
+  "Candidate disagreement provides COMPLEMENTARY triage information. It is not independent of what the engine already reports: on the out-of-sample cohort its association with protein error falls from 0.525 to 0.167 [0.069, 0.265] once protein length, protein pTM and mean protein pLDDT are accounted for, and at a fixed 20% review budget its advantage over protein pTM alone (53.7% against 51.2% of highest-quintile-error targets recovered) does not resolve, +2.5 percentage points [-3.2, +7.4]. Read this alongside the engine's own per-chain confidence, not instead of it."
+ ],
+ "preflight": null,
+ "rnpbench_diagnose_version": "0.2.1",
+ "sampling_budget_note": "On the benchmark population, the candidate a user receives improves by about 4 percentage points from 1 to 5 samples and by about 3.5 more from 5 to 50, while the best candidate present improves by about 21. Deeper sampling produces better complexes than the engine's own ranking can identify. The diagnostic above is available from 5 candidates.",
+ "target": "7K9D",
+ "validity": {
+  "STRUCTURAL_FAILURE": 0,
+  "TECHNICAL_FAILURE": 0,
+  "VALID": 5,
+  "details": [],
+  "n_total": 5,
+  "n_valid": 5
+ }
+}

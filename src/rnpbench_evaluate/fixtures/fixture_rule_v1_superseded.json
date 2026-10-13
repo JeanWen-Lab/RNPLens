@@ -1,0 +1,21 @@
+{
+ "rule_id": "RNPBENCH_EVALUATE_FIXTURE_RULE_V1",
+ "frozen_utc": "2026-10-10T07:55:24Z",
+ "purpose": "software regression fixtures for rnpbench evaluate; not a scientific selection; no fixture value is reported as a benchmark result",
+ "pool": "released score_v3 stores; scored categories use Boltz-2 exec_A designated outputs (model_0, the engine's rank-0) on the five-engine common population (59 targets), so both the released DockQ row and the frozen four-axis geometry row exist; the no-value category uses the released RF3 rows (the only engine with refusals other than AF3)",
+ "categories_in_assignment_order": {
+  "no_value": "status NO_VALUE in the released store; first by (target, execution, model_idx)",
+  "equivalent_copies": "n_admissible_candidates >= 2 and the reference holds >= 2 chains of the protein entity",
+  "residue_numbering": "a native chain of the selected mapping has auth_seq_id != label_seq_id (construct position) for at least one residue, or insertion codes",
+  "partial_reference": "a native chain of the selected mapping has fewer than 60% of its construct positions observed",
+  "short_rna": "RNA construct <= 5 nt, one protein and one RNA chain in the reference, a single admissible candidate",
+  "ordinary": "one protein and one RNA chain in the reference; single admissible candidate; RNA 20-60 nt; >= 90% of construct positions observed in both chains; auth == label numbering; all paired residues in frame"
+ },
+ "selection_within_category": "smallest protein + RNA construct length, ties by target identifier; a target already assigned to an earlier category is skipped",
+ "constructed_negative_controls": "two inputs derived from the ordinary fixture, labelled as constructed: (i) the RNA chain removed from the prediction; (ii) the prediction's residue numbering shifted by +1000. Their expected outputs are whatever the frozen code returns; the test asserts only that each is a no-value state and never DockQ = 0",
+ "values_not_used": [
+  "DockQ",
+  "any geometry value",
+  "structure appearance"
+ ]
+}

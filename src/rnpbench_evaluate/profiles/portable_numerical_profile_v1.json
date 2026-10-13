@@ -1,0 +1,52 @@
+{
+ "profile_id": "RNPBENCH_EVALUATE_PORTABLE_NUMERICAL_PROFILE_V1",
+ "package_version": "0.1.1",
+ "frozen_utc": "2026-10-10T08:56:27+00:00",
+ "authorised_by": "owner instruction pasted-text-2026-10-10T08-54-57.txt, section 1 (provisional tolerances 1e-5 A for RMSD, 1e-7 for DockQ)",
+ "frozen_before": "any v0.1.1 test run on any platform, and before the new AlphaFold 3 / Chai-1 / RF2NA fixtures were selected",
+ "does_not_change": "the v0.1.0.dev0 macOS self-test result, which FAILED under its predeclared 1e-6 bound and remains recorded as FAIL (qualification_v0.1.0.dev0/selftest_record_macos_arm64.json)",
+ "profiles": {
+  "reference": {
+   "applies_to": "the reference platform (karyon: Linux x86-64, the platform that produced the frozen values)",
+   "rule": "every compared value bit-identical (==), including unrounded floats"
+  },
+  "portable": {
+   "applies_to": "any other platform",
+   "rule": "exact (==) for everything except the floating-point quantities listed in `tolerances`; each listed quantity within its absolute tolerance; every deviation reported, including those within tolerance"
+  }
+ },
+ "tolerances": {
+  "rmsd_angstrom": {
+   "abs": 1e-05,
+   "quantities": [
+    "dockq.per_interface.*.iRMSD",
+    "dockq.per_interface.*.LRMSD",
+    "geometry.prot_internal_ca_rmsd",
+    "geometry.rna_internal_c4_rmsd",
+    "geometry.rna_placement_c4_rmsd"
+   ],
+   "justification": "owner-specified 1e-5 A; observed v0.1.0.dev0 macOS maxima 4.5e-6 A (LRMSD), 1.8e-7 A (iRMSD), 7e-15 A (geometry)"
+  },
+  "dockq_score": {
+   "abs": 1e-07,
+   "quantities": [
+    "dockq.dockq_unrounded",
+    "dockq.adapter_total_dockq",
+    "dockq.per_interface.*.DockQ"
+   ],
+   "justification": "owner-specified 1e-7; observed v0.1.0.dev0 macOS maximum 4.6e-8"
+  }
+ },
+ "no_additional_float_tolerances": "No other floating-point quantity receives a tolerance. fnat and fnonnat are ratios of integer contact counts that are themselves required to be exact, so they are compared exactly; any floating-point quantity not listed above is compared exactly.",
+ "always_exact": [
+  "reported (displayed) values: DockQ, fnat, iRMSD, LRMSD to 3 decimals and geometry RMSDs to 2 decimals, compared as the formatted strings shown in summary.txt",
+  "DockQ threshold class (incorrect/acceptable/medium/high) computed from the unrounded value",
+  "status, failure stage, failure / NO_VALUE reason, geometry exclusion",
+  "selected chain mapping, number of admissible candidates, number of interfaces",
+  "residue correspondence counts (in frame / out of frame / indeterminate)",
+  "all integer counts (contacts, residue lengths, aligned pairs)",
+  "output identity: prediction and reference SHA-256",
+  "validity and evaluability classifications"
+ ],
+ "failure_handling": "If the portable qualification fails under this profile, the result is reported as FAIL and work stops for review. Tolerances are not widened after seeing results."
+}

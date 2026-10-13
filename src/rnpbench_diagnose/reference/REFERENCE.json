@@ -1,0 +1,21 @@
+{
+ "what_these_are": "Benchmark reference distributions of component disagreement, used only to say where an observed value sits relative to the benchmark. They are not a calibration set and support no probability statement.",
+ "cohortP_disagreement.tsv": {
+  "sha256": "fe7dd6cd7d78e5da02f2bce4a639b3bf48c3aa404bdc10e3d6bf501049b5192a",
+  "mode": "within_engine",
+  "population": "65 targets, 58 protein clusters; one engine; 50 candidates per target",
+  "rows": "one per (target, depth); the package reads depth 50 only",
+  "produced_by": "diag_agreement.py under DIAGNOSTIC_PROTOCOL.md (frozen 2026-09-29, sha256 49f078728687ff6c...)"
+ },
+ "cohortE_disagreement.tsv": {
+  "sha256": "dd303f3e4d368c916d1ec1e80486c13cae31a105da975afc81e70be887a8f730",
+  "mode": "cross_engine",
+  "population": "59 targets, 59 protein clusters; four engines (Boltz-2, Chai-1, RF3, RF2NA); six engine pairs per target",
+  "excluded": "AF3, whose designated output was not verifiable: its designation rule matched two rows for 85 of 118 target-executions",
+  "produced_by": "diag_cross_engine.py under the same frozen protocol"
+ },
+ "no_reference_for": [
+  "placement attribution, which is refused rather than banded",
+  "any probability of correctness"
+ ]
+}
