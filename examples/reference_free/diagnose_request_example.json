@@ -1,0 +1,25 @@
+{
+ "sample": {
+  "name": "1C9S",
+  "sequences": [
+   {
+    "proteinChain": {
+     "sequence": "MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQ"
+    }
+   },
+   {
+    "rnaSequence": {
+     "sequence": "GGCGUAGCUCAGCUGGGAGAGCGCC"
+    }
+   }
+  ]
+ },
+ "evidence": {
+  "1": {
+   "declared_no_msa": true
+  }
+ },
+ "provenance": {
+  "note": "Illustrative request for the worked example. Sequences are placeholders for the preflight demonstration and are not the scored construct."
+ }
+}

@@ -1,0 +1,22 @@
+RNPBench Evaluate 0.2.0.dev1  --  target 7K9D
+prediction  7K9D_prediction.pdb  (sha256 9c1a6659f60fa280)
+reference   7K9D_reference.cif  (sha256 75fa157147f8e721)
+construct   protein 98 aa, RNA 60 nt
+
+DockQ (released RNPBench configuration, construct-position correspondence)
+  DockQ 0.936  [high]   fnat 0.927   iRMSD 0.434 A   LRMSD 1.780 A
+  chain mapping AB:AB (best of 1 admissible); residue pairs in frame 148, out of frame 0, indeterminate 0
+
+Structural geometry (frozen four-axis decomposition; alignment-based correspondence)
+  RNA internal C4' RMSD 0.75 A over 59 nt
+  RNA placement C4' RMSD after protein superposition 1.79 A
+  protein internal CA RMSD 0.52 A over 89 residues (whole construct; scales with length)
+
+Validity: protein chain True, RNA chain True; model numbering usable as construct positions: {'A': True, 'B': True}
+Prediction chain A (protein): 98 residues, 98 letters equal to the construct at their residue number, 0 numbered outside the construct
+Prediction chain B (rna): 60 residues, 60 letters equal to the construct at their residue number, 0 numbered outside the construct
+Construct equals a reference entity sequence: protein True, RNA False
+  rna construct differs from the reference entity at 1 G/X (X = modified residue in the reference); reported, not corrected
+
+Software: DockQ 2.1.3, gemmi 0.6.5, biopython 1.84, numpy 1.26.4, python 3.11.17
+These are reference-based accuracy measurements of one prediction. They are not a confidence estimate.
