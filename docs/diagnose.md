@@ -8,7 +8,8 @@ outputs usable structures at all, and how much do the candidates disagree with e
 
 ```
 rnplens diagnose validity  STRUCTURES...
-rnplens diagnose run       STRUCTURES... --mode within_engine --target ID --out DIR [--request request.json]
+rnplens diagnose run       STRUCTURES... --mode within_engine --engine BOLTZ2 --target ID --out DIR [--request request.json]
+                           [--allow-outside-validated-domain]
 rnplens diagnose run       STRUCTURES... --mode cross_engine  --target ID --engine LABEL ... --out DIR
 rnplens diagnose preflight request.json
 rnplens diagnose selftest  [--profile portable|reference]
@@ -25,7 +26,8 @@ pair, or no resolved protein or RNA residues); the reason is recorded in `detail
 `run` computes the median pairwise value, across the valid candidates, of three decomposition axes: protein
 internal Cα RMSD, RNA internal C4′ RMSD and RNA placement C4′ RMSD.
 
-- `within_engine`: several samples of one engine (at least two valid; the frozen reference used 50 per target).
+- `within_engine`: several samples of one engine, declared with `--engine` (at least two valid structures are
+  needed to compute anything; the statements are validated for 5–50 Boltz-2 candidates).
 - `cross_engine`: one designated output per engine, with an `--engine` label for each structure in order;
   at least three engines must supply a valid structure, and several candidates of one engine are refused.
 
@@ -59,3 +61,13 @@ A directory that already holds a report is refused.
 
 The preregistered out-of-sample evaluation of the protein-side statement, its protocol and results are in
 [validation/](validation/).
+
+## Validated applicability (0.2.0rc3)
+
+Every run is checked against the conditions under which its statements were validated: the declared engine(s),
+the number of valid structures and the chain composition of each file (one protein chain and one RNA chain). The
+conditions are in [which_analysis_should_i_use.md](which_analysis_should_i_use.md#when-is-a-diagnose-statement-validated).
+Outside them Diagnose refuses and lists the reasons. With `--allow-outside-validated-domain` it computes the values
+anyway; `report.json` then records `applicability.status = "outside_validated_domain"` with the reasons and
+`outside_domain_accepted_by_user = true`, and the HTML page opens with an "Outside the validated domain" notice.
+The check changes no computed value.

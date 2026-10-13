@@ -70,7 +70,7 @@ def diagnose_example(tmp, profile):
     ex = os.path.join(tmp, "examples"); shutil.copytree(EXAMPLES, ex) if not os.path.exists(ex) else None
     d = os.path.join(ex, "diagnose_7K9D"); out = os.path.join(tmp, "diagnose_out")
     files = sorted(os.path.join(d, f) for f in os.listdir(d) if f.endswith(".pdb"))
-    rc = entry(["diagnose", *files, "--mode", "within_engine", "--target", "7K9D", "--out", out])
+    rc = entry(["diagnose", *files, "--mode", "within_engine", "--engine", "BOLTZ2", "--target", "7K9D", "--out", out])
     got = normalise(json.load(open(os.path.join(out, "report.json"))), ex)
     exp = json.load(open(os.path.join(EXPECTED, "diagnose_7K9D_report.json")))
     s = _summ("diagnose.example_7K9D.report", compare(exp, got, profile)); s["exit"] = rc; s["ok"] = s["ok"] and rc == 0

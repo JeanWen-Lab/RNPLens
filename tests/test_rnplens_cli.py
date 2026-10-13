@@ -26,7 +26,7 @@ def run(*args, cwd=None):
 
 
 def test_version_is_a_release_candidate_not_stable():
-    assert rnplens.__version__ == "0.2.0rc2"
+    assert rnplens.__version__ == "0.2.0rc3"
     assert rnplens.IMPLEMENTATION == "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)"
 
 
@@ -62,7 +62,7 @@ def test_argument_errors_exit_2(args, code):
 
 def test_version_lists_components_and_dependencies():
     out = run("--version").stdout
-    assert out.startswith("rnplens 0.2.0rc2")
+    assert out.startswith("rnplens 0.2.0rc3")
     for s in ("RNPBench toolkit 0.2.0.dev1", "rnpbench_evaluate", "rnpbench_report", "rnpbench_diagnose", "DockQ 2.1.3"):
         assert s in out
 
@@ -71,7 +71,7 @@ def test_provenance_record():
     r = run("provenance")
     assert r.returncode == 0, r.stderr
     rec = json.loads(r.stdout)
-    assert rec["rnplens_version"] == "0.2.0rc2"
+    assert rec["rnplens_version"] == "0.2.0rc3"
     assert rec["component_module_versions"]["rnpbench_evaluate"] == "0.2.0.dev1"
     assert rec["frozen_sources_sha256"] and all(len(h) == 64 for h in rec["frozen_sources_sha256"].values())
 
@@ -129,7 +129,7 @@ def test_report_and_diagnose_examples_run(tmp_path):
     assert res["summary"]["NO_REFERENCE_STRUCTURE_IS_READ"] is True
     assert "not a probability of structural correctness" in res["summary"]["SEMANTICS"]
     models = sorted(os.path.join(EX, "reference_free", "diagnose_7K9D", f) for f in os.listdir(os.path.join(EX, "reference_free", "diagnose_7K9D")))
-    r = run("diagnose", "run", *models, "--mode", "within_engine", "--target", "7K9D", "--out", str(tmp_path / "dia"))
+    r = run("diagnose", "run", *models, "--mode", "within_engine", "--engine", "BOLTZ2", "--target", "7K9D", "--out", str(tmp_path / "dia"))
     assert r.returncode == 0, r.stderr
     d = json.load(open(tmp_path / "dia" / "report.json"))
     assert "probability_of_correctness" in d["diagnosis"]["refused_statements"]

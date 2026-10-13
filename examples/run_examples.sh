@@ -23,6 +23,6 @@ rnplens report run "$OUT/B1_report_contract.json" --out "$OUT/B1_report_7K9D"
 
 echo "== Example B2: reference-free validity and candidate disagreement (rnplens diagnose)"
 rnplens diagnose validity "$EX"/reference_free/diagnose_7K9D/*.pdb > "$OUT/B2_diagnose_validity.json"
-rnplens diagnose run "$EX"/reference_free/diagnose_7K9D/*.pdb --mode within_engine --target 7K9D --out "$OUT/B2_diagnose_7K9D"
+rnplens diagnose run "$EX"/reference_free/diagnose_7K9D/*.pdb --mode within_engine --engine BOLTZ2 --target 7K9D --out "$OUT/B2_diagnose_7K9D"
 
 echo "== done: outputs in $OUT"

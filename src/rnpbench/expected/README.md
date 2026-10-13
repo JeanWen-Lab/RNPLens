@@ -3,3 +3,9 @@ Expected outputs for the toolkit example regressions. They were generated on 202
 Files: `report_7K9D_result.json` and `report_7K9D_contacts_by_output.json` (the two JSON files Report writes) and `diagnose_7K9D_report.json`, all from the same original runs. The contacts file was added to the expected set after qualification run 1, because the run-1 self-test harness compared Report's in-memory result rather than the files Report writes. It comes from the same original run; no expected value was regenerated.
 
 0.2.0.dev1: the two Report files moved, unchanged, to `rnpbench_report/selftest_data/expected/`, because Report's public self-test now lives in Report; this directory keeps the Diagnose expected output.
+
+0.2.0rc3 (RNPLens): Diagnose now records its validated-applicability assessment, and the example declares the engine
+that produced its candidates (`--engine BOLTZ2`). Exactly two values were added to `diagnose_7K9D_report.json`, by
+an exact-edit script that refuses unless every other key equals the original: the new key `applicability`
+(status `inside_validated_domain`), and `engines`, which changed from `null` to `["BOLTZ2"]`. Every value produced
+by the original implementation is unchanged (sha256 before `d621134675eac76c…`, after `f03aff048c1eee9c…`).

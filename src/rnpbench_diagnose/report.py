@@ -36,7 +36,8 @@ BUDGET_NOTE = ("On the benchmark population, the candidate a user receives impro
                "own ranking can identify. The diagnostic above is available from 5 candidates.")
 
 
-def record(preflight_receipt, validity_summary, disagreement, diagnosis, *, target=None, engines=None):
+def record(preflight_receipt, validity_summary, disagreement, diagnosis, *, target=None, engines=None,
+           applicability=None):
     """The JSON record. Everything the HTML shows is here, and nothing is here that it hides."""
     from . import __version__
     return {"rnpbench_diagnose_version": __version__,
@@ -46,6 +47,7 @@ def record(preflight_receipt, validity_summary, disagreement, diagnosis, *, targ
             "validity": validity_summary,
             "disagreement": {kx: v for kx, v in disagreement.items() if kx != "values"},
             "diagnosis": diagnosis,
+            "applicability": applicability,
             "sampling_budget_note": BUDGET_NOTE,
             "limits": LIMITS}
 
@@ -76,6 +78,23 @@ def render_html(rec):
                   "[%.3f, %.3f] on %s &middot; reference %s (n = %d)</p></li>"
                   % (e(s["text"]), e(tag), ev["rho"], ev["ci"][0], ev["ci"][1], e(ev["cohort"]),
                      e(s["reference"]["source"]), s["reference"]["n"]))
+    ap = rec.get("applicability")
+    ap_html = banner = ""
+    if ap:
+        dom = ap["validated_domain"]
+        inside = ap["status"] == "inside_validated_domain"
+        ap_html = ("<h2>Validated applicability</h2><p class='%s'><b>%s.</b> %s</p><p class='meta'>Validated on: %s. "
+                   "Required: %s.</p>%s"
+                   % ("ok" if inside else "warnp",
+                      "Inside the validated domain" if inside else "Outside the validated domain",
+                      "This run matches the conditions under which the statements below were validated."
+                      if inside else "The statements below were computed as usual, but no validation covers this "
+                      "configuration; do not read them as validated diagnostics.",
+                      e(dom["evidence"]), e(dom["chains"]),
+                      "" if inside else "<ul class='limits'>%s</ul>" % "".join("<li>%s</li>" % e(x) for x in ap["reasons_outside"])))
+        if not inside:
+            banner = ("<p class='banner'><b>Outside the validated domain.</b> This configuration was run at the user's "
+                      "explicit request; see &ldquo;Validated applicability&rdquo;.</p>")
     na = rec["diagnosis"].get("measured_but_not_attributed")
     na_html = ""
     if na:
@@ -94,10 +113,12 @@ th{font-weight:600;color:#3d3d42;white-space:nowrap} ul{list-style:none;padding:
 .limits li{margin:.35em 0;color:#3d3d42;font-size:.92em;padding-left:1.1em;text-indent:-1.1em}
 .limits li:before{content:"\u2014\u00a0"}
 code{background:#f4f4f6;padding:.05em .3em;border-radius:3px}
+.banner{background:#fff1e6;border-left:4px solid #b3541e;padding:.6em .9em;margin:0 0 1.2em} .warnp{color:#8a3a10} .ok{color:#1d1d1f}
 </style></head><body>
 <h1>Predicted protein&ndash;RNA complex: diagnostic report</h1>
 <p class="sub">Target <code>%(target)s</code> &middot; %(mode)s &middot; RNPLens Diagnose (component %(version)s)</p>
-<h2>Output validity</h2><table>%(vrows)s</table>
+%(banner)s<h2>Output validity</h2><table>%(vrows)s</table>
+%(ap)s
 <h2>What the structures agree about</h2><ul>%(stmts)s</ul>
 %(na)s
 <h2>Sampling budget</h2><p class="meta">%(budget)s</p>
@@ -106,7 +127,7 @@ code{background:#f4f4f6;padding:.05em .3em;border-radius:3px}
 """ % {"target": e(str(rec.get("target") or "unnamed")),
        "mode": e(rec["diagnosis"]["mode"].replace("_", " ")),
        "version": e(rec["rnpbench_diagnose_version"]),
-       "vrows": vrows, "stmts": "".join(st), "na": na_html,
+       "vrows": vrows, "stmts": "".join(st), "na": na_html, "ap": ap_html, "banner": banner,
        "budget": e(rec["sampling_budget_note"]),
        "limits": "".join("<li>%s</li>" % e(x) for x in rec["limits"])}
 
