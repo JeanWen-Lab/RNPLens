@@ -57,6 +57,11 @@ def validate(contract, verify_digests=True):
         raise ContractError("schema_version must be %r, got %r" % (SCHEMA_VERSION, contract["schema_version"]))
     if not str(contract["case_id"]).strip():
         raise ContractError("case_id must be a non-empty string")
+    cid = str(contract["case_id"])
+    if any(ch in cid for ch in ("/", "\\", "\x00")) or cid.startswith(".") or any(ord(ch) < 32 for ch in cid):
+        # case_id names the HTML file inside the output directory (report_<case_id>.html); it may not be a path
+        raise ContractError("case_id %r may not contain '/', '\\', control characters or start with '.'; it names "
+                            "a file inside the output directory" % cid)
 
     c = contract["construct"]
     _require(c, REQUIRED_CONSTRUCT, "construct")
