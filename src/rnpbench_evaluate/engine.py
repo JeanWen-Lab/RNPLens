@@ -61,7 +61,7 @@ def frozen(allow_unpinned=False):
         v = versions()
         for k, want in PINNED.items():
             if v.get(k) != want and not allow_unpinned:
-                raise RuntimeError("%s %s is installed; the frozen RNPBench configuration requires %s %s. "
+                raise RuntimeError("%s %s is installed; the frozen RNPLens scoring configuration requires %s %s. "
                                    "Install the pinned version (see environment.yml)." % (k, v.get(k), k, want))
         ns, rec = frozen_loader.load({"P": None, "REP": None})
         _CACHE["ns"], _CACHE["rec"] = ns, rec
@@ -239,7 +239,7 @@ def evaluate(inp, allow_unpinned=False, keep_stage=False, workdir=None):
             "provenance": {"software_versions": versions(),
                            "frozen_sources": {k: v["sha256"] for k, v in rec["manifest"]["files"].items()},
                            "frozen_origin": rec["manifest"].get("origin"),
-                           "frozen_execution_record": "rnpbench provenance --full prints every executed top-level statement and its hash"},
+                           "frozen_execution_record": "rnplens evaluate provenance --full prints every executed top-level statement and its hash"},
         }
         return _clean(result)
     finally:

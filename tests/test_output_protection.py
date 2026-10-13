@@ -1,7 +1,6 @@
 """RNPBENCH_REPORT_OUTPUT_PROTECTION_V1 (0.2.0.dev1): `run` refuses an existing --outdir and changes nothing.
 
-Every entry point is exercised in a subprocess: the standalone console script, both module names, and the
-unified `rnpbench report run` (skipped when the toolkit meta-package is not installed).
+Every entry point is exercised in a subprocess: the public `rnplens report run` and both internal module names.
 """
 import hashlib
 import json
@@ -21,10 +20,9 @@ def _which(name):
 
 
 ENTRY = {
-    "rnpbench-report": lambda: [_which("rnpbench-report"), "run"],
     "python -m rnpbench_report": lambda: [sys.executable, "-m", "rnpbench_report", "run"],
     "python -m rnpbench_predict": lambda: [sys.executable, "-m", "rnpbench_predict", "run"],
-    "rnpbench report run": lambda: [_which("rnpbench"), "report", "run"],
+    "rnplens report run": lambda: [_which("rnplens"), "report", "run"],
 }
 
 
@@ -54,7 +52,7 @@ def _cmd(entry, contract, out):
     base = ENTRY[entry]()
     if base[0] is None:
         pytest.skip("%s is not installed" % entry)
-    return base + [contract, "--out" if entry == "rnpbench report run" else "--outdir", str(out)]
+    return base + [contract, "--out" if entry == "rnplens report run" else "--outdir", str(out)]
 
 
 @pytest.mark.parametrize("entry", sorted(ENTRY))

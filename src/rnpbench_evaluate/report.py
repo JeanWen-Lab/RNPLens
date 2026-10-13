@@ -47,12 +47,12 @@ def _f(v, d=3):
 def summary_text(r):
     dq, g, v = r["dockq"], r["geometry"], r["validity"]
     L = []
-    L.append("RNPBench Evaluate %s  --  target %s" % (r["rnpbench_evaluate_version"], r["target_id"]))
+    L.append("RNPLens Evaluate (component %s)  --  target %s" % (r["rnpbench_evaluate_version"], r["target_id"]))
     L.append("prediction  %s  (sha256 %s)" % (os.path.basename(r["input"]["prediction"]["path"]), r["input"]["prediction"]["sha256"][:16]))
     L.append("reference   %s  (sha256 %s)" % (os.path.basename(r["input"]["reference"]["path"]), r["input"]["reference"]["sha256"][:16]))
     L.append("construct   protein %d aa, RNA %d nt" % (r["input"]["construct"]["protein_length"], r["input"]["construct"]["rna_length"]))
     L.append("")
-    L.append("DockQ (released RNPBench configuration, construct-position correspondence)")
+    L.append("DockQ (frozen RNPLens scoring configuration, construct-position correspondence)")
     if dq["status"] == "SCORED":
         L.append("  DockQ %s  [%s]   fnat %s   iRMSD %s A   LRMSD %s A" % (_f(dq["dockq"]), dq["dockq_class"], _f(_first(r, "fnat")), _f(_first(r, "iRMSD")), _f(_first(r, "LRMSD"))))
         c = dq["correspondence"] or {}

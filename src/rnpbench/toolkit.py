@@ -6,7 +6,7 @@ import sys
 
 
 def main(argv):
-    ap = argparse.ArgumentParser(prog="rnpbench toolkit")
+    ap = argparse.ArgumentParser(prog="rnplens")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("version")
     sub.add_parser("provenance")
@@ -39,5 +39,5 @@ def main(argv):
     print("== report"); rcs["report"] = selftests.run("report", ["--profile", a.profile])
     print("== diagnose"); rcs["diagnose"] = selftests.run("diagnose", ["--profile", a.profile])
     ok = all(v == 0 for v in rcs.values())
-    print("%s: toolkit selftest %s" % ("PASS" if ok else "FAIL", rcs))
+    print("%s: rnplens selftest %s" % ("PASS" if ok else "FAIL", rcs))
     return 0 if ok else 3

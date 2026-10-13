@@ -97,17 +97,17 @@ def main(argv=None):
         from . import toolkit
         return toolkit.main(rest)
     if tool not in VERBS:
-        print("rnpbench: unknown tool %r\n\n%s" % (tool, USAGE), file=sys.stderr)
+        print("rnplens: unknown tool %r\n\n%s" % (tool, USAGE), file=sys.stderr)
         return 2
     if tool == "evaluate" and (not rest or rest[0].startswith("-")) and rest[:1] not in (["-h"], ["--help"]):
         _notice("rnpbench evaluate <options>", "rnpbench evaluate run <options>")
         return _evaluate("evaluate", rest)
     if not rest or rest[0] in ("-h", "--help"):
-        print("rnpbench %s: %s\nverbs: %s" % (tool, SCOPE[tool], " | ".join(VERBS[tool])))
+        print("rnplens %s: %s\nverbs: %s" % (tool, SCOPE[tool], " | ".join(VERBS[tool])))
         return 0 if rest else 2
     verb, args = rest[0], rest[1:]
     if verb not in VERBS[tool]:
-        print("rnpbench %s: unknown verb %r; verbs: %s" % (tool, verb, " | ".join(VERBS[tool])), file=sys.stderr)
+        print("rnplens %s: unknown verb %r; verbs: %s" % (tool, verb, " | ".join(VERBS[tool])), file=sys.stderr)
         return 2
     native = VERBS[tool][verb]
     if native is None:

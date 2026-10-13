@@ -79,7 +79,7 @@ def diagnose_example(tmp, profile):
 
 # ------------------------------------------------------------------ entry
 def run(tool, argv):
-    ap = argparse.ArgumentParser(prog="rnpbench %s selftest" % tool)
+    ap = argparse.ArgumentParser(prog="rnplens %s selftest" % tool)
     ap.add_argument("--profile", choices=("reference", "portable"), default="portable")
     ap.add_argument("--out", default=None, help="directory for the self-test record (never overwritten)")
     if tool == "report":
@@ -106,7 +106,7 @@ def run(tool, argv):
         shutil.rmtree(tmp, ignore_errors=True)
     for c in checks:
         print("  %-34s %s  %s" % (c["check"], "ok  " if c["ok"] else "FAIL", ", ".join("%s=%s" % (k, c[k]) for k in ("n_values", "n_checks", "n_failed", "n_floats_not_bit_identical", "max_abs_deviation", "verdict", "groups") if k in c)))
-    print("%s: rnpbench %s selftest (profile %s)" % (rec["verdict"], tool, a.profile))
+    print("%s: RNPLens %s self-test (profile %s)" % (rec["verdict"], tool.capitalize(), a.profile))
     if a.out:
         json.dump(rec, open(os.path.join(a.out, "selftest_record.json"), "w"), indent=1)
     return 0 if rec["verdict"] == "PASS" else 3

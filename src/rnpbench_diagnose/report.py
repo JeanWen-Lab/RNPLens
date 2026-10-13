@@ -83,7 +83,7 @@ def render_html(rec):
                    "<b>%.2f &Aring;</b>. This value is reported without interpretation.</p>"
                    "<p class='meta'>%s</p>" % (na["rna_placement_c4_rmsd"], e(na["why"])))
     return """<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>RNPBench-Diagnose %(target)s</title>
+<html lang="en"><head><meta charset="utf-8"><title>RNPLens Diagnose: %(target)s</title>
 <style>
 body{font:14px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:52em;margin:2.2em auto;padding:0 1.2em;color:#1d1d1f}
 h1{font-size:1.5em;margin:0 0 .15em} h2{font-size:1.05em;margin:1.8em 0 .5em;border-bottom:1px solid #e3e3e6;padding-bottom:.25em}
@@ -96,7 +96,7 @@ th{font-weight:600;color:#3d3d42;white-space:nowrap} ul{list-style:none;padding:
 code{background:#f4f4f6;padding:.05em .3em;border-radius:3px}
 </style></head><body>
 <h1>Predicted protein&ndash;RNA complex: diagnostic report</h1>
-<p class="sub">Target <code>%(target)s</code> &middot; %(mode)s &middot; rnpbench-diagnose %(version)s</p>
+<p class="sub">Target <code>%(target)s</code> &middot; %(mode)s &middot; RNPLens Diagnose (component %(version)s)</p>
 <h2>Output validity</h2><table>%(vrows)s</table>
 <h2>What the structures agree about</h2><ul>%(stmts)s</ul>
 %(na)s

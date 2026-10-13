@@ -20,16 +20,16 @@ from .validity import summarize, validity
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog="rnpbench-diagnose",
+    ap = argparse.ArgumentParser(prog="rnplens diagnose",
                                  description="Reference-free diagnostics for a predicted protein-RNA complex. "
                                              "Launches no prediction.")
     ap.add_argument("--version", action="version", version=__version__)
     sub = ap.add_subparsers(dest="command", required=True)
-    p1 = sub.add_parser("preflight", help="validate a request")
+    p1 = sub.add_parser("preflight", prog="rnplens diagnose preflight", help="validate a request")
     p1.add_argument("request")
-    p2 = sub.add_parser("validity", help="classify predicted outputs")
+    p2 = sub.add_parser("validity", prog="rnplens diagnose validity", help="classify predicted outputs")
     p2.add_argument("structures", nargs="+")
-    p3 = sub.add_parser("diagnose", help="validity, disagreement and the user report")
+    p3 = sub.add_parser("diagnose", prog="rnplens diagnose run", help="validity, disagreement and the user report")
     p3.add_argument("structures", nargs="+")
     p3.add_argument("--out", required=True)
     p3.add_argument("--mode", required=True, choices=list(MODES))

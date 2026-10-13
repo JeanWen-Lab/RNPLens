@@ -22,13 +22,14 @@ from . import agreement, contract
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog="rnpbench_predict")
+    ap = argparse.ArgumentParser(prog="rnplens report")
     sub = ap.add_subparsers(dest="cmd", required=True)
-    v = sub.add_parser("validate"); v.add_argument("contract")
+    v = sub.add_parser("validate", prog="rnplens report validate"); v.add_argument("contract")
     v.add_argument("--no-verify-digests", action="store_true")
-    r = sub.add_parser("run"); r.add_argument("contract"); r.add_argument("--outdir", required=True)
+    r = sub.add_parser("run", prog="rnplens report run"); r.add_argument("contract")
+    r.add_argument("--outdir", required=True, help="output directory; must not exist (rnplens report run also accepts --out)")
     r.add_argument("--nproc", type=int, default=1); r.add_argument("--no-report", action="store_true")
-    s = sub.add_parser("selftest")
+    s = sub.add_parser("selftest", prog="rnplens report selftest")
     s.add_argument("--profile", choices=("portable", "reference"), default="portable")
     s.add_argument("--out", "--outdir", dest="out", default=None, help="directory for the self-test record (must not exist)")
     s.add_argument("--acceptance-store", default=None, help="INTERNAL: frozen development store (not distributed)")

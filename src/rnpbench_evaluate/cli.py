@@ -31,7 +31,7 @@ def _build_input(a):
         return a.input, None
     need = [n for n in ("prediction", "reference", "protein_seq", "rna_seq", "target_id") if not getattr(a, n)]
     if need:
-        raise SystemExit("rnpbench evaluate: give --input, or all of --prediction --reference --protein-seq --rna-seq --target-id (missing: %s)" % ", ".join("--" + n.replace("_", "-") for n in need))
+        raise SystemExit("rnplens evaluate run: give --input, or all of --prediction --reference --protein-seq --rna-seq --target-id (missing: %s)" % ", ".join("--" + n.replace("_", "-") for n in need))
     d = {"contract": "RNPBENCH_EVALUATE_INPUT_V1", "target_id": a.target_id,
          "prediction": {"path": os.path.abspath(a.prediction), "engine": a.engine},
          "reference": {"path": os.path.abspath(a.reference)},
@@ -41,10 +41,10 @@ def _build_input(a):
 
 
 def main(argv=None):
-    p = argparse.ArgumentParser(prog="rnpbench", description="RNPBench Evaluate: reference-based evaluation of predicted protein-RNA complexes under the frozen RNPBench rules.")
-    p.add_argument("--version", action="version", version="rnpbench-evaluate " + __version__)
+    p = argparse.ArgumentParser(prog="rnplens evaluate", description="RNPLens Evaluate: reference-based evaluation of predicted protein-RNA complexes under the frozen RNPLens scoring rules.")
+    p.add_argument("--version", action="version", version="RNPLens Evaluate component " + __version__)
     sub = p.add_subparsers(dest="cmd", required=True)
-    e = sub.add_parser("evaluate", help="evaluate one prediction against one experimental reference")
+    e = sub.add_parser("evaluate", prog="rnplens evaluate run", help="evaluate one prediction against one experimental reference")
     e.add_argument("--input", help="input contract JSON (RNPBENCH_EVALUATE_INPUT_V1)")
     e.add_argument("--prediction", help="predicted complex (.pdb or .cif), residues numbered 1..L along each construct")
     e.add_argument("--reference", help="experimental reference (.cif, mmCIF with label_seq_id)")
@@ -56,16 +56,16 @@ def main(argv=None):
     e.add_argument("--out", required=True, help="output directory (must not already hold results)")
     e.add_argument("--workdir", default=None, help="directory for temporary staging files (default: the system temporary directory)")
     e.add_argument("--allow-unpinned", action="store_true", help="run with a DockQ version other than 2.1.3 (recorded in provenance; results are then not the frozen configuration)")
-    v = sub.add_parser("validate", help="validate an input contract without scoring")
+    v = sub.add_parser("validate", prog="rnplens evaluate validate", help="validate an input contract without scoring")
     v.add_argument("--input", required=True)
-    s = sub.add_parser("selftest", help="reproduce the frozen regression fixtures")
+    s = sub.add_parser("selftest", prog="rnplens evaluate selftest", help="reproduce the frozen regression fixtures")
     s.add_argument("--profile", choices=("reference", "portable"), default="reference",
                    help="reference: every value bit-identical (reference platform); portable: frozen per-quantity tolerances for unrounded floats, everything else exact")
     s.add_argument("--internal-fixtures", default=os.environ.get("RNPBENCH_INTERNAL_FIXTURES"),
                    help="directory of internal (non-redistributable) fixtures; default $RNPBENCH_INTERNAL_FIXTURES")
     s.add_argument("--out", default=None, help="optional directory for the self-test record and per-fixture results")
     s.add_argument("--allow-unpinned", action="store_true")
-    pv = sub.add_parser("provenance", help="print pinned frozen sources")
+    pv = sub.add_parser("provenance", prog="rnplens evaluate provenance", help="print pinned frozen sources")
     pv.add_argument("--full", action="store_true")
     a = p.parse_args(argv)
 
@@ -89,7 +89,7 @@ def main(argv=None):
         return 0
     if a.cmd == "selftest":
         from . import selftest
-        print("rnpbench-evaluate %s self-test" % __version__)
+        print("RNPLens Evaluate self-test (component %s)" % __version__)
         rec, results = selftest.run(allow_unpinned=a.allow_unpinned, profile_name=a.profile, internal_fixtures=a.internal_fixtures)
         print("%s: %d/%d checks (profile %s, sets %s)" % (rec["verdict"], rec["n_passed"], rec["n_checks"], rec["profile"], "+".join(rec["fixture_sets"])))
         print("  checks required to be exact: %d/%d equal" % (rec["n_exact_required_equal"], rec["n_exact_required"]))

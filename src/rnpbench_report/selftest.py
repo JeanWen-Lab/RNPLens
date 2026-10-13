@@ -297,7 +297,7 @@ def run(profile="portable", out=None, acceptance_store=None, overlay=None, verbo
             print("  %-40s %s  %s" % (c["check"], "ok  " if c["ok"] else "FAIL", ", ".join("%s=%s" % (k, c[k]) for k in (
                 "n_cases", "n_values", "n_failed", "n_floats_not_bit_identical", "max_abs_deviation", "embedded_images",
                 "n_text_lines_differing", "files_unchanged", "status", "verdict", "n_checks", "analysis_implementation") if k in c)))
-        print("%s: rnpbench-report selftest (profile %s, %s)" % (rec["verdict"], profile, rec["sets"]))
+        print("%s: RNPLens Report self-test (profile %s, %s)" % (rec["verdict"], profile, rec["sets"]))
     if out:
         json.dump(rec, open(os.path.join(out, "selftest_record.json"), "w"), indent=1)
     return (0 if rec["verdict"] == "PASS" else 4), rec

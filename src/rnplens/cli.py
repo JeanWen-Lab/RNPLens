@@ -56,7 +56,7 @@ def _tool_help(tool):
     verbs, scope = TOOLS[tool]
     return ("usage: rnplens %s <verb> [options]\n\n%s\n\nverbs: %s\n\n"
             "Run 'rnplens %s <verb> --help' for the options of one verb (the help text of the underlying "
-            "RNPBench %s implementation)." % (tool, scope, verbs, tool, tool.capitalize()))
+            "RNPLens %s component)." % (tool, scope, verbs, tool, tool.capitalize()))
 
 
 def _version():
