@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rnplens"
+version = "0.2.0rc1"
+description = "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+# Licence intentionally not declared: the licence has not been approved (see the release-preparation records).
+authors = [{ name = "RNPLens authors (author list to be supplied)" }]
+keywords = ["protein-RNA complex", "structure prediction", "evaluation", "DockQ", "structural biology"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: MacOS",
+]
+# Exactly the runtime pins of the internally qualified RNPBench toolkit 0.2.0.dev1 (rnpbench-core, -evaluate,
+# -report, -diagnose). DockQ is pinned because the frozen scorer depends on DockQ 2.1.3 internals.
+dependencies = [
+  "DockQ==2.1.3",
+  "gemmi==0.6.5",
+  "biopython==1.84",
+  "numpy==1.26.4",
+  "scipy==1.13.1",
+]
+
+[project.optional-dependencies]
+html = ["matplotlib>=3.8"]   # only for the HTML page of RNPLens Report
+test = ["pytest"]
+
+[project.scripts]
+rnplens = "rnplens.cli:main"
+# compatibility entry points of the internally qualified toolkit (unchanged behaviour)
+rnpbench = "rnpbench.cli:main"
+rnpbench-evaluate = "rnpbench_evaluate.cli:main"
+rnpbench-report = "rnpbench_report.cli:main"
+rnpbench-diagnose = "rnpbench_diagnose._toolkit:entry"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+# rnplens: the public command and version. The other six import packages are the internally qualified
+# RNPBench toolkit 0.2.0.dev1 components, byte-for-byte (see docs/reproducibility.md).
+packages = ["rnplens", "rnpbench", "rnpbench_core", "rnpbench_evaluate", "rnpbench_report", "rnpbench_predict", "rnpbench_diagnose"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+rnpbench = ["profiles/*.json", "expected/*.json", "expected/*.md", "expected/*.txt", "examples/*.md", "examples/*/*.json", "examples/*/*.pdb", "examples/*/*/*"]
+rnpbench_core = ["frozen/*.json", "frozen/*/*.py"]
+rnpbench_evaluate = ["fixtures/*.json", "fixtures/*/*", "profiles/*.json"]
+rnpbench_report = ["selftest_data/*/*.json", "selftest_data/*/*.html", "selftest_data/*/*/*", "selftest_data/README.md"]
+rnpbench_diagnose = ["reference/*", "_checks/contract/*.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
