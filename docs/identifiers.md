@@ -9,7 +9,7 @@ project, package or command, and nothing in this list needs to be used by name.
 | kind | identifiers | why it is kept |
 |---|---|---|
 | frozen scorer sources | the eight files under `src/rnpbench_core/frozen/` (for example `canonical/rnpbench_score_v2.py`) | their SHA-256 is verified at run time; any edit would stop the scorer from loading |
-| internal Python module names | `rnpbench`, `rnpbench_core`, `rnpbench_evaluate`, `rnpbench_report` (alias `rnpbench_predict`), `rnpbench_diagnose` | the frozen loader binds the scorer modules by name; these modules are not a public Python API (the interface is the `rnplens` command) |
+| internal Python module names | `rnpbench`, `rnpbench_core`, `rnpbench_evaluate`, `rnpbench_report`, `rnpbench_diagnose` (the earlier import alias `rnpbench_predict` was removed in 0.2.0rc3; it was used by no RNPLens tool) | the frozen loader binds the scorer modules by name; these modules are not a public Python API (the interface is the `rnplens` command) |
 | input contracts and output schemas | `RNPBENCH_EVALUATE_INPUT_V1`; `rnpbench-predict-contract-1`; `rnpbench-predict-result-1` | written into and checked against every contract and result file |
 | scoring configurations | `RNPBENCH_SCORING_V3_CONSTRUCT_POSITION_DOCKQ_2_1_3`, `RNPBENCH_FOUR_AXIS_DECOMPOSITION_SCORE_DECOMP_V1` | name the frozen configuration recorded in each Evaluate result |
 | analysis-implementation version | `rnpbench-predict-1.0.0` (Report) | recorded in each Report result; the self-test requires it |

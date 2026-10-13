@@ -9,10 +9,10 @@ predict structures. The command is ``rnplens``::
 
 This package contains the public command and version only. The three tools are the internally qualified
 RNPBench toolkit 0.2.0.dev1 implementation, distributed unchanged as the import packages ``rnpbench_core``,
-``rnpbench_evaluate``, ``rnpbench_report`` (alias ``rnpbench_predict``), ``rnpbench_diagnose`` and ``rnpbench``;
+``rnpbench_evaluate``, ``rnpbench_report``, ``rnpbench_diagnose`` and ``rnpbench``;
 their Python APIs are those packages' own.
 """
-__version__ = "0.2.0rc2"
+__version__ = "0.2.0rc3"
 
 # The implementation this release distributes, byte-for-byte (see docs/reproducibility.md).
 IMPLEMENTATION = "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)"

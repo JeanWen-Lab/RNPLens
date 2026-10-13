@@ -1,6 +1,6 @@
 """RNPBENCH_REPORT_OUTPUT_PROTECTION_V1 (0.2.0.dev1): `run` refuses an existing --outdir and changes nothing.
 
-Every entry point is exercised in a subprocess: the public `rnplens report run` and both internal module names.
+Every entry point is exercised in a subprocess: the public `rnplens report run` and the internal module.
 """
 import hashlib
 import json
@@ -21,7 +21,6 @@ def _which(name):
 
 ENTRY = {
     "python -m rnpbench_report": lambda: [sys.executable, "-m", "rnpbench_report", "run"],
-    "python -m rnpbench_predict": lambda: [sys.executable, "-m", "rnpbench_predict", "run"],
     "rnplens report run": lambda: [_which("rnplens"), "report", "run"],
 }
 

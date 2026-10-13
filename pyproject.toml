@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rnplens"
-version = "0.2.0rc2"
+version = "0.2.0rc3"
 description = "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
@@ -35,7 +35,7 @@ dependencies = [
 
 [project.optional-dependencies]
 html = ["matplotlib>=3.8"]   # only for the HTML page of RNPLens Report
-test = ["pytest"]
+test = ["pytest", "jsonschema>=4.18"]
 
 [project.scripts]
 rnplens = "rnplens.cli:main"
@@ -44,7 +44,7 @@ rnplens = "rnplens.cli:main"
 package-dir = { "" = "src" }
 # rnplens: the public command and version. The other six import packages are internal RNPLens components whose
 # module names (rnpbench_*) are historical identifiers kept for numerical reproducibility (docs/identifiers.md).
-packages = ["rnplens", "rnpbench", "rnpbench_core", "rnpbench_evaluate", "rnpbench_report", "rnpbench_predict", "rnpbench_diagnose"]
+packages = ["rnplens", "rnpbench", "rnpbench_core", "rnpbench_evaluate", "rnpbench_report", "rnpbench_diagnose"]
 include-package-data = false
 
 [tool.setuptools.package-data]

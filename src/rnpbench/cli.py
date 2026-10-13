@@ -11,7 +11,7 @@ stderr and nothing else differs:
   rnpbench selftest ...                              ->  rnpbench evaluate selftest ...
   rnpbench provenance ...                            ->  rnpbench evaluate provenance ...
 The tools' own entry points remain: rnpbench-evaluate, rnpbench-report, rnpbench-diagnose,
-python -m rnpbench_evaluate | rnpbench_report | rnpbench_predict | rnpbench_diagnose.
+python -m rnpbench_evaluate | rnpbench_report | rnpbench_diagnose.
 """
 import sys
 

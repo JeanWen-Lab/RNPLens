@@ -1,8 +1,8 @@
 """Command line: validate a contract, run the analysis, write the report.
 
-  python -m rnpbench_predict validate CONTRACT.json
-  python -m rnpbench_predict run      CONTRACT.json --outdir DIR [--nproc N]
-  python -m rnpbench_predict selftest [--profile portable|reference] [--out DIR]
+  rnplens report validate CONTRACT.json
+  rnplens report run      CONTRACT.json --out DIR [--nproc N]
+  rnplens report selftest [--profile portable|reference] [--out DIR]
                                       [--acceptance-store DIR --overlay DIR]   (internal acceptance suite)
 
 Exit codes are meaningful: 0 success, 2 contract error or refused invocation (including an existing output
