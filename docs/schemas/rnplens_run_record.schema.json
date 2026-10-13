@@ -1,0 +1,86 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://github.com/JeanWen-Lab/RNPLens/docs/schemas/rnplens_run_record.schema.json",
+ "title": "RNPLens run record",
+ "description": "rnplens_run.json: written by the rnplens command into the output directory after a successful run. It records the RNPLens release, the command and the SHA-256 of every input and output file. Record identifier in 'record'.",
+ "type": "object",
+ "properties": {
+  "command": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "the command as given"
+  },
+  "created_utc": {
+   "type": "string"
+  },
+  "implementation": {
+   "type": "string",
+   "description": "identifier of the qualified component set"
+  },
+  "inputs": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "path": {
+      "type": "string"
+     },
+     "sha256": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "path",
+     "sha256"
+    ]
+   },
+   "description": "every input file named on the command line or in a contract, with SHA-256"
+  },
+  "note": {
+   "type": "string"
+  },
+  "outputs": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "file": {
+      "type": "string"
+     },
+     "sha256": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "file",
+     "sha256"
+    ]
+   },
+   "description": "every file the tool wrote into the output directory, with SHA-256"
+  },
+  "record": {
+   "type": "string",
+   "description": "record identifier"
+  },
+  "rnplens_version": {
+   "type": "string",
+   "description": "RNPLens release that ran the command"
+  },
+  "working_directory": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "command",
+  "created_utc",
+  "implementation",
+  "inputs",
+  "note",
+  "outputs",
+  "record",
+  "rnplens_version",
+  "working_directory"
+ ]
+}

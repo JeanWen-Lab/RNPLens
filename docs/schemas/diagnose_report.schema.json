@@ -1,0 +1,384 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://github.com/JeanWen-Lab/RNPLens/docs/schemas/diagnose_report.schema.json",
+ "title": "RNPLens Diagnose report",
+ "description": "RNPLens Diagnose report.json (reference-free validity and component disagreement). Derived from observed outputs. The applicability block (0.2.0rc3 and later) states whether the run is inside the validated domain of the statements.",
+ "type": "object",
+ "properties": {
+  "applicability": {
+   "type": "object",
+   "properties": {
+    "engines_declared": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "mode": {
+     "type": "string"
+    },
+    "n_structures_used": {
+     "type": "number"
+    },
+    "outside_domain_accepted_by_user": {
+     "type": "boolean"
+    },
+    "reasons_outside": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "status": {
+     "type": "string"
+    },
+    "validated_domain": {
+     "type": "object",
+     "properties": {
+      "candidates_max": {
+       "type": "number"
+      },
+      "candidates_min": {
+       "type": "number"
+      },
+      "chains": {
+       "type": "string"
+      },
+      "engines": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "evidence": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "candidates_max",
+      "candidates_min",
+      "chains",
+      "engines",
+      "evidence"
+     ]
+    }
+   },
+   "required": [
+    "engines_declared",
+    "mode",
+    "n_structures_used",
+    "outside_domain_accepted_by_user",
+    "reasons_outside",
+    "status",
+    "validated_domain"
+   ],
+   "description": "status inside_validated_domain or outside_validated_domain, the reasons, the validated domain and whether the user accepted running outside it"
+  },
+  "diagnosis": {
+   "type": "object",
+   "properties": {
+    "measured_but_not_attributed": {
+     "type": "object",
+     "properties": {
+      "rna_placement_c4_rmsd": {
+       "type": "number"
+      },
+      "why": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "rna_placement_c4_rmsd",
+      "why"
+     ]
+    },
+    "mode": {
+     "type": "string"
+    },
+    "refused_statements": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "statements": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "available": {
+        "type": "boolean"
+       },
+       "axis": {
+        "type": "string"
+       },
+       "band": {
+        "type": "string"
+       },
+       "component_specific": {
+        "type": "boolean"
+       },
+       "disagreement_angstrom": {
+        "type": "number"
+       },
+       "evidence": {
+        "type": "object",
+        "properties": {
+         "ci": {
+          "type": "array",
+          "items": {
+           "type": "number"
+          }
+         },
+         "cohort": {
+          "type": "string"
+         },
+         "margin_over_off_diagonals": {
+          "type": "array",
+          "items": {
+           "type": "number"
+          }
+         },
+         "not_separable_from": {
+          "type": "string"
+         },
+         "out_of_sample": {
+          "type": "object",
+          "properties": {
+           "ci": {
+            "type": "array",
+            "items": {
+             "type": "number"
+            }
+           },
+           "cohort": {
+            "type": "string"
+           },
+           "margin_over_off_diagonals": {
+            "type": "array",
+            "items": {
+             "type": "number"
+            }
+           },
+           "note": {
+            "type": "string"
+           },
+           "rho": {
+            "type": "number"
+           },
+           "verdict": {
+            "type": "string"
+           }
+          },
+          "required": [
+           "note",
+           "verdict"
+          ]
+         },
+         "rho": {
+          "type": "number"
+         },
+         "specific": {
+          "type": "boolean"
+         }
+        },
+        "required": [
+         "ci",
+         "cohort",
+         "rho",
+         "specific"
+        ]
+       },
+       "mode": {
+        "type": "string"
+       },
+       "percentile_in_reference": {
+        "type": "number"
+       },
+       "reference": {
+        "type": "object",
+        "properties": {
+         "median": {
+          "type": "number"
+         },
+         "n": {
+          "type": "number"
+         },
+         "q1": {
+          "type": "number"
+         },
+         "q3": {
+          "type": "number"
+         },
+         "sha256": {
+          "type": "string"
+         },
+         "source": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "median",
+         "n",
+         "q1",
+         "q3",
+         "sha256",
+         "source"
+        ]
+       },
+       "statement": {
+        "type": "string"
+       },
+       "text": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "available",
+       "axis",
+       "band",
+       "component_specific",
+       "disagreement_angstrom",
+       "evidence",
+       "mode",
+       "percentile_in_reference",
+       "reference",
+       "statement",
+       "text"
+      ]
+     }
+    }
+   },
+   "required": [
+    "measured_but_not_attributed",
+    "mode",
+    "refused_statements",
+    "statements"
+   ],
+   "description": "licensed statements with value, band, percentile, reference and evidence; refused statements; the measured-but-not-attributed placement value"
+  },
+  "disagreement": {
+   "type": "object",
+   "properties": {
+    "exclusions": {
+     "type": "object",
+     "properties": {}
+    },
+    "members": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "n_pairs": {
+     "type": "number"
+    },
+    "pair_exclusions": {
+     "type": "object",
+     "properties": {}
+    },
+    "prot_internal_ca_rmsd": {
+     "type": "number"
+    },
+    "refused": {
+     "description": "null in every observed output"
+    },
+    "rna_internal_c4_rmsd": {
+     "type": "number"
+    },
+    "rna_placement_c4_rmsd": {
+     "type": "number"
+    },
+    "usable": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "exclusions",
+    "n_pairs",
+    "pair_exclusions",
+    "prot_internal_ca_rmsd",
+    "refused",
+    "rna_internal_c4_rmsd",
+    "rna_placement_c4_rmsd",
+    "usable"
+   ],
+   "description": "median pairwise value of each axis, pairs used, usable structures, exclusions, refusals"
+  },
+  "engines": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   },
+   "description": "the engine labels declared with --engine"
+  },
+  "limits": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "what the report does not tell you; always present"
+  },
+  "preflight": {
+   "description": "receipt of the prediction request, if one was given with --request"
+  },
+  "rnpbench_diagnose_version": {
+   "type": "string",
+   "description": "version of the Diagnose component (historical key name; see docs/identifiers.md)"
+  },
+  "sampling_budget_note": {
+   "type": "string",
+   "description": "note on sampling depth"
+  },
+  "target": {
+   "type": "string",
+   "description": "the identifier given by the user"
+  },
+  "validity": {
+   "type": "object",
+   "properties": {
+    "STRUCTURAL_FAILURE": {
+     "type": "number"
+    },
+    "TECHNICAL_FAILURE": {
+     "type": "number"
+    },
+    "VALID": {
+     "type": "number"
+    },
+    "details": {
+     "type": "array"
+    },
+    "n_total": {
+     "type": "number"
+    },
+    "n_valid": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "STRUCTURAL_FAILURE",
+    "TECHNICAL_FAILURE",
+    "VALID",
+    "details",
+    "n_total",
+    "n_valid"
+   ],
+   "description": "counts per validity class and per-structure details"
+  }
+ },
+ "required": [
+  "diagnosis",
+  "disagreement",
+  "engines",
+  "limits",
+  "preflight",
+  "rnpbench_diagnose_version",
+  "sampling_budget_note",
+  "target",
+  "validity"
+ ]
+}

@@ -1,0 +1,388 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://github.com/JeanWen-Lab/RNPLens/docs/schemas/report_result.schema.json",
+ "title": "RNPLens Report result",
+ "description": "RNPLens Report result.json (reference-free agreement among existing predictions). Schema identifier in schema_version. Derived from observed outputs. Agreement values are descriptive; no accuracy is computed and no reference structure is read.",
+ "type": "object",
+ "properties": {
+  "contact_support": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "number"
+   },
+   "description": "for each residue-nucleotide contact, the number of engines proposing it"
+  },
+  "engine_pairs": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "engine_a": {
+      "type": "string"
+     },
+     "engine_b": {
+      "type": "string"
+     },
+     "n_output_pairs_compared": {
+      "type": "number"
+     },
+     "register_agreement": {
+      "type": "number"
+     },
+     "rna_pose_copy_permutation_capped": {
+      "type": "boolean"
+     },
+     "rna_pose_difference_A": {
+      "type": "number"
+     },
+     "surface_agreement": {
+      "type": "number"
+     }
+    },
+    "required": [
+     "engine_a",
+     "engine_b",
+     "n_output_pairs_compared",
+     "register_agreement",
+     "rna_pose_copy_permutation_capped",
+     "rna_pose_difference_A",
+     "surface_agreement"
+    ]
+   },
+   "description": "pairwise comparisons between engines (empty with a single engine)"
+  },
+  "environment": {
+   "type": "object",
+   "properties": {
+    "biopython": {
+     "type": "string"
+    },
+    "matplotlib": {
+     "type": "string"
+    },
+    "numpy": {
+     "type": "string"
+    },
+    "package_version": {
+     "type": "string"
+    },
+    "platform": {
+     "type": "string"
+    },
+    "python": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "biopython",
+    "matplotlib",
+    "numpy",
+    "package_version",
+    "platform",
+    "python"
+   ],
+   "description": "platform and dependency versions"
+  },
+  "package_version": {
+   "type": "string",
+   "description": "analysis-implementation version"
+  },
+  "per_output": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "chain_lengths": {
+      "type": "array",
+      "items": {
+       "type": "array",
+       "items": {
+        "type": [
+         "number",
+         "string"
+        ]
+       }
+      }
+     },
+     "cross_engine_support": {
+      "type": [
+       "null",
+       "number"
+      ]
+     },
+     "declared_lengths": {
+      "description": "null in every observed output"
+     },
+     "engine": {
+      "type": "string"
+     },
+     "error": {
+      "description": "null in every observed output"
+     },
+     "execution": {
+      "type": "string"
+     },
+     "n_contacts": {
+      "type": "number"
+     },
+     "n_other_engines_compared": {
+      "type": "number"
+     },
+     "n_protein_copies": {
+      "type": "number"
+     },
+     "n_rna_copies": {
+      "type": "number"
+     },
+     "n_surface": {
+      "type": "number"
+     },
+     "native": {
+      "type": "number"
+     },
+     "native_kind": {
+      "type": "string"
+     },
+     "no_interface_contact": {
+      "type": "boolean"
+     },
+     "repeat_register_agreement": {
+      "type": [
+       "null",
+       "number"
+      ]
+     },
+     "sha256": {
+      "type": "string"
+     },
+     "state": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "chain_lengths",
+     "cross_engine_support",
+     "declared_lengths",
+     "engine",
+     "error",
+     "execution",
+     "n_contacts",
+     "n_other_engines_compared",
+     "n_protein_copies",
+     "n_rna_copies",
+     "n_surface",
+     "native",
+     "native_kind",
+     "no_interface_contact",
+     "repeat_register_agreement",
+     "sha256",
+     "state"
+    ]
+   },
+   "description": "one record per declared output: eligibility state (ELIGIBLE or a named outcome), SHA-256, contact counts, the engine's own confidence"
+  },
+  "schema_version": {
+   "type": "string",
+   "description": "output schema identifier (historical prefix; see docs/identifiers.md)"
+  },
+  "summary": {
+   "type": "object",
+   "properties": {
+    "NO_ACCURACY_IS_COMPUTED": {
+     "type": "boolean"
+    },
+    "NO_REFERENCE_STRUCTURE_IS_READ": {
+     "type": "boolean"
+    },
+    "SEMANTICS": {
+     "type": "string"
+    },
+    "case_id": {
+     "type": "string"
+    },
+    "construct": {
+     "type": "object",
+     "properties": {
+      "protein_length": {
+       "type": "number"
+      },
+      "protein_sequence": {
+       "type": "string"
+      },
+      "rna_length": {
+       "type": "number"
+      },
+      "rna_sequence": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "protein_length",
+      "rna_length"
+     ]
+    },
+    "contact_support_histogram": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "number"
+     }
+    },
+    "eligible_engines": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "hypothesis_thresholds": {
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    },
+    "ineligible": {
+     "type": "array"
+    },
+    "interface_hypotheses": {
+     "type": "object",
+     "properties": {
+      "0.3": {
+       "type": "array",
+       "items": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      },
+      "0.5": {
+       "type": "array",
+       "items": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      },
+      "0.7": {
+       "type": "array",
+       "items": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "required": [
+      "0.3",
+      "0.5",
+      "0.7"
+     ]
+    },
+    "median_pairwise_register_agreement": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "median_pairwise_rna_pose_difference_A": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "median_pairwise_surface_agreement": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "n_contacts_proposed_by_any_engine": {
+     "type": "number"
+    },
+    "n_declared_outputs": {
+     "type": "number"
+    },
+    "n_eligible_engines": {
+     "type": "number"
+    },
+    "n_eligible_outputs": {
+     "type": "number"
+    },
+    "n_hypotheses_at_primary_threshold": {
+     "type": "number"
+    },
+    "outputs_with_no_interface_contact": {
+     "type": "array"
+    },
+    "primary_threshold": {
+     "type": "number"
+    },
+    "repeat_agreement": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "properties": {
+       "register_agreement": {
+        "type": "number"
+       },
+       "rna_pose_copy_permutation_capped": {
+        "type": "boolean"
+       },
+       "rna_pose_difference_A": {
+        "type": "number"
+       },
+       "surface_agreement": {
+        "type": "number"
+       }
+      },
+      "required": [
+       "register_agreement",
+       "rna_pose_copy_permutation_capped",
+       "rna_pose_difference_A",
+       "surface_agreement"
+      ]
+     }
+    }
+   },
+   "required": [
+    "NO_ACCURACY_IS_COMPUTED",
+    "NO_REFERENCE_STRUCTURE_IS_READ",
+    "SEMANTICS",
+    "case_id",
+    "construct",
+    "contact_support_histogram",
+    "eligible_engines",
+    "hypothesis_thresholds",
+    "ineligible",
+    "interface_hypotheses",
+    "median_pairwise_register_agreement",
+    "median_pairwise_rna_pose_difference_A",
+    "median_pairwise_surface_agreement",
+    "n_contacts_proposed_by_any_engine",
+    "n_declared_outputs",
+    "n_eligible_engines",
+    "n_eligible_outputs",
+    "n_hypotheses_at_primary_threshold",
+    "outputs_with_no_interface_contact",
+    "primary_threshold",
+    "repeat_agreement"
+   ],
+   "description": "case-level values: eligible engines and outputs, median pairwise surface and register agreement, RNA pose difference, interface hypotheses"
+  },
+  "wall_s": {
+   "type": "number",
+   "description": "run time in seconds"
+  }
+ },
+ "required": [
+  "contact_support",
+  "engine_pairs",
+  "environment",
+  "package_version",
+  "per_output",
+  "schema_version",
+  "summary",
+  "wall_s"
+ ]
+}

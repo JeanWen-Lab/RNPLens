@@ -22,10 +22,19 @@ Every `run` command writes into a new directory and refuses one that already hol
 
 | file | content |
 |---|---|
-| `report.json` | `target`, `engines`, `preflight` (receipt if `--request` given), `validity` (counts per class, `n_total`, `n_valid`, details), `disagreement` (median pairwise value per axis, pairs used, usable structures, exclusions, refusals), `diagnosis` (`statements` with value, band, percentile, reference and evidence; `refused_statements`; `measured_but_not_attributed`), `limits`, `sampling_budget_note`, `rnpbench_diagnose_version` |
+| `report.json` | `target`, `engines`, `preflight` (receipt if `--request` given), `validity` (counts per class, `n_total`, `n_valid`, details), `disagreement` (median pairwise value per axis, pairs used, usable structures, exclusions, refusals), `diagnosis` (`statements` with value, band, percentile, reference and evidence; `refused_statements`; `measured_but_not_attributed`), `applicability` (0.2.0rc3: `status` inside or outside the validated domain, `reasons_outside`, `validated_domain`, `outside_domain_accepted_by_user`), `limits`, `sampling_budget_note`, `rnpbench_diagnose_version` |
 | `report.html` | self-contained page |
 
 `rnplens diagnose validity` prints its JSON (`per_structure`, `summary`) to standard output.
+
+## Run record (`rnplens_run.json`, every `run`)
+
+Written by the `rnplens` command into the output directory after the tool finishes: `record`
+(`rnplens-run-record-1`), `rnplens_version`, `implementation`, `created_utc`, `command`, `working_directory`,
+`inputs` (path and SHA-256 of every input file named on the command line or in a contract) and `outputs` (every
+file the tool wrote, with SHA-256). It is never written over an existing record.
+
+JSON Schemas of all four files are in [schemas/](schemas/).
 
 ## Self-tests
 

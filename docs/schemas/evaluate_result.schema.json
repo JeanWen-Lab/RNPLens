@@ -1,0 +1,705 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://github.com/JeanWen-Lab/RNPLens/docs/schemas/evaluate_result.schema.json",
+ "title": "RNPLens Evaluate result",
+ "description": "RNPLens Evaluate result.json (one prediction scored against one experimental reference). Schema 1 for RNPLens 0.2.0rc3; derived from observed outputs, including every regression fixture and no-value case. Values that could not be computed are null with status NO_VALUE and a reason, never 0.",
+ "type": "object",
+ "properties": {
+  "created_utc": {
+   "type": "string",
+   "description": "time the result was written (UTC, ISO 8601)"
+  },
+  "dockq": {
+   "type": "object",
+   "properties": {
+    "adapter_total_dockq": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "candidate_outcomes": {
+     "type": [
+      "array",
+      "null"
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "exception": {
+        "type": [
+         "null",
+         "string"
+        ]
+       },
+       "mapping": {
+        "type": "string"
+       },
+       "outcome": {
+        "type": "string"
+       },
+       "total_dockq": {
+        "type": [
+         "null",
+         "number"
+        ]
+       }
+      },
+      "required": [
+       "exception",
+       "mapping",
+       "outcome",
+       "total_dockq"
+      ]
+     }
+    },
+    "configuration": {
+     "type": "string"
+    },
+    "correspondence": {
+     "type": [
+      "null",
+      "object"
+     ],
+     "properties": {
+      "in_frame": {
+       "type": "number"
+      },
+      "indeterminate": {
+       "type": "number"
+      },
+      "n_pairs": {
+       "type": "number"
+      },
+      "out_of_frame": {
+       "type": "number"
+      }
+     },
+     "required": [
+      "in_frame",
+      "indeterminate",
+      "n_pairs",
+      "out_of_frame"
+     ]
+    },
+    "dockq": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "dockq_class": {
+     "type": [
+      "null",
+      "string"
+     ]
+    },
+    "dockq_unrounded": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "failure_detail": {
+     "type": [
+      "null",
+      "string"
+     ]
+    },
+    "failure_reason": {
+     "type": [
+      "null",
+      "string"
+     ]
+    },
+    "failure_stage": {
+     "type": [
+      "null",
+      "string"
+     ]
+    },
+    "model_numbering": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "properties": {
+       "contiguous_from_one": {
+        "type": "boolean"
+       },
+       "insertion_codes": {
+        "type": "number"
+       },
+       "length_equals_a_construct_length": {
+        "type": "boolean"
+       },
+       "n": {
+        "type": "number"
+       },
+       "usable_as_construct_positions": {
+        "type": "boolean"
+       }
+      },
+      "required": [
+       "contiguous_from_one",
+       "insertion_codes",
+       "length_equals_a_construct_length",
+       "n",
+       "usable_as_construct_positions"
+      ]
+     }
+    },
+    "n_admissible_candidates": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "n_interfaces": {
+     "type": [
+      "null",
+      "number"
+     ]
+    },
+    "no_value_note": {
+     "type": "string"
+    },
+    "outcomes_seen": {
+     "type": [
+      "array",
+      "null"
+     ],
+     "items": {
+      "type": "string"
+     }
+    },
+    "per_interface": {
+     "type": [
+      "null",
+      "object"
+     ],
+     "additionalProperties": {
+      "type": "object",
+      "properties": {
+       "DockQ": {
+        "type": "number"
+       },
+       "LRMSD": {
+        "type": "number"
+       },
+       "fnat": {
+        "type": "number"
+       },
+       "fnonnat": {
+        "type": "number"
+       },
+       "iRMSD": {
+        "type": "number"
+       },
+       "len1": {
+        "type": "number"
+       },
+       "len2": {
+        "type": "number"
+       },
+       "model_total": {
+        "type": "number"
+       },
+       "nat_correct": {
+        "type": "number"
+       },
+       "nat_total": {
+        "type": "number"
+       }
+      },
+      "required": [
+       "DockQ",
+       "LRMSD",
+       "fnat",
+       "fnonnat",
+       "iRMSD",
+       "len1",
+       "len2",
+       "model_total",
+       "nat_correct",
+       "nat_total"
+      ]
+     },
+     "description": "per chain-pair interface values (DockQ, fnat, iRMSD, LRMSD), keyed by the chain pair"
+    },
+    "reported_statistic": {
+     "type": "string"
+    },
+    "selected_mapping": {
+     "type": [
+      "null",
+      "string"
+     ]
+    },
+    "status": {
+     "type": "string"
+    },
+    "tolerance": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "adapter_total_dockq",
+    "candidate_outcomes",
+    "configuration",
+    "correspondence",
+    "dockq",
+    "dockq_class",
+    "dockq_unrounded",
+    "failure_detail",
+    "failure_reason",
+    "failure_stage",
+    "model_numbering",
+    "n_admissible_candidates",
+    "n_interfaces",
+    "outcomes_seen",
+    "per_interface",
+    "reported_statistic",
+    "selected_mapping",
+    "status",
+    "tolerance"
+   ],
+   "description": "DockQ route: frozen configuration identifier, status (SCORED or NO_VALUE), value, class, per-interface values, selected chain mapping, and the failing stage and reason when there is no value"
+  },
+  "geometry": {
+   "type": "object",
+   "properties": {
+    "chains_used": {
+     "type": "object",
+     "properties": {
+      "prediction": {
+       "type": "array",
+       "items": {
+        "type": [
+         "null",
+         "string"
+        ]
+       }
+      },
+      "reference": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      }
+     },
+     "required": [
+      "prediction",
+      "reference"
+     ]
+    },
+    "configuration": {
+     "type": "string"
+    },
+    "correspondence_note": {
+     "type": "string"
+    },
+    "exclusion": {
+     "type": "string"
+    },
+    "n_prot_aligned": {
+     "type": "number"
+    },
+    "n_prot_native": {
+     "type": "number"
+    },
+    "n_prot_pose": {
+     "type": "number"
+    },
+    "n_rna_aligned": {
+     "type": "number"
+    },
+    "n_rna_native": {
+     "type": "number"
+    },
+    "n_rna_pose": {
+     "type": "number"
+    },
+    "no_value_note": {
+     "type": "string"
+    },
+    "prot_internal_ca_rmsd": {
+     "type": "number"
+    },
+    "rna_internal_c4_rmsd": {
+     "type": "number"
+    },
+    "rna_placement_c4_rmsd": {
+     "type": "number"
+    },
+    "status": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "chains_used",
+    "configuration",
+    "correspondence_note",
+    "status"
+   ],
+   "description": "geometry route: status, protein internal Calpha RMSD, RNA internal C4' RMSD and RNA placement C4' RMSD with the numbers of aligned positions"
+  },
+  "input": {
+   "type": "object",
+   "properties": {
+    "construct": {
+     "type": "object",
+     "properties": {
+      "protein_length": {
+       "type": "number"
+      },
+      "protein_sequence": {
+       "type": "string"
+      },
+      "rna_length": {
+       "type": "number"
+      },
+      "rna_sequence": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "protein_length",
+      "protein_sequence",
+      "rna_length",
+      "rna_sequence"
+     ]
+    },
+    "construct_checks": {
+     "type": "object",
+     "properties": {
+      "construct_positions_with_X": {
+       "type": "object",
+       "properties": {
+        "protein": {
+         "type": "array",
+         "items": {
+          "type": "number"
+         }
+        },
+        "rna": {
+         "type": "array",
+         "items": {
+          "type": "number"
+         }
+        }
+       },
+       "required": [
+        "protein",
+        "rna"
+       ]
+      },
+      "note": {
+       "type": "string"
+      },
+      "protein_construct_equals_a_reference_entity_sequence": {
+       "type": "boolean"
+      },
+      "protein_positions_differing_from_same_length_entity": {
+       "type": "array"
+      },
+      "reference_entity_poly_records": {
+       "type": "number"
+      },
+      "reference_sequence_column": {
+       "type": "string"
+      },
+      "rna_construct_equals_a_reference_entity_sequence": {
+       "type": "boolean"
+      },
+      "rna_positions_differing_from_same_length_entity": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "construct": {
+          "type": "string"
+         },
+         "position": {
+          "type": "number"
+         },
+         "reference": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "construct",
+         "position",
+         "reference"
+        ]
+       }
+      }
+     },
+     "required": [
+      "construct_positions_with_X",
+      "note",
+      "protein_construct_equals_a_reference_entity_sequence",
+      "protein_positions_differing_from_same_length_entity",
+      "reference_entity_poly_records",
+      "reference_sequence_column",
+      "rna_construct_equals_a_reference_entity_sequence",
+      "rna_positions_differing_from_same_length_entity"
+     ]
+    },
+    "prediction": {
+     "type": "object",
+     "properties": {
+      "designated_output": {
+       "type": "object",
+       "properties": {
+        "rule": {
+         "type": "string"
+        },
+        "sample_index": {
+         "type": "number"
+        }
+       },
+       "required": [
+        "rule",
+        "sample_index"
+       ]
+      },
+      "engine": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "sha256": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "engine",
+      "path",
+      "sha256"
+     ]
+    },
+    "reference": {
+     "type": "object",
+     "properties": {
+      "path": {
+       "type": "string"
+      },
+      "sha256": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "path",
+      "sha256"
+     ]
+    }
+   },
+   "required": [
+    "construct",
+    "construct_checks",
+    "prediction",
+    "reference"
+   ],
+   "description": "the prediction, the reference and the construct sequences, with the SHA-256 of each file"
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "frozen_execution_record": {
+     "type": "string"
+    },
+    "frozen_origin": {
+     "type": "string"
+    },
+    "frozen_sources": {
+     "type": "object",
+     "properties": {
+      "canonical/corr_mask_audit.py": {
+       "type": "string"
+      },
+      "canonical/pos_adapter.py": {
+       "type": "string"
+      },
+      "canonical/rf2na_scoring.py": {
+       "type": "string"
+      },
+      "canonical/rnpbench_score_v2.py": {
+       "type": "string"
+      },
+      "decomp/score_decomp.py": {
+       "type": "string"
+      },
+      "f1/f1_b1c_allatom.py": {
+       "type": "string"
+      },
+      "f1/f1_b2a_matrix.py": {
+       "type": "string"
+      },
+      "f1/f1_featurize_mp.py": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "canonical/corr_mask_audit.py",
+      "canonical/pos_adapter.py",
+      "canonical/rf2na_scoring.py",
+      "canonical/rnpbench_score_v2.py",
+      "decomp/score_decomp.py",
+      "f1/f1_b1c_allatom.py",
+      "f1/f1_b2a_matrix.py",
+      "f1/f1_featurize_mp.py"
+     ]
+    },
+    "software_versions": {
+     "type": "object",
+     "properties": {
+      "DockQ": {
+       "type": "string"
+      },
+      "biopython": {
+       "type": "string"
+      },
+      "gemmi": {
+       "type": "string"
+      },
+      "numpy": {
+       "type": "string"
+      },
+      "platform": {
+       "type": "string"
+      },
+      "python": {
+       "type": "string"
+      },
+      "scipy": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "DockQ",
+      "biopython",
+      "gemmi",
+      "numpy",
+      "platform",
+      "python",
+      "scipy"
+     ]
+    }
+   },
+   "required": [
+    "frozen_execution_record",
+    "frozen_origin",
+    "frozen_sources",
+    "software_versions"
+   ],
+   "description": "dependency versions, platform and the SHA-256 of each frozen scorer file"
+  },
+  "rnpbench_evaluate_version": {
+   "type": "string",
+   "description": "version of the Evaluate component that wrote the file (historical key name; see docs/identifiers.md)"
+  },
+  "target_id": {
+   "type": "string",
+   "description": "the identifier given by the user"
+  },
+  "validity": {
+   "type": "object",
+   "properties": {
+    "evaluable_dockq": {
+     "type": "boolean"
+    },
+    "evaluable_geometry": {
+     "type": "boolean"
+    },
+    "model_numbering_usable_as_construct_positions": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "boolean"
+     }
+    },
+    "prediction_chain_kinds": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "prediction_has_protein_chain": {
+     "type": "boolean"
+    },
+    "prediction_has_rna_chain": {
+     "type": "boolean"
+    },
+    "prediction_residues_vs_construct": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "properties": {
+       "first_differences": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "construct": {
+           "type": "string"
+          },
+          "position": {
+           "type": "number"
+          },
+          "prediction": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "construct",
+          "position",
+          "prediction"
+         ]
+        }
+       },
+       "kind": {
+        "type": "string"
+       },
+       "letters_equal_to_construct": {
+        "type": "number"
+       },
+       "numbered_outside_construct": {
+        "type": "number"
+       },
+       "residues": {
+        "type": "number"
+       }
+      },
+      "required": [
+       "first_differences",
+       "kind",
+       "letters_equal_to_construct",
+       "numbered_outside_construct",
+       "residues"
+      ]
+     }
+    }
+   },
+   "required": [
+    "evaluable_dockq",
+    "evaluable_geometry",
+    "model_numbering_usable_as_construct_positions",
+    "prediction_chain_kinds",
+    "prediction_has_protein_chain",
+    "prediction_has_rna_chain",
+    "prediction_residues_vs_construct"
+   ],
+   "description": "input validity checks performed before scoring"
+  }
+ },
+ "required": [
+  "created_utc",
+  "dockq",
+  "geometry",
+  "input",
+  "provenance",
+  "rnpbench_evaluate_version",
+  "target_id",
+  "validity"
+ ]
+}

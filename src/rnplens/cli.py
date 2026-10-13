@@ -134,7 +134,77 @@ def main(argv=None):
               % (cmd, TOOLS[cmd][0], cmd, TOOLS[cmd][0].split(" | ")[0]), file=sys.stderr)
         return 2
     from rnpbench import cli as rnpbench_cli
-    return rnpbench_cli.main([cmd] + rest)
+    rc = rnpbench_cli.main([cmd] + rest)
+    if rc == 0 and rest[0] == "run":
+        _write_run_record(cmd, rest)
+    return rc
+
+
+RUN_RECORD = "rnplens_run.json"
+
+
+def _sha(p):
+    import hashlib
+    h = hashlib.sha256()
+    with open(p, "rb") as fh:
+        for b in iter(lambda: fh.read(1 << 20), b""):
+            h.update(b)
+    return h.hexdigest()
+
+
+def _opt(args, *names):
+    for i, a in enumerate(args):
+        for n in names:
+            if a == n and i + 1 < len(args):
+                return args[i + 1]
+            if a.startswith(n + "="):
+                return a.split("=", 1)[1]
+    return None
+
+
+def _write_run_record(tool, args):
+    """After a successful `run`, write rnplens_run.json into its output directory: the RNPLens release, the command,
+    and the SHA-256 of every input and output file. Descriptive only; it never changes or replaces a result file."""
+    import datetime
+    import os
+    out = _opt(args, "--out", "--outdir")
+    if not out or not os.path.isdir(out) or os.path.exists(os.path.join(out, RUN_RECORD)):
+        return
+    files = [a for a in args[1:] if not a.startswith("-") and os.path.isfile(a)]
+    for flag in ("--input", "--prediction", "--reference", "--protein-seq", "--rna-seq", "--request"):
+        v = _opt(args, flag)
+        if v and os.path.isfile(v):
+            files.append(v)
+    referenced = []
+    for f in list(files):
+        if f.endswith(".json"):
+            try:
+                c = json.load(open(f, encoding="utf-8"))
+            except Exception:
+                continue
+            base = os.path.dirname(os.path.abspath(f))
+            cand = [c.get(k, {}).get("path") for k in ("prediction", "reference") if isinstance(c.get(k), dict)]
+            cand += [o.get(k) for o in c.get("outputs", []) if isinstance(o, dict) for k in ("structure_path", "confidence_path")]
+            for q in cand:
+                if isinstance(q, str):
+                    for r in (q, os.path.join(base, q)):
+                        if os.path.isfile(r):
+                            referenced.append(r); break
+    seen, inputs = set(), []
+    for f in files + referenced:
+        a = os.path.abspath(f)
+        if a not in seen:
+            seen.add(a); inputs.append({"path": a, "sha256": _sha(a)})
+    outputs = [{"file": os.path.relpath(os.path.join(d, f), out), "sha256": _sha(os.path.join(d, f))}
+               for d, _, fs in os.walk(out) for f in sorted(fs) if f != RUN_RECORD]
+    rec = {"record": "rnplens-run-record-1", "rnplens_version": __version__,
+           "implementation": IMPLEMENTATION, "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+           "command": ["rnplens", tool] + list(args), "working_directory": os.getcwd(),
+           "inputs": inputs, "outputs": sorted(outputs, key=lambda x: x["file"]),
+           "note": "written by the rnplens command after the tool finished; the tool's own result files are unchanged"}
+    with open(os.path.join(out, RUN_RECORD), "x", encoding="utf-8") as fh:
+        json.dump(rec, fh, indent=1)
+        fh.write("\n")
 
 
 if __name__ == "__main__":
