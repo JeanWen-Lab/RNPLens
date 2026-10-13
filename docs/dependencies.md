@@ -13,6 +13,7 @@ This is a factual inventory, not legal advice. Licences were read from the insta
 | scipy | 1.13.1 (pinned) | BSD-3-Clause | numerics |
 | matplotlib (optional, `html`) | ≥ 3.8 (qualified with 3.9.2) | Matplotlib licence (PSF-style) | figures in Report's HTML page |
 | pytest (optional, `test`) | any | MIT | tests |
+| jsonschema (optional, `test`) | ≥ 4.18 (tested with 4.26.0) | MIT | validating outputs against `docs/schemas/` in the tests |
 
 Installed transitively through DockQ and matplotlib, unpinned (as in the qualified toolkit): networkx (BSD-3-Clause),
 parallelbar (MIT), tqdm (MPL-2.0 AND MIT), colorama (BSD), pillow (MIT-CMU), contourpy, cycler, kiwisolver
@@ -22,7 +23,10 @@ parallelbar (MIT), tqdm (MPL-2.0 AND MIT), colorama (BSD), pillow (MIT-CMU), con
 
 All structure files in the repository are either Boltz-2 predictions made for the study or copies of wwPDB
 entries; no output of any other engine is included. Terms were read from the upstream licence files on 2026-10-13.
-This is a factual record, not legal advice.
+This is a factual record, not legal advice. The file-by-file manifest, with each file's SHA-256, origin, PDB entry
+and primary citation, engine and settings, input sequences, processing and attribution, is
+[examples/DATA_PROVENANCE.tsv](../examples/DATA_PROVENANCE.tsv). Redistribution under the RNPLens licence remains
+subject to institutional (ANU) approval before public release.
 
 | files | content | terms | status |
 |---|---|---|---|

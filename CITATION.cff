@@ -4,7 +4,7 @@ message: >-
   Author list, release date and DOI are to be supplied at release.
 title: "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
 type: software
-version: 0.2.0rc2
+version: 0.2.0rc3
 license: MIT
 repository-code: "https://github.com/JeanWen-Lab/RNPLens"
 authors:

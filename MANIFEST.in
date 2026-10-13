@@ -1,4 +1,4 @@
-include README.md CHANGELOG.md CONTRIBUTING.md CITATION.cff LICENSE
+include README.md CHANGELOG.md CONTRIBUTING.md CITATION.cff LICENSE SECURITY.md
 graft docs
 graft examples
 graft tests

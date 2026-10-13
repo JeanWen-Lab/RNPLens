@@ -2,8 +2,11 @@
 
 **Evaluation and diagnostic tools for protein–RNA complex predictions.**
 
-> **Status: release candidate `0.2.0rc2` — not yet publicly released.** MIT licence. The software accompanies a
-> manuscript in preparation; see [Citation](#citation).
+> **Status: release candidate `0.2.0rc3` — not yet publicly released.** MIT licence, subject to institutional
+> (ANU) intellectual-property approval before public release. The software accompanies a manuscript in
+> preparation; see [Citation](#citation).
+
+**New to RNPLens? Start with [Which analysis should I use?](docs/which_analysis_should_i_use.md)**
 
 RNPLens helps researchers examine protein–RNA complex structures that have **already been predicted** (for example by
 AlphaFold 3, Boltz-2, Chai-1, RoseTTAFold-family models or docking), identify where a prediction may be limited,
@@ -108,7 +111,7 @@ hypothesis at the primary threshold. Cross-engine agreement needs outputs from s
 
 ```bash
 rnplens diagnose validity examples/reference_free/diagnose_7K9D/*.pdb
-rnplens diagnose run examples/reference_free/diagnose_7K9D/*.pdb --mode within_engine --target 7K9D --out out_diagnose_7K9D
+rnplens diagnose run examples/reference_free/diagnose_7K9D/*.pdb --mode within_engine --engine BOLTZ2 --target 7K9D --out out_diagnose_7K9D
 ```
 
 Outputs: `report.json` and `report.html`. All five samples are `VALID`. The diagnosis reads:
@@ -121,7 +124,13 @@ disagreement 0.56 A, typical relative to the frozen development reference (25th 
 ```
 
 Diagnose explicitly refuses to attribute error to RNA placement, to give a probability of correctness or to
-recommend an engine; every report carries these limits.
+recommend an engine; every report carries these limits. It also checks that the run is inside the conditions
+under which its statements were validated (here: 5 Boltz-2 candidates, one protein and one RNA chain each) and
+refuses otherwise unless you pass `--allow-outside-validated-domain`; see
+[docs/which_analysis_should_i_use.md](docs/which_analysis_should_i_use.md#when-is-a-diagnose-statement-validated).
+
+Every `run` also writes `rnplens_run.json` next to the results: the RNPLens release, the command, and the SHA-256
+of every input and output file.
 
 The full expected outputs of both examples, with the platform they were produced on, are in
 [`examples/expected_output/`](examples/expected_output/). See [docs/quickstart.md](docs/quickstart.md) for a
@@ -142,11 +151,13 @@ See [docs/interpretation.md](docs/interpretation.md) and [docs/limitations.md](d
 
 ## Documentation
 
+[which analysis should I use?](docs/which_analysis_should_i_use.md) ·
 [installation](docs/installation.md) · [quick start](docs/quickstart.md) · [Evaluate](docs/evaluate.md) ·
 [Report](docs/report.md) · [Diagnose](docs/diagnose.md) · [output formats](docs/output_formats.md) ·
 [interpretation](docs/interpretation.md) · [limitations](docs/limitations.md) ·
 [reproducibility](docs/reproducibility.md) · [Evaluate input contract](docs/INPUT_CONTRACT.md) ·
-[identifiers](docs/identifiers.md) · [validation records](docs/validation/)
+[identifiers](docs/identifiers.md) · [validation records](docs/validation/) · [output schemas](docs/schemas/) ·
+[example data provenance](examples/DATA_PROVENANCE.tsv) · [software vs study reproducibility](docs/paper_reproducibility.md)
 
 ## Provenance of the implementation
 
@@ -156,7 +167,8 @@ scorer files are verified by SHA-256 at run time. A few machine-readable identif
 internal prefix so that this stays verifiable; they are listed in [docs/identifiers.md](docs/identifiers.md). The
 study's benchmark resource (its entries, partitions and score stores) is **not** part of this repository, and the
 software version is independent of the manuscript's evidence build identifier. See
-[docs/reproducibility.md](docs/reproducibility.md).
+[docs/reproducibility.md](docs/reproducibility.md), and [docs/paper_reproducibility.md](docs/paper_reproducibility.md)
+for what this repository does and does not reproduce of the study.
 
 ## Citation
 
@@ -165,5 +177,7 @@ publication) and the software release. See [`CITATION.cff`](CITATION.cff). No DO
 
 ## Licence
 
-RNPLens is released under the [MIT licence](LICENSE). Third-party dependencies keep their own licences, and the
-example and test structures carry the terms listed in [docs/dependencies.md](docs/dependencies.md).
+RNPLens is released under the [MIT licence](LICENSE), subject to institutional (ANU) intellectual-property
+approval before public release. Third-party dependencies keep their own licences. Every bundled structure is listed
+with its origin, terms and attribution in [examples/DATA_PROVENANCE.tsv](examples/DATA_PROVENANCE.tsv) (see also
+[docs/dependencies.md](docs/dependencies.md)). Security issues: see [SECURITY.md](SECURITY.md).

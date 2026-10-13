@@ -55,7 +55,7 @@ it is not a probability of structural correctness".
 
 ```bash
 rnplens diagnose validity examples/reference_free/diagnose_7K9D/*.pdb > OUT/B2_diagnose_validity.json
-rnplens diagnose run examples/reference_free/diagnose_7K9D/*.pdb --mode within_engine --target 7K9D --out OUT/B2_diagnose_7K9D
+rnplens diagnose run examples/reference_free/diagnose_7K9D/*.pdb --mode within_engine --engine BOLTZ2 --target 7K9D --out OUT/B2_diagnose_7K9D
 ```
 
 `validity` classifies each file as `VALID`, `TECHNICAL_FAILURE` or `STRUCTURAL_FAILURE` (here 5 of 5 `VALID`).

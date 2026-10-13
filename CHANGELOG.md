@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.2.0rc3 — release candidate (not released)
+
+- **Diagnose applicability domain enforced.** Each run is checked against the conditions under which its
+  statements were validated: Boltz-2 candidates, 5–50 per target, for `within_engine`; designated outputs of
+  three or more of Boltz-2, Chai-1, RF3 and RoseTTAFold2NA for `cross_engine`; one protein chain and one RNA
+  chain per structure for both. Outside these conditions Diagnose refuses with the reasons, unless
+  `--allow-outside-validated-domain` is given; the report then records and displays that it is outside the
+  validated domain. `within_engine` now takes `--engine`. No computed value changed. `report.json` gains
+  `applicability`; the Diagnose example-regression reference gained exactly that key and the declared engine.
+- **Run record.** Every `run` writes `rnplens_run.json`: RNPLens release, command, and SHA-256 of every input and
+  output file.
+- **Output schemas.** JSON Schemas for Evaluate, Report, Diagnose and the run record (`docs/schemas/`), with tests.
+- **Security.** A Report `case_id` that is a path (contains `/`, `\`, a control character, or starts with `.`) is
+  refused; previously it could make Report fail after writing part of its output. Tests check that hostile
+  identifiers and file names are escaped in the HTML pages. New `SECURITY.md` and an issue template.
+- **Removed** the import alias `rnpbench_predict`, which no RNPLens tool used.
+- **Documentation.** New `docs/which_analysis_should_i_use.md` (choosing a tool, a table of every reported value,
+  Diagnose's validated conditions), `docs/paper_reproducibility.md`, `examples/DATA_PROVENANCE.tsv` and screenshots
+  of genuine outputs in the README.
+
 ## 0.2.0rc2 — release candidate (not released)
 
 - **One public name.** All human-readable text now uses RNPLens: the help and error messages of every command and
