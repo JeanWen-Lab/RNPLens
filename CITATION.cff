@@ -1,10 +1,12 @@
 cff-version: 1.2.0
 message: >-
   If you use RNPLens, please cite the accompanying manuscript (in preparation) and this software release.
-  Author list, repository URL, licence, release date and DOI are to be supplied at release.
+  Author list, release date and DOI are to be supplied at release.
 title: "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
 type: software
-version: 0.2.0rc1
+version: 0.2.0rc2
+license: MIT
+repository-code: "https://github.com/JeanWen-Lab/RNPLens"
 authors:
   - name: "RNPLens authors (to be supplied)"
 abstract: >-

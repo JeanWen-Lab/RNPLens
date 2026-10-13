@@ -26,8 +26,8 @@ def run(*args, cwd=None):
 
 
 def test_version_is_a_release_candidate_not_stable():
-    assert rnplens.__version__ == "0.2.0rc1"
-    assert rnplens.IMPLEMENTATION == "RNPBench toolkit 0.2.0.dev1"
+    assert rnplens.__version__ == "0.2.0rc2"
+    assert rnplens.IMPLEMENTATION == "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)"
 
 
 @pytest.mark.parametrize("args", [["--help"], ["evaluate", "--help"], ["report", "--help"], ["diagnose", "--help"],
@@ -43,7 +43,7 @@ def test_help_is_discoverable(args):
 def test_verb_help_reaches_the_implementation(tool, verb):
     r = run(tool, verb, "--help")
     assert r.returncode == 0, r.stderr
-    assert "usage:" in r.stdout
+    assert ("usage: rnplens %s %s" % (tool, verb)) in r.stdout
 
 
 def test_help_states_scope_limits():
@@ -62,7 +62,7 @@ def test_argument_errors_exit_2(args, code):
 
 def test_version_lists_components_and_dependencies():
     out = run("--version").stdout
-    assert out.startswith("rnplens 0.2.0rc1")
+    assert out.startswith("rnplens 0.2.0rc2")
     for s in ("RNPBench toolkit 0.2.0.dev1", "rnpbench_evaluate", "rnpbench_report", "rnpbench_diagnose", "DockQ 2.1.3"):
         assert s in out
 
@@ -71,7 +71,7 @@ def test_provenance_record():
     r = run("provenance")
     assert r.returncode == 0, r.stderr
     rec = json.loads(r.stdout)
-    assert rec["rnplens_version"] == "0.2.0rc1"
+    assert rec["rnplens_version"] == "0.2.0rc2"
     assert rec["component_module_versions"]["rnpbench_evaluate"] == "0.2.0.dev1"
     assert rec["frozen_sources_sha256"] and all(len(h) == 64 for h in rec["frozen_sources_sha256"].values())
 
