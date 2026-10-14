@@ -135,10 +135,10 @@ def test_diagnose_inside_domain(tmp_path):
 
 def test_diagnose_multi_chain_structures_are_outside_domain():
     from rnpbench_diagnose.applicability import assess, chain_counts
-    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     single = _models()
     assert all(chain_counts(p) == (1, 1) for p in single)
-    multi = os.path.join(root, "src", "rnpbench_evaluate", "fixtures", "equivalent_copies", "reference.cif")
+    import rnpbench_evaluate
+    multi = os.path.join(os.path.dirname(rnpbench_evaluate.__file__), "fixtures", "equivalent_copies", "reference.cif")
     n_p, n_r = chain_counts(multi)
     assert (n_p, n_r) != (1, 1)
     rec = assess("within_engine", [multi] * 5, declared_engine="BOLTZ2")
