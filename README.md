@@ -140,6 +140,14 @@ The full expected outputs of both examples, with the platform they were produced
 [`examples/expected_output/`](examples/expected_output/). See [docs/quickstart.md](docs/quickstart.md) for a
 field-by-field walk-through.
 
+## What the outputs look like
+
+These are the genuine outputs of the two worked examples above (from `examples/expected_output/`).
+
+| Evaluate (`summary.txt`) | Report (HTML page) | Diagnose (HTML page) |
+|---|---|---|
+| [![Evaluate summary](docs/images/example_evaluate.png)](docs/images/example_evaluate.png) | [![Report page](docs/images/example_report.png)](docs/images/example_report.png) | [![Diagnose page](docs/images/example_diagnose.png)](docs/images/example_diagnose.png) |
+
 ## Interpreting results responsibly
 
 RNPLens keeps apart quantities that are easily conflated:
