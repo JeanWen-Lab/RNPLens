@@ -10,3 +10,6 @@ RNPLens 0.2.0rc3 on the reference platform. Nothing in them was edited or produc
 | `example_diagnose.png` | `B2_diagnose_7K9D/report.html` |
 
 Rendered with headless Firefox at 1100 px width; trailing white space below the content was cropped.
+
+`RNPLens.png` is the project logo, supplied by the authors (1254 × 1254 px, RGBA); it is included unmodified and
+is shown in the README at 180 px width.

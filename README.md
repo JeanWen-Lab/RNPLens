@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/images/RNPLens.png" alt="RNPLens logo" width="180"></p>
+
 # RNPLens
 
 **Evaluation and diagnostic tools for protein–RNA complex predictions.**
