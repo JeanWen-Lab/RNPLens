@@ -1,4 +1,23 @@
 {
+ "applicability": {
+  "engines_declared": [
+   "BOLTZ2"
+  ],
+  "mode": "within_engine",
+  "n_structures_used": 5,
+  "outside_domain_accepted_by_user": false,
+  "reasons_outside": [],
+  "status": "inside_validated_domain",
+  "validated_domain": {
+   "candidates_max": 50,
+   "candidates_min": 5,
+   "chains": "one protein chain and one RNA chain per structure",
+   "engines": [
+    "BOLTZ2"
+   ],
+   "evidence": "development: 65 targets (58 protein clusters), Boltz-2, 50 candidates per target, depth control at 5 candidates; out of sample: 807 targets (456 protein clusters), Boltz-2, 5 candidates per target"
+  }
+ },
  "diagnosis": {
   "measured_but_not_attributed": {
    "rna_placement_c4_rmsd": 1.933,
@@ -98,7 +117,9 @@
   "rna_placement_c4_rmsd": 1.9332614065703115,
   "usable": 5
  },
- "engines": null,
+ "engines": [
+  "BOLTZ2"
+ ],
  "limits": [
   "These statements describe DISAGREEMENT among structures, not correctness. No probability of correctness is offered, and none should be inferred.",
   "Disagreement measures variance, not bias. Candidates that are all wrong in the same way will look consistent here. This is the failure mode the diagnostic cannot see.",

@@ -1,0 +1,45 @@
+{
+ "record": "rnplens-run-record-1",
+ "rnplens_version": "0.2.0rc3",
+ "implementation": "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)",
+ "created_utc": "2026-10-14T00:09:13+00:00",
+ "command": [
+  "rnplens",
+  "evaluate",
+  "run",
+  "--input",
+  "example_input.json",
+  "--out",
+  "/tmp/RNPLens_example_clone/expected_output/A_evaluate_7K9D"
+ ],
+ "working_directory": "/tmp/RNPLens_example_clone/examples/reference_based",
+ "inputs": [
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_based/example_input.json",
+   "sha256": "94c72cd574b14912114036bc64b9773cfb5679a2e8573301a7fc5a9c29051c5a"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_based/7K9D_prediction.pdb",
+   "sha256": "9c1a6659f60fa28011b4deae449524146aaba822529e2f065a541b0d1a968009"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_based/7K9D_reference.cif",
+   "sha256": "75fa157147f8e721244095aa7141e8c90898d25296d222eae7898f9b10b6ca8e"
+  }
+ ],
+ "outputs": [
+  {
+   "file": "result.csv",
+   "sha256": "27e596b8c25c451ecf970d77c576591dd48163e7626c1c17d442b759478e2eef"
+  },
+  {
+   "file": "result.json",
+   "sha256": "f804f8cd99c90bf78d8de0e525a0ce56961cd3dd0281238ee87088cc83a43667"
+  },
+  {
+   "file": "summary.txt",
+   "sha256": "7b21081f249ae35e29e0a06f8234afbcb8be1819c9b106153342d2ee4ca35c16"
+  }
+ ],
+ "note": "written by the rnplens command after the tool finished; the tool's own result files are unchanged"
+}
