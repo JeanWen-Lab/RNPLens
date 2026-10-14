@@ -34,15 +34,16 @@ separate. Evaluate is the only tool that measures correctness, and it needs an e
 | RNA internal C4′ RMSD | Evaluate | yes | Å, ≥ 0 | lower | RNA shape, after superposing the RNAs |
 | RNA placement C4′ RMSD | Evaluate | yes | Å, ≥ 0 | lower | where the RNA sits, after superposing the proteins |
 | protein internal Cα RMSD | Evaluate | yes | Å, ≥ 0 | lower | whole-construct protein geometry (includes domain arrangement; grows with length) |
-| `dockq_status`, `geometry_status` | Evaluate | yes | `SCORED` / `NO_VALUE` | — | whether the value exists; the failing stage and reason are recorded |
+| `dockq.status`, `geometry.status` | Evaluate | yes | `SCORED` / `NO_VALUE` (DockQ); `COMPUTED` / `NO_VALUE` (geometry) | — | whether the value exists; the failing stage and reason are recorded |
 | surface agreement | Report | no | 0–1 | — | weighted Jaccard overlap of the protein interface residues proposed by two outputs or engines |
 | register agreement | Report | no | 0–1 | — | weighted Jaccard overlap of the residue–nucleotide contacts (5 Å); stricter than surface agreement |
 | RNA pose difference | Report | no | Å, ≥ 0 | — | RNA C4′ RMSD between two outputs after superposing their proteins |
 | contact support | Report | no | count of engines | — | how many engines propose a contact (each engine counts once) |
-| interface hypotheses | Report | no | groups of outputs | — | outputs grouped by register agreement at 0.3, 0.5 and 0.7; listed, never ranked |
+| interface hypotheses | Report | no | groups of engines | — | engines grouped by register agreement at 0.3, 0.5 and 0.7; listed, never ranked. With one engine there is always exactly one hypothesis: read the repeat agreement instead |
+| repeat agreement | Report | no | surface and register 0–1, pose Å | — | the same three agreement measures between the runs of one engine |
 | validity class | Diagnose | no | `VALID` / `TECHNICAL_FAILURE` / `STRUCTURAL_FAILURE` | — | whether a file is a usable protein–RNA complex |
 | protein, RNA disagreement | Diagnose | no | Å, ≥ 0 | — | median pairwise RMSD among the supplied structures for that component |
-| band and percentile | Diagnose | no | low / typical / high / very high | — | where the disagreement sits in the frozen development reference, not among your structures |
+| band and percentile | Diagnose | no | low / typical / high / very high | — | where the disagreement sits in the frozen development reference, not among your structures; band rules below |
 | placement disagreement | Diagnose | no | Å | — | measured and reported, deliberately **not** interpreted (attribution was tested and did not hold) |
 
 "—" means there is no better direction: high agreement is not evidence of correctness, and low agreement is not
@@ -70,6 +71,62 @@ verified when the reference was built.
 Even inside the domain, a Diagnose statement is triage, not a verdict. On the out-of-sample cohort the
 protein-side association fell from ρ 0.525 to 0.167 once protein length, protein pTM and mean protein pLDDT were
 accounted for. Read it next to the engine's own per-chain confidence, not instead of it.
+
+## How Diagnose bands are assigned
+
+Each disagreement value is placed in the frozen development reference distribution of the same mode and axis (65
+targets within engine, 59 across engines). With q1, median and q3 the quartiles of that reference:
+
+| band | rule |
+|---|---|
+| low | value ≤ q1 |
+| typical | q1 < value ≤ median |
+| high | median < value ≤ q3 |
+| very high | value > q3 |
+
+So a value just above the reference median is already "high" (in the bundled example, 0.89 Å against a median of
+0.853 Å, at the 52nd percentile). The bands are coarse positions in the reference, not thresholds of concern; the
+exact percentile is reported with every statement, and the quartiles and median are in `report.json`.
+
+## Labels for engines
+
+| tool | how the engine is given | accepted |
+|---|---|---|
+| Evaluate | `--engine` or `prediction.engine`: a free label recorded in the result | any text |
+| Report | `outputs[].engine` in the contract | exactly `AF3`, `BOLTZ2`, `CHAI1`, `RF3`, `RF2NA` or `OTHER` |
+| Diagnose | `--engine` | any text is recorded; for the validated domain `BOLTZ2`, `CHAI1`, `RF3`, `RF2NA` are recognised, ignoring case, spaces, `-` and `_` (so `Boltz-2` counts as `BOLTZ2`) |
+
+## Construct sequences from engine input files
+
+Evaluate and Report need the protein and RNA sequences that were given to the predictor:
+- Boltz-2 YAML: `sequences[].protein.sequence` and `sequences[].rna.sequence`;
+- AlphaFold 3 JSON: `sequences[].protein.sequence` and `sequences[].rna.sequence`;
+- Chai-1 FASTA: the `>protein|…` and `>rna|…` records.
+
+Write each to a FASTA file (or pass the string) with `--protein-seq` and `--rna-seq`, and give Report the lengths in
+`construct.protein_length` and `construct.rna_length`.
+
+## Exit status
+
+| status | meaning |
+|---|---|
+| 0 | success |
+| 1 | Diagnose refused the run (outside the validated domain, too few valid structures, an existing report), or Evaluate was given an incomplete set of command-line options; the message says what is missing |
+| 2 | a command-line or contract error, or a refused output directory, in Evaluate and Report; an unknown command or verb |
+
+Nothing is written when a run is refused.
+
+## Terms in Diagnose reports
+
+| term | meaning |
+|---|---|
+| ρ (rho) | Spearman correlation, across targets (weighted equally per protein cluster), between the disagreement on an axis and the actual error on the same axis |
+| `margin_over_off_diagonals` | how much larger that correlation is than the correlations of the same disagreement with the two other error axes; positive means the statement is specific to its own component |
+| `component_specific` | whether that specificity held under the frozen criterion; when false, the statement names what it cannot be separated from |
+| out-of-sample ρ | the same correlation on targets not used in development (within engine: 0.525, against 0.869 in development) |
+| "transport shrinkage" | the drop from the development to the out-of-sample correlation (0.869 − 0.525 = 0.344); "plan with 0.5" means expect the out-of-sample strength |
+| `cohortP_disagreement.tsv`, `cohortE_disagreement.tsv` | the frozen reference distributions (within engine, cross engine) shipped with RNPLens |
+| percentile ordinals | statement texts print ordinals mechanically ("52th"); the text is frozen with the regression references and is kept unchanged |
 
 ## Common questions
 

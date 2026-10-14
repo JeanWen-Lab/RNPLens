@@ -26,7 +26,7 @@ structure for you, and gives **no calibrated probability that a structure or an 
 Each tool answers a different question, and their outputs are never combined into a single score.
 
 - **Evaluate** reports two independent routes side by side: a DockQ route (DockQ, fnat, iRMSD, LRMSD with construct-position residue correspondence over all admissible chain mappings) and a geometry route (RNA conformation C4′ RMSD, RNA placement after protein superposition, protein Cα RMSD). An output that cannot be scored is reported as **NO VALUE** with the stage and reason — never as zero.
-- **Report** measures agreement on the binding surface, on the exact residue–nucleotide contacts (contact register) and on RNA pose, and groups outputs into interface hypotheses. **Agreement among predicted structures is descriptive evidence, not a calibrated probability of structural correctness.** Engines can agree and still be wrong.
+- **Report** measures agreement on the binding surface, on the exact residue–nucleotide contacts (contact register) and on RNA pose, and groups engines into interface hypotheses. **Agreement among predicted structures is descriptive evidence, not a calibrated probability of structural correctness.** Engines can agree and still be wrong.
 - **Diagnose** separates technically broken files from structural failures from valid outputs, and measures protein-side and RNA-side disagreement among candidates relative to a frozen benchmark reference. Disagreement is a **review flag**, not a correctness score; **low disagreement does not guarantee an accurate structure** (candidates that are all wrong in the same way look consistent). The protein-side signal has been checked out of sample but overlaps substantially with the engine's own confidence (pTM, pLDDT); the RNA-side statement has not been validated out of sample.
 
 ## Quick start
@@ -85,12 +85,15 @@ How to read it: DockQ summarises interface accuracy; fnat is the fraction of nat
 reproduced. The geometry route separates whether the RNA has the right shape (internal RMSD) from whether it sits
 in the right place on the protein (placement RMSD). Whole-construct protein RMSD reflects domain arrangement and is
 not a domain-level fold-accuracy measure. Positions that are missing from the experimental structure are unknown,
-not confirmed non-contacts. The 5′-triphosphate guanosine of the deposited RNA is reported as a construct–reference
-difference and left uncorrected. These are accuracy measurements of one prediction, not a confidence estimate.
+not confirmed non-contacts. The bundled reference is a reduced copy of PDB 7K9D whose RNA sequence record lists
+the 5′-triphosphate guanosine as `X`, so it is reported as a construct–reference difference and left uncorrected.
+(With the full RCSB file the canonical sequence record lists it as `G`, and the construct then equals the reference
+entity; the scores are identical. Evaluate compares against `_entity_poly.pdbx_seq_one_letter_code_can` when the
+file has it.) These are accuracy measurements of one prediction, not a confidence estimate.
 
 ## Example 2 — Reference-free assessment
 
-No experimental structure is read. Inputs are in `examples/reference_free/`: the top-ranked output of two independent
+Run these from the repository root (after Example 1: `cd ../..`). No experimental structure is read. Inputs are in `examples/reference_free/`: the top-ranked output of two independent
 Boltz-2 runs of 7K9D with their confidence files (`report_7K9D/`), and the five samples of one Boltz-2 run
 (`diagnose_7K9D/`).
 
@@ -105,7 +108,8 @@ rnplens report run contract.json --out out_report_7K9D
 Outputs: `result.json`, `contacts_by_output.json` and a self-contained HTML page. For this example, with one engine,
 Report describes **repeat agreement** between the two runs: binding-surface agreement 0.88, contact-register
 agreement 0.89, RNA pose difference 0.96 Å; 47 distinct residue–nucleotide contacts were proposed, one interface
-hypothesis at the primary threshold. Cross-engine agreement needs outputs from several engines.
+hypothesis (with a single engine there is always exactly one, so read the repeat agreement instead).
+Cross-engine agreement needs outputs from several engines.
 
 **Validity and candidate disagreement (Diagnose).**
 

@@ -13,6 +13,9 @@ rnplens report selftest [--profile portable|reference]
 rnplens example-contract EXAMPLES_DIR --out contract.json      # the bundled example with absolute paths
 ```
 
+`--out` and `--outdir` are the same option (the verb's own help lists `--outdir`). The output directory must not
+exist; Report refuses an existing one.
+
 ## The contract
 
 ```json
@@ -22,17 +25,36 @@ rnplens example-contract EXAMPLES_DIR --out contract.json      # the bundled exa
   "construct": {"protein_length": 191, "rna_length": 8,
                 "protein_sequence": "optional, checked against the length", "rna_sequence": "optional"},
   "outputs": [
-    {"engine": "AF3", "execution": "run_1", "structure_path": "/abs/path/model.cif", "sha256": "<optional digest>"}
+    {"engine": "AF3", "execution": "run_1", "structure_path": "/abs/path/model.cif", "sha256": "<SHA-256 of the file, required>"}
   ]
 }
 ```
 
 - `protein_length` and `rna_length` are the construct you asked for; they are required and never inferred from
   the outputs.
-- `structure_path` must be absolute. A `sha256` given in the contract is re-verified before the file is parsed.
-- Engines with a built-in confidence parser: `AF3`, `BOLTZ2`, `CHAI1`, `RF3` (ipTM) and `RF2NA` (negated mean
-  inter-chain PAE). For anything else use `"engine": "OTHER"` and declare `native_confidence` and
-  `native_confidence_kind`, or `null`. Confidences are shown per engine and never compared across engines.
+- Each output needs `engine`, `execution`, `structure_path` and `sha256`. `structure_path` must be absolute.
+  `sha256` is the digest of the structure file as you registered it (`shasum -a 256 FILE` on macOS,
+  `sha256sum FILE` on Linux); it is re-verified before the file is parsed, so a report never describes a file
+  that changed afterwards. `--no-verify-digests` skips that re-verification only; the field is still required.
+  `rnplens example-contract` shows a complete contract with digests filled in.
+- Use one contract per complex and at least **two** eligible outputs. With a single output, Report runs but no
+  agreement can be computed (`repeat_agreement` is empty).
+- `engine` must be exactly one of `AF3`, `BOLTZ2`, `CHAI1`, `RF3`, `RF2NA` or `OTHER` (upper case, no hyphen;
+  `Boltz-2` is refused, write `BOLTZ2`). The first five have a built-in confidence parser; for any other engine
+  use `OTHER` and declare `native_confidence` and `native_confidence_kind` yourself, or `null`. Confidences are
+  shown per engine and never compared across engines.
+- **Where the confidence is read from.** In the directory of the structure file, or in `confidence_dir` if you
+  give one for that output:
+
+  | engine | file | value |
+  |---|---|---|
+  | `AF3` | the single `*_summary_confidences.json` | `iptm` |
+  | `BOLTZ2` | `confidence_<model file stem>.json` (for `6DCB_model_0.pdb`: `confidence_6DCB_model_0.json`) | `iptm` |
+  | `CHAI1` | `scores.model_idx_<N>.npz`, N taken from the model file name | `iptm` |
+  | `RF3` | `<name>_summary_confidences.json` beside `<name>_model.cif` | `iptm` |
+  | `RF2NA` | the `.npz` beside the model | negated mean inter-chain PAE |
+
+  A missing file is reported as `UNAVAILABLE` with the reason; it never stops the agreement analysis.
 
 ## What it measures
 
@@ -43,8 +65,19 @@ rnplens example-contract EXAMPLES_DIR --out contract.json      # the bundled exa
 Across engines, **support** for a contact is a count of engines; an engine that ran several times contributes the
 fraction of its own executions, so it cannot outweigh an engine that ran once (equal engine weighting). Outputs
 are grouped into **interface hypotheses** at three thresholds (0.3, 0.5, 0.7; primary 0.5); hypotheses are listed,
-never averaged, and the largest group is not implied to be correct. With a single engine, Report gives **repeat
-agreement** between that engine's runs only.
+never averaged, and the largest group is not implied to be correct.
+
+**Hypotheses group engines, not individual outputs.** Two engines fall in the same hypothesis when their
+register agreement reaches the threshold. With a **single engine** there is always exactly one hypothesis, whatever
+the agreement between its runs, so `n_hypotheses_at_primary_threshold = 1` then carries no information. Read
+`summary.repeat_agreement` instead: surface agreement, register agreement and RNA pose difference between the
+engine's runs. The cross-engine medians (`median_pairwise_…`) are `null` with one engine.
+
+**Contact support** is the number of engines proposing a contact, with each engine weighted equally across its
+runs: a contact proposed in one of two runs of the same engine has support 0.5. `n_contacts_proposed_by_any_engine`
+counts every contact with support above 0. `contact_support_histogram` counts contacts with support of at least
+1, 2, … whole engines, so contacts proposed by only some runs of one engine (support below 1) are in the total but
+not in the histogram.
 
 ## Named outcomes instead of degraded numbers
 

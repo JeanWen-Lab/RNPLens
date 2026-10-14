@@ -6,7 +6,7 @@ Every `run` command writes into a new directory and refuses one that already hol
 
 | file | content |
 |---|---|
-| `result.json` | `rnpbench_evaluate_version`, `created_utc`, `target_id`, `input` (prediction, reference and construct, with SHA-256), `dockq` (configuration, status, value, unrounded value, class, reported statistic, selected mapping, admissible candidates, per-interface DockQ/fnat/iRMSD/LRMSD, correspondence counts, failure stage/reason/detail, model numbering), `geometry` (status, the three RMSDs with aligned/pose/native counts, chains used, configuration, correspondence note), `validity`, `provenance` (dependency versions, platform, SHA-256 of each frozen scorer file) |
+| `result.json` | `rnpbench_evaluate_version`, `created_utc`, `target_id`, `input` (prediction, reference and construct, with SHA-256), `dockq` (`configuration`, `status`, `dockq`, `dockq_unrounded`, `dockq_class`, `reported_statistic`, `selected_mapping`, `n_admissible_candidates`, `per_interface` (DockQ, fnat, iRMSD, LRMSD per chain pair), `correspondence` counts, `failure_stage`/`failure_reason`/`failure_detail`, `model_numbering`), `geometry` (status, the three RMSDs with aligned/pose/native counts, chains used, configuration, correspondence note), `validity`, `provenance` (dependency versions, platform, SHA-256 of each frozen scorer file) |
 | `result.csv` | one row; columns `target_id, prediction_sha256, reference_sha256, engine, dockq_status, dockq, dockq_unrounded, dockq_class, fnat, irmsd, lrmsd, selected_mapping, n_admissible_candidates, n_interfaces, pairs_in_frame, pairs_out_of_frame, pairs_indeterminate, dockq_failure_stage, dockq_failure_reason, geometry_status, protein_internal_ca_rmsd, rna_internal_c4_rmsd, rna_placement_c4_rmsd, n_protein_pairs, n_rna_pairs, geometry_exclusion`; NO VALUE fields are empty |
 | `summary.txt` | human-readable summary |
 
@@ -40,3 +40,23 @@ JSON Schemas of all four files are in [schemas/](schemas/).
 
 `rnplens selftest`, and each tool's `selftest`, print one line per check and end with `PASS` or `FAIL`; with `--out`
 they also write a JSON record.
+
+## Evaluate: terms used in the output
+
+- **Statuses.** `dockq.status` is `SCORED` or `NO_VALUE`; `geometry.status` is `COMPUTED` or `NO_VALUE`. With
+  `NO_VALUE` the value fields are `null` in `result.json`, empty in `result.csv`, and `summary.txt` prints
+  `NO VALUE (not zero)`; the failing stage and reason are recorded.
+- **Chain mapping** (`selected_mapping`, for example `BA:BA`). The chain pair of the model, then the chain pair of
+  the reference it was mapped to (`model:reference`). The order of the two letters within a pair is DockQ 2.1.3's
+  own and does not indicate which chain is the protein; `AB:AB` and `BA:BA` are both a one-to-one mapping of the
+  model's chains onto the reference chains with the same identifiers. `per_interface` is keyed the same way.
+- **Position counts of the geometry route.** `n_*_pose`: positions present in the prediction; `n_*_native`:
+  positions resolved in the experimental structure; `n_*_aligned`: positions matched between the two by the frozen
+  sequence alignment and used in the RMSD. Aligned can be well below native when the experimental structure covers
+  a different part of the construct, or when the alignment leaves positions unpaired; the RMSD is over the aligned
+  positions only, and `summary.txt` states that count (`over 166 residues`).
+- **Construct–reference comparison.** The construct sequences are compared with the reference's
+  `_entity_poly.pdbx_seq_one_letter_code_can` (canonical) record when present, otherwise with
+  `pdbx_seq_one_letter_code`. A modified residue is therefore reported as a difference only when the file's
+  sequence record shows it as such (for example `X`); files downloaded from RCSB carry the canonical record, in which
+  most modified nucleotides appear as their parent base. Coordinates are never edited either way.

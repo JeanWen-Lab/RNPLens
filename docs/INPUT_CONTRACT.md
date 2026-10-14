@@ -69,7 +69,10 @@ Other commands:
 
 **Configurable dependencies and paths.** No path is built in. DockQ is used as a pinned Python package rather than through a binary path. Staging uses `--workdir`, or else the system temporary directory, which follows `TMPDIR`. Internal fixtures are found through `--internal-fixtures` or `RNPBENCH_INTERNAL_FIXTURES`.
 
-## Refusals (exit status 2; nothing is written)
+## Refusals (nothing is written)
+
+Exit status 2, except a missing sequence option on the command line, which exits 1 (see
+[which_analysis_should_i_use.md](which_analysis_should_i_use.md#exit-status)).
 
 An input is refused for any of these:
 - wrong contract identifier or `target_id`;

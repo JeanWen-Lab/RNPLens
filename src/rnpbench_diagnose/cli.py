@@ -86,8 +86,9 @@ def main(argv=None):
         if not a.allow_outside_validated_domain:
             raise SystemExit("DIAGNOSE REFUSED: outside the validated applicability domain:\n  - "
                              + "\n  - ".join(ap["reasons_outside"])
-                             + "\nRe-run with --allow-outside-validated-domain to compute the values anyway; the report "
-                               "will then be marked as outside the validated domain.")
+                             + "\nIf these structures do meet the validated conditions, declare them (for example "
+                               "--engine BOLTZ2 for Boltz-2 samples). Otherwise, --allow-outside-validated-domain computes "
+                               "the values anyway and marks the report as outside the validated domain.")
         ap["outside_domain_accepted_by_user"] = True
     dis = run_disagreement(good, labels=lab)
     try:
