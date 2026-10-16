@@ -4,9 +4,8 @@
 
 **Evaluation and diagnostic tools for protein–RNA complex predictions.**
 
-> **Status: release candidate `0.2.0rc3` — not yet publicly released.** MIT licence, subject to institutional
-> (ANU) intellectual-property approval before public release. The software accompanies a manuscript in
-> preparation; see [Citation](#citation).
+> **Status: Pre-release software, licensed under MIT. Public release pending.** The software accompanies a
+> manuscript in preparation; see [Citation](#citation).
 
 **New to RNPLens? Start with [Which analysis should I use?](docs/which_analysis_should_i_use.md)**
 
@@ -191,7 +190,7 @@ publication) and the software release. See [`CITATION.cff`](CITATION.cff). No DO
 
 ## Licence
 
-RNPLens is released under the [MIT licence](LICENSE), subject to institutional (ANU) intellectual-property
-approval before public release. Third-party dependencies keep their own licences. Every bundled structure is listed
+RNPLens is licensed under the [MIT licence](LICENSE). Copyright (c) 2026 Jiayu Wen. Third-party dependencies and
+data retain their separately documented terms. Every bundled structure is listed
 with its origin, terms and attribution in [examples/DATA_PROVENANCE.tsv](examples/DATA_PROVENANCE.tsv) (see also
 [docs/dependencies.md](docs/dependencies.md)). Security issues: see [SECURITY.md](SECURITY.md).
