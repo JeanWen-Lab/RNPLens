@@ -1,0 +1,28 @@
+{
+ "schema": "rnplens.replay.canonical_artifacts.1",
+ "contract": "records/replay/DETERMINISM_CONTRACT_v1.md",
+ "project_dir": "project",
+ "patterns_relative_to_project_dir": [
+  ".rnplens/HEAD",
+  ".rnplens/state/v*.json",
+  ".rnplens/cache/*.json",
+  ".rnplens/cache/invalid/*.json",
+  "analyses/v*/index.json",
+  "analyses/v*/update_report.json",
+  "analyses/v*/update_report.html",
+  "analyses/reports/*.json",
+  "analyses/reports/*.html",
+  "imports/v*/*/construct_protein.fasta",
+  "imports/v*/*/construct_rna.fasta",
+  "imports/v*/*/derived/*/*",
+  "analyses/v*/*/report/contacts_by_output.json",
+  "analyses/v*/*/report_runs_*/contacts_by_output.json",
+  "analyses/v*/*/region_*/region_contacts.tsv"
+ ],
+ "pattern_syntax": "one fnmatch pattern per path segment; the number of segments must match",
+ "sidecar_dir": ".rnplens/run/",
+ "sidecar_rule": "everything under the sidecar dir is volatile execution metadata and excluded from the byte rule",
+ "amendments": [
+  "1 (before the retest): imports/v*/*/derived/*/* added; see DETERMINISM_CONTRACT_v1.md, Amendment 1"
+ ]
+}

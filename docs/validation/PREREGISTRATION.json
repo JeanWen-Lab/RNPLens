@@ -1,0 +1,16 @@
+{
+ "preregistration": "out-of-sample validation of the two licensed diagnostic statements",
+ "frozen_at": "2026-09-29, before step 3 of the sequence in section 5 of the protocol",
+ "meaning": "Each digest below was computed before any native error existed on this cohort. unblind_analysis.py in particular was written before the answer was available, and it refuses any association the protocol did not declare.",
+ "digests": {
+  "OOS_VALIDATION_PROTOCOL.md": "8d490e8eb23239ac393698ab7b8967bcf3a8ca2fc6e867601820ffbc6592a1c1",
+  "cohort.json": "a5c3ef42b65db73bc2bc5507decd3d77f73e17aac63f0e65e67be2c0ffbe1817",
+  "campaign_run.py": "17cc553815b77fe897c618ebd2d8dc9f035624b1cbde7a30241878202c8d98cc",
+  "seal_reports.py": "e509b7fef8c96a79aa7b747c626898e05f795dd52fd8665d70e0fa200b7c31ac",
+  "unblind_analysis.py": "7d192542a88f1bd31db1f71a24eb7aad141d03d08ac4a056c2c9895a8de0c182"
+ },
+ "cohort_ordered_ids_sha256": "1ede4f8ff6dc08c46eec770a2e1ef798655fb3a2688573ddf27a95294b165e90",
+ "n_targets": 825,
+ "package_version": "rnpbench_diagnose 0.1.0",
+ "manuscript_BUILD_ID_at_freeze": "21734060bd4d6920"
+}

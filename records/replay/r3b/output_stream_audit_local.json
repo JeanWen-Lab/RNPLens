@@ -1,0 +1,211 @@
+{
+ "dynamic": [
+  {
+   "argv": "rnplens update project",
+   "both_streams": false,
+   "command": "update",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 515
+  },
+  {
+   "argv": "rnplens clarify project --json",
+   "both_streams": false,
+   "command": "clarify --json",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 3
+  },
+  {
+   "argv": "rnplens region project/imports/v0006/main project/analyses/v0006/main --rna 14-23",
+   "both_streams": false,
+   "command": "region",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 869
+  },
+  {
+   "argv": "rnplens export-methods project/analyses/v0006/main --project project/imports/v0006/main",
+   "both_streams": false,
+   "command": "export-methods",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 3494
+  },
+  {
+   "argv": "rnplens explain structures --analysis project/analyses/v0006/main --project project/imports/v0006/main",
+   "both_streams": true,
+   "command": "explain structures",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 159,
+   "stdout_bytes": 2417
+  },
+  {
+   "argv": "rnplens explain evidence --id region_14-23/region.json#/contacts/0 --analysis project/analyses/v0006/main --project project/imports/v0006/main",
+   "both_streams": true,
+   "command": "explain evidence",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 155,
+   "stdout_bytes": 7440
+  },
+  {
+   "argv": "rnplens explain region_mapping --region 14-23 --analysis project/analyses/v0006/main --project project/imports/v0006/main",
+   "both_streams": true,
+   "command": "explain region_mapping",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 167,
+   "stdout_bytes": 290
+  },
+  {
+   "argv": "rnplens view project/imports/v0006/main --analysis project/analyses/v0006/main --rna 14-23",
+   "both_streams": false,
+   "command": "view",
+   "exit": 2,
+   "ordered_output_installed": true,
+   "stderr_bytes": 83,
+   "stdout_bytes": 0
+  },
+  {
+   "argv": "rnplens group project/imports/v0006/main --analysis project/analyses/v0006/main",
+   "both_streams": false,
+   "command": "group",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 550
+  },
+  {
+   "argv": "rnplens assist --project project/imports/v0006/main --analysis project/analyses/v0006/main --item C --rna 14-23 --runs run_A,run_B --followup local --question Which contacts in RNA 14-23 are found in only one run?",
+   "both_streams": false,
+   "command": "assist menu C (local follow-up)",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 4674
+  },
+  {
+   "argv": "rnplens_assistant replay-followup /Users/jean_macpro_2017/.claude-science/orgs/be9023ea-0d23-43ea-9ab2-1191f48bbff9/workspaces/1ad5145c-97c3-4599-b6a7-99779dae196b/scratch_local/rnpaudit_wwxre2c5/case/project/analyses/v0006/main/followup/fu_0001/followup_plan.json --project project/imports/v0006/main --analysis project/analyses/v0006/main",
+   "both_streams": false,
+   "command": "replay-followup",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 122
+  },
+  {
+   "argv": "rnplens relink project --search in --dry-run",
+   "both_streams": false,
+   "command": "relink --dry-run",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 620
+  },
+  {
+   "argv": "rnplens update project --report v0001 v0009",
+   "both_streams": false,
+   "command": "update --report",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 250
+  },
+  {
+   "argv": "rnplens update project --versions",
+   "both_streams": false,
+   "command": "update --versions",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 788
+  },
+  {
+   "argv": "rnplens update project --status",
+   "both_streams": false,
+   "command": "update --status",
+   "exit": 0,
+   "ordered_output_installed": true,
+   "stderr_bytes": 0,
+   "stdout_bytes": 515
+  }
+ ],
+ "static": {
+  "assist (pinned)": {
+   "file": "src/rnplens/assist.py",
+   "stderr_writes": 6,
+   "stdout_writes": 8
+  },
+  "clarify": {
+   "file": "src/rnplens/clarify.py",
+   "stderr_writes": 5,
+   "stdout_writes": 8
+  },
+  "cli": {
+   "file": "src/rnplens/cli.py",
+   "stderr_writes": 6,
+   "stdout_writes": 8
+  },
+  "explain": {
+   "file": "src/rnplens/evidence_query.py",
+   "stderr_writes": 4,
+   "stdout_writes": 1
+  },
+  "export-methods": {
+   "file": "src/rnplens/methods_export.py",
+   "stderr_writes": 2,
+   "stdout_writes": 2
+  },
+  "follow-up (pinned)": {
+   "file": "assistant/rnplens_assistant/followup.py",
+   "stderr_writes": 0,
+   "stdout_writes": 1
+  },
+  "group/group-diff": {
+   "file": "src/rnplens/grouping.py",
+   "stderr_writes": 2,
+   "stdout_writes": 8
+  },
+  "region": {
+   "file": "src/rnplens/region.py",
+   "stderr_writes": 2,
+   "stdout_writes": 3
+  },
+  "relink": {
+   "file": "src/rnplens/portability.py",
+   "stderr_writes": 3,
+   "stdout_writes": 2
+  },
+  "replay (pinned)": {
+   "file": "assistant/rnplens_assistant/replay.py",
+   "stderr_writes": 0,
+   "stdout_writes": 0
+  },
+  "replay-followup entry": {
+   "file": "assistant/rnplens_assistant/__main__.py",
+   "stderr_writes": 1,
+   "stdout_writes": 8
+  },
+  "scripted follow-up (frozen v2 harness)": {
+   "file": "demos/lib/followup_scripted.py",
+   "stderr_writes": 0,
+   "stdout_writes": 2
+  },
+  "update/status/versions": {
+   "file": "src/rnplens/incremental.py",
+   "stderr_writes": 8,
+   "stdout_writes": 3
+  },
+  "view": {
+   "file": "src/rnplens/viewer.py",
+   "stderr_writes": 1,
+   "stdout_writes": 2
+  }
+ }
+}

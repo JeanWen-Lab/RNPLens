@@ -1,0 +1,3 @@
+$ rnplens view project/imports/v0004/main --analysis project/analyses/v0004/main --rna 1-4
+rnplens view: 10 structure(s); page /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/24BR/second_copy_20261017T083839Z/project/analyses/v0004/main/viewer_1-4/viewer.html (opens without network access; highlighted residues are Report's contacts for each structure, not a measure of correctness)
+rnplens view: Viewer status: automatically tested, awaiting manual visual confirmation; not fully visually qualified (records/viewer/MOLSTAR_VISUAL_VERIFICATION.md).

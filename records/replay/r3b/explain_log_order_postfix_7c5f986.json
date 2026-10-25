@@ -1,0 +1,60 @@
+{
+ "hypothesis_holds_for_all": false,
+ "logs": [
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/24BR/first_20261017T092102Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11152,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/24BR/second_copy_20261017T092322Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11314,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/2QQP/first_20261017T092051Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 8162,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/2QQP/second_copy_20261017T092311Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 8282,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/2XGJ/first_20261017T092055Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11152,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/2XGJ/second_copy_20261017T092316Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11314,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/moved_elsewhere/24BR_copy_20261017T092102Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11152,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/moved_elsewhere/2QQP_copy_20261017T092051Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 8162,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/moved_elsewhere/2XGJ_copy_20261017T092055Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11152,
+   "written_early": false
+  }
+ ],
+ "n_logs": 9
+}

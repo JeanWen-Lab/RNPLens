@@ -1,0 +1,51 @@
+{
+ "cases": [
+  "2QQP",
+  "2XGJ",
+  "24BR"
+ ],
+ "contract": "records/replay/DETERMINISM_CONTRACT_v2.md",
+ "gating_criteria": [
+  "0_completed",
+  "i_promised_byte_identical",
+  "ib_projection_coverage",
+  "ii_scientific_equal"
+ ],
+ "json_projection_steps": [
+  "canonical paths (v1 rule 2) including former project locations (execution.project_root of state sidecars != current root, and their parent folders)",
+  "remove at every depth: v1 VOLATILE_KEYS + command, argv, working_directory, cwd, pid, hostname, host, project_root, platform, python, executable",
+  "consent ids consent-NNNN-<8 hex> -> consent-NNNN",
+  "Amendment 1: ISO-8601 and compact YYYYmmddTHHMMSSZ time stamps inside string values and keys -> <time>",
+  "64-hex equal to raw sha256 of a projected file G inside the project (current bytes, or a former version recorded in the projection index) -> projection-sha256:<sha256 of projection bytes of G>",
+  "evidence_sha256 removed; in followup_record.json projection add evidence_content_sha256 = sha256_json({statements: sibling followup_answer.json projection statements, tool_log: [{tool, call, status, outputs, message}]})"
+ ],
+ "json_serialisation": "json.dumps(obj, indent=1, sort_keys=True, ensure_ascii=True) + newline",
+ "measured_not_gating": [
+  "measured_iii_references_to_original_root",
+  "measured_raw_files"
+ ],
+ "pairs_per_case": [
+  "first_vs_second",
+  "first_vs_moved (--moved)"
+ ],
+ "projection_extensions": {
+  ".html": ".canonical.txt",
+  ".json": ".canonical.json",
+  ".log": ".canonical.txt",
+  ".md": ".canonical.txt",
+  ".svg": ".canonical.txt",
+  ".tsv": ".canonical.txt",
+  ".txt": ".canonical.txt"
+ },
+ "projection_index": "<project>/.rnplens/run/projection_index.json = {\"schema\": \"rnplens-projection-index-2\", \"entries\": [{file, raw_sha256, projection_sha256}] in write order (latest entry for a raw hash wins), \"errors\": [...]}; sidecar (not promised) (Amendment 1)",
+ "projection_not_required": [
+  "files under <project>/.rnplens/",
+  "v1 canonical files (retest/canonical_artifacts_v1.json)",
+  "projections themselves (*.canonical.json, *.canonical.txt)"
+ ],
+ "promised_set": "every regular file under <project>/ except files under <project>/.rnplens/run/ and except files F for which F.canonical.json or F.canonical.txt exists (the projection is promised instead)",
+ "text_projection_steps": [
+  "paths, consent ids, hashes as substrings (as JSON)",
+  "ISO-8601 and compact YYYYmmddTHHMMSSZ time stamps -> <time>"
+ ]
+}

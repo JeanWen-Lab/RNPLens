@@ -1,0 +1,561 @@
+RNPLens 0.4 — NOTICE
+====================
+
+Repository root NOTICE. Prepared 2026-10-23; staged 2026-10-24 on branch
+staging/0.4-mit-licence-and-logo, based on commit
+53711d496bd7cc6c6b7dfac308f8ba345d4a1df4 (tree
+9bc2d0868a754068d5c59fee95a7b502d47d0a80, 2,540 tracked files). Nothing is applied to
+the qualification candidate, nothing is merged and nothing is published.
+
+This file travels with the two rnplens artefacts: it is named in pyproject's
+license-files, so the wheel carries it as rnplens-0.4.0.dev0.dist-info/licenses/NOTICE,
+and in MANIFEST.in, so the sdist carries it at the archive root. It is deliberately NOT
+shipped with rnplens-assistant, which bundles no third-party code of any kind; Part 0
+states, entry by entry, which licence actually obliges a notice to travel.
+
+This NOTICE aggregates the third-party attributions that the RNPLens distributions are
+obliged to carry. It is a factual record of what the files and their upstream licence
+texts state. It is not legal advice and expresses no opinion on whether any licence
+combination is permissible. Items whose permission is not established are listed in
+Part E and are marked UNRESOLVED rather than asserted.
+
+RNPLens itself is covered by the MIT LICENSE at the repository root, and
+rnplens-assistant by the byte-identical copy at assistant/LICENSE. Attribution for
+first-party code rests entirely on those files: no source file in the repository carries a
+licence header or an SPDX-License-Identifier.
+
+Two distributions are built from this tree:
+  * rnplens 0.4.0.dev0            — wheel and sdist
+  * rnplens-assistant 0.1.0.dev0  — wheel and sdist
+Membership statements below were verified by full member listing of the four staged
+artefacts built from this commit (release_prep_20261023T0530Z/packaging/export_53711d49/).
+
+
+-------------------------------------------------------------------------------
+PART 0 — WHICH ENTRIES OBLIGE THIS NOTICE TO TRAVEL
+-------------------------------------------------------------------------------
+
+Nothing here is included for completeness alone. For each entry the question is narrow:
+does the licence of that component require its notice to accompany a redistribution of
+RNPLens? It does only where RNPLens redistributes the component's own files. Everything
+RNPLens merely imports at run time, or invokes as a separate program, arrives from its own
+publisher carrying its own notice, and places no obligation on these artefacts.
+
+  entry   component                         redistributed  notice must     carried by
+                                            by RNPLens     travel          this NOTICE
+  ------  --------------------------------  -------------  --------------  -----------
+  A.1     Mol* 5.13.1 bundle                yes (verbatim)  YES   (MIT)     yes
+  A.2.1   react                             yes (in bundle) YES   (MIT)     yes
+  A.2.2   react-dom                         yes (in bundle) YES   (MIT)     yes
+  A.2.3   scheduler                         yes (in bundle) YES   (MIT)     yes
+  A.2.4   immutable                         yes (in bundle) YES   (MIT)     yes
+  A.2.5   glsl-float-to-rgba (Equinor)      yes (in bundle) YES   (MIT)     yes
+  A.2.6   glsl-rgba-to-float (IHME)         yes (in bundle) YES   (BSD-3)   yes
+  A.2.7   webgl2examples                    yes (in bundle) YES   (MIT)     yes
+  A.2.8   niagara                           yes (in bundle) YES   (MIT)     yes
+  A.2.9   Rendu (FXAA)                      yes (in bundle) YES   (MIT)     yes
+  A.2.10  cylinder intersection (I. Quilez) yes (in bundle) YES   (MIT)     yes
+  A.3     contact_explorer.js               yes (first-party)  n/a          recorded
+  B.1     wwPDB coordinates                 yes             no (CC0)        recorded
+  B.2     Boltz-2 outputs                   yes             UNRESOLVED      recorded
+  B.3     derived disagreement tables       yes             UNRESOLVED      recorded
+  C.1-C.6 gemmi, biopython, numpy, DockQ,   no (installed   no              recorded
+          matplotlib, scipy                 by the user)
+  D       bwrap, Codex CLI, browsers,       no (invoked or  no              recorded
+          setuptools, GitHub Actions        build-only)
+
+Every entry in Parts A.1 and A.2 is obliged to travel. Inside the bundle there are TEN
+distinct third-party attributions from EIGHT copyright holders (A.2.1-A.2.10; react,
+react-dom and scheduler share one holder), and Mol* itself (A.1, Mol* contributors) is a
+further attribution from a ninth holder, so eleven notices from nine holders in total must
+accompany the rnplens artefacts. Of the ten inside the bundle, nine are MIT
+notice-retention clauses; A.2.6 is BSD-3-Clause, whose binary-form clause requires the
+notice to appear "in the documentation or other materials provided with the distribution",
+which is this file. A.3 is first-party and B.1 is CC0: neither compels a notice, and both
+are recorded for provenance, not obligation. B.2 and B.3 are recorded because the right to
+redistribute them is unconfirmed; recording them states no permission. Parts C and D
+oblige nothing on these artefacts because no file of theirs is inside one — verified by
+full member listing, not assumed.
+
+Because every obliged entry is inside the Mol* bundle, which ships only in the two rnplens
+artefacts, this NOTICE is required in those two and in neither rnplens-assistant artefact.
+Shipping it there would assert a third-party content relationship that the assistant
+artefacts do not have.
+
+
+-------------------------------------------------------------------------------
+PART A — BUNDLED THIRD-PARTY CODE
+The notice MUST travel with the distribution for every item in this Part.
+-------------------------------------------------------------------------------
+
+A.1  Mol* (molstar) 5.13.1 — prebuilt Viewer bundle
+-----------------------------------------------------
+Component   : Mol* Viewer prebuilt bundle (molstar.js, molstar.css)
+Version     : 5.13.1 (npm, published 2026-10-08T10:00:08.869Z, fetched 2026-10-16)
+Licence     : MIT (SPDX: MIT)
+Copyright   : Copyright (c) 2017 - now, Mol* contributors
+Homepage    : https://molstar.org
+Ships in    : rnplens wheel  -> rnplens/vendor/molstar/
+              rnplens sdist  -> src/rnplens/vendor/molstar/
+              (not in either rnplens-assistant artefact)
+Files and SHA-256 at this commit, each matching vendor/molstar/VERSION.json exactly:
+    molstar.js   5,268,685 bytes  4fc6493c2471db8834dcc391151b344d7017e4eb8a4eb76c152be5f9dbd23874
+    molstar.css     72,904 bytes  22fbf73b75c11ef57687d08437c95dbfe8430ea895264f6da2b9b01e28bacc49
+    LICENSE          1,088 bytes  aa42900c6ea7bfcf22d25a4c369025e01a526c66501fd9193f9a8aecee7a0753
+Source      : https://registry.npmjs.org/molstar/-/molstar-5.13.1.tgz
+              tarball sha256 08e9292fb427bbebe9e1ecaef9e1b1066e2323dc4327e83692c4a5c3f14fff4e
+Why it is in this file:
+    The bundle is redistributed verbatim inside both rnplens artefacts and is loaded
+    unchanged by rnplens.viewer.structure_page to render the offline viewer. RNPLens does
+    not modify, rebuild or extend it. Source maps, themes and example pages of the
+    upstream build/viewer directory are not included.
+Obligation  : The MIT licence requires the copyright notice and the permission notice to
+              be included in all copies or substantial portions of the Software. The
+              notice therefore MUST travel with the distribution. It does: the upstream
+              LICENSE file ships beside the bundle in both artefacts.
+Status      : MET for Mol* itself. See A.2 for the components embedded inside the bundle.
+
+
+A.2  Components embedded inside molstar.js
+--------------------------------------------
+molstar.js is a bundle. It contains third-party code with its own attribution notices,
+carried as comments inside the minified file. Shipping Mol*'s own LICENSE discharges the
+attribution for Mol*; it does not name these components. Before this file was staged the
+only place these attributions existed in the distribution was inside a 5.2 MB minified
+file, with no aggregated list anywhere; this Part is that list.
+
+COUNT CORRECTION. The release brief and the 2026-10-23 licence inventory describe "five
+further third-party notices". Extraction over the whole file at this commit finds all 18
+case-insensitive occurrences of "copyright", which resolve to TEN distinct third-party
+attributions from EIGHT copyright holders (react, react-dom and scheduler, A.2.1-A.2.3,
+share a single holder). The earlier count matched only the pattern "Copyright (c)", which
+occurs 9 times; two further notices use the form "Copyright <year>" with no "(c)" (A.2.7
+and A.2.10), and one previously unattributed string, "Copyright (c) 2018", is resolved
+here to its named author (A.2.8). All ten are listed below with the copyright line exactly
+as the bundle states it.
+
+No GPL, LGPL, AGPL or Mozilla Public License notice occurs anywhere in molstar.js. (The
+27 occurrences of the three-letter string "MPL" are all substrings of WebGL enumerant
+names such as FRAMEBUFFER_INCOMPLETE_* and IMPLEMENTATION_COLOR_READ_*, and of the phrase
+"IMPLIED WARRANTIES"; none is a licence token.) molstar.css contains no copyright string.
+
+The four npm packages A.2.1–A.2.4 are declared by the bundler's own trailing block,
+"/*! Bundled license information: ... */". The six items A.2.5–A.2.10 are GLSL shader
+routines adapted into Mol*'s shader sources, each carrying an inline attribution naming
+the project it was adapted from.
+
+  A.2.1  react — react/cjs/react.production.min.js and
+         react/cjs/react-jsx-runtime.production.min.js
+         Licence  : MIT (SPDX: MIT)
+         Copyright: Copyright (c) Facebook, Inc. and its affiliates.
+         As stated : "This source code is licensed under the MIT license found in the
+                      LICENSE file in the root directory of this source tree."
+         Why here : bundled into molstar.js, which RNPLens redistributes verbatim.
+
+  A.2.2  react-dom — react-dom/cjs/react-dom.production.min.js
+         Licence  : MIT (SPDX: MIT)
+         Copyright: Copyright (c) Facebook, Inc. and its affiliates.
+         Why here : as A.2.1.
+
+  A.2.3  scheduler — scheduler/cjs/scheduler.production.min.js
+         Licence  : MIT (SPDX: MIT)
+         Copyright: Copyright (c) Facebook, Inc. and its affiliates.
+         Why here : as A.2.1.
+
+  A.2.4  immutable — immutable/dist/immutable.es.js
+         Licence  : MIT (SPDX: MIT) — the full MIT text is embedded in the bundle
+         Copyright: Copyright (c) 2014-present, Lee Byron and other contributors.
+         Why here : as A.2.1.
+
+  A.2.5  glsl-float-to-rgba (Equinor) — floatToRgba shader routine
+         Licence  : MIT (SPDX: MIT)
+         Copyright: MIT License, Copyright (c) 2020 Equinor
+         Upstream : https://github.com/equinor/glsl-float-to-rgba
+         Why here : adapted into a Mol* shader source compiled into molstar.js.
+
+  A.2.6  glsl-rgba-to-float (IHME) — rgbaToFloat shader routine
+         Licence  : BSD 3-Clause (SPDX: BSD-3-Clause) — the full text is embedded
+         Copyright: Copyright (c) 2019, Institute for Health Metrics and Evaluation
+                    All rights reserved.
+         Upstream : https://github.com/ihmeuw/glsl-rgba-to-float
+         Why here : adapted into a Mol* shader source compiled into molstar.js.
+         Note     : BSD-3-Clause requires that redistributions in binary form reproduce
+                    the copyright notice, the conditions and the disclaimer "in the
+                    documentation or other materials provided with the distribution".
+                    A minified bundle is a binary-form redistribution for this purpose.
+                    This NOTICE is the accompanying material that satisfies that clause.
+
+  A.2.7  webgl2examples (dual-depth peeling) — Tarek Sherif, Shuai Shao
+         Licence  : MIT (SPDX: MIT)
+         Copyright: The MIT License, Copyright 2017 Tarek Sherif, Shuai Shao
+         Upstream : https://github.com/tsherif/webgl2examples
+         Why here : adapted into the Mol* depth-peeling shader compiled into molstar.js.
+
+  A.2.8  niagara — sphere-impostor projection specialisation, Arseny Kapoulkine
+         Licence  : MIT (SPDX: MIT)
+         Copyright: Specialization by Arseny Kapoulkine, MIT License Copyright (c) 2018
+         Upstream : https://github.com/zeux/niagara
+         Why here : adapted into the Mol* sphere-impostor vertex shader. The bundle also
+                    credits the underlying method to "Michael Mara, Morgan McGuire. 2013";
+                    that is an academic attribution, not a licence grant.
+
+  A.2.9  Rendu (FXAA) — Simon Rodriguez
+         Licence  : MIT (SPDX: MIT)
+         Copyright: MIT License Copyright (c) 2017 Simon Rodriguez
+         Upstream : https://github.com/kosua20/Rendu
+         Why here : adapted into the Mol* FXAA post-processing shader.
+
+  A.2.10 Cylinder-impostor intersection routine — Inigo Quilez
+         Licence  : MIT (SPDX: MIT)
+         Copyright: The MIT License, Copyright 2016 Inigo Quilez
+         Upstream : https://www.shadertoy.com/view/4lcSRn
+         Why here : adapted into the Mol* cylinder-impostor shader compiled into
+                    molstar.js. This is the tenth distinct attribution; react, react-dom
+                    and scheduler (A.2.1-A.2.3) share one copyright holder, which is why
+                    ten attributions arise from eight holders.
+
+  Obligation for all of A.2 : notice retention. Each licence above requires the copyright
+  notice to be retained in redistributions. The notices do travel inside molstar.js, which
+  RNPLens ships byte-identically. Whether a notice buried in a minified bundle, with no
+  aggregated list, discharges the obligation was the open question this NOTICE closes.
+  Status: MET, by this file travelling in both rnplens artefacts
+  (rnplens-0.4.0.dev0.dist-info/licenses/NOTICE in the wheel, NOTICE at the root of the
+  sdist). Verified by member listing of the artefacts built from the staging branch.
+
+
+A.3  First-party viewer asset (recorded for contrast, no third-party obligation)
+---------------------------------------------------------------------------------
+src/rnplens/viewer_assets/contact_explorer.js (23,067 bytes) is first-party RNPLens code,
+covered by the root LICENSE. Its own header states that it is part of RNPLens, not of
+Mol*. It contains no third-party code or notice. It ships in both rnplens artefacts.
+
+
+-------------------------------------------------------------------------------
+PART B — BUNDLED THIRD-PARTY AND DERIVED DATA
+-------------------------------------------------------------------------------
+
+B.1  Experimental reference structures — wwPDB
+-------------------------------------------------
+Component   : Deposited coordinate files of wwPDB entries 7K9D, 4I67, 2JEA, 4PMI, 6E4P
+Licence     : CC0 1.0 Universal public domain dedication (SPDX: CC0-1.0)
+Copyright   : None asserted. wwPDB archive data carries no copyright; attribution to the
+              depositors is requested, not required.
+Ships in    : rnplens wheel (5 .cif) and rnplens sdist (6 .cif); not in rnplens-assistant
+Why it is in this file:
+    Unmodified deposited coordinates are redistributed as the experimental references for
+    the worked examples and the Evaluate fixtures. Provenance for every shipped structure
+    file is recorded in examples/DATA_PROVENANCE.tsv and was matched by SHA-256.
+Obligation  : None (CC0). Attribution is requested; the primary citations are therefore
+              recorded here and in the repository's provenance table:
+                7K9D  doi 10.1073/pnas.2020393118
+                6E4P  doi 10.1093/nar/gky1259
+                2JEA  doi 10.1038/SJ.EMBOR.7400945
+                4PMI  doi 10.7554/eLife.04120
+                4I67  doi 10.1093/nar/gkt323
+Status      : MET.
+
+B.2  Predicted structures generated with Boltz-2 — UNRESOLVED
+----------------------------------------------------------------
+Component   : 22 recorded prediction files (14 .pdb in the rnplens wheel, 22 .pdb in the
+              rnplens sdist, counting shipped copies), generated by the study's authors
+Engine      : Boltz-2, boltz 2.2.1; MSAs from the public ColabFold MSA server
+Licence of the engine : MIT (code and weights), per the repository's documentation
+Copyright   : Not stated for the outputs. The engine's own MIT notice governs its code and
+              weights, not the files generated with it.
+Ships in    : rnplens wheel and sdist; not in rnplens-assistant
+Why it is in this file:
+    These are not third-party works in the ordinary sense — they were generated by the
+    project — but they are outputs of a third-party model, and the right to redistribute
+    them has not been confirmed. They are listed so that the NOTICE does not imply a
+    permission the project does not hold.
+Obligation  : UNRESOLVED. The repository records the absence of an output-specific term,
+              which is not a grant. Release blocker B4. See Part E.
+
+B.3  Reference disagreement distributions — PARTLY UNRESOLVED
+----------------------------------------------------------------
+Component   : src/rnpbench_diagnose/reference/cohortP_disagreement.tsv (130 data rows)
+              src/rnpbench_diagnose/reference/cohortE_disagreement.tsv  (59 data rows)
+Content     : Per-target median pairwise disagreement values. Numbers and target
+              identifiers only; no coordinates.
+SHA-256     : cohortP fe7dd6cd7d78e5da02f2bce4a639b3bf48c3aa404bdc10e3d6bf501049b5192a
+              cohortE dd303f3e4d368c916d1ec1e80486c13cae31a105da975afc81e70be887a8f730
+Ships in    : rnplens wheel and sdist, in both cases even though the user-facing Diagnose
+              workflow is BLOCKED in 0.4
+cohortP     : derived from Boltz-2 outputs only. Same open question as B.2.
+cohortE     : derived from four engines — Boltz-2 (MIT), Chai-1 (Apache-2.0 code),
+              RF3 (BSD-3-Clause code) and RoseTTAFold2NA. UNRESOLVED: the only licence
+              text the project holds for RoseTTAFold2NA reads CC BY-NC-SA 4.0, a
+              non-commercial share-alike licence, while the repository's own
+              docs/dependencies.md states "MIT code". All 59 rows of cohortE include
+              RF2NA. Release blocker B5. See Part E and the accompanying
+              PROVENANCE_DISCREPANCIES.md.
+Obligation  : UNRESOLVED for cohortE. If the CC BY-NC-SA 4.0 reading governs the derived
+              values, a share-alike attribution obligation would attach and would conflict
+              with redistribution under a permissive project licence.
+
+
+-------------------------------------------------------------------------------
+PART C — DEPENDENCIES IMPORTED BY SHIPPED CODE (INSTALLED, NOT BUNDLED)
+-------------------------------------------------------------------------------
+
+None of the packages in this Part is bundled. Each is resolved from PyPI by the user's own
+pip at install time and arrives carrying its own licence. No file of any of them is copied
+into, modified by, or shipped inside any RNPLens artefact; this was verified by full
+member listing of all four staged artefacts.
+
+No notice obligation therefore falls on the RNPLens distributions for Part C. These
+entries are recorded because shipped RNPLens modules import them, so a recipient of an
+RNPLens artefact will necessarily install them, and because two of them (C.1, C.2) carry
+terms that are not plain permissive grants.
+
+  C.1  gemmi 0.6.5 — REQUIRED, imported by 9 shipped modules
+       Licence   : Mozilla Public License 2.0 (SPDX: MPL-2.0)
+       As stated : the installed METADATA declares "License: MPL-2.0" and the classifier
+                   "Mozilla Public License 2.0 (MPL 2.0)"; the project description in the
+                   same METADATA additionally offers "MPLv2, or (at your option) LGPLv3."
+                   The packaged licence file (licences/LICENSE.txt) is the MPL 2.0 text
+                   only. The dual offer is recorded here because it is the recipient's
+                   choice to make, not RNPLens's.
+       Copyright : the MPL 2.0 text as packaged asserts no project copyright line.
+       Imported by: rnpbench_core/frozen/canonical/{corr_mask_audit,pos_adapter,
+                   rnpbench_score_v2}.py, rnpbench_diagnose/applicability.py,
+                   rnpbench_evaluate/{contract,engine,selftest}.py,
+                   rnplens/{importer,region}.py
+       Why here  : MPL-2.0 is file-level copyleft and is the strongest term in the
+                   dependency set. Its obligations attach to gemmi's own source files.
+                   No gemmi source file is present in any RNPLens artefact; the installed
+                   artefact is a separate compiled wheel.
+       Obligation: none on the RNPLens artefacts, on the facts above. Confirmation that
+                   importing and dynamically loading an unmodified MPL-2.0 extension
+                   creates no obligation on the importing distribution is left to legal
+                   review.
+
+  C.2  biopython 1.84 — REQUIRED, imported by 4 shipped modules
+       Licence   : Biopython License Agreement. NOT an OSI identifier; the installed
+                   classifier is "License :: Freely Distributable" and there is no
+                   License-Expression. No SPDX identifier can be stated from the metadata.
+       Copyright : Copyright (c) 1999-2024, The Biopython Contributors
+       As stated : the licence file states that Biopython is released under the "Biopython
+                   License Agreement", and that *some* files are additionally dual
+                   licensed under the BSD 3-Clause licence. The dual offer is partial, so
+                   it cannot be read as covering the package.
+       Imported by: rnpbench_core/frozen/f1/f1_featurize_mp.py,
+                   rnpbench_report/{agreement,geometry}.py, rnplens/importer.py
+       Obligation: none on the RNPLens artefacts (nothing bundled). Recorded because a
+                   release that must publish an SPDX-clean dependency manifest cannot do
+                   so for this package without an upstream clarification or a stated
+                   exception.
+
+  C.3  numpy 1.26.4 — REQUIRED, imported by 14 shipped modules
+       Licence   : BSD 3-Clause (SPDX: BSD-3-Clause)
+       Copyright : Copyright (c) 2005-2023, NumPy Developers.
+       Note      : the installed licence file is a composite that also carries the notices
+                   of vendored components, including "Copyright (c) 2011-2014, The OpenBLAS
+                   Project". Those travel with the numpy wheel, not with RNPLens.
+       Obligation: none on the RNPLens artefacts (not bundled).
+
+  C.4  DockQ 2.1.3 — REQUIRED, imported by 3 frozen scorer modules
+       Licence   : MIT (SPDX: MIT)
+       Copyright : Copyright (c) 2024 bjornwallner
+       Imported by: rnpbench_core/frozen/canonical/{corr_mask_audit,pos_adapter,
+                   rnpbench_score_v2}.py
+       Note      : two DockQ internals are substituted at run time by the frozen scorer.
+                   No DockQ code is copied into the RNPLens tree.
+       Obligation: none on the RNPLens artefacts (not bundled). DockQ should be cited.
+
+  C.5  matplotlib 3.11.2 — OPTIONAL extra [html], imported by 4 shipped modules
+       Licence   : the Matplotlib licence, a PSF-derived agreement between the Matplotlib
+                   Development Team and the licensee; installed classifier "Python
+                   Software Foundation License". Permissive, not copyleft.
+       Copyright : the agreement requires that MDT's notice of copyright,
+                   "Copyright (c) 2012- Matplotlib Development Team; All Rights Reserved",
+                   be retained in any derivative work.
+       Imported by: rnpbench_report/{agreement,report}.py, rnplens/{region,summary}.py
+       Note      : docs/dependencies.md states matplotlib ">= 3.8 (qualified with 3.9.2)";
+                   the final clean install resolved 3.11.2.
+       Obligation: none on the RNPLens artefacts (not bundled, no derivative work).
+
+  C.6  scipy 1.13.1 — declared REQUIRED, imported by NO shipped module
+       Licence   : BSD 3-Clause (SPDX: BSD-3-Clause)
+       Copyright : Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers.
+       Why here  : scipy is an exact runtime pin that no module in either distribution
+                   imports. It is a recorded-environment provenance pin, not an import.
+                   Listed so the manifest is not read as claiming an import that does not
+                   exist.
+       Obligation: none.
+
+Transitively installed but imported by no RNPLens module, and bundled in nothing:
+colorama 0.4.6 (BSD), networkx 3.6.1 (BSD-3-Clause), parallelbar 2.5 (MIT) and
+tqdm 4.70.1 (MPL-2.0 AND MIT) enter the environment through DockQ's own requirements.
+tqdm's MPL-2.0 component is the only other copyleft term in the installed set and binds
+nothing here: no RNPLens module imports tqdm and no RNPLens artefact contains it. The
+optional [html] and [test] closures (contourpy, cycler, fonttools, kiwisolver, packaging,
+pillow, pyparsing, python-dateutil, six, tzdata; attrs, iniconfig, jsonschema,
+jsonschema-specifications, pluggy, Pygments, pytest, referencing, rpds-py,
+typing_extensions) are permissive, bundled in nothing and imported by no shipped module.
+The complete per-package record is THIRD_PARTY_ATTRIBUTION_INVENTORY.tsv.
+
+
+-------------------------------------------------------------------------------
+PART D — SYSTEM PREREQUISITES (INVOKED, NEVER REDISTRIBUTED)
+-------------------------------------------------------------------------------
+
+These are external programs that RNPLens invokes as separate processes. None is bundled,
+installed by pip, linked, or redistributed, and no licence text for any of them exists in
+the repository. The identifications below are attributions of what the project's own
+documentation states and were NOT read from an upstream licence file at this commit.
+
+  bubblewrap (bwrap)   LGPL-2.0-or-later (upstream, per project documentation)
+                       Invoked by assistant/rnplens_assistant/codex_adapter/codex_jail.sh.
+                       The only LGPL component anywhere in the project. Because it is
+                       executed as a separate program and never shipped, no LGPL
+                       obligation attaches to the RNPLens artefacts.
+  Codex CLI            Apache-2.0 (upstream, per project documentation). Invoked by the
+                       assistant's Codex adapter.
+  Chrome for Testing,  Used only by the viewer and screenshot test harnesses. Not shipped,
+  Firefox,             not a runtime requirement of either distribution.
+  puppeteer-core
+
+The three codex_adapter wrappers (codex_jail.sh, codex_seatbelt.sh, codex_seatbelt.sb)
+contain no third-party code, copyright or licence marker; they are first-party.
+
+Build and CI only, contributing nothing to the artefacts: setuptools (>=77 for both
+distributions since the PEP 639 licence declaration was staged; the installed setuptools
+79.0.1 declares no licence metadata at all, and the artefacts were built with 83.0.0), and
+the GitHub Actions actions/checkout@v4 and actions/setup-python@v5.
+
+
+-------------------------------------------------------------------------------
+PART E — UNRESOLVED ITEMS CARRIED BY THIS NOTICE
+-------------------------------------------------------------------------------
+
+This NOTICE discharges the attribution obligations in Part A once adopted. It does not and
+cannot resolve the following, each of which is an owner or institutional decision rather
+than an attribution defect. They are stated here so that the NOTICE is not mistaken for a
+clearance.
+
+  E.1  CLOSED ON THIS BRANCH, SUBJECT TO E.2. rnplens-assistant previously shipped with no
+       licence of any kind — no License field, no License-Expression, no classifier, no
+       License-File and no licence file anywhere in its wheel or sdist. It nonetheless
+       carries first-party code and a byte-identical copy of the first-party documentation
+       file docs/which_analysis_should_i_use.md, so its recipients received no grant. On
+       branch staging/0.4-mit-licence-and-logo both distributions declare
+       License-Expression: MIT and carry the MIT text (assistant/LICENSE, byte-identical
+       to the root LICENSE, sha256
+       5e20f1489e9daf6e3a7e019d6ec5828fbe29d44a081317cda3fccdaa0bf50c4d). Release blocker
+       B3 is addressed in substance; the grant still names no identifiable holder, which is
+       E.2.
+
+  E.2  The project LICENSE names no identifiable copyright holder. "The RNPLens authors" is
+       the owner's explicit choice for the copyright line and is retained verbatim in both
+       distributions; CITATION.cff and pyproject.toml authors remain placeholders that only
+       the owner can fill. This is the one remaining rights input. Release blocker B2.
+
+  E.3  No ANU institutional IP clearance exists for the code, records or bundled data.
+       Release blocker B1.
+
+  E.4  Redistribution right for the bundled Boltz-2 outputs is unconfirmed (B.2 above).
+       Release blocker B4.
+
+  E.5  The RoseTTAFold2NA terms governing values derived into cohortE_disagreement.tsv are
+       stated incompatibly across project material, and the only licence copy the project
+       holds reads CC BY-NC-SA 4.0 (B.3 above). Release blocker B5. The discrepancy and a
+       proposed correction are recorded in PROVENANCE_DISCREPANCIES.md. No frozen record
+       has been edited.
+
+  E.6  docs/images/RNPLens.png. The repository stated only "supplied by the authors". The
+       file's own embedded Content Credentials record that it was produced by a generative
+       image model. This is an origin question rather than a third-party notice question
+       and is reported in full in LOGO_PROVENANCE_FINDING.md. On branch
+       staging/0.4-mit-licence-and-logo the image no longer travels in any artefact and no
+       artefact's metadata refers to it: MANIFEST.in excludes it from the sdist, the two
+       wheels never contained it, and the README <img> tag that put the reference into
+       every artefact's long description is removed. The file remains in the repository
+       tree, so publishing the repository itself remains a separate decision. Release
+       blocker B6 stays open on origin, not on distribution.
+
+  E.7  Two shipped example sequence files, examples/reference_based/7K9D_protein.fasta and
+       7K9D_rna.fasta, have no row in examples/DATA_PROVENANCE.tsv, although their
+       sequences are byte-identical to the input columns of the 7K9D rows. They ship in the
+       rnplens sdist only.
+
+-------------------------------------------------------------------------------
+End of NOTICE.
+Evidence for every statement above is recorded in
+release_prep_20261023T0530Z/attribution/THIRD_PARTY_ATTRIBUTION_INVENTORY.tsv,
+LOGO_PROVENANCE_FINDING.md and PROVENANCE_DISCREPANCIES.md, and the artefact proof for the
+membership and metadata statements in
+release_prep_20261023T0530Z/licence_mit/MIT_LICENCE_AND_LOGO_RECORD.md.
+This file is a factual record, not legal advice.
+-------------------------------------------------------------------------------
+
+
+================================================================================
+PUBLIC RELEASE ADDENDUM — v0.4.0-rc1 source prerelease
+================================================================================
+
+This addendum is appended for the public release snapshot. It corrects statements
+above that were accurate for the internal commit they were written against but are
+not accurate for this snapshot. Nothing above is deleted: the original text is the
+record, and this addendum is the correction.
+
+1. Commit and tree. The body above describes internal commit
+   53711d496bd7cc6c6b7dfac308f8ba345d4a1df4 (tree 9bc2d086..., 2,540 tracked files).
+   This snapshot is derived from the later internal candidate
+   27166d065b2689bf3740344f1426aba1a064914e (tree 8b57b42bc4dfb0725392fb3052eef2869ccb2e87)
+   and is published as a single commit with 2,542 tracked files minus the exclusions in
+   item 3. Every third-party membership and digest claim above was re-verified against
+   this snapshot and holds; only the commit identifier and file count differ.
+
+2. Evidence documents are internal. The closing paragraph above, and items E.5 and E.6,
+   cite THIRD_PARTY_ATTRIBUTION_INVENTORY.tsv, LOGO_PROVENANCE_FINDING.md,
+   PROVENANCE_DISCREPANCIES.md and MIT_LICENCE_AND_LOGO_RECORD.md. These are internal
+   release-preparation records and are NOT distributed with this snapshot. They are cited
+   as the internal evidence base, not as files a reader can open here. The substance a
+   public reader needs is restated in item 4 below and in the README.
+
+3. The project logo is excluded. docs/images/RNPLens.png is absent from this snapshot
+   entirely -- from the tree, the working directory and the single-commit history -- not
+   merely excluded from the built distributions. Statements above that the file "remains
+   in the repository tree" describe the internal repository, not this snapshot. It is
+   embedded nowhere: the filename survives only in a MANIFEST.in exclude directive and in
+   item E.6. Three further internal-only files are likewise absent:
+   records/PROTECTED_STATE_BEFORE_2026-10-16.md, docs/dev/V04_CONTRACTS.md and
+   tests/test_grouping_karyon.py.
+
+4. The RoseTTAFold2NA licence question is RESOLVED; item E.5 above is superseded.
+   The project owner verified the upstream repository licence directly at
+   https://github.com/uw-ipd/RoseTTAFold2NA/blob/main/LICENSE : it is the MIT License,
+   Copyright (c) 2022 Institute for Protein Design. The CC BY-NC-SA 4.0 text previously
+   held by this project was traced to a template-database licence copied from one
+   directory level too deep inside the RF2NA distribution; it does not govern the RF2NA
+   software. Statements above, and in earlier project records, that the RF2NA software
+   repository is CC BY-NC-SA 4.0 are WITHDRAWN as incorrect.
+
+   src/rnpbench_diagnose/reference/cohortE_disagreement.tsv is retained. A targeted
+   provenance check of its contents found 59 data rows of project-generated measurements
+   only: a public PDB target identifier, the engine names used, pair counts, three derived
+   RMSD disagreement values and an exclusion flag. It holds no atomic coordinates, no
+   sequences and no reference to any private corpus or reserved holdout (0 matches for
+   RNPLens-Rank, holdout or private-corpus terms). REFERENCE.json records it as produced by
+   diag_cross_engine.py under the frozen protocol. No actual third-party restriction was
+   identified.
+
+   Two separate matters, as the owner directs: the RF2NA SOFTWARE licence is MIT and
+   settled; the rights position of particular GENERATED OUTPUTS of any engine is the
+   separate open question in item 5, on which this release asserts no grant and claims no
+   prohibition.
+
+5. Engine-generated outputs are an open question, not a restriction. The 22 Boltz-2
+   coordinate files and the 6 per-model confidence JSON files bundled as examples and
+   self-test fixtures were generated by this project with Boltz-2 2.2.1 on public inputs.
+   Boltz-2's code and weights are MIT; its licence is silent about outputs. This release
+   does not assert a grant it has not confirmed, and equally does not treat silence as a
+   prohibition. Per-file exact-command provenance is in examples/DATA_PROVENANCE.tsv.
+   Correction to E.7: the two example FASTA files DO have provenance rows in this
+   snapshot, so E.7 is closed on that point; however the 6 confidence JSON files have no
+   provenance rows, and that gap is open.
+
+6. Item E.3 (institutional IP clearance) is recorded above as an open blocker. The project
+   owner has determined that it is not a precondition for this source publication. It is
+   left in the record unchanged rather than edited away.

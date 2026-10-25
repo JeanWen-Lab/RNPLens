@@ -1,0 +1,8826 @@
+{
+ "plan": "2JEA_strace",
+ "page": "demos/1b_region_subrange/analysis/viewer_26-35",
+ "browser": "HeadlessChrome/155.0.8059.84",
+ "gl": {
+  "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+ },
+ "n_steps": 139,
+ "n_pass": 139,
+ "run_level": {
+  "status_loaded": true,
+  "nonlocal_requests": 0,
+  "websockets": 0,
+  "failed_loads": 0,
+  "page_errors": 0
+ },
+ "run_level_pass": true,
+ "pass": true,
+ "steps": [
+  {
+   "id": "00_overall",
+   "do": "load",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:97",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": "2JEA_strace_00_overall.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "01_B33",
+   "do": "click",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": "mouse",
+   "click_atom": "C2'",
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.46
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.001061,
+   "screenshot": "2JEA_strace_01_B33.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "02_B35",
+   "do": "click",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": "mouse",
+   "click_atom": "C3'",
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     2.96
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.08
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.21
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.36
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.91
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.47
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.37
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.45
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.71
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.49
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.25
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.34
+    ]
+   ],
+   "observed_count": 12,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 12,
+   "max_distance_error_A": 0.004771,
+   "screenshot": "2JEA_strace_02_B35.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "03_B30",
+   "do": "click",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": "mouse",
+   "click_atom": "OP1",
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": "2JEA_strace_03_B30.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "04_clear",
+   "do": "clear",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:97",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": "2JEA_strace_04_clear.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "05_show_s006",
+   "do": "show",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:82",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:27",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": "2JEA_strace_05_show_s006.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "06_s006_B33",
+   "do": "click",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": "mouse",
+   "click_atom": "OP2",
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.83
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004777,
+   "screenshot": "2JEA_strace_06_s006_B33.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "07_s006_B35",
+   "do": "click",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": "mouse",
+   "click_atom": "O3'",
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     4.02
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.24
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.28
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.24
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.8
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.5
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.32
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.31
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.75
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     4.21
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.46
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     2.98
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.02
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004948,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "08_s006_B30",
+   "do": "click",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": "mouse",
+   "click_atom": "C5'",
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "09_s006_clear",
+   "do": "clear",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:82",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:27",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "10_s006_B33_again",
+   "do": "click",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": "mouse",
+   "click_atom": "OP2",
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.83
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004777,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "11_prev_to_s005",
+   "do": "prev",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100",
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     33,
+     4.72
+    ],
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.97
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:100",
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.00132,
+   "screenshot": "2JEA_strace_11_prev_to_s005.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "12_next_to_s006",
+   "do": "next",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.83
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004777,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "13_mode_all",
+   "do": "mode",
+   "structure": "s006",
+   "mode": "all",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.83
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:82",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:27",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004777,
+   "screenshot": "2JEA_strace_13_mode_all.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "14_reverse_A104",
+   "do": "click",
+   "structure": "s006",
+   "mode": "all",
+   "selected": "protein A:104",
+   "click": "mouse",
+   "click_atom": "O",
+   "expected_partners": [
+    "B:33"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.83
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:82",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:27",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004777,
+   "screenshot": "2JEA_strace_14_reverse_A104.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "15_mode_focus",
+   "do": "mode",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "protein A:104",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "B:33"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.83
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004777,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "16_B26",
+   "do": "click",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": "mouse",
+   "click_atom": "C2",
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": "2JEA_strace_16_B26.png",
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "17_B26_toggle_off",
+   "do": "click",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": null,
+   "click": "mouse",
+   "click_atom": "C2",
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:82",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:27",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "18_sweep_s001",
+   "do": "show",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:97",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "19_sweep_s001_clear",
+   "do": "clear",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:97",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "20_sweep_s001_B26",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "21_sweep_s001_B27",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "22_sweep_s001_B28",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:28"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "23_sweep_s001_B29",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:97"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     29,
+     3.58
+    ],
+    [
+     "A",
+     97,
+     "B",
+     29,
+     4.02
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:95",
+    "A:97",
+    "B:29"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.004658,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "24_sweep_s001_B30",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "25_sweep_s001_B31",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     3.17
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.002269,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "26_sweep_s001_B32",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.71
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.000276,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "27_sweep_s001_B33",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.46
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.001061,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "28_sweep_s001_B34",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.36
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.45
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.9
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     4.26
+    ]
+   ],
+   "observed_count": 4,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 4,
+   "max_distance_error_A": 0.003951,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "29_sweep_s001_B35",
+   "do": "api_select",
+   "structure": "s001",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     2.96
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.08
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.21
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.36
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.91
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.47
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.37
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.45
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.71
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.49
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.25
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.34
+    ]
+   ],
+   "observed_count": 12,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 12,
+   "max_distance_error_A": 0.004771,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "30_sweep_s002",
+   "do": "show",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.82
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.06
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.35
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.56
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.75
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.42
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.24
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.09
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.22
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.79
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.23
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.41
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.78
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004704,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "31_sweep_s002_clear",
+   "do": "clear",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "32_sweep_s002_B26",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "33_sweep_s002_B27",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "34_sweep_s002_B28",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:28"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "35_sweep_s002_B29",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:29"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "36_sweep_s002_B30",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "37_sweep_s002_B31",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     2.8
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.003001,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "38_sweep_s002_B32",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.49
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.000222,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "39_sweep_s002_B33",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     33,
+     4.94
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.00327,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "40_sweep_s002_B34",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.45
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.36
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.81
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.77
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     4.54
+    ]
+   ],
+   "observed_count": 5,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 5,
+   "max_distance_error_A": 0.00455,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "41_sweep_s002_B35",
+   "do": "api_select",
+   "structure": "s002",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.82
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.06
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.35
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.56
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.75
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.42
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.24
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.09
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.22
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.79
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.23
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.41
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.78
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004704,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "42_sweep_s003",
+   "do": "show",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.94
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     2.97
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.03
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.4
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.95
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.38
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.25
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.31
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.78
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.73
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.35
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.5
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.21
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004886,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "43_sweep_s003_clear",
+   "do": "clear",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:28",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "44_sweep_s003_B26",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "45_sweep_s003_B27",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "46_sweep_s003_B28",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     28,
+     3.81
+    ],
+    [
+     "A",
+     96,
+     "B",
+     28,
+     3.99
+    ],
+    [
+     "A",
+     97,
+     "B",
+     28,
+     3.29
+    ],
+    [
+     "A",
+     98,
+     "B",
+     28,
+     4.13
+    ]
+   ],
+   "observed_count": 4,
+   "observed_bs_union": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "B:28"
+   ],
+   "n_lines": 4,
+   "max_distance_error_A": 0.003382,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "47_sweep_s003_B29",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:29"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "48_sweep_s003_B30",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "49_sweep_s003_B31",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     3.49
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.003121,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "50_sweep_s003_B32",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.31
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.003848,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "51_sweep_s003_B33",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100",
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     33,
+     4.82
+    ],
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.55
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:100",
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.004202,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "52_sweep_s003_B34",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:141",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.44
+    ],
+    [
+     "A",
+     141,
+     "B",
+     34,
+     4.76
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.41
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.87
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.78
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     4.07
+    ]
+   ],
+   "observed_count": 6,
+   "observed_bs_union": [
+    "A:101",
+    "A:141",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 6,
+   "max_distance_error_A": 0.003972,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "53_sweep_s003_B35",
+   "do": "api_select",
+   "structure": "s003",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.94
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     2.97
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.03
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.4
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.95
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.38
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.25
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.31
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.78
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.73
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.35
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.5
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.21
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004886,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "54_sweep_s004",
+   "do": "show",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:91",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     4.05
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.16
+    ],
+    [
+     "A",
+     91,
+     "B",
+     35,
+     4.79
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.4
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.49
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.82
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.47
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.29
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.34
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.84
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.94
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.58
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.25
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.05
+    ]
+   ],
+   "observed_count": 14,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:91",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 14,
+   "max_distance_error_A": 0.004399,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "55_sweep_s004_clear",
+   "do": "clear",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:5",
+    "A:85",
+    "A:90",
+    "A:91",
+    "A:94",
+    "A:95",
+    "A:97",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "56_sweep_s004_B26",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "57_sweep_s004_B27",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "58_sweep_s004_B28",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:28"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "59_sweep_s004_B29",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:97"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     29,
+     4.39
+    ],
+    [
+     "A",
+     97,
+     "B",
+     29,
+     3.51
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:95",
+    "A:97",
+    "B:29"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.002993,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "60_sweep_s004_B30",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "61_sweep_s004_B31",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     2.67
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.003608,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "62_sweep_s004_B32",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.26
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.001331,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "63_sweep_s004_B33",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:5",
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     5,
+     "B",
+     33,
+     4.35
+    ],
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.52
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:104",
+    "A:5",
+    "B:33"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.001561,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "64_sweep_s004_B34",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.51
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.34
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     4.07
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.75
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     4.03
+    ]
+   ],
+   "observed_count": 5,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 5,
+   "max_distance_error_A": 0.0047,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "65_sweep_s004_B35",
+   "do": "api_select",
+   "structure": "s004",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:91",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     4.05
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.16
+    ],
+    [
+     "A",
+     91,
+     "B",
+     35,
+     4.79
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.4
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.49
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.82
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.47
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.29
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.34
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.84
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.94
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.58
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.25
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.05
+    ]
+   ],
+   "observed_count": 14,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:91",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 14,
+   "max_distance_error_A": 0.004399,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "66_sweep_s005",
+   "do": "show",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:4",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     4,
+     "B",
+     35,
+     4.91
+    ],
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.89
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.03
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.44
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.34
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.79
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.23
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.15
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.02
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.24
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.92
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.39
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.27
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.85
+    ]
+   ],
+   "observed_count": 14,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:4",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 14,
+   "max_distance_error_A": 0.004615,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "67_sweep_s005_clear",
+   "do": "clear",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:4",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:27",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "68_sweep_s005_B26",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "69_sweep_s005_B27",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     97,
+     "B",
+     27,
+     4.08
+    ],
+    [
+     "A",
+     98,
+     "B",
+     27,
+     4
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:97",
+    "A:98",
+    "B:27"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.004782,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "70_sweep_s005_B28",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     28,
+     3.32
+    ],
+    [
+     "A",
+     96,
+     "B",
+     28,
+     4.76
+    ],
+    [
+     "A",
+     97,
+     "B",
+     28,
+     1.7
+    ],
+    [
+     "A",
+     98,
+     "B",
+     28,
+     4.16
+    ]
+   ],
+   "observed_count": 4,
+   "observed_bs_union": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "B:28"
+   ],
+   "n_lines": 4,
+   "max_distance_error_A": 0.004956,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "71_sweep_s005_B29",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     29,
+     3.99
+    ],
+    [
+     "A",
+     97,
+     "B",
+     29,
+     3.95
+    ],
+    [
+     "A",
+     98,
+     "B",
+     29,
+     4.15
+    ]
+   ],
+   "observed_count": 3,
+   "observed_bs_union": [
+    "A:95",
+    "A:97",
+    "A:98",
+    "B:29"
+   ],
+   "n_lines": 3,
+   "max_distance_error_A": 0.003786,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "72_sweep_s005_B30",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "73_sweep_s005_B31",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     2.62
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.000499,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "74_sweep_s005_B32",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     0.82
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.002801,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "75_sweep_s005_B33",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100",
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     33,
+     4.72
+    ],
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.97
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:100",
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.00132,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "76_sweep_s005_B34",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:4",
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     4,
+     "B",
+     34,
+     3.93
+    ],
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.73
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.29
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.84
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.82
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     4.42
+    ]
+   ],
+   "observed_count": 6,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:4",
+    "B:34"
+   ],
+   "n_lines": 6,
+   "max_distance_error_A": 0.004981,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "77_sweep_s005_B35",
+   "do": "api_select",
+   "structure": "s005",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:4",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     4,
+     "B",
+     35,
+     4.91
+    ],
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.89
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.03
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.44
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.34
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.79
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.23
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.15
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.02
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.24
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.92
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.39
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.27
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.85
+    ]
+   ],
+   "observed_count": 14,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:4",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 14,
+   "max_distance_error_A": 0.004615,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "78_sweep_s006",
+   "do": "show",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     4.02
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.24
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.28
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.24
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.8
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.5
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.32
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.31
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.75
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     4.21
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.46
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     2.98
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.02
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004948,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "79_sweep_s006_clear",
+   "do": "clear",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:82",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:27",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "80_sweep_s006_B26",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "81_sweep_s006_B27",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:82",
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     82,
+     "B",
+     27,
+     3.74
+    ],
+    [
+     "A",
+     97,
+     "B",
+     27,
+     4.55
+    ],
+    [
+     "A",
+     98,
+     "B",
+     27,
+     2.88
+    ]
+   ],
+   "observed_count": 3,
+   "observed_bs_union": [
+    "A:82",
+    "A:97",
+    "A:98",
+    "B:27"
+   ],
+   "n_lines": 3,
+   "max_distance_error_A": 0.00464,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "82_sweep_s006_B28",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:96",
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     96,
+     "B",
+     28,
+     4.59
+    ],
+    [
+     "A",
+     97,
+     "B",
+     28,
+     2.68
+    ],
+    [
+     "A",
+     98,
+     "B",
+     28,
+     1.89
+    ]
+   ],
+   "observed_count": 3,
+   "observed_bs_union": [
+    "A:96",
+    "A:97",
+    "A:98",
+    "B:28"
+   ],
+   "n_lines": 3,
+   "max_distance_error_A": 0.004244,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "83_sweep_s006_B29",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     29,
+     2.53
+    ],
+    [
+     "A",
+     96,
+     "B",
+     29,
+     4.59
+    ],
+    [
+     "A",
+     97,
+     "B",
+     29,
+     3.36
+    ],
+    [
+     "A",
+     98,
+     "B",
+     29,
+     3.83
+    ]
+   ],
+   "observed_count": 4,
+   "observed_bs_union": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "B:29"
+   ],
+   "n_lines": 4,
+   "max_distance_error_A": 0.004834,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "84_sweep_s006_B30",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "85_sweep_s006_B31",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     3.2
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.003645,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "86_sweep_s006_B32",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.95
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 1.5e-05,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "87_sweep_s006_B33",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.83
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004777,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "88_sweep_s006_B34",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.4
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.21
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.89
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.88
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     3.95
+    ]
+   ],
+   "observed_count": 5,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 5,
+   "max_distance_error_A": 0.00312,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "89_sweep_s006_B35",
+   "do": "api_select",
+   "structure": "s006",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     4.02
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.24
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.28
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.24
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.8
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.5
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.32
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.31
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.75
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     4.21
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.46
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     2.98
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.02
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004948,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "90_sweep_s007",
+   "do": "show",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.14
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.29
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.44
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.69
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     3.16
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.58
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.33
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.55
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     4.31
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.3
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     2.96
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.42
+    ]
+   ],
+   "observed_count": 12,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 12,
+   "max_distance_error_A": 0.004872,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "91_sweep_s007_clear",
+   "do": "clear",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:28",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "92_sweep_s007_B26",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "93_sweep_s007_B27",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "94_sweep_s007_B28",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     28,
+     4.73
+    ],
+    [
+     "A",
+     97,
+     "B",
+     28,
+     3.34
+    ],
+    [
+     "A",
+     98,
+     "B",
+     28,
+     3.96
+    ]
+   ],
+   "observed_count": 3,
+   "observed_bs_union": [
+    "A:95",
+    "A:97",
+    "A:98",
+    "B:28"
+   ],
+   "n_lines": 3,
+   "max_distance_error_A": 0.003593,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "95_sweep_s007_B29",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:96",
+    "A:97"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     29,
+     1.15
+    ],
+    [
+     "A",
+     96,
+     "B",
+     29,
+     4.82
+    ],
+    [
+     "A",
+     97,
+     "B",
+     29,
+     4.83
+    ]
+   ],
+   "observed_count": 3,
+   "observed_bs_union": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "B:29"
+   ],
+   "n_lines": 3,
+   "max_distance_error_A": 0.004478,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "96_sweep_s007_B30",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "97_sweep_s007_B31",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     3.1
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.000154,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "98_sweep_s007_B32",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.3
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.001429,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "99_sweep_s007_B33",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.86
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.003364,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "100_sweep_s007_B34",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.62
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.33
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.88
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     3.91
+    ]
+   ],
+   "observed_count": 4,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 4,
+   "max_distance_error_A": 0.003189,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "101_sweep_s007_B35",
+   "do": "api_select",
+   "structure": "s007",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.14
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.29
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.44
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.69
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     3.16
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.58
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.33
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.55
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     4.31
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.3
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     2.96
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.42
+    ]
+   ],
+   "observed_count": 12,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 12,
+   "max_distance_error_A": 0.004872,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "102_sweep_s008",
+   "do": "show",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     2.8
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.04
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.51
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.54
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.64
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.26
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.08
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     1.99
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.32
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     4.12
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.22
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.06
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.93
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004886,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "103_sweep_s008_clear",
+   "do": "clear",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:1",
+    "A:100",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:2",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:95",
+    "A:96",
+    "A:97",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "104_sweep_s008_B26",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "105_sweep_s008_B27",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "106_sweep_s008_B28",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:28"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "107_sweep_s008_B29",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:95",
+    "A:96",
+    "A:97"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     95,
+     "B",
+     29,
+     3.2
+    ],
+    [
+     "A",
+     96,
+     "B",
+     29,
+     3.88
+    ],
+    [
+     "A",
+     97,
+     "B",
+     29,
+     3.36
+    ]
+   ],
+   "observed_count": 3,
+   "observed_bs_union": [
+    "A:95",
+    "A:96",
+    "A:97",
+    "B:29"
+   ],
+   "n_lines": 3,
+   "max_distance_error_A": 0.003397,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "108_sweep_s008_B30",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "109_sweep_s008_B31",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:2",
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     2,
+     "B",
+     31,
+     4.74
+    ],
+    [
+     "A",
+     100,
+     "B",
+     31,
+     3.07
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:100",
+    "A:2",
+    "B:31"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.00245,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "110_sweep_s008_B32",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:2",
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     2,
+     "B",
+     32,
+     2.51
+    ],
+    [
+     "A",
+     100,
+     "B",
+     32,
+     0.94
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:100",
+    "A:2",
+    "B:32"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.003843,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "111_sweep_s008_B33",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:1",
+    "A:2"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     1,
+     "B",
+     33,
+     3.75
+    ],
+    [
+     "A",
+     2,
+     "B",
+     33,
+     2.9
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:1",
+    "A:2",
+    "B:33"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.00321,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "112_sweep_s008_B34",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:1",
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     1,
+     "B",
+     34,
+     3.74
+    ],
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.45
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.21
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.87
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.89
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     4.05
+    ]
+   ],
+   "observed_count": 6,
+   "observed_bs_union": [
+    "A:1",
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 6,
+   "max_distance_error_A": 0.003471,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "113_sweep_s008_B35",
+   "do": "api_select",
+   "structure": "s008",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     2.8
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.04
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.51
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.54
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.64
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.26
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.08
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     1.99
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.32
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     4.12
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.22
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.06
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.93
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004886,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "114_sweep_s009",
+   "do": "show",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:140",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.75
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.11
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.32
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.4
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.37
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.32
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.32
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.14
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.09
+    ],
+    [
+     "A",
+     140,
+     "B",
+     35,
+     4.88
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.6
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.7
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.39
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.83
+    ]
+   ],
+   "observed_count": 14,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:140",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 14,
+   "max_distance_error_A": 0.004678,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "115_sweep_s009_clear",
+   "do": "clear",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:140",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "116_sweep_s009_B26",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "117_sweep_s009_B27",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "118_sweep_s009_B28",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:28"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "119_sweep_s009_B29",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     97,
+     "B",
+     29,
+     4.27
+    ],
+    [
+     "A",
+     98,
+     "B",
+     29,
+     4.65
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:97",
+    "A:98",
+    "B:29"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.004509,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "120_sweep_s009_B30",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "121_sweep_s009_B31",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     2.88
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.0049,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "122_sweep_s009_B32",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.79
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.002053,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "123_sweep_s009_B33",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.7
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004336,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "124_sweep_s009_B34",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.21
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.42
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.84
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.78
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     4.43
+    ]
+   ],
+   "observed_count": 5,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 5,
+   "max_distance_error_A": 0.003785,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "125_sweep_s009_B35",
+   "do": "api_select",
+   "structure": "s009",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:140",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     3.75
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.11
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.32
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.4
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.37
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.32
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.32
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.14
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.09
+    ],
+    [
+     "A",
+     140,
+     "B",
+     35,
+     4.88
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.6
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.7
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.39
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     2.83
+    ]
+   ],
+   "observed_count": 14,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:140",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 14,
+   "max_distance_error_A": 0.004678,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "126_sweep_s010",
+   "do": "show",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     4.06
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.16
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.33
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.42
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.89
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.52
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.38
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.38
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.78
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.76
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.29
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.45
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.06
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004687,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "127_sweep_s010_clear",
+   "do": "clear",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  },
+  {
+   "id": "128_sweep_s010_B26",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:26",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:26"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "129_sweep_s010_B27",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:27",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:27"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 2 of 10 BOLTZ2"
+  },
+  {
+   "id": "130_sweep_s010_B28",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:28",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:28"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 4 of 10 BOLTZ2"
+  },
+  {
+   "id": "131_sweep_s010_B29",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:29",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:97",
+    "A:98"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     97,
+     "B",
+     29,
+     4.48
+    ],
+    [
+     "A",
+     98,
+     "B",
+     29,
+     4.92
+    ]
+   ],
+   "observed_count": 2,
+   "observed_bs_union": [
+    "A:97",
+    "A:98",
+    "B:29"
+   ],
+   "n_lines": 2,
+   "max_distance_error_A": 0.002234,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 8 of 10 BOLTZ2"
+  },
+  {
+   "id": "132_sweep_s010_B30",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:30",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": 0,
+   "observed_bs_union": [
+    "B:30"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 0 of 10 BOLTZ2"
+  },
+  {
+   "id": "133_sweep_s010_B31",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:31",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     31,
+     2.86
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:31"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.000827,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "134_sweep_s010_B32",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:32",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:100"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     100,
+     "B",
+     32,
+     1.92
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:100",
+    "B:32"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.004858,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "135_sweep_s010_B33",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:33",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:104"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     104,
+     "B",
+     33,
+     4.5
+    ]
+   ],
+   "observed_count": 1,
+   "observed_bs_union": [
+    "A:104",
+    "B:33"
+   ],
+   "n_lines": 1,
+   "max_distance_error_A": 0.002353,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "136_sweep_s010_B34",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:34",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     101,
+     "B",
+     34,
+     4.63
+    ],
+    [
+     "A",
+     184,
+     "B",
+     34,
+     4.47
+    ],
+    [
+     "A",
+     185,
+     "B",
+     34,
+     3.93
+    ],
+    [
+     "A",
+     190,
+     "B",
+     34,
+     4.76
+    ],
+    [
+     "A",
+     208,
+     "B",
+     34,
+     3.68
+    ]
+   ],
+   "observed_count": 5,
+   "observed_bs_union": [
+    "A:101",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "B:34"
+   ],
+   "n_lines": 5,
+   "max_distance_error_A": 0.004548,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "137_sweep_s010_B35",
+   "do": "api_select",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": "rna B:35",
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190"
+   ],
+   "observed_panel_rows": [
+    [
+     "A",
+     85,
+     "B",
+     35,
+     4.06
+    ],
+    [
+     "A",
+     90,
+     "B",
+     35,
+     3.16
+    ],
+    [
+     "A",
+     94,
+     "B",
+     35,
+     4.33
+    ],
+    [
+     "A",
+     99,
+     "B",
+     35,
+     4.42
+    ],
+    [
+     "A",
+     101,
+     "B",
+     35,
+     2.89
+    ],
+    [
+     "A",
+     136,
+     "B",
+     35,
+     3.52
+    ],
+    [
+     "A",
+     137,
+     "B",
+     35,
+     3.38
+    ],
+    [
+     "A",
+     138,
+     "B",
+     35,
+     2.38
+    ],
+    [
+     "A",
+     139,
+     "B",
+     35,
+     4.78
+    ],
+    [
+     "A",
+     141,
+     "B",
+     35,
+     3.76
+    ],
+    [
+     "A",
+     181,
+     "B",
+     35,
+     3.29
+    ],
+    [
+     "A",
+     184,
+     "B",
+     35,
+     3.45
+    ],
+    [
+     "A",
+     190,
+     "B",
+     35,
+     3.06
+    ]
+   ],
+   "observed_count": 13,
+   "observed_bs_union": [
+    "A:101",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:190",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:99",
+    "B:35"
+   ],
+   "n_lines": 13,
+   "max_distance_error_A": 0.004687,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": "has at least one Report contact in 10 of 10 BOLTZ2"
+  },
+  {
+   "id": "138_final_clear",
+   "do": "clear",
+   "structure": "s010",
+   "mode": "focus",
+   "selected": null,
+   "click": null,
+   "click_atom": null,
+   "expected_partners": [],
+   "observed_panel_rows": [],
+   "observed_count": null,
+   "observed_bs_union": [
+    "A:100",
+    "A:101",
+    "A:104",
+    "A:136",
+    "A:137",
+    "A:138",
+    "A:139",
+    "A:141",
+    "A:181",
+    "A:184",
+    "A:185",
+    "A:190",
+    "A:208",
+    "A:85",
+    "A:90",
+    "A:94",
+    "A:97",
+    "A:98",
+    "A:99",
+    "B:29",
+    "B:31",
+    "B:32",
+    "B:33",
+    "B:34",
+    "B:35"
+   ],
+   "n_lines": 0,
+   "max_distance_error_A": 0.0,
+   "screenshot": null,
+   "criteria": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true,
+    "B6": true,
+    "B7": true,
+    "B8": true,
+    "B9": true
+   },
+   "pass": true,
+   "ensemble_text": null
+  }
+ ],
+ "n_requests": 20
+}

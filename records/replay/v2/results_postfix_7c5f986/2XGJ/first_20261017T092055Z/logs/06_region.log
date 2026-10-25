@@ -1,0 +1,8 @@
+$ rnplens region project/imports/v0004/main project/analyses/v0004/main --rna 1-5
+rnplens region: RNA 1-5; 2 run(s) compared (run_A, run_B); 10 structure(s)
+  contacts in range: 61; shared by all runs: 56; present in some runs: 0; not determined somewhere: 0
+  found only in run run_A: 2 (K460-A1, S850-A5)
+  found only in run run_B: 3 (G315-A1, Q316-A1, K324-A1)
+  shared by all runs: P137-A4, P137-A5, I138-A3, I138-A4, I138-A5, K139-A4, K139-A5, A140-A5, T160-A5, G161-A5, T175-A5, E177-A5, I178-A5, E208-A3, E208-A4, E208-A5, R209-A4, R209-A5, K319-A1, F351-A1, F351-A2, S352-A1, S352-A2, K353-A1, K353-A2, K353-A3, R354-A2, H412-A3, H413-A3, S414-A2, S414-A3, S414-A4, G415-A3, K421-A4, T439-A2, T439-A3, E440-A2, E440-A3, T441-A2, T441-A3, T441-A4, W461-A1, D462-A1, G463-A1, R642-A1, Q883-A4, Q883-A5, E884-A3, E884-A4, R885-A1, Y957-A2, R963-A4, R963-A5, R967-A4, R967-A5, E970-A5
+  Recurrence among predictions is not evidence of correctness.
+  output folder: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/2XGJ/first_20261017T092055Z/project/analyses/v0004/main/region_1-5

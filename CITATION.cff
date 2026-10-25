@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------------------------------
+# OWNER INPUT REQUIRED - the one remaining rights input for the 0.4 release (blocker B2).
+# No name, affiliation, ORCID, date or identifier below has been invented. Fill all of the following in
+# one pass, here and in the two pyproject.toml files, then delete this block:
+#   1. authors:      replace each placeholder field of every entry, and add one entry per author in the
+#                    agreed order. cff-version 1.2.0 requires at least one author, each with at least a
+#                    name field; affiliation and orcid are optional.
+#   2. pyproject.toml (root) authors - the same list, as name/email tables.
+#   3. assistant/pyproject.toml - add the same authors list (it currently declares none).
+#   4. date-released - add on the day of release (CFF expects YYYY-MM-DD).
+#   5. the archive identifier - add a cff `doi` field only once one is actually minted.
+# The MIT licence itself needs none of this: its copyright line, "The RNPLens authors", is the owner's
+# explicit choice and is already carried verbatim by both distributions. What is missing is the citable
+# authorship, not the grant.
+# ---------------------------------------------------------------------------------------------------
+cff-version: 1.2.0
+message: >-
+  If you use RNPLens, please cite the accompanying manuscript (in preparation) and this software release.
+  PLACEHOLDERS: the author list, affiliations, ORCIDs, release date and DOI must be supplied by the owner before
+  release. The author list and affiliations are those of the authoritative manuscript, supplied by the
+  project owner; none of them has been inferred from git history.
+title: "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
+type: software
+version: 0.4.0.dev0
+license: MIT
+repository-code: "https://github.com/JeanWen-Lab/RNPLens"
+authors:
+  - family-names: "Parker"
+    given-names: "Brian J."
+    affiliation: "Biological Data Science Institute, Australian National University, Canberra, Australia; ARC Centre of Excellence for the Mathematical Analysis of Cellular Systems, Canberra, Australia"
+    email: "Brian.Parker@anu.edu.au"
+  - family-names: "Wen"
+    given-names: "Jiayu"
+    affiliation: "John Curtin School of Medical Research, Australian National University, Canberra, Australia; The Shine-Dalgarno Centre for RNA Innovation, Australian National University, Canberra, Australia; ARC Centre of Excellence for the Mathematical Analysis of Cellular Systems, Canberra, Australia"
+    email: "Jiayu.Wen@anu.edu.au"
+abstract: >-
+  RNPLens assesses existing protein-RNA complex predictions: reference-based structural accuracy on the DockQ route
+  (Evaluate), reference-free descriptive agreement and contacts among predictions (Report, region, grouping, an
+  offline Mol* viewer) and evidence-traced explanations and Methods records, through explicit commands or an optional
+  AI-guided assistant (experimental). It does not predict structures and gives no calibrated probability of
+  correctness. In 0.4, Evaluate's four-axis geometry route and the user-facing Diagnose workflow are blocked.
+keywords:
+  - protein-RNA complex
+  - structure prediction
+  - model evaluation
+  - DockQ
+  - structural biology

@@ -1,0 +1,97 @@
+{
+ "base": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/feature/nt-contacts/out/feature_59cdf6c/eval/base/a",
+ "feature": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/feature/nt-contacts/out/feature_59cdf6c/eval/feature/a",
+ "files": [
+  {
+   "file": "evaluate/s001/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "fbe444133fb002df0397ebf76f16680f7f1320d2610ddc940dac2bf6cfd7d27a",
+   "sha256_feature": "4bf70a20658fae85b3c59e15b48247a924fe1448a73496ab9a709d244bff4a4e",
+   "byte_identical": false,
+   "differing_paths": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "n_differing_paths": 2,
+   "non_environment_differences": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "pass": false
+  },
+  {
+   "file": "evaluate/s001/result.csv",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "437023d459e3e40d91fb3e2b520241c180427d85cbceeabddfe004847f39d0c9",
+   "sha256_feature": "437023d459e3e40d91fb3e2b520241c180427d85cbceeabddfe004847f39d0c9",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "evaluate/s001/summary.txt",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "70927d4a82345feda28c428faffa0a4935059d89bf1c2477f4cf8eff6154ad1f",
+   "sha256_feature": "70927d4a82345feda28c428faffa0a4935059d89bf1c2477f4cf8eff6154ad1f",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "evaluate/s002/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "8abb877ea5572fc64ef7503c1acafbe49f0f0becc0880e2ae5c1ab6fa809df93",
+   "sha256_feature": "30099649a4064df9dd0dc9ccd1b2c951d65849efe8f20bf0302ff9d4e8fe6a80",
+   "byte_identical": false,
+   "differing_paths": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "n_differing_paths": 2,
+   "non_environment_differences": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "pass": false
+  },
+  {
+   "file": "evaluate/s002/result.csv",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "c04aeaa937d66fdf50030ae1850570860ea59c02292ba8e1eaad73b63f57f2e5",
+   "sha256_feature": "c04aeaa937d66fdf50030ae1850570860ea59c02292ba8e1eaad73b63f57f2e5",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "evaluate/s002/summary.txt",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "d23ff87ac7f9b242ba6f414031fe1b9815a769a196c12efef7f2c8f15266d4da",
+   "sha256_feature": "d23ff87ac7f9b242ba6f414031fe1b9815a769a196c12efef7f2c8f15266d4da",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "report/contacts_by_output.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "35ddfe4e963a4baa85037b174b50925afbe3577fb5c95cd8e0f0b66bc45a1d77",
+   "sha256_feature": "35ddfe4e963a4baa85037b174b50925afbe3577fb5c95cd8e0f0b66bc45a1d77",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "report/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "9a642b5d4fae68d795614c224805336b7ca0a77519fd9551c84e206c0616d4f3",
+   "sha256_feature": "9a642b5d4fae68d795614c224805336b7ca0a77519fd9551c84e206c0616d4f3",
+   "byte_identical": true,
+   "pass": true
+  }
+ ],
+ "pass": false
+}

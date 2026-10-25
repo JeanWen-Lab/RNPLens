@@ -1,0 +1,452 @@
+{
+ "acceptable_threshold": 0.23,
+ "designated_alone_acceptable": {
+  "fraction": null,
+  "n": 0
+ },
+ "label": "exploratory, development-pool, descriptive; secondary, reference-based, retrospective",
+ "labels": {
+  "columns": [
+   "entry",
+   "pose",
+   "dockq"
+  ],
+  "join_check_iptm": {
+   "mismatches": [
+    [
+     "1CVJ",
+     0
+    ],
+    [
+     "1CVJ",
+     1
+    ],
+    [
+     "1CVJ",
+     2
+    ],
+    [
+     "1CVJ",
+     3
+    ],
+    [
+     "1CVJ",
+     4
+    ],
+    [
+     "1EC6",
+     0
+    ],
+    [
+     "1EC6",
+     1
+    ],
+    [
+     "1EC6",
+     2
+    ],
+    [
+     "1EC6",
+     3
+    ],
+    [
+     "1EC6",
+     4
+    ]
+   ],
+   "rows_checked": 1080,
+   "rows_mismatched": 1080
+  },
+  "path": "/home/jwen/projects/PCfold3D-RNP/outputs/rnp/f1/rank_corpus.tsv",
+  "sha256": "5c596fcc031bf34f9db8c314f6d54ce3186803b7c60d5c267df30c4394540427"
+ },
+ "missing": {
+  "eligible_structures_without_label": 0,
+  "targets_without_labels": [
+   "1CVJ",
+   "1EC6",
+   "1G59",
+   "1KOG",
+   "1KQ2",
+   "1L9A",
+   "1OOA",
+   "1QF6",
+   "1RPU",
+   "1U1Y",
+   "1UTD",
+   "1YYK",
+   "1ZBH",
+   "1ZE2",
+   "21ZH",
+   "22AX",
+   "2AB4",
+   "2BH2",
+   "2BX2",
+   "2DB3",
+   "2EZ6",
+   "2F8T",
+   "2QK9",
+   "2R7S",
+   "2R8S",
+   "2YKG",
+   "2ZI0",
+   "3ADB",
+   "3ADI",
+   "3AHU",
+   "3BSN",
+   "3DH3",
+   "3EQT",
+   "3FHT",
+   "3IVK",
+   "3L25",
+   "3LRR",
+   "3MOJ",
+   "3NMR",
+   "3PF4",
+   "3PF5",
+   "3QSY",
+   "3V6Y",
+   "3VYX",
+   "3W3S",
+   "3ZC0",
+   "4ALP",
+   "4AY2",
+   "4B3O",
+   "4C8Y",
+   "4C9D",
+   "4DB2",
+   "4GHA",
+   "4HKQ",
+   "4HT8",
+   "4IJS",
+   "4J1G",
+   "4JNX",
+   "4KRE",
+   "4KRF",
+   "4KZD",
+   "4LMZ",
+   "4M59",
+   "4N2Q",
+   "4NGC",
+   "4PEH",
+   "4QI2",
+   "4QIL",
+   "4RWN",
+   "4U8T",
+   "4V2S",
+   "4W5N",
+   "4WKR",
+   "4WTA",
+   "4WTD",
+   "4WTE",
+   "4Y91",
+   "5BS3",
+   "5BZ5",
+   "5BZU",
+   "5CCB",
+   "5D0A",
+   "5DV7",
+   "5E3H",
+   "5F5F",
+   "5GUH",
+   "5GXH",
+   "5GXI",
+   "5HJZ",
+   "5I4A",
+   "5JAJ",
+   "5JRC",
+   "5JS1",
+   "5K78",
+   "5KL1",
+   "5KL8",
+   "5L2L",
+   "5SUP",
+   "5T7B",
+   "5W0O",
+   "5W3V",
+   "5WTY",
+   "5WWX",
+   "5Z9W",
+   "5ZQ0",
+   "5ZQ1",
+   "5ZTM",
+   "5ZUU",
+   "6DB8",
+   "6DTA",
+   "6G2K",
+   "6GC5",
+   "6H5Q",
+   "6H9H",
+   "6HAK",
+   "6HTU",
+   "6JOO",
+   "6M0V",
+   "6M7D",
+   "6MSF",
+   "6N4O",
+   "6OGZ",
+   "6R9J",
+   "6U8D",
+   "6UV1",
+   "6VRB",
+   "6WPI",
+   "6WRE",
+   "6ZDP",
+   "7C45",
+   "7D2L",
+   "7EWQ",
+   "7F1M",
+   "7JHY",
+   "7K9Y",
+   "7KJV",
+   "7KX7",
+   "7MJY",
+   "7O0G",
+   "7OFW",
+   "7OM6",
+   "7OMA",
+   "7OZQ",
+   "7R97",
+   "7SOP",
+   "7SVA",
+   "7SZU",
+   "7TNY",
+   "7TNZ",
+   "7TO1",
+   "7UJ1",
+   "7UML",
+   "7UO0",
+   "7UTN",
+   "7YEY",
+   "7YFQ",
+   "7YFX",
+   "7YSE",
+   "7ZKI",
+   "8ACC",
+   "8C8J",
+   "8CBM",
+   "8CBW",
+   "8D29",
+   "8D9K",
+   "8E28",
+   "8F5G",
+   "8FTM",
+   "8HNT",
+   "8PDL",
+   "8PM4",
+   "8QG0",
+   "8R0S",
+   "8R3Z",
+   "8SH5",
+   "8T29",
+   "8TG4",
+   "8W35",
+   "8WND",
+   "8WZC",
+   "8XPP",
+   "8ZTY",
+   "9C2K",
+   "9CY7",
+   "9D9O",
+   "9DN4",
+   "9DOW",
+   "9EBU",
+   "9IAJ",
+   "9IAK",
+   "9IAM",
+   "9IIY",
+   "9IJ2",
+   "9JKD",
+   "9JSB",
+   "9K6P",
+   "9K6S",
+   "9LOU",
+   "9LRI",
+   "9MW6",
+   "9NJB",
+   "9NO0",
+   "9NYY",
+   "9PSB",
+   "9PTG",
+   "9Q1J",
+   "9QS9",
+   "9S0Z",
+   "9SHP",
+   "9SLZ",
+   "9T99",
+   "9TKV",
+   "9W2K",
+   "9XZQ",
+   "9YCK",
+   "9YM9"
+  ]
+ },
+ "n_targets_with_acceptable_candidate": 0,
+ "n_targets_with_grouping": 216,
+ "n_targets_with_labels": 0,
+ "per_target": {},
+ "pool": "B",
+ "provenance": {
+  "code_commit": "034998f0cb993dae5055e02fd620506762bb6638",
+  "config": {
+   "acceptable": 0.23,
+   "seed": 20261016,
+   "within": 0.05
+  },
+  "config_sha256": "29457e480f41e6dd49871c6c684e911262f231fba97dccdd7cafb7f5e179b1f3",
+  "created_utc": "2026-10-16T10:51:13+00:00",
+  "definition": "Spec B v2 section 5 retrospective coverage (Amendments 1 and 3).",
+  "inputs": [
+   {
+    "path": "/home/jwen/projects/PCfold3D-RNP/outputs/rnp/f1/rank_corpus.tsv",
+    "sha256": "5c596fcc031bf34f9db8c314f6d54ce3186803b7c60d5c267df30c4394540427"
+   }
+  ],
+  "kind": "grouping_retrospective_coverage_poolB",
+  "rnplens_version": "0.4.0.dev0",
+  "schema": "rnplens.v04.1"
+ },
+ "rep_of_top_group_within_0.05": {
+  "fraction": null,
+  "n": 0
+ },
+ "settings": {
+  "3": {
+   "designated_plus_next_by_confidence": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "grouping_shown_set": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "random_expected": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "shown_size": {
+    "n": 0
+   },
+   "top_m_by_confidence": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   }
+  },
+  "5": {
+   "designated_plus_next_by_confidence": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "grouping_shown_set": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "random_expected": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "shown_size": {
+    "n": 0
+   },
+   "top_m_by_confidence": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   }
+  },
+  "all": {
+   "designated_plus_next_by_confidence": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "grouping_shown_set": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "random_expected": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   },
+   "shown_size": {
+    "n": 0
+   },
+   "top_m_by_confidence": {
+    "acceptable": {
+     "fraction": null,
+     "n": 0
+    },
+    "within_0.05": {
+     "fraction": null,
+     "n": 0
+    }
+   }
+  }
+ },
+ "statement": "Measures whether a small inspection set retains an acceptable proposal. It does not test whether RNPLens can tell which one it is, and it is not a selection or accuracy result.",
+ "within": 0.05
+}

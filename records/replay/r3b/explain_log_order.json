@@ -1,0 +1,168 @@
+{
+ "hypothesis_holds_for_all": true,
+ "logs": [
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/first_20261017T090132Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11125,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11287,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/2QQP/first_20261017T090122Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 8142,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/2QQP/second_copy_20261017T090342Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 8262,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/2XGJ/first_20261017T090126Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11125,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/2XGJ/second_copy_20261017T090346Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11287,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/moved_elsewhere/24BR_copy_20261017T090132Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11125,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/moved_elsewhere/2QQP_copy_20261017T090122Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 8142,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/moved_elsewhere/2XGJ_copy_20261017T090126Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11125,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/24BR/first_20261017T083616Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10828,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/24BR/second_copy_20261017T083839Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10990,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 7922,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/second_copy_20261017T083826Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 8042,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2XGJ/first_20261017T083609Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10828,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2XGJ/second_copy_20261017T083832Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10990,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/moved_elsewhere/24BR_copy_20261017T083616Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10828,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/moved_elsewhere/2QQP_copy_20261017T083604Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 7922,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/moved_elsewhere/2XGJ_copy_20261017T083609Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10828,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/24BR/first_20261017T011032Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10909,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/24BR/second_copy_20261017T011252Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11071,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/2QQP/first_20261017T011022Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 7982,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/2QQP/second_copy_20261017T011242Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 8102,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/2XGJ/first_20261017T011026Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10909,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/2XGJ/second_copy_20261017T011246Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 11071,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/moved_elsewhere/24BR_copy_20261017T011032Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10909,
+   "written_early": false
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/moved_elsewhere/2QQP_copy_20261017T011022Z/logs/10_explain_evidence.log",
+   "predicted_early": true,
+   "stdout_body_bytes": 7982,
+   "written_early": true
+  },
+  {
+   "log": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/moved_elsewhere/2XGJ_copy_20261017T011026Z/logs/10_explain_evidence.log",
+   "predicted_early": false,
+   "stdout_body_bytes": 10909,
+   "written_early": false
+  }
+ ],
+ "n_logs": 27
+}

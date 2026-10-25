@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+._*
+# outputs of the examples and self-tests
+rnplens_example_outputs/
+out_*/
+selftest_out/

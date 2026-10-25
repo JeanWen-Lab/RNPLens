@@ -1,0 +1,3 @@
+$ rnplens update project --init in/run_A in/run_B in/run_C_other_construct --protein-seq in/protein.fasta --rna-seq in/rna.fasta --engine BOLTZ2 --case-id 24BR_retest
+project /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/24BR/first_20261017T092102Z/project: state v0002, NEEDS_CLARIFICATION
+  1 question(s) need an answer: rnplens clarify /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/24BR/first_20261017T092102Z/project

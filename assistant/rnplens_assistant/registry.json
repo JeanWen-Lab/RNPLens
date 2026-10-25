@@ -1,0 +1,117 @@
+{
+ "registry": "rnplens-assistant-tool-registry-2",
+ "frozen_for": "gate 1 (2026-10-17, Canberra)",
+ "toolkit_base": "dev/0.3.0 aa037d0 + gate1/assistant-companion",
+ "tools": {
+  "import_predictions": {
+   "status": "QUALIFIED",
+   "wraps": "rnplens import",
+   "needs_reference": false,
+   "note": "Spec A import with gate-1 fixes M1/m9; ambiguity stops with questions"
+  },
+  "analyse_predictions": {
+   "status": "QUALIFIED",
+   "wraps": "rnplens analyse --without-diagnose",
+   "needs_reference": false,
+   "note": "Report contacts, positions, surface/register agreement, RNA pose difference; repeat agreement only for exactly two structures (engine) or two runs (designated structures, gate-1 M4)"
+  },
+  "region_contacts": {
+   "status": "QUALIFIED",
+   "wraps": "counting over Report contacts_by_output.json",
+   "needs_reference": false,
+   "note": "number of structures with at least one contact in a declared position range; no new statistic"
+  },
+  "evaluate_against_reference": {
+   "status": "QUALIFIED",
+   "wraps": "rnplens analyse --reference --without-diagnose (Evaluate DockQ route)",
+   "needs_reference": true,
+   "note": "DockQ, class, fnat, iRMSD, LRMSD; four-axis geometry withheld"
+  },
+  "compare_prediction_sets": {
+   "status": "QUALIFIED",
+   "wraps": "rnplens compare (DockQ route)",
+   "needs_reference": true,
+   "note": "matched before/after on designated structures; correspondence and evaluability changes never pooled"
+  },
+  "explain_metric": {
+   "status": "QUALIFIED",
+   "wraps": "docs/which_analysis_should_i_use.md (verbatim rows)",
+   "needs_reference": false,
+   "note": ""
+  },
+  "region_comparison": {
+   "status": "DESCRIPTIVE",
+   "wraps": "rnplens region (0.4)",
+   "needs_reference": false,
+   "capability": "region:region_run_comparison",
+   "note": "shared and run-specific contacts in a declared range from Report's contact records; mirrors the capability status"
+  },
+  "explain_evidence": {
+   "status": "DESCRIPTIVE",
+   "wraps": "rnplens explain (0.4)",
+   "needs_reference": false,
+   "capability": "evidence_query:explain_evidence",
+   "note": "read from execution records; nothing recomputed"
+  },
+  "export_methods": {
+   "status": "DESCRIPTIVE",
+   "wraps": "rnplens export-methods (0.4)",
+   "needs_reference": false,
+   "capability": "methods_export:export_methods",
+   "note": "draft for author review"
+  },
+  "show_distinct_proposals": {
+   "status": "DESCRIPTIVE",
+   "wraps": "rnplens group (0.4), shown as distinct proposals only",
+   "needs_reference": false,
+   "capability": "grouping:hypothesis_grouping",
+   "note": "members per proposal in the grouping's display order; never ordered by size; no representative, ranking or selection"
+  }
+ },
+ "unavailable": {
+  "diagnose": {
+   "status": "BLOCKED",
+   "reason": "Diagnose statements and bands await requalification against the corrected (CP-V2) evidence; not part of this assistant version",
+   "capability": "diagnose_interpretation"
+  },
+  "geometry_decomposition": {
+   "status": "BLOCKED",
+   "reason": "Evaluate's four-axis geometry route (protein-internal, RNA-internal, RNA placement RMSD) has a known residue-correspondence defect; the corrected implementation is not yet qualified",
+   "capability": "geometry_four_axis"
+  },
+  "ranking": {
+   "status": "CLOSED",
+   "reason": "RNPLens Rank was closed (2026-10-14); no candidate ranking or selection is offered",
+   "capability": "ranking"
+  },
+  "grouping": {
+   "status": "BLOCKED",
+   "reason": "grouping as selection is not offered: groups are shown only as distinct proposals (show_distinct_proposals), never ranked or used to select a structure"
+  },
+  "new_predictions": {
+   "status": "NOT_OFFERED",
+   "reason": "RNPLens assesses existing predictions; it does not predict structures",
+   "capability": "structure_prediction"
+  },
+  "mutation_advice": {
+   "status": "NOT_OFFERED",
+   "reason": "no mutation or experiment is recommended",
+   "capability": "mutation_advice"
+  }
+ },
+ "successor_of": "rnplens-assistant-tool-registry-1 (frozen for gate 1; unchanged entries below)",
+ "followup": {
+  "status": "EXPERIMENTAL",
+  "module": "rnplens_assistant.followup",
+  "note": "bounded result-aware follow-up (Function 4); EXPERIMENTAL until the frozen live suite (FOLLOWUP_SUITE_v1 Part 2) has run",
+  "allowlist": [
+   "inspect_region_contacts",
+   "compare_runs_in_region",
+   "explain_unavailable_metric",
+   "retrieve_contributing_structures",
+   "inspect_existing_comparison",
+   "export_table_or_methods",
+   "none"
+  ]
+ }
+}

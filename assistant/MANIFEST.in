@@ -1,0 +1,5 @@
+# rnplens-assistant sdist (0.4 release packaging, B9). The assistant tests are run from the repository, not from
+# this sdist: they read repository files outside this directory (../docs, ../src, evaluation_v04/) and several
+# carry development-host paths for tests that run only on the development host. setuptools adds tests/test*.py
+# to an sdist by default; they are removed here. The wheel is unaffected.
+prune tests

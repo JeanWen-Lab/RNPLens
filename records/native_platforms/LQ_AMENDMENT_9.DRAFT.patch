@@ -1,0 +1,93 @@
+diff -ruN a/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/AMENDMENT_9.md b/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/AMENDMENT_9.md
+--- a/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/AMENDMENT_9.md	1970-01-01 10:00:00
++++ b/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/AMENDMENT_9.md	2026-10-22 21:12:37
+@@ -0,0 +1,39 @@
++# Amendment 9 to LIVE_QUALIFICATION_v1 (2026-10-22, Canberra): re-pin two sources after the native-platforms change
++
++**Status: PROPOSED. Not owner-approved. Applies only on branch `dev/0.4-native-platforms`; it changes nothing on
++`rc/0.4-candidate`.** Frozen, once approved, **before any run of this suite at this head, mocked or live**. No Codex or
++other language-model call has been made for RNPLens 0.4.
++
++## Why
++
++The native-platforms change (single-computer Assistant on Linux and macOS) edits two pinned sources and adds one module
++that the first imports:
++- `codex_llm.py` takes the jail from `confine.py`, and passes the call-folder paths that the jail reports.
++  On Linux these are `/work/schema.json` and `/work/last.json`, as before (test
++  `test_linux_codex_arguments_identical_to_the_candidate`).
++- `doctor.py` gains the macOS Seatbelt check. Its Linux checks and messages are unchanged.
++
++Without this amendment, `freeze_refusals()` reports exactly these two files. All 22 failures of
++`assistant/tests/test_live_qualification.py` on the branch come from that one refusal (Linux, karyon: 22 of the 24 suite
++failures of qualification run `Linux_20261022T093237Z`; macOS: the same 22 tests).
++
++## 1. Changed pinned sources (scenarios.json `pinned_sources`)
++
++| file | pinned (Amendment 7/8) | after |
++|---|---|---|
++| `assistant/rnplens_assistant/codex_llm.py` | `15c9167f6e928f8b4b295710fca6142b9ed0735d223daa983308a0c988063e8f` | `a6671a4c4a1259b74123d0e132d250274a8f9a0bc09e5f49dc11dbb1b7d51013` |
++| `src/rnplens/doctor.py` | `548bf968539c284a76c977a2442048c08237e97035e1319550d0b5cd82d08014` | `b4715079810078fa3e8a13e781f34d13a03dadf55c01c11fce95360745eff729` |
++| `assistant/rnplens_assistant/confine.py` (new pin) | — | `01d8976a20891d9a427591cc69990489126469495bf6ef572726885e6f6f43c1` |
++
++The other 20 pinned sources are byte-identical to `8e57aea`. They include the planner and drafter prompts, the tool
++registry, `policy.py`, `tools.py`, `gates.py`, `evidence.py`, `replay.py`, `ask.py` and `codex_jail.sh`.
++
++scenarios.json: `5c957e334e53c1962e735964ac1507d15285afd1a4050db984c388d587957a5e` before, `5486cf7c5fcc30c4d1d37672c81d9e8b770f50d2131468da37b5e96fbce8a9f4` after.
++
++## 2. What does not change
++
++- The scenarios, call budget and ledger cap.
++- The privacy gate, the confirmation and authorisation rules (Amendment 8), and the scoring.
++- The Linux jail.
++
++The suite remains a Linux (karyon) suite. A macOS live smoke test is a separate proposal and needs its own authorisation.
+diff -ruN a/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/FREEZE.md b/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/FREEZE.md
+--- a/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/FREEZE.md	2026-10-22 19:59:09
++++ b/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/FREEZE.md	2026-10-22 21:12:37
+@@ -17,6 +17,8 @@
+ 
+ **Amendment 1** (frozen 2026-10-17, after mocked test run 1 and before run 2). See AMENDMENT_1.md. It makes the first call's 'before' reading a full reading of the owner-stated baseline in `Guard.__init__`; no scenario, expectation, threshold or scoring rule changed. The hashes below are the post-amendment hashes. The original hash of run_live.py was 239a0fb68a37af548522b8c8271da6f486d7479ee1b05a6fdc19e5eed5be6a3d; all other files are unchanged.
+ 
++**Amendment 9** (2026-10-22, PROPOSED, not owner-approved; branch dev/0.4-native-platforms, before any run of this suite at this head, mocked or live). See AMENDMENT_9.md. It re-pins assistant/rnplens_assistant/codex_llm.py and src/rnplens/doctor.py and pins the new assistant/rnplens_assistant/confine.py after the native-platforms change.
++
+ **Amendment 8** (2026-10-19, owner-approved; rc/0.4-candidate on 8c64601, before any run of this suite at this head, mocked or live). See AMENDMENT_8.md. The confirmation file becomes a call-specific authorisation: it must name 18 bound values (experiment, mode, run id, scenario, task, target, task content digest, commit, model, reasoning effort, model-visible payload sha256, registry, jail, FREEZE.md, codex, bwrap and python sha256, maximum model calls); run_live.py recomputes each before anything is created or called and refuses a missing, wrong or extra field or reuse for another experiment, and the guard checks the sent payload and the call count before each call. No pinned source, scenario, expectation, threshold, budget or scoring rule changed. The previous hash of run_live.py was 173d266e78bb33431585ba696042f9e9c621b74b8987239ba097ab52d39cd184; scenarios.json is unchanged.
+ 
+ **Amendment 7** (2026-10-19, owner-approved; RNPLens 0.4 release candidate, rc/0.4-candidate on c5422ba, before any run of this suite at this head, mocked or live). See AMENDMENT_7.md. It re-pins src/rnplens/assist.py after commit 414b5e4 (result links: the menu and the natural-language mode list the contact tables and the offline Mol* page; verified diff 19+/2-). The premise check at c5422ba reproduced premise_check_a6_karyon.json byte for byte (26 payload hashes unchanged). No scenario, expectation, threshold, budget or scoring rule changed. The previous hash of scenarios.json was 58b0a40b3b6b08bd8636872012d7f5e6e26e9b22eb0d8bda45ad1d7e54871dce; all other suite files are unchanged.
+@@ -33,6 +35,7 @@
+ 
+ | file | sha256 |
+ |---|---|
++| `AMENDMENT_9.md` | `f92ad3ed6318cf5163bc73f2ea7c06c3a4883af9e25af1fc6be4856c5e915b5f` |
+ | `AMENDMENT_8.md` | `a17cf32382a772d2b7ff08cf63f19c945897659e96bbed8a89fec7a61657ae6d` |
+ | `AMENDMENT_7.md` | `a4310b8eed057bf78870697a42cb5a102f9fa43f58f7ffc1118eb0b022513095` |
+ | `AMENDMENT_6.md` | `a0ded748cfae110cbce7d82670ef9b34e9de766af1c76bc144cdecd3e3863fcf` |
+@@ -50,5 +53,5 @@
+ | `premise_check_r2_karyon.json` | `358ae79ce8f5ee6777cd9506a3267ee70d6dbcf85f586b1d9bd395ff2ddc894a` |
+ | `privacy.py` | `a940f93004251d3ffca2c1a44ef05ff8ce4eaf2650b9e0b5d6536b4bddbb7b5f` |
+ | `run_live.py` | `015a75452c64223e79cb0a88676178bc2dd1cfe62c44f524f2feae10b1c3f440` |
+-| `scenarios.json` | `5c957e334e53c1962e735964ac1507d15285afd1a4050db984c388d587957a5e` |
++| `scenarios.json` | `5486cf7c5fcc30c4d1d37672c81d9e8b770f50d2131468da37b5e96fbce8a9f4` |
+ | `score_live.py` | `991994db31a5d348d86aa0f9d54e35992a9021af45827365b8abafd116965d8c` |
+diff -ruN a/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/scenarios.json b/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/scenarios.json
+--- a/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/scenarios.json	2026-10-22 19:59:09
++++ b/assistant/evaluation_v04/LIVE_QUALIFICATION_v1/scenarios.json	2026-10-22 21:12:37
+@@ -374,7 +374,8 @@
+  },
+  "pinned_sources": {
+   "assistant/rnplens_assistant/ask.py": "dfd1dadfa693287509e51cdc1295559202282f08ed0eafda0374c7b837e00191",
+-  "assistant/rnplens_assistant/codex_llm.py": "15c9167f6e928f8b4b295710fca6142b9ed0735d223daa983308a0c988063e8f",
++  "assistant/rnplens_assistant/codex_llm.py": "a6671a4c4a1259b74123d0e132d250274a8f9a0bc09e5f49dc11dbb1b7d51013",
++  "assistant/rnplens_assistant/confine.py": "01d8976a20891d9a427591cc69990489126469495bf6ef572726885e6f6f43c1",
+   "assistant/rnplens_assistant/followup.py": "a941bedcd21dc823d4c5d0ae03d94fad3ee23953aad4c80fa4b5897a75a62fba",
+   "assistant/rnplens_assistant/consent.py": "d797aebaf339aea8f22f12bc1af2145f103be03ce34445e6c081c5c11d72878e",
+   "assistant/rnplens_assistant/policy.py": "5f8dff054529b15edd6af63d5d6ab0f9b4edf8b46f681ad527d4cdb6204f9a6a",
+@@ -393,7 +394,7 @@
+   "assistant/rnplens_assistant/docs/which_analysis_should_i_use.md": "9b302bc7db6232ba6a463f3b60f8f3388ecb12017ad7a13cc678953862c9283f",
+   "assistant/rnplens_assistant/codex_adapter/codex_jail.sh": "2a88313b4829fde9c6e56b230ca7bddc5f5c35227a402923b7409ac4a1c8c2be",
+   "src/rnplens/assist.py": "2254b16cba460b603b1137a3ca596b3c0aabac2efa01f4d5ecabd392a18f7794",
+-  "src/rnplens/doctor.py": "548bf968539c284a76c977a2442048c08237e97035e1319550d0b5cd82d08014",
++  "src/rnplens/doctor.py": "b4715079810078fa3e8a13e781f34d13a03dadf55c01c11fce95360745eff729",
+   "assistant/rnplens_assistant/redact.py": "def5d6b83ce0d953de60f308ed1e8be11a3c780dbc8a6efd815d72f84fa455f4"
+  }
+ }
+\ No newline at end of file

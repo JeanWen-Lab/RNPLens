@@ -1,0 +1,6 @@
+chrome: Google Chrome for Testing 155.0.8059.84
+node: v22.22.1
+bwrap: bubblewrap 0.11.1
+strace: strace -- version 6.19
+puppeteer-core: 24.43.1
+Linux karyon 7.0.0-34-generic #34-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:29:37 UTC 2026 x86_64 GNU/Linux

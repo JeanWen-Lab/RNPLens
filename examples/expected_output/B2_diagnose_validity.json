@@ -1,0 +1,97 @@
+{
+ "per_structure": [
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_0.pdb",
+   "checks": {
+    "parses": true,
+    "single_model": true,
+    "protein_chain_present": true,
+    "rna_chain_present": true,
+    "interface_object": true,
+    "rna_residues_resolved": true,
+    "protein_residues_resolved": true,
+    "coordinates_finite": true
+   },
+   "classification": "VALID",
+   "detail": "",
+   "n_rna_residues": 60,
+   "n_protein_residues": 98
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_1.pdb",
+   "checks": {
+    "parses": true,
+    "single_model": true,
+    "protein_chain_present": true,
+    "rna_chain_present": true,
+    "interface_object": true,
+    "rna_residues_resolved": true,
+    "protein_residues_resolved": true,
+    "coordinates_finite": true
+   },
+   "classification": "VALID",
+   "detail": "",
+   "n_rna_residues": 60,
+   "n_protein_residues": 98
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_2.pdb",
+   "checks": {
+    "parses": true,
+    "single_model": true,
+    "protein_chain_present": true,
+    "rna_chain_present": true,
+    "interface_object": true,
+    "rna_residues_resolved": true,
+    "protein_residues_resolved": true,
+    "coordinates_finite": true
+   },
+   "classification": "VALID",
+   "detail": "",
+   "n_rna_residues": 60,
+   "n_protein_residues": 98
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_3.pdb",
+   "checks": {
+    "parses": true,
+    "single_model": true,
+    "protein_chain_present": true,
+    "rna_chain_present": true,
+    "interface_object": true,
+    "rna_residues_resolved": true,
+    "protein_residues_resolved": true,
+    "coordinates_finite": true
+   },
+   "classification": "VALID",
+   "detail": "",
+   "n_rna_residues": 60,
+   "n_protein_residues": 98
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_4.pdb",
+   "checks": {
+    "parses": true,
+    "single_model": true,
+    "protein_chain_present": true,
+    "rna_chain_present": true,
+    "interface_object": true,
+    "rna_residues_resolved": true,
+    "protein_residues_resolved": true,
+    "coordinates_finite": true
+   },
+   "classification": "VALID",
+   "detail": "",
+   "n_rna_residues": 60,
+   "n_protein_residues": 98
+  }
+ ],
+ "summary": {
+  "VALID": 5,
+  "TECHNICAL_FAILURE": 0,
+  "STRUCTURAL_FAILURE": 0,
+  "n_total": 5,
+  "n_valid": 5,
+  "details": []
+ }
+}

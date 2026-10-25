@@ -1,0 +1,1416 @@
+{
+ "designation": {
+  "rule": "engine model_0 (Boltz-2 ranks by confidence_score)",
+  "targets_model_0_ineligible": 0,
+  "targets_model_0_max_confidence": 216,
+  "targets_order_non_increasing": 216
+ },
+ "failed": [],
+ "ineligible_states": {},
+ "inspection": {
+  "3": {
+   "designated_plus_next_by_confidence": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.8241512345679012,
+     "median": 1.0,
+     "min": 0.3333333333333333,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.4221955878806856,
+     "median": 0.3930131004366812,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.9166666666666666,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "grouping_shown_set": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.9225308641975308,
+     "median": 1.0,
+     "min": 0.6,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.48165643190332685,
+     "median": 0.4985502816031908,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.6296296296296297,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "random_expected": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.8581153549382715,
+     "median": 0.8216666666666665,
+     "min": 0.5999999999999999,
+     "n": 216
+    },
+    "diversity": {
+     "max": 0.9699629629629629,
+     "mean": 0.45691353445072813,
+     "median": 0.44153307710914497,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.7989583333333333,
+     "median": 0.9475,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "shown_size": {
+    "max": 3.0,
+    "mean": 2.384259259259259,
+    "median": 2.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "targets_shown_smaller_than_k": 116,
+   "targets_top_equals_designated_plus_next": 216,
+   "top_m_by_confidence": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.8241512345679012,
+     "median": 1.0,
+     "min": 0.3333333333333333,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.4221955878806856,
+     "median": 0.3930131004366812,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.9166666666666666,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   }
+  },
+  "5": {
+   "designated_plus_next_by_confidence": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.8861882716049384,
+     "median": 1.0,
+     "min": 0.5,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.42832283386433384,
+     "median": 0.3984459807022036,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 4.0,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "grouping_shown_set": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.4906269913107716,
+     "median": 0.5259694714046486,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.6342592592592593,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "random_expected": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.9178896604938273,
+     "median": 1.0,
+     "min": 0.6725,
+     "n": 216
+    },
+    "diversity": {
+     "max": 0.9689898989898986,
+     "mean": 0.4566934332227163,
+     "median": 0.44153307710914497,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.877013888888889,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "shown_size": {
+    "max": 5.0,
+    "mean": 2.712962962962963,
+    "median": 2.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "targets_shown_smaller_than_k": 195,
+   "targets_top_equals_designated_plus_next": 216,
+   "top_m_by_confidence": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.8861882716049384,
+     "median": 1.0,
+     "min": 0.5,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.42832283386433384,
+     "median": 0.3984459807022036,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 4.0,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   }
+  },
+  "all": {
+   "designated_plus_next_by_confidence": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.8861882716049384,
+     "median": 1.0,
+     "min": 0.5,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.42832283386433384,
+     "median": 0.3984459807022036,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 4.0,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "grouping_shown_set": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.4906269913107716,
+     "median": 0.5259694714046486,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.6342592592592593,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "random_expected": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.9178896604938273,
+     "median": 1.0,
+     "min": 0.6725,
+     "n": 216
+    },
+    "diversity": {
+     "max": 0.9689898989898986,
+     "mean": 0.4566934332227163,
+     "median": 0.44153307710914497,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 3.0,
+     "mean": 0.877013888888889,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   },
+   "shown_size": {
+    "max": 5.0,
+    "mean": 2.712962962962963,
+    "median": 2.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "targets_shown_smaller_than_k": null,
+   "targets_top_equals_designated_plus_next": 216,
+   "top_m_by_confidence": {
+    "coverage": {
+     "max": 1.0,
+     "mean": 0.8861882716049384,
+     "median": 1.0,
+     "min": 0.5,
+     "n": 216
+    },
+    "diversity": {
+     "max": 1.0,
+     "mean": 0.42832283386433384,
+     "median": 0.3984459807022036,
+     "min": 0.0,
+     "n": 199
+    },
+    "redundancy": {
+     "max": 4.0,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 0.0,
+     "n": 216
+    }
+   }
+  }
+ },
+ "label": "exploratory, development-pool, descriptive",
+ "n_eligible": 1080,
+ "n_no_interface_structures": 0,
+ "n_structures": 1080,
+ "n_targets_completed": 216,
+ "n_targets_listed": 216,
+ "order_invariance": {
+  "permutations_per_target": 5,
+  "targets_checked": 216,
+  "targets_with_any_difference": 0
+ },
+ "pool": "B",
+ "properties": {
+  "0.3": {
+   "group_size_histogram": {
+    "1": 120,
+    "2": 56,
+    "3": 25,
+    "4": 22,
+    "5": 137
+   },
+   "groups_per_target": {
+    "max": 5.0,
+    "mean": 1.6666666666666667,
+    "median": 1.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "mean_R_members_to_representative": {
+    "max": 1.0,
+    "mean": 0.710221836660547,
+    "median": 0.7091173835125448,
+    "min": 0.3125,
+    "n": 211
+   },
+   "reduction_factor": {
+    "max": 5.0,
+    "mean": 3.8850308641975313,
+    "median": 5.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "singleton_fraction_of_groups": {
+    "max": 1.0,
+    "mean": 0.1705246913580247,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 216
+   },
+   "singleton_fraction_of_structures": {
+    "max": 1.0,
+    "mean": 0.1111111111111111,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 216
+   },
+   "surface_groups_per_target": {
+    "max": 3.0,
+    "mean": 1.0694444444444444,
+    "median": 1.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "targets_with_no_interface_group": 0,
+   "targets_with_one_group": 137
+  },
+  "0.5": {
+   "group_size_histogram": {
+    "1": 234,
+    "2": 73,
+    "3": 27,
+    "4": 31,
+    "5": 99
+   },
+   "groups_per_target": {
+    "max": 5.0,
+    "mean": 2.1481481481481484,
+    "median": 2.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "mean_R_members_to_representative": {
+    "max": 1.0,
+    "mean": 0.7607037560796613,
+    "median": 0.768676967112729,
+    "min": 0.5,
+    "n": 195
+   },
+   "reduction_factor": {
+    "max": 5.0,
+    "mean": 3.2685185185185186,
+    "median": 2.5,
+    "min": 1.0,
+    "n": 216
+   },
+   "singleton_fraction_of_groups": {
+    "max": 1.0,
+    "mean": 0.3016975308641975,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 216
+   },
+   "singleton_fraction_of_structures": {
+    "max": 1.0,
+    "mean": 0.21666666666666665,
+    "median": 0.0,
+    "min": 0.0,
+    "n": 216
+   },
+   "surface_groups_per_target": {
+    "max": 5.0,
+    "mean": 1.3796296296296295,
+    "median": 1.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "targets_with_no_interface_group": 0,
+   "targets_with_one_group": 99
+  },
+  "0.7": {
+   "group_size_histogram": {
+    "1": 487,
+    "2": 54,
+    "3": 18,
+    "4": 24,
+    "5": 67
+   },
+   "groups_per_target": {
+    "max": 5.0,
+    "mean": 3.009259259259259,
+    "median": 3.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "mean_R_members_to_representative": {
+    "max": 1.0,
+    "mean": 0.8410125663378344,
+    "median": 0.842286129824736,
+    "min": 0.7,
+    "n": 148
+   },
+   "reduction_factor": {
+    "max": 5.0,
+    "mean": 2.5466820987654324,
+    "median": 1.6666666666666667,
+    "min": 1.0,
+    "n": 216
+   },
+   "singleton_fraction_of_groups": {
+    "max": 1.0,
+    "mean": 0.5266203703703703,
+    "median": 0.6666666666666666,
+    "min": 0.0,
+    "n": 216
+   },
+   "singleton_fraction_of_structures": {
+    "max": 1.0,
+    "mean": 0.45092592592592595,
+    "median": 0.4,
+    "min": 0.0,
+    "n": 216
+   },
+   "surface_groups_per_target": {
+    "max": 5.0,
+    "mean": 2.138888888888889,
+    "median": 2.0,
+    "min": 1.0,
+    "n": 216
+   },
+   "targets_with_no_interface_group": 0,
+   "targets_with_one_group": 67
+  }
+ },
+ "provenance": {
+  "code_commit": "5f1156f8938f197be6cf33329eb1ebdf7975cf3e",
+  "config": {
+   "ks": [
+    3,
+    5
+   ],
+   "pool": "B",
+   "seed": 20261016
+  },
+  "config_sha256": "de2c2a5c1aab2ab2da174c1566abb181754ac45230ddf01a8950b67502f17476",
+  "created_utc": "2026-10-16T10:48:13+00:00",
+  "definition": "Spec B v2 section 5 reference-free properties (Amendments 1-3).",
+  "inputs": [
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1CVJ.json",
+    "sha256": "68d4f4517e90c30a85cfef7819a352918fcb1654d20997546f5f842382ab528e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1EC6.json",
+    "sha256": "8c248cb977e1a7d076b510134fb7e39c93b5df82b70d8f020d10f31588f00ef4"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1G59.json",
+    "sha256": "3e3bbd3885eaa717bbb83daa92710cc6844a255106e68e54baeee20888be5a83"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1KOG.json",
+    "sha256": "4e2152fcfa1f2628bbac052ee2b50a0ec279d57749eed0fa237b685286231adc"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1KQ2.json",
+    "sha256": "bd0073fbfb713b487d6b4baf622f2da0a39124cae5c836392fc4bafc83c7df3b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1L9A.json",
+    "sha256": "bbe4ec01217dc43d1aa76354154c35f83acfdbf03189814f7b8c31cd2902c609"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1OOA.json",
+    "sha256": "ef8d01d9eaf805823c4b299a6ef56549be656a6e378660b3469069322c6b5d18"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1QF6.json",
+    "sha256": "acb1311288b80f9fa7d3de97a6265d6d1638b84d4dabd70b3a19ff88ec4e662b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1RPU.json",
+    "sha256": "9614f72cd98554d5e229b9fb7afcc3599c9fa613ba222d1171c182030929d725"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1U1Y.json",
+    "sha256": "a5c82f0bdad2c27f4376f56d73f31fc744b3f35af2a7f4378ddbd1da037f864c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1UTD.json",
+    "sha256": "1effae3af1f48711df88cb682a2a0069f7fddfbea7b65c81bda09e739a9db9d7"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1YYK.json",
+    "sha256": "048e5e10173c767ba55b23f9c390aa5cbc75fa5605160755d1160be81e0514f5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1ZBH.json",
+    "sha256": "8b6404d9c6112db5200f6cfc828e3f478383e25222c1419f4844256c4fe67e9d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/1ZE2.json",
+    "sha256": "b6760709acc438f0090ca3e493c4f6d0222753ac050c85f200d4e27c8b32b2c1"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/21ZH.json",
+    "sha256": "a5ce9010f73bf8ce48bd3030974eb633e888a3cabea1a738e92c0132469de307"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/22AX.json",
+    "sha256": "79908544a95af0f1ef8fa5663c14bf97599fe22d735506bddb4bcf36571d6748"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2AB4.json",
+    "sha256": "f479f873bb3b1435a9aec09f4a30f98a2e30ec9ad7c79db8d55d88df6276ca0f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2BH2.json",
+    "sha256": "7210ed650e7590b1e9923e437b8b0a07a3075757cd330467b48ca6c7b42fdf4c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2BX2.json",
+    "sha256": "c7d5c8e006506c5875509950185276a9311470cc59008c7da1a41d4d5421df0d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2DB3.json",
+    "sha256": "ef36bb70fff2969f5b12f4e26559754850b58e0941009093a885503f84d35ab3"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2EZ6.json",
+    "sha256": "74f5fdb46899612cd1188ded3ec688c479b6702b803258de8d0ccd28454bbde6"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2F8T.json",
+    "sha256": "c7cf009be254d3b321d135c7915a76fea658bed0a132112aca53e682622ef14e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2QK9.json",
+    "sha256": "7514de7abf8f5cda37a5547c8ce1ce2b9707c0cad40719dfd504464b3b064022"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2R7S.json",
+    "sha256": "a685317b40ff27e8df72e09cc90a7093d6f1c510ef7a3ecfd41a45cc425f5236"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2R8S.json",
+    "sha256": "004a6775c4a1517699601112a93a298792b726e13e180c47fa8599e09e76cfc1"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2YKG.json",
+    "sha256": "b26e4791d315ad159fb269bdf8adc6c4337a04e7dd1c7502287de10bec384c9b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/2ZI0.json",
+    "sha256": "86ff181434213b521ae99acb1308e773c9e0693e238bd358b64381b8dd9bebf6"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3ADB.json",
+    "sha256": "b0cc220f88fce7212125e06ecb33344e32c58bbc73085a47cc943f32ac0040d2"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3ADI.json",
+    "sha256": "e7e83255639960a0cde03716ed1db8d4bac915a08b175718d44477aeed006ac6"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3AHU.json",
+    "sha256": "2e9882c04e1b1490d45e5a2e9ad7ce4587daf5199a0dfd686ae39290c7e78c18"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3BSN.json",
+    "sha256": "38dea02af837a6c093e737c0bd7cb33d834fab83079e2d6d8cc41b481c4f5a21"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3DH3.json",
+    "sha256": "89a681e16b3d3f6d6f6432da943de31bb92b8d69c893bebc76b032f74b797e92"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3EQT.json",
+    "sha256": "55e5ed6af028215e16eab5493d32e16b5d67d7380931eda9bd3709a4509d6710"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3FHT.json",
+    "sha256": "843c9941f7f292e5624e1241b8faa4d2f707acdc5f5b7e05f7d1b07ff832b34e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3IVK.json",
+    "sha256": "11e7befbe80c01e37005ec218b29059fcf5aab7d18ae2a9b070934c25a1791d2"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3L25.json",
+    "sha256": "2ccbdb70b3fd42d8f684a893a0a0fa3d64098af5f76e139bfcc6719d846647d0"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3LRR.json",
+    "sha256": "e20677ef70553798f42a29b318fc79b8b00d73354f3dbb49d4c39e6c631010b1"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3MOJ.json",
+    "sha256": "43e0ca8624bd0e9afe5c4f1ece7c8ad284157f47b5d399dfb829a3a32f6177de"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3NMR.json",
+    "sha256": "a84805a8efa346e2de256914e435aac002787de8cbc286dd0624db6f3e058616"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3PF4.json",
+    "sha256": "7c80f21d541aa3710cbe6c6ff04b7794a6705f9002a5edfa9f9687937c245952"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3PF5.json",
+    "sha256": "7829d5ce14cf6af5d7414d2204956479dad75dad9284deda40a4b0946349d23c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3QSY.json",
+    "sha256": "bde0141564c071bd124b0e2a4d14508ddb57c84b01e6e3b76c032ca0cc25f5de"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3V6Y.json",
+    "sha256": "a2621ff68e5fa398b99d6e6cd30f5abe7b372d18c429ebb682d780ad91c3db75"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3VYX.json",
+    "sha256": "933ace0fb807d2af5da473b88df8e1fc1d91288b602daf76787b3f94e2bd4376"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3W3S.json",
+    "sha256": "b8e5593fcf410b2d00b7694f59f424f88e4a7e5b1a6bad58932bd0f27d53b96a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/3ZC0.json",
+    "sha256": "e69e7b7953bf62c70e8cfe88a3d16610930b8fdbfa3f982d22264891705da14c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4ALP.json",
+    "sha256": "e5ecb7b5154f688602e3b545ca707bed7b426fb4049f973b640de8abe13ae6ed"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4AY2.json",
+    "sha256": "0e1a939326fc88263fc2f1d8b90c6d8b8d3f5593b4bcf6e25f91ce4c632c2e0c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4B3O.json",
+    "sha256": "50ed655b71af1f45fdebcfdb00ed4386bf3da3b00d4528fe3aee20c84a2564d0"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4C8Y.json",
+    "sha256": "3119560e62d661795c355e9d37b3a06eaf49426e94fbb01da3156e2febf03920"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4C9D.json",
+    "sha256": "b53d66af48a74285abc48508bf456c363fedc2ffc1ec6c6a9c4a6345199ba918"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4DB2.json",
+    "sha256": "9f0b2cbd7a7d72f768e320e49b69ffa89b8767579e1980edf35f5d0c55041506"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4GHA.json",
+    "sha256": "d84f234b7f4cb1a645f629e9dcaf0b8a3eea04f7b6ea1a530ceb4ce5ea33e9dc"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4HKQ.json",
+    "sha256": "63664c73f9239be899ce835e2c95ce1bada68c2abcbc672a41515061ddd32aa8"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4HT8.json",
+    "sha256": "06c1c5847e4b7a6979356cdfa2e25fd376df7aa3ae669e604011b6116c28ed2b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4IJS.json",
+    "sha256": "6fedfdb57b67789a016ecb352188bb820bcac639bfa16fcd044c9c173798be21"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4J1G.json",
+    "sha256": "97e98bbd1ab5864283f6bee8c7183b691afaa033a3849c68144fcc0ecfeee9c4"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4JNX.json",
+    "sha256": "d4e695ddeb410a874411013fac297a91b5ba622a7428a2d96f3d79f6ed355cee"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4KRE.json",
+    "sha256": "82973a3f19e94607f0ad006cebfb83fb02c5aa5f9d53d6be0a3e42f8fae65d6b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4KRF.json",
+    "sha256": "fbecb9c66dac61eec4df4a913460e9665e9395f97078be0e61a1a925661af89b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4KZD.json",
+    "sha256": "50795efa24fd46a75b443b1dffa26293a76803efc8ae2b09f3d5c9903ab0436f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4LMZ.json",
+    "sha256": "8b461f1ff32be1d109dc35da9c56bc7fc80c1c890da93bef4b6c08536fd491f5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4M59.json",
+    "sha256": "c42e6893be9ce8dfffd10de9173cf7060ce5c3080233d463ff697ffe3eb00511"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4N2Q.json",
+    "sha256": "7cbe65d4f2f9d1e4ae4ccd794ff0cfecde57f96e4c5254d435c171e38163bfcd"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4NGC.json",
+    "sha256": "72d5cb592cda996c72b3bccb2f792dffd0b114e6e1a4be60908d624182c63642"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4PEH.json",
+    "sha256": "5091a638c8f71bb999d40678a8e317dbc64d68e9036b39095b8fb253670d323b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4QI2.json",
+    "sha256": "d470eb9663c397e8fb89ebb7504babc8be66775e2615ebf74b0271744ee6a51e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4QIL.json",
+    "sha256": "e8a14d0faf400515d641b6efe56f09df9b6d4ad7331495562ca91fc94bca31a2"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4RWN.json",
+    "sha256": "b24731e43d93b090164cb63326856514632025fe68f75c61f81f84c08d2d420a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4U8T.json",
+    "sha256": "791069ec9d03a7398557f755cf1075af3a34507ed991e94895b145a82ca99ea2"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4V2S.json",
+    "sha256": "00d54a5fec528ebe31900f04c022c6be088717fa0bf124c20227c30f9423e270"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4W5N.json",
+    "sha256": "10fa3164282282419b02fa47f481cf34d654ecf0f6f3d97f669e178d3109e80e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4WKR.json",
+    "sha256": "2dc1b3784cde18c15111bcd59eb790ac3a24c4746b1ecd73f8646094753a99a3"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4WTA.json",
+    "sha256": "c82ea0c69e5cbc6ffe4135ccd97081919608b6b512efd41abaa6c1f62633f213"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4WTD.json",
+    "sha256": "eefa17cac2a572c2b547673d99975a22a908ef349e71d8f7b6f581abf02213f1"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4WTE.json",
+    "sha256": "99b78cbe21558fa8c766a5ad4313e9ecfb4533902594d895b2f7366816f0a104"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/4Y91.json",
+    "sha256": "69259b86d43bcd3493334e5a5ab66065ef48273347a5451ba6de6f293285c082"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5BS3.json",
+    "sha256": "1f3076ba281d00b6ac35717a92227196c4be694cf9f02c10a2137f3ff10ab879"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5BZ5.json",
+    "sha256": "185eee51e072ddbd61559b1eeedf09b8b1b3af15c8cff31381710b69fbe36b68"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5BZU.json",
+    "sha256": "92a9cad06f198b624b1d36eace2408aeb1c74adbb97de24b365df6562dff9938"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5CCB.json",
+    "sha256": "8de73fcfa87b93f5a1bf62fbeb8eadbf8550d0237129daa0b0dc39b9aa91f1b8"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5D0A.json",
+    "sha256": "28717f626e5a6bc18c3309231cbc3d84eecccf56c0a142cdbdf25ae1f8d19a3f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5DV7.json",
+    "sha256": "7d8cec6d5019a547ca6e3c0f15e978662efe9504f0936d60c728cc5353cec0fc"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5E3H.json",
+    "sha256": "55d9a2a5f832d68eb8cfd6d1b214d3404989b8849177c1c88eaa639c60bfbf6f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5F5F.json",
+    "sha256": "5763c6c1630342d69d3e005cea23be50d254d7c9cfc2743c4c79317e4282a9ec"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5GUH.json",
+    "sha256": "e41a356a81c721d8a3190a98722cf199fd52ece5b5a2a8ab38057aa06db0e5be"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5GXH.json",
+    "sha256": "d02670c4eae25288be9c704990b69bab0128b9a1a71f3ab30229a52bb1dd820d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5GXI.json",
+    "sha256": "70889b0656eb7302da1227092cc19a3d813c910a0269cc376d50ec6f740b4a21"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5HJZ.json",
+    "sha256": "76981420098e84f7e0fae140372c1885e466fb41a2c480f718a3c86f97896af3"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5I4A.json",
+    "sha256": "5aa6f2fde09758ae6b0037c17fa96fe42dc441e7d81f99f3ecf4ae5b6c0914f7"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5JAJ.json",
+    "sha256": "9c089d06d5274e77e915f9509290b2a9c3ffdd4c6b581d171bf2fc5979cc26a5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5JRC.json",
+    "sha256": "bfbd32837945cd0c90b3bf162835a96f640b8a739e4e0ed06479d2bc4270b8df"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5JS1.json",
+    "sha256": "a5872d752349b94be9059568008d10e4bf8e36e7b36d38e4a7516907eb1ef2e5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5K78.json",
+    "sha256": "22ea8e837e3e365117b6adfa6e2282a34ab9860acead93371189fbc91fbc929f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5KL1.json",
+    "sha256": "d954609e11a0394fbf487f3e15c6dc1701f0772aa04760088824cdf9705d8030"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5KL8.json",
+    "sha256": "c4c34e344333cacd888d7a38daf6f83b015339d66826546563dd3f749309c027"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5L2L.json",
+    "sha256": "c9a63af8d6bed000c0d324dd5dfc73b797579dc1b22f3d266b2d83aae5b77985"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5SUP.json",
+    "sha256": "e8296ff1308b911d0e315be7f229adbde9fd8d38f3e6d104bb0c056afd897839"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5T7B.json",
+    "sha256": "fa5935307bfef61102c5b7cd9c41460394493ea65e36d9707466a086b863e311"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5W0O.json",
+    "sha256": "57fb029d7f78067315b1eb931030ffff69248da80eef652e9f841931d5a04702"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5W3V.json",
+    "sha256": "91c7c7b9aa85c5ba30fc266890c2f4bbeacebcaf47ff48584357ead9f39a9768"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5WTY.json",
+    "sha256": "2a85e66e609db998f6ba16bf61f99c3f1d7954280ab225813dbed469e8f0082f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5WWX.json",
+    "sha256": "d3e7e2ebaee1cfc1a08c7754113c9bced45f04b06b4137c47786efb223a5bb4c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5Z9W.json",
+    "sha256": "d6dc64501c614cc496b23d551d63fbb537a2d9f15968ddb4faeedcecd33bbfe7"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5ZQ0.json",
+    "sha256": "96da15047fd9df94356ab1f5cae887652a88c79f8ce60e77a1539739a127052c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5ZQ1.json",
+    "sha256": "d10fe2769c23ca891fc6eb24d9e95f0faf9160e707d698e7617e0311c653ae9a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5ZTM.json",
+    "sha256": "670463d431ecb1b5d9d08648159e8cbd8970c5d9d3a17d06c6020abcf42bbac9"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/5ZUU.json",
+    "sha256": "b9b422aac69cf485cffc13a7a17ebfc2a8fa1f07b645bac594a4e5694c3bea1e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6DB8.json",
+    "sha256": "40ccf25332328bdff029e7b257d666dca4a4afc73c7af308776b69329bd9012e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6DTA.json",
+    "sha256": "c611e567f5bda571febdf4b91d6afdc4fffd8e85977b02a1e87d9e98ffb6b036"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6G2K.json",
+    "sha256": "85da2693b961a3b8f347e28d563c257ee53555bddce83984e15f85547be715b3"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6GC5.json",
+    "sha256": "8032a4ff3a6fdb5db40cc8d6ae348ced219b756a2fb80c66c3b9bb5623d961cc"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6H5Q.json",
+    "sha256": "932814d839f68b1bcb36182db8567f6ab0a760f77f746205a6021e8e4710cafb"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6H9H.json",
+    "sha256": "72f9c6b82cf64ccf0d46fd7768d57eed10973976cb0abd78e0e51985b495536d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6HAK.json",
+    "sha256": "eabe9125414cd4e91570de2621c291a95c931fbc0943a865d82bad882ce1a0a4"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6HTU.json",
+    "sha256": "395f339d2a8061cf8b6028f9b1d18c25ddbd9435f406936051a14665e490755a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6JOO.json",
+    "sha256": "c68464bb4573dded348f031f4dd07f51826645bba0d854910da8fdcad6fdbef3"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6M0V.json",
+    "sha256": "6b121d8391b30e4f25dcd1986b2aff803f9ecb5bc2401cf8ba28e839cfe84c5b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6M7D.json",
+    "sha256": "7bbd8974dece80cd1f81bc6825557b792b1964a1dbcb0d2e264dd748450f56b0"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6MSF.json",
+    "sha256": "315d06d60a3a528b22032a7b465795e5ac8f211e433f109bd5d49bccc1a6c83a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6N4O.json",
+    "sha256": "2a4edc335fe81bcb6b2f5cab276b8fd854522911063b701bc1c574d451e3cc83"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6OGZ.json",
+    "sha256": "c2b0ce44a3b031f5363c41d5f61b77ed8af588fb7b45cc02adbea94e691f638a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6R9J.json",
+    "sha256": "3a8a8b1b5870ebf5d2c39887960a7864b0a54368137dd2a6da9eab99801e51ef"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6U8D.json",
+    "sha256": "565a1c1455a10d0b9c2b058120394d5ec73b57d4c75c4ce1cd05889d3edea656"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6UV1.json",
+    "sha256": "c9eb08f37ecdce9c3ca67f429263acf4654910b3ca2f92cfd3ceadea8becd36b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6VRB.json",
+    "sha256": "32d81c087dbcdafa0f5cf706ab83749fa6d9648c0c8f3ff5815b909223946193"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6WPI.json",
+    "sha256": "81fdd7400dac29daef9c4e54535ab9176d54880ed73999eacf451df94d90cec2"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6WRE.json",
+    "sha256": "72c2ed1630c630174c91001caa9ff3f1398ad427ffe02ca63bdb37f4e384f54a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/6ZDP.json",
+    "sha256": "435c2695c6c178044c4c306409c0e951990efc345887dd1b83197c1663788b77"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7C45.json",
+    "sha256": "94f4c2b5878cd9e8cf685f99f8635a9fed12d1cfcfb2d954a7718fb196e9d995"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7D2L.json",
+    "sha256": "871c5ac0329c4eb7782f7e86713c32a9d789a68c6343e682688a11d557f59fb1"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7EWQ.json",
+    "sha256": "18e50da165f868c886732401b3f037d6fb88bdf5a636e6077b725c8ac7a07e2e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7F1M.json",
+    "sha256": "9e3384e0fe49ea90027a878a9ff56099af220ee2c15c6e1e69e77003ca96204a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7JHY.json",
+    "sha256": "18ff3e06f0e97a401de27f7c0f58eb7b7f6aa0973bae63d3647146715bad4d38"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7K9Y.json",
+    "sha256": "c7520b04c0437688dfc12fa711bbbef3fa51a2df81e6807a1e47b84573078402"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7KJV.json",
+    "sha256": "728b6bd0d4547fd40a7ea1d38e853aa3a759fabfdf8bd9a46eea73cc282376ae"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7KX7.json",
+    "sha256": "e39c0247e4df1bf1b4da889a56fc29d0086168c45a5cc67b45a8bfdf62a6fb94"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7MJY.json",
+    "sha256": "89c294a510632e0241781474d1ce45e2f5fe5abab50320c012116a74e53be2f2"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7O0G.json",
+    "sha256": "ce5341057e9d84f02640039a19ad8d155b188bd5ef55242ef8047d606a83d4ae"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7OFW.json",
+    "sha256": "e3050cfd79aa028ef7335d2fe268151355d720559514f677ad1399799343427d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7OM6.json",
+    "sha256": "58a686b6532f3319a22dba27bce69d9151e73cf23660c91f950feb54ce253672"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7OMA.json",
+    "sha256": "2f99b9559672bb91780d6dc1850ea9bd47a1473c55bbf9cfccd72efb071a88b5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7OZQ.json",
+    "sha256": "229c463c6538785b4051cb97ea6df9f9abc4e40d751e3cc6311ca00d45dc1b95"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7R97.json",
+    "sha256": "fbd4a5b8ca6253c1774de7922f0b9f484a7651fbdbf120af310fdb7786e9f7ca"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7SOP.json",
+    "sha256": "c5ad17892e9d518f6228a09d0ef11c0a9a674aa26433d507cf2d02340214b778"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7SVA.json",
+    "sha256": "a5d6b6e610ba377df2c104cf5d4efa78723da37832062c11ebb57a1dbac65657"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7SZU.json",
+    "sha256": "ed791585d452e94e27c0f98edb332b9666ab0dfadc39076cbed3d7550a0dbbc5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7TNY.json",
+    "sha256": "ff53acbe46543efce39f38444e90507a83804aeb3c74cd41f03190900cc2b489"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7TNZ.json",
+    "sha256": "0428eb6523af60ce5157bcc9fed9e67eb40fd1f86a29c2d5177c2aa6b787ee3f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7TO1.json",
+    "sha256": "fc730f0597f1ce0abf004b5060c144daac5d011220ce60e2ac72da9a41fe03b5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7UJ1.json",
+    "sha256": "1bbdd5c33213a67c47ba49e5365d07cbd6de7b0c3c184b02ac6d0f1b3d68da4e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7UML.json",
+    "sha256": "043a8d4d4261fbc001a6fa3bc556601b42d0e2dbc27d6b13f9df5dc7978f1ca0"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7UO0.json",
+    "sha256": "b7669024af9170f2124cad245804c99e6d651f48da671955b566662815591270"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7UTN.json",
+    "sha256": "3ed082ba3d0a066793a9df4c4137b8d9238b49cb5984a03079fe1592048cd33e"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7YEY.json",
+    "sha256": "ea1394887a350b3c27132ffc1e2e6fe5f4d69d8fd7b3bbe198e2d114a1225da6"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7YFQ.json",
+    "sha256": "e29ffe7da1b2c7925dcd8d33623664e2fd551414bf1578fcc66749b53e5e702c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7YFX.json",
+    "sha256": "c8b6113187becfa0992df57bc9a379f087802b5538f1e53afe173c871b4d48e0"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7YSE.json",
+    "sha256": "35fad4156baf8d4aad0ef73903a68882a29b50b1d481b7ffeb2040c5af816519"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/7ZKI.json",
+    "sha256": "185b78ff1c328bd8c029762d490249e16ada077e5a620cccde610b892cc243be"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8ACC.json",
+    "sha256": "a4487f57bccd1e24c78f74246aab245c2aab33b4d96fcc767142b25ad172a55b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8C8J.json",
+    "sha256": "e92c3505a0687ab0af10bdfa01473849ad44faf8923abd3532c4b6dee737491d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8CBM.json",
+    "sha256": "f9ba8ea36cc5f69f7ea08e498e9d3a4a551f900aad26fcd153dd57c3e6d67931"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8CBW.json",
+    "sha256": "db2da27e31b4e06d75f954536c0c9c7a0f466301acdedb5f8e7c9e0f14dbb102"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8D29.json",
+    "sha256": "21db4b42e3febe0c6e7ca96c8367a19fb94d948680d1ac6195eaf07a2dcebe06"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8D9K.json",
+    "sha256": "cf2d484c8d64d465ef2282463170ca1b24d8f723339bde11417c7f4e91ff0e09"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8E28.json",
+    "sha256": "041c31eaa5f7baab6be2f76ed2d62d57094461fd97c89367517231cc4bbc5e1b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8F5G.json",
+    "sha256": "fe7e54d5fdac6302411c20112129a61e347c14d2a59f748e71f34f7d62300ce5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8FTM.json",
+    "sha256": "89b2c1cde7fc7af74c059633e3740f503072057b28d42133f05c56eed2b3207b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8HNT.json",
+    "sha256": "c623ae06d391e5ab9ec9641f6b393f30176ee449fd340eea060444a9ddd1ec46"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8PDL.json",
+    "sha256": "123494d044dc0c282e6444257d9c95840a6dd8df4e4682ff443adb81bac2f401"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8PM4.json",
+    "sha256": "c1f7171f42ff412aae7af1b357ebc05960d4008298c4c4a0b7d43e91316adf34"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8QG0.json",
+    "sha256": "86415db2428e91428a4ea311bc7f9fdd5db0bb58f2e2c6d70b4c5480a88467c0"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8R0S.json",
+    "sha256": "a4c0600388e8c5b0f8e5cde2956f8b2cf9503646c6036e84f1b5061466729654"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8R3Z.json",
+    "sha256": "aadec4b85317f1ec4767d14424b2ed172fb4093b52aa37c025b8a4be4289adcd"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8SH5.json",
+    "sha256": "dc9a81da7882a578c5ea07555a3f816b88d053894f240b90058ecb000f8fd965"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8T29.json",
+    "sha256": "bba66d1272207f5e2a525ea714b5334a9d1669427230c2e05d5763247a76daa5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8TG4.json",
+    "sha256": "f0e1ba67911ea7a4db1e5e9eb45ae105d8e7a8b3c9b44bc426beabfb4165ae28"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8W35.json",
+    "sha256": "011dd8f64bb5b027e662a23989e3829f1e15e90603b6895b5122439f7f89c722"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8WND.json",
+    "sha256": "7e3efdfb0e5cf6629f9773ef560fb7c5373f313645cf428393c63a92397d1881"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8WZC.json",
+    "sha256": "4514675993a6245f5d5a3cf7174c8fde264f2f826d2650e7a3eb06b72243e6c5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8XPP.json",
+    "sha256": "863814a323aa9f2b29224103a84655d09ff71f32ffe51867a5f2133e6855d142"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/8ZTY.json",
+    "sha256": "b878da1ecd5476d2b2d32e9374ce64b828aa98cdca5217cbd697d2ddbf6da973"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9C2K.json",
+    "sha256": "8f43d0c4693dbf959e821491d829c76352b34dd3b7a54391275077a13cf73d0d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9CY7.json",
+    "sha256": "f25fc1d537c141c1baa422b7207890a807c719c0a3d700224be478010cfb0e05"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9D9O.json",
+    "sha256": "bf2f22f367212b6269639d02467a2726bd0301b9339635f18b4b7dd677ce4e7d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9DN4.json",
+    "sha256": "5f6a3fa8146e52732597c52d20f702ce48d313609e76d84ec52ef7045087bbe9"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9DOW.json",
+    "sha256": "09bcc2f5b54e1e2edfd8fae1ea9dc76990b3170f4f83e71f998ca30e099b175b"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9EBU.json",
+    "sha256": "d9b4bf467abc9fab7e88b7d467b24b362544ff7f20759fb8304abfeb66b302c5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9IAJ.json",
+    "sha256": "0cf951dc5549dc993f4bdb884c53e2eb9da7d0639a671f6c47305be62c87f0d9"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9IAK.json",
+    "sha256": "9b7327f7c51ba8851ed7f59f7f27d0bbb0efd1d3e593204758a61b331d92fb0c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9IAM.json",
+    "sha256": "a11225c6d7669ef002b2aacdae54faf7078ffa0250c040d6e852b02e2052f6a8"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9IIY.json",
+    "sha256": "11c39bace0a883325f0881fdfebac216a3199fc0cbe20dea8e26074b3b10d21c"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9IJ2.json",
+    "sha256": "d1271c59dc0d2c2de98fbb3aaaa7e6ab46c7c9e1d50113e329eb2398f3c42fe9"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9JKD.json",
+    "sha256": "5bff8ee924dd945a8b631a7eb5939a4a181777911327279e2bd833f486bb720d"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9JSB.json",
+    "sha256": "e69bddf32fca75192f71629eb1677163a7b9bfd9c3b81964450f8b4d415c3982"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9K6P.json",
+    "sha256": "2ee9229f016640b0c9c5fd4e3f1f07347d6f175143522dec3009f1131168dcba"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9K6S.json",
+    "sha256": "c495b79c2ca95215efd0b0c7884d2cfb1470d0ecc62c947abce9c55bd5d894b5"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9LOU.json",
+    "sha256": "736ad31e5650aeec7bf3b7e74ef9021daafc7370f2fcafbca83d54fab315a5b9"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9LRI.json",
+    "sha256": "00e5beb9dc4d4c3465e6a7126ce65f0420c07beeb8e05a7bc9cb346d76928782"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9MW6.json",
+    "sha256": "c615769c075d13be69cab301c651f01719cfe476f58e03aa322d90ca9a360400"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9NJB.json",
+    "sha256": "9f5e812c493078714d2fd000fe6041c0c8bdb5e224de283336eefc91b9ec5271"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9NO0.json",
+    "sha256": "136fc8f41b152f37ec900ecd493ac67a1e223469d68d635408e03ddd0555b095"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9NYY.json",
+    "sha256": "50cd86cd215dadda0caf295543ff6b27189febbb074468a0a968f9760fbc84ee"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9PSB.json",
+    "sha256": "d121532a87397360737a621e8d0b22e30251dbf5ef8a1f720db1571942c621c0"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9PTG.json",
+    "sha256": "6ec4c6c01d0c2c7b5c47c30fa672413e55f4951c994af5b7dd4a6f06c67f4715"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9Q1J.json",
+    "sha256": "dc22d57549fc02e05bc713404439631c8239886c36be61dd07bee2707eb34cc1"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9QS9.json",
+    "sha256": "247ca1db582781c6a47effc938a4e30415919009a2517d83e260aecd1bf9953f"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9S0Z.json",
+    "sha256": "29e827f1d035a234c1ca2b84143f4c4e1a84619f56bca671423b580abb92a1e3"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9SHP.json",
+    "sha256": "12d52ebb96f16add9993314b27fd33708bf924bcb6db229eb6e6d76031b47723"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9SLZ.json",
+    "sha256": "7863d2f3e92bc2a318bdbcab39fab1f8258f9e3bc78a97132a1b24ca2ce89403"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9T99.json",
+    "sha256": "26acb45a1b612f9266554230e5e6215af3e0dc5819aa451af46ceb093d8c9267"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9TKV.json",
+    "sha256": "3ae6fa86451842a6bb270f6708e3e86b5fa8777fb6e722fb053f1ccb8bb88a1a"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9W2K.json",
+    "sha256": "6b9b07bc7ce1e45add985734c7efecf2d1acf084d15095bd24df410926ca5391"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9XZQ.json",
+    "sha256": "908230889f656de8f4939b87daca9285d1861d7f4f4d408c7a480c2fb0d670a3"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9YCK.json",
+    "sha256": "2dbae0dd27ae9c8621359727d6a3f618d54a2f3c21b32fd69806b0e1bf858881"
+   },
+   {
+    "path": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/work/grouping/qual_v1/targets/9YM9.json",
+    "sha256": "e0ac5319979a5f22e262932ec484602b09150cd70a1145c70ae21134b0819c83"
+   }
+  ],
+  "kind": "grouping_qualification_poolB",
+  "rnplens_version": "0.4.0.dev0",
+  "schema": "rnplens.v04.1"
+ },
+ "subsampling_ari": {
+  "0.3": {
+   "per_target_mean": {
+    "max": 1.0,
+    "mean": 0.9896825396825397,
+    "median": 1.0,
+    "min": 0.55,
+    "n": 216
+   },
+   "targets_all_20_equal_1": 207
+  },
+  "0.5": {
+   "per_target_mean": {
+    "max": 1.0,
+    "mean": 0.978181216931217,
+    "median": 1.0,
+    "min": 0.55,
+    "n": 216
+   },
+   "targets_all_20_equal_1": 193
+  },
+  "0.7": {
+   "per_target_mean": {
+    "max": 1.0,
+    "mean": 0.9675176366843035,
+    "median": 1.0,
+    "min": 0.3,
+    "n": 216
+   },
+   "targets_all_20_equal_1": 191
+  }
+ },
+ "wall_s_per_target": {
+  "max": 0.5,
+  "mean": 0.18518518518518523,
+  "median": 0.2,
+  "min": 0.0,
+  "n": 216
+ }
+}

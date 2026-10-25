@@ -1,0 +1,4 @@
+$ rnplens clarify project --answer 1 exclude_run --text run_C is a truncated-RNA copy made for the replay retest
+rnplens clarify: recorded construct_mismatch:/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/24BR/first_20261017T092102Z/in/run_C_other_construct = exclude_run in state v0003
+project /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postfix_7c5f986/24BR/first_20261017T092102Z/project: state v0004, COMPLETE
+  main                     COMPLETE  analyses/v0004/main

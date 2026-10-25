@@ -1,0 +1,22 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "properties": {
+  "action": {
+   "type": "string",
+   "enum": [
+    "ANSWER",
+    "ANSWER_WITH_LIMITATION",
+    "CLARIFY",
+    "REFUSE_WITH_ALTERNATIVE"
+   ]
+  },
+  "answer": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "action",
+  "answer"
+ ]
+}

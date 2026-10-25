@@ -1,0 +1,27 @@
+step	expected_exit	exit	command
+00_truncate	0	0	py /home/jwen/projects/RNPBench/RNPLens_dev_0.4/RNPLens/demos/lib/truncate_rna.py in/run_B in/run_C_other_construct 2
+01_init	3	3	rnplens update project --init in/run_A in/run_B in/run_C_other_construct --protein-seq in/protein.fasta --rna-seq in/rna.fasta --engine BOLTZ2 --case-id 2QQP_retest
+02_clarify_json	3	3	rnplens clarify project --json
+03_answer	0	0	rnplens clarify project --answer 1 exclude_run --text run_C is a truncated-RNA copy made for the replay retest
+04_update_no_change	0	0	rnplens update project
+05_region_rule	0	0	py /home/jwen/projects/RNPBench/RNPLens_dev_0.4/RNPLens/demos/lib/region_rule.py project/imports/v0004/main project/analyses/v0004/main region_rule.json
+06_region	0	0	rnplens region project/imports/v0004/main project/analyses/v0004/main --rna 1-4
+07_export_methods	0	0	rnplens export-methods project/analyses/v0004/main --project project/imports/v0004/main
+08_explain_structures	0	0	rnplens explain structures --analysis project/analyses/v0004/main --project project/imports/v0004/main
+09_menu_C_followup_local	0	0	rnplens assist --project project/imports/v0004/main --analysis project/analyses/v0004/main --item C --rna 1-4 --runs run_A,run_B --followup local --question Which contacts in RNA 1-4 are found in only one run, and which structures list them? --yes
+10_explain_evidence	0	0	rnplens explain evidence --id region_1-4/region.json#/contacts/0 --analysis project/analyses/v0004/main --project project/imports/v0004/main
+11_view	0	0	rnplens view project/imports/v0004/main --analysis project/analyses/v0004/main --rna 1-4
+12_group	0	0	rnplens group project/imports/v0004/main --analysis project/analyses/v0004/main
+13_group_diff	0	0	rnplens group-diff project/analyses/v0004/main 1 2
+14_followup_SCRIPTED	0	0	py /home/jwen/projects/RNPBench/RNPLens_dev_0.4/RNPLens/demos/lib/followup_scripted.py project/imports/v0004/main project/analyses/v0004/main Which contacts in RNA 1-4 are found in only one run? region_1-4/region.json#/summary/only_in_run/run_B followup_scripted.json
+15_update_after_outputs	0	0	rnplens update project
+16_remove_run_C	0	0	rnplens update project --remove-input in/run_C_other_construct
+17_versions	0	0	rnplens update project --versions
+18_status	0	0	rnplens update project --status
+c1_update_no_change	0	0	rnplens update project
+c2_region_whole_rna	0	0	rnplens region project/imports/v0004/main project/analyses/v0004/main --rna 1-4
+c3_explain_region_mapping	0	0	rnplens explain region_mapping --region region_1-4 --analysis project/analyses/v0004/main --project project/imports/v0004/main
+c4_export_methods	0	0	rnplens export-methods project/analyses/v0004/main --project project/imports/v0004/main
+c5_view_whole_rna	0	0	rnplens view project/imports/v0004/main --analysis project/analyses/v0004/main --rna 1-4
+c6_update_report	0	0	rnplens update project --report v0004 v0008
+c7_status	0	0	rnplens update project --status

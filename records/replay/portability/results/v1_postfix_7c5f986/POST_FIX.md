@@ -1,0 +1,6 @@
+# Post-fix PORTABILITY_TEST_v1 at 7c5f986: PASS
+
+Label: **post-fix retest (after the 5b15730 v2 failure)**.
+- Code: `7c5f9860f5cef14b35763cc0c21dda63a273d762`, clean tree, on karyon. Run once.
+- Rule: PORTABILITY_TEST_v1 with Amendment 1, unchanged.
+- Report: `records/replay/r3b/POST_FIX_RETESTS_7c5f986.md`.

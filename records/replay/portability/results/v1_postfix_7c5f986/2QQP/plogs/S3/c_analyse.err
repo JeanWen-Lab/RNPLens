@@ -1,0 +1,4 @@
+NOT SELF-CONTAINED (rnplens analyse): 10 structure file(s) are read from outside the place this project records for them (external), each verified by SHA-256:
+  /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2QQP/orig_20261017T092052Z/in/run_A
+  /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2QQP/orig_20261017T092052Z/in/run_B
+The project depends on these locations. To make it self-contained, copy the files next to the project and run 'rnplens relink <project> --search <copy>'.

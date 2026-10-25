@@ -1,0 +1,15 @@
+{
+ "first_differences": [],
+ "fraction_identical": 1.0,
+ "label": "exploratory, development-pool, descriptive",
+ "n_identical_sets": 3200,
+ "n_structures_absent_from_rank_file": 0,
+ "n_structures_compared": 3200,
+ "note": "parity check only; grouping always uses Report's own interface_contacts",
+ "pool": "A",
+ "pooled_jaccard": 1.0,
+ "rank_file": {
+  "path": "/home/jwen/projects/RNPBench/RNPLens-Rank/derived/poolA_contacts.json",
+  "sha256": "7fa483ef5aa09451fae64deacf23c7d5f2ced9528e292a6d25e7800ff424b2f1"
+ }
+}

@@ -1,0 +1,9 @@
+$ rnplens region project/imports/v0004/main project/analyses/v0004/main --rna 1-4
+rnplens region: existing result reused (recorded inputs unchanged): /home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/moved_elsewhere/2QQP_copy_20261017T011022Z/project/analyses/v0004/main/region_1-4
+rnplens region: RNA 1-4; 2 run(s) compared (run_A, run_B); 10 structure(s)
+  contacts in range: 69; shared by all runs: 32; present in some runs: 0; not determined somewhere: 0
+  found only in run run_A: 21 (T22-U1, S24-U1, V25-U1, K27-U4, G28-U3, G28-U4, I29-U3, Q31-U4, Q32-U3, A50-U4, S53-U4, V54-U3, V54-U4, R57-U4, L58-U2, L58-U3, S61-U3, I62-U1, R66-U4, A74-U1, K75-U1)
+  found only in run run_B: 16 (L15-U4, K18-U4, S19-U3, S19-U4, S20-U3, A21-U3, A21-U4, A67-U3, R68-U2, R69-U3, R69-U4, R70-U4, A71-U2, R72-U2, R73-U4, A74-U2)
+  shared by all runs: S19-U2, S20-U2, S20-U4, A21-U2, T22-U2, T22-U3, T22-U4, P23-U2, P23-U3, P23-U4, S24-U2, S24-U3, S24-U4, V25-U2, V25-U3, V25-U4, I62-U2, I62-U3, R65-U1, R65-U2, R65-U3, R65-U4, R66-U1, R66-U2, R66-U3, R69-U1, R69-U2, R70-U1, R70-U2, R72-U1, R73-U1, R73-U2
+  Recurrence among predictions is not evidence of correctness.
+  output folder: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-2/retest_v2_3df760d/moved_elsewhere/2QQP_copy_20261017T011022Z/project/analyses/v0004/main/region_1-4

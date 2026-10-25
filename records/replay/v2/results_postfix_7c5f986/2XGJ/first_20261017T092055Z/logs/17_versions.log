@@ -1,0 +1,8 @@
+$ rnplens update project --versions
+v0001  INITIALISED          2026-10-17T09:20:55+00:00  project created
+v0002  NEEDS_CLARIFICATION  2026-10-17T09:20:56+00:00  first import and analysis; 1 question(s) need an answer
+v0003  RESUME_PENDING       2026-10-17T09:20:56+00:00  answer recorded for construct_mismatch:../in/run_C_other_construct: exclude_run
+v0004  COMPLETE             2026-10-17T09:20:58+00:00  resume
+v0005  COMPLETE             2026-10-17T09:20:59+00:00  update
+v0006  COMPLETE             2026-10-17T09:21:01+00:00  update
+v0007  COMPLETE             2026-10-17T09:21:01+00:00  update

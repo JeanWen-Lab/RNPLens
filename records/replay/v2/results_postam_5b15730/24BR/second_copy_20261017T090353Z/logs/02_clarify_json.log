@@ -1,0 +1,147 @@
+$ rnplens clarify project --json
+[
+ {
+  "chosen_automatically": false,
+  "depends_on": {
+   "construct:main": "12ada4b164eb7e597a6b807cdb1474d9dfc128681fb9451572213dbcd34e2ce5",
+   "run:/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct": "2d73e193be6be3b09390eadcfd9d0a158a40298756f4079b53d430c76dc09e70"
+  },
+  "detail": {
+   "alignments": {
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_0.pdb": [
+     {
+      "chain": "B",
+      "first_differing_alignment_columns": [
+       1,
+       2
+      ],
+      "gap_columns": 2,
+      "identity_over_construct": 0.5,
+      "substitutions": 0,
+      "type": "rna"
+     }
+    ],
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_1.pdb": [
+     {
+      "chain": "B",
+      "first_differing_alignment_columns": [
+       1,
+       2
+      ],
+      "gap_columns": 2,
+      "identity_over_construct": 0.5,
+      "substitutions": 0,
+      "type": "rna"
+     }
+    ],
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_2.pdb": [
+     {
+      "chain": "B",
+      "first_differing_alignment_columns": [
+       1,
+       2
+      ],
+      "gap_columns": 2,
+      "identity_over_construct": 0.5,
+      "substitutions": 0,
+      "type": "rna"
+     }
+    ],
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_3.pdb": [
+     {
+      "chain": "B",
+      "first_differing_alignment_columns": [
+       1,
+       2
+      ],
+      "gap_columns": 2,
+      "identity_over_construct": 0.5,
+      "substitutions": 0,
+      "type": "rna"
+     }
+    ],
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_4.pdb": [
+     {
+      "chain": "B",
+      "first_differing_alignment_columns": [
+       1,
+       2
+      ],
+      "gap_columns": 2,
+      "identity_over_construct": 0.5,
+      "substitutions": 0,
+      "type": "rna"
+     }
+    ]
+   },
+   "differing_files": [
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_0.pdb",
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_1.pdb",
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_2.pdb",
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_3.pdb",
+    "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct/24BR_model_4.pdb"
+   ],
+   "n_differing": 5,
+   "n_matching": 0,
+   "observed_construct": {
+    "protein_length": 327,
+    "rna_length": 2,
+    "sha256": "3e8d76968bcc5bb8a37c3ebc7ca783a794b6f12fd87d1c8be9c4b376a15b2902"
+   },
+   "run": "run_C_other_construct",
+   "run_root": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct"
+  },
+  "group": "main",
+  "id": "construct_mismatch:/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct",
+  "options": [
+   {
+    "apply": {
+     "exclude_run": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct"
+    },
+    "effects": {
+     "run_in_analysis:/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct": false
+    },
+    "id": "exclude_run",
+    "label": "wrong folder: exclude run run_C_other_construct from this project's analysis"
+   },
+   {
+    "apply": {
+     "construct": {
+      "protein_sequence": "APPRIGTHNGTFHCAEALACALLRLLPEYRDAEIVRTRDPEKLASCDIVVDVGGEYDPRRHRYDHHQRSFTETMSSLSPGKPWQTKLSSAGLIYLHFGHKLLAQLLGTSEEDSMVGTLYDKMYENFVEEVDAVDNGISQWAEGEPRYALTTTLSARVARLNPTWNHPDQDTEAGFKRAMDLVQEEFLQRLDFYQHSWLPARALVEEALAQRFQVDPSGEIVELAKGACPWKEHLYHLESGLSPPIAIFFVIYTDQAGQWRIQCVPKEPHSFQSRLPLPEPWRGLRDEALDQVSGIPGCIFVHASGFIGGHHTREGALSMARATLAQR",
+      "rna_sequence": "UU"
+     },
+     "separate_run": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct"
+    },
+    "effects": {
+     "construct_of:/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct": "3e8d76968bcc5bb8a37c3ebc7ca783a794b6f12fd87d1c8be9c4b376a15b2902",
+     "run_in_analysis:/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct": true
+    },
+    "id": "analyse_separately",
+    "label": "intentional different constructs: analyse run run_C_other_construct separately, as its own construct (protein 327 residues, RNA 2 nucleotides, as read from its chains)"
+   },
+   {
+    "apply": {
+     "construct": {
+      "protein_sequence": "APPRIGTHNGTFHCAEALACALLRLLPEYRDAEIVRTRDPEKLASCDIVVDVGGEYDPRRHRYDHHQRSFTETMSSLSPGKPWQTKLSSAGLIYLHFGHKLLAQLLGTSEEDSMVGTLYDKMYENFVEEVDAVDNGISQWAEGEPRYALTTTLSARVARLNPTWNHPDQDTEAGFKRAMDLVQEEFLQRLDFYQHSWLPARALVEEALAQRFQVDPSGEIVELAKGACPWKEHLYHLESGLSPPIAIFFVIYTDQAGQWRIQCVPKEPHSFQSRLPLPEPWRGLRDEALDQVSGIPGCIFVHASGFIGGHHTREGALSMARATLAQR",
+      "rna_sequence": "UU"
+     },
+     "reference_set": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct"
+    },
+    "depends_on_override": {
+     "construct:declared": "12ada4b164eb7e597a6b807cdb1474d9dfc128681fb9451572213dbcd34e2ce5",
+     "construct:main": null
+    },
+    "effects": {
+     "reference_set": "/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct",
+     "run_in_analysis:/home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/24BR/second_copy_20261017T090353Z/in/run_C_other_construct": true
+    },
+    "id": "use_as_reference_set",
+    "label": "the declared construct is not the intended one: use run run_C_other_construct as the reference set (its chain sequences become the project construct; runs that matched the earlier declaration are then asked about)"
+   }
+  ],
+  "question": "5 structure(s) of run run_C_other_construct have chains that differ from the construct declared for this project. One project analyses one construct. Which applies?",
+  "source": "rnplens clarify",
+  "type": "construct_mismatch",
+  "type_meaning": "chains of a run differ from the declared construct"
+ }
+]

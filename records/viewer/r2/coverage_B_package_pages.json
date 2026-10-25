@@ -1,0 +1,7852 @@
+{
+ "cutoff_A": 5.0,
+ "pages": [
+  {
+   "discrepancies": [],
+   "page_id": "demo1_1VTM_rna1-3",
+   "range": [
+    1,
+    3
+   ],
+   "structures": [
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 25
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       91,
+       92,
+       93,
+       94,
+       99,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s001",
+     "key": "BOLTZ2|run_A#1VTM_model_0",
+     "label": "s001 run_A#1VTM_model_0",
+     "n_contact_pairs": 25,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 0.323,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.917,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.801,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/01_s001_run_A_1VTM_model_0.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 20
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       36,
+       37,
+       38,
+       39,
+       40,
+       92,
+       93,
+       94,
+       99,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s002",
+     "key": "BOLTZ2|run_A#1VTM_model_1",
+     "label": "s002 run_A#1VTM_model_1",
+     "n_contact_pairs": 20,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.692,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.663,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.802,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/02_s002_run_A_1VTM_model_1.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 22
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       92,
+       93,
+       94,
+       102,
+       106,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s003",
+     "key": "BOLTZ2|run_A#1VTM_model_2",
+     "label": "s003 run_A#1VTM_model_2",
+     "n_contact_pairs": 22,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.375,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.995,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.164,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/03_s003_run_A_1VTM_model_2.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 24
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       91,
+       92,
+       93,
+       94,
+       102,
+       106,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s004",
+     "key": "BOLTZ2|run_A#1VTM_model_3",
+     "label": "s004 run_A#1VTM_model_3",
+     "n_contact_pairs": 24,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.372,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.924,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.116,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/04_s004_run_A_1VTM_model_3.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 4
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       85,
+       86,
+       88,
+       90
+      ],
+      "rna": [
+       1,
+       2
+      ]
+     },
+     "group": null,
+     "id": "s005",
+     "key": "BOLTZ2|run_A#1VTM_model_4",
+     "label": "s005 run_A#1VTM_model_4",
+     "n_contact_pairs": 4,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.268,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.276,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.441,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/05_s005_run_A_1VTM_model_4.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 24
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       91,
+       92,
+       93,
+       94,
+       99,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s006",
+     "key": "BOLTZ2|run_B#1VTM_model_0",
+     "label": "s006 run_B#1VTM_model_0",
+     "n_contact_pairs": 24,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.057,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.097,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.368,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/06_s006_run_B_1VTM_model_0.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 28
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       36,
+       38,
+       41,
+       89,
+       90,
+       91,
+       92,
+       93,
+       94,
+       95,
+       96,
+       99,
+       102,
+       106,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s007",
+     "key": "BOLTZ2|run_B#1VTM_model_1",
+     "label": "s007 run_B#1VTM_model_1",
+     "n_contact_pairs": 28,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.54,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.327,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.15,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/07_s007_run_B_1VTM_model_1.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 20
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       37,
+       38,
+       39,
+       41,
+       91,
+       92,
+       93,
+       94,
+       95,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s008",
+     "key": "BOLTZ2|run_B#1VTM_model_2",
+     "label": "s008 run_B#1VTM_model_2",
+     "n_contact_pairs": 20,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.244,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.686,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.692,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/08_s008_run_B_1VTM_model_2.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 22
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       92,
+       93,
+       94,
+       99,
+       107,
+       110,
+       111,
+       114
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s009",
+     "key": "BOLTZ2|run_B#1VTM_model_3",
+     "label": "s009 run_B#1VTM_model_3",
+     "n_contact_pairs": 22,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 0.971,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.373,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.441,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/09_s009_run_B_1VTM_model_3.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 16
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       38,
+       88,
+       89,
+       90,
+       91,
+       92,
+       93,
+       95,
+       99
+      ],
+      "rna": [
+       1,
+       2,
+       3
+      ]
+     },
+     "group": null,
+     "id": "s010",
+     "key": "BOLTZ2|run_B#1VTM_model_4",
+     "label": "s010 run_B#1VTM_model_4",
+     "n_contact_pairs": 16,
+     "region_positions": [
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "G",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.332,
+       "position": 1,
+       "structure_residue": "G"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.984,
+       "position": 2,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.062,
+       "position": 3,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/10_s010_run_B_1VTM_model_4.pdb",
+      "n_protein_residues": 158,
+      "n_rna_residues": 3
+     }
+    }
+   ],
+   "summary": {
+    "all_sets_equal": true,
+    "molstar_compared": false,
+    "n_discrepancies": 0,
+    "n_structures": 10
+   }
+  },
+  {
+   "discrepancies": [],
+   "page_id": "demo1b_2JEA_rna26-35",
+   "range": [
+    26,
+    35
+   ],
+   "structures": [
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 21
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       85,
+       90,
+       94,
+       95,
+       97,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s001",
+     "key": "BOLTZ2|exec_A#2JEA_model_0",
+     "label": "s001 exec_A#2JEA_model_0",
+     "n_contact_pairs": 21,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 11.302,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 10.867,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.938,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.579,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.419,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.172,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.71,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.461,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.9,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.451,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/01_s001_exec_A_2JEA_model_0.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 21
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       85,
+       90,
+       94,
+       99,
+       100,
+       101,
+       136,
+       137,
+       138,
+       139,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s002",
+     "key": "BOLTZ2|exec_A#2JEA_model_1",
+     "label": "s002 exec_A#2JEA_model_1",
+     "n_contact_pairs": 21,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 10.823,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 7.925,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.632,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.055,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.643,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.797,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.49,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.943,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.807,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.092,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/02_s002_exec_A_2JEA_model_1.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 27
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       85,
+       90,
+       94,
+       95,
+       96,
+       97,
+       98,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       139,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       28,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s003",
+     "key": "BOLTZ2|exec_A#2JEA_model_2",
+     "label": "s003 exec_A#2JEA_model_2",
+     "n_contact_pairs": 27,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 8.075,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 9.479,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.289,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 7.549,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 7.409,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.487,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.306,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.546,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.869,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.312,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/03_s003_exec_A_2JEA_model_2.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 25
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       5,
+       85,
+       90,
+       91,
+       94,
+       95,
+       97,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       139,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s004",
+     "key": "BOLTZ2|exec_A#2JEA_model_3",
+     "label": "s004 exec_A#2JEA_model_3",
+     "n_contact_pairs": 25,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 10.916,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 10.695,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 7.775,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.51,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.548,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.666,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.259,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.35,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.033,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.34,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/04_s004_exec_A_2JEA_model_3.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 33
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       4,
+       85,
+       90,
+       94,
+       95,
+       96,
+       97,
+       98,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       139,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       27,
+       28,
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s005",
+     "key": "BOLTZ2|exec_A#2JEA_model_4",
+     "label": "s005 exec_A#2JEA_model_4",
+     "n_contact_pairs": 33,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 12.042,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.995,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.704,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.946,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 7.49,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.62,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 0.823,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.719,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.837,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.017,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/05_s005_exec_A_2JEA_model_4.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 31
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       82,
+       85,
+       90,
+       94,
+       95,
+       96,
+       97,
+       98,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       139,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       27,
+       28,
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s006",
+     "key": "BOLTZ2|exec_B#2JEA_model_0",
+     "label": "s006 exec_B#2JEA_model_0",
+     "n_contact_pairs": 31,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.1,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.883,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.888,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.529,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.4,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.196,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.95,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.835,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.887,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.314,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/06_s006_exec_B_2JEA_model_0.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 25
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       85,
+       90,
+       94,
+       95,
+       96,
+       97,
+       98,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       28,
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s007",
+     "key": "BOLTZ2|exec_B#2JEA_model_1",
+     "label": "s007 exec_B#2JEA_model_1",
+     "n_contact_pairs": 25,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 10.947,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.335,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.336,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.153,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.009,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.1,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.301,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.863,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.883,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.551,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/07_s007_exec_B_2JEA_model_1.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 28
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       1,
+       2,
+       85,
+       90,
+       94,
+       95,
+       96,
+       97,
+       99,
+       100,
+       101,
+       136,
+       137,
+       138,
+       139,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s008",
+     "key": "BOLTZ2|exec_B#2JEA_model_2",
+     "label": "s008 exec_B#2JEA_model_2",
+     "n_contact_pairs": 28,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 10.618,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 9.154,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.903,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.199,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.471,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.068,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 0.936,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.897,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.743,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.987,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/08_s008_exec_B_2JEA_model_2.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 24
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       85,
+       90,
+       94,
+       97,
+       98,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       139,
+       140,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s009",
+     "key": "BOLTZ2|exec_B#2JEA_model_3",
+     "label": "s009 exec_B#2JEA_model_3",
+     "n_contact_pairs": 24,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 11.241,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 9.73,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.744,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.269,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.999,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.885,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.788,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.704,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.84,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.136,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/09_s009_exec_B_2JEA_model_3.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "R2_region_record_pairs": {
+       "equal": true,
+       "n": 23
+      },
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       85,
+       90,
+       94,
+       97,
+       98,
+       99,
+       100,
+       101,
+       104,
+       136,
+       137,
+       138,
+       139,
+       141,
+       181,
+       184,
+       185,
+       190,
+       208
+      ],
+      "rna": [
+       29,
+       31,
+       32,
+       33,
+       34,
+       35
+      ]
+     },
+     "group": null,
+     "id": "s010",
+     "key": "BOLTZ2|exec_B#2JEA_model_4",
+     "label": "s010 exec_B#2JEA_model_4",
+     "n_contact_pairs": 23,
+     "region_positions": [
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 11.524,
+       "position": 26,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 8.605,
+       "position": 27,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 6.087,
+       "position": 28,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.478,
+       "position": 29,
+       "structure_residue": "A"
+      },
+      {
+       "class": "NO_QUALIFYING_CONTACT",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": false,
+       "highlighted_in_sources": [],
+       "in_mapping": true,
+       "in_record": false,
+       "min_heavy_atom_distance_A": 5.598,
+       "position": 30,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.861,
+       "position": 31,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 1.925,
+       "position": 32,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 4.498,
+       "position": 33,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 3.678,
+       "position": 34,
+       "structure_residue": "A"
+      },
+      {
+       "class": "HIGHLIGHTED",
+       "construct_nucleotide": "A",
+       "geometry_agrees_with_record": true,
+       "highlighted": true,
+       "highlighted_in_sources": [
+        "V1_ball",
+        "V1_layer",
+        "V2",
+        "V3"
+       ],
+       "in_mapping": true,
+       "in_record": true,
+       "min_heavy_atom_distance_A": 2.382,
+       "position": 35,
+       "structure_residue": "A"
+      }
+     ],
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/10_s010_exec_B_2JEA_model_4.pdb",
+      "n_protein_residues": 250,
+      "n_rna_residues": 35
+     }
+    }
+   ],
+   "summary": {
+    "all_sets_equal": true,
+    "molstar_compared": false,
+    "n_discrepancies": 0,
+    "n_structures": 10
+   }
+  },
+  {
+   "discrepancies": [],
+   "page_id": "demo3_6BJG_reps_t0.3",
+   "range": null,
+   "structures": [
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       46,
+       56,
+       67,
+       69,
+       107,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       10,
+       11,
+       12,
+       13,
+       14,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 2,
+     "id": "s019",
+     "key": "BOLTZ2|boltz_out#6BJG_model_25",
+     "label": "s019 boltz_out#6BJG_model_25",
+     "n_contact_pairs": 38,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/01_s019_boltz_out_6BJG_model_25.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 1,
+     "id": "s021",
+     "key": "BOLTZ2|boltz_out#6BJG_model_27",
+     "label": "s021 boltz_out#6BJG_model_27",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/02_s021_boltz_out_6BJG_model_27.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    }
+   ],
+   "summary": {
+    "all_sets_equal": true,
+    "molstar_compared": false,
+    "n_discrepancies": 0,
+    "n_structures": 2
+   }
+  },
+  {
+   "discrepancies": [],
+   "page_id": "demo3_6BJG_reps_t0.5",
+   "range": null,
+   "structures": [
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 1,
+     "id": "s013",
+     "key": "BOLTZ2|boltz_out#6BJG_model_2",
+     "label": "s013 boltz_out#6BJG_model_2",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/01_s013_boltz_out_6BJG_model_2.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       15,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       56,
+       69
+      ],
+      "rna": [
+       5,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 3,
+     "id": "s016",
+     "key": "BOLTZ2|boltz_out#6BJG_model_22",
+     "label": "s016 boltz_out#6BJG_model_22",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/02_s016_boltz_out_6BJG_model_22.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       67,
+       69,
+       107,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 5,
+     "id": "s020",
+     "key": "BOLTZ2|boltz_out#6BJG_model_26",
+     "label": "s020 boltz_out#6BJG_model_26",
+     "n_contact_pairs": 42,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/03_s020_boltz_out_6BJG_model_26.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 2,
+     "id": "s033",
+     "key": "BOLTZ2|boltz_out#6BJG_model_38",
+     "label": "s033 boltz_out#6BJG_model_38",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/04_s033_boltz_out_6BJG_model_38.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       46,
+       56,
+       69,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       12,
+       13,
+       14,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 4,
+     "id": "s039",
+     "key": "BOLTZ2|boltz_out#6BJG_model_43",
+     "label": "s039 boltz_out#6BJG_model_43",
+     "n_contact_pairs": 33,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/05_s039_boltz_out_6BJG_model_43.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    }
+   ],
+   "summary": {
+    "all_sets_equal": true,
+    "molstar_compared": false,
+    "n_discrepancies": 0,
+    "n_structures": 5
+   }
+  },
+  {
+   "discrepancies": [],
+   "page_id": "demo3_6BJG_reps_t0.7",
+   "range": null,
+   "structures": [
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       39,
+       41,
+       42,
+       45,
+       52,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 16,
+     "id": "s003",
+     "key": "BOLTZ2|boltz_out#6BJG_model_10",
+     "label": "s003 boltz_out#6BJG_model_10",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/01_s003_boltz_out_6BJG_model_10.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 3,
+     "id": "s005",
+     "key": "BOLTZ2|boltz_out#6BJG_model_12",
+     "label": "s005 boltz_out#6BJG_model_12",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/02_s005_boltz_out_6BJG_model_12.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 2,
+     "id": "s007",
+     "key": "BOLTZ2|boltz_out#6BJG_model_14",
+     "label": "s007 boltz_out#6BJG_model_14",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/03_s007_boltz_out_6BJG_model_14.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       34,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 5,
+     "id": "s010",
+     "key": "BOLTZ2|boltz_out#6BJG_model_17",
+     "label": "s010 boltz_out#6BJG_model_17",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/04_s010_boltz_out_6BJG_model_17.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       46,
+       53,
+       55,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 9,
+     "id": "s011",
+     "key": "BOLTZ2|boltz_out#6BJG_model_18",
+     "label": "s011 boltz_out#6BJG_model_18",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/05_s011_boltz_out_6BJG_model_18.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 1,
+     "id": "s013",
+     "key": "BOLTZ2|boltz_out#6BJG_model_2",
+     "label": "s013 boltz_out#6BJG_model_2",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/06_s013_boltz_out_6BJG_model_2.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       56,
+       69,
+       111
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 7,
+     "id": "s014",
+     "key": "BOLTZ2|boltz_out#6BJG_model_20",
+     "label": "s014 boltz_out#6BJG_model_20",
+     "n_contact_pairs": 16,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/07_s014_boltz_out_6BJG_model_20.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       15,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       56,
+       69
+      ],
+      "rna": [
+       5,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 15,
+     "id": "s016",
+     "key": "BOLTZ2|boltz_out#6BJG_model_22",
+     "label": "s016 boltz_out#6BJG_model_22",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/08_s016_boltz_out_6BJG_model_22.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       67,
+       69,
+       107,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 18,
+     "id": "s020",
+     "key": "BOLTZ2|boltz_out#6BJG_model_26",
+     "label": "s020 boltz_out#6BJG_model_26",
+     "n_contact_pairs": 42,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/09_s020_boltz_out_6BJG_model_26.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 13,
+     "id": "s023",
+     "key": "BOLTZ2|boltz_out#6BJG_model_29",
+     "label": "s023 boltz_out#6BJG_model_29",
+     "n_contact_pairs": 23,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/10_s023_boltz_out_6BJG_model_29.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 4,
+     "id": "s025",
+     "key": "BOLTZ2|boltz_out#6BJG_model_30",
+     "label": "s025 boltz_out#6BJG_model_30",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/11_s025_boltz_out_6BJG_model_30.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 6,
+     "id": "s034",
+     "key": "BOLTZ2|boltz_out#6BJG_model_39",
+     "label": "s034 boltz_out#6BJG_model_39",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/12_s034_boltz_out_6BJG_model_39.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       46,
+       56,
+       69,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       12,
+       13,
+       14,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 17,
+     "id": "s039",
+     "key": "BOLTZ2|boltz_out#6BJG_model_43",
+     "label": "s039 boltz_out#6BJG_model_43",
+     "n_contact_pairs": 33,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/13_s039_boltz_out_6BJG_model_43.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       2,
+       3,
+       4,
+       20,
+       21
+      ]
+     },
+     "group": 12,
+     "id": "s041",
+     "key": "BOLTZ2|boltz_out#6BJG_model_45",
+     "label": "s041 boltz_out#6BJG_model_45",
+     "n_contact_pairs": 16,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/14_s041_boltz_out_6BJG_model_45.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       53,
+       56,
+       68,
+       69
+      ],
+      "rna": [
+       2,
+       3,
+       4,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 14,
+     "id": "s042",
+     "key": "BOLTZ2|boltz_out#6BJG_model_46",
+     "label": "s042 boltz_out#6BJG_model_46",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/15_s042_boltz_out_6BJG_model_46.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       5,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 8,
+     "id": "s043",
+     "key": "BOLTZ2|boltz_out#6BJG_model_47",
+     "label": "s043 boltz_out#6BJG_model_47",
+     "n_contact_pairs": 24,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/16_s043_boltz_out_6BJG_model_47.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       16,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       1,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 11,
+     "id": "s044",
+     "key": "BOLTZ2|boltz_out#6BJG_model_48",
+     "label": "s044 boltz_out#6BJG_model_48",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/17_s044_boltz_out_6BJG_model_48.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": 10,
+     "id": "s045",
+     "key": "BOLTZ2|boltz_out#6BJG_model_49",
+     "label": "s045 boltz_out#6BJG_model_49",
+     "n_contact_pairs": 14,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/18_s045_boltz_out_6BJG_model_49.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    }
+   ],
+   "summary": {
+    "all_sets_equal": true,
+    "molstar_compared": false,
+    "n_discrepancies": 0,
+    "n_structures": 18
+   }
+  },
+  {
+   "discrepancies": [],
+   "page_id": "demo3_6BJG_all50",
+   "range": null,
+   "structures": [
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       43,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s001",
+     "key": "BOLTZ2|boltz_out#6BJG_model_0",
+     "label": "s001 boltz_out#6BJG_model_0",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/01_s001_boltz_out_6BJG_model_0.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s002",
+     "key": "BOLTZ2|boltz_out#6BJG_model_1",
+     "label": "s002 boltz_out#6BJG_model_1",
+     "n_contact_pairs": 21,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/02_s002_boltz_out_6BJG_model_1.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       39,
+       41,
+       42,
+       45,
+       52,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s003",
+     "key": "BOLTZ2|boltz_out#6BJG_model_10",
+     "label": "s003 boltz_out#6BJG_model_10",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/03_s003_boltz_out_6BJG_model_10.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s004",
+     "key": "BOLTZ2|boltz_out#6BJG_model_11",
+     "label": "s004 boltz_out#6BJG_model_11",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/04_s004_boltz_out_6BJG_model_11.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s005",
+     "key": "BOLTZ2|boltz_out#6BJG_model_12",
+     "label": "s005 boltz_out#6BJG_model_12",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/05_s005_boltz_out_6BJG_model_12.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       43,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s006",
+     "key": "BOLTZ2|boltz_out#6BJG_model_13",
+     "label": "s006 boltz_out#6BJG_model_13",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/06_s006_boltz_out_6BJG_model_13.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s007",
+     "key": "BOLTZ2|boltz_out#6BJG_model_14",
+     "label": "s007 boltz_out#6BJG_model_14",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/07_s007_boltz_out_6BJG_model_14.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       43,
+       53,
+       56,
+       69,
+       111
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s008",
+     "key": "BOLTZ2|boltz_out#6BJG_model_15",
+     "label": "s008 boltz_out#6BJG_model_15",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/08_s008_boltz_out_6BJG_model_15.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s009",
+     "key": "BOLTZ2|boltz_out#6BJG_model_16",
+     "label": "s009 boltz_out#6BJG_model_16",
+     "n_contact_pairs": 16,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/09_s009_boltz_out_6BJG_model_16.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       34,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s010",
+     "key": "BOLTZ2|boltz_out#6BJG_model_17",
+     "label": "s010 boltz_out#6BJG_model_17",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/10_s010_boltz_out_6BJG_model_17.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       46,
+       53,
+       55,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s011",
+     "key": "BOLTZ2|boltz_out#6BJG_model_18",
+     "label": "s011 boltz_out#6BJG_model_18",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/11_s011_boltz_out_6BJG_model_18.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69,
+       111
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       6,
+       7,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s012",
+     "key": "BOLTZ2|boltz_out#6BJG_model_19",
+     "label": "s012 boltz_out#6BJG_model_19",
+     "n_contact_pairs": 23,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/12_s012_boltz_out_6BJG_model_19.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s013",
+     "key": "BOLTZ2|boltz_out#6BJG_model_2",
+     "label": "s013 boltz_out#6BJG_model_2",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/13_s013_boltz_out_6BJG_model_2.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       56,
+       69,
+       111
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s014",
+     "key": "BOLTZ2|boltz_out#6BJG_model_20",
+     "label": "s014 boltz_out#6BJG_model_20",
+     "n_contact_pairs": 16,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/14_s014_boltz_out_6BJG_model_20.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s015",
+     "key": "BOLTZ2|boltz_out#6BJG_model_21",
+     "label": "s015 boltz_out#6BJG_model_21",
+     "n_contact_pairs": 15,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/15_s015_boltz_out_6BJG_model_21.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       15,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       56,
+       69
+      ],
+      "rna": [
+       5,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s016",
+     "key": "BOLTZ2|boltz_out#6BJG_model_22",
+     "label": "s016 boltz_out#6BJG_model_22",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/16_s016_boltz_out_6BJG_model_22.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       15,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       56,
+       69
+      ],
+      "rna": [
+       5,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s017",
+     "key": "BOLTZ2|boltz_out#6BJG_model_23",
+     "label": "s017 boltz_out#6BJG_model_23",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/17_s017_boltz_out_6BJG_model_23.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s018",
+     "key": "BOLTZ2|boltz_out#6BJG_model_24",
+     "label": "s018 boltz_out#6BJG_model_24",
+     "n_contact_pairs": 21,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/18_s018_boltz_out_6BJG_model_24.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       46,
+       56,
+       67,
+       69,
+       107,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       10,
+       11,
+       12,
+       13,
+       14,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s019",
+     "key": "BOLTZ2|boltz_out#6BJG_model_25",
+     "label": "s019 boltz_out#6BJG_model_25",
+     "n_contact_pairs": 38,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/19_s019_boltz_out_6BJG_model_25.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       67,
+       69,
+       107,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s020",
+     "key": "BOLTZ2|boltz_out#6BJG_model_26",
+     "label": "s020 boltz_out#6BJG_model_26",
+     "n_contact_pairs": 42,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/20_s020_boltz_out_6BJG_model_26.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s021",
+     "key": "BOLTZ2|boltz_out#6BJG_model_27",
+     "label": "s021 boltz_out#6BJG_model_27",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/21_s021_boltz_out_6BJG_model_27.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s022",
+     "key": "BOLTZ2|boltz_out#6BJG_model_28",
+     "label": "s022 boltz_out#6BJG_model_28",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/22_s022_boltz_out_6BJG_model_28.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s023",
+     "key": "BOLTZ2|boltz_out#6BJG_model_29",
+     "label": "s023 boltz_out#6BJG_model_29",
+     "n_contact_pairs": 23,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/23_s023_boltz_out_6BJG_model_29.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s024",
+     "key": "BOLTZ2|boltz_out#6BJG_model_3",
+     "label": "s024 boltz_out#6BJG_model_3",
+     "n_contact_pairs": 16,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/24_s024_boltz_out_6BJG_model_3.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s025",
+     "key": "BOLTZ2|boltz_out#6BJG_model_30",
+     "label": "s025 boltz_out#6BJG_model_30",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/25_s025_boltz_out_6BJG_model_30.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       67,
+       69,
+       111
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       7,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s026",
+     "key": "BOLTZ2|boltz_out#6BJG_model_31",
+     "label": "s026 boltz_out#6BJG_model_31",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/26_s026_boltz_out_6BJG_model_31.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       46,
+       56,
+       69,
+       111
+      ],
+      "rna": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s027",
+     "key": "BOLTZ2|boltz_out#6BJG_model_32",
+     "label": "s027 boltz_out#6BJG_model_32",
+     "n_contact_pairs": 26,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/27_s027_boltz_out_6BJG_model_32.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       5,
+       6,
+       7,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s028",
+     "key": "BOLTZ2|boltz_out#6BJG_model_33",
+     "label": "s028 boltz_out#6BJG_model_33",
+     "n_contact_pairs": 23,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/28_s028_boltz_out_6BJG_model_33.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s029",
+     "key": "BOLTZ2|boltz_out#6BJG_model_34",
+     "label": "s029 boltz_out#6BJG_model_34",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/29_s029_boltz_out_6BJG_model_34.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s030",
+     "key": "BOLTZ2|boltz_out#6BJG_model_35",
+     "label": "s030 boltz_out#6BJG_model_35",
+     "n_contact_pairs": 19,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/30_s030_boltz_out_6BJG_model_35.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s031",
+     "key": "BOLTZ2|boltz_out#6BJG_model_36",
+     "label": "s031 boltz_out#6BJG_model_36",
+     "n_contact_pairs": 15,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/31_s031_boltz_out_6BJG_model_36.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       2,
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s032",
+     "key": "BOLTZ2|boltz_out#6BJG_model_37",
+     "label": "s032 boltz_out#6BJG_model_37",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/32_s032_boltz_out_6BJG_model_37.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s033",
+     "key": "BOLTZ2|boltz_out#6BJG_model_38",
+     "label": "s033 boltz_out#6BJG_model_38",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/33_s033_boltz_out_6BJG_model_38.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s034",
+     "key": "BOLTZ2|boltz_out#6BJG_model_39",
+     "label": "s034 boltz_out#6BJG_model_39",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/34_s034_boltz_out_6BJG_model_39.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       43,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s035",
+     "key": "BOLTZ2|boltz_out#6BJG_model_4",
+     "label": "s035 boltz_out#6BJG_model_4",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/35_s035_boltz_out_6BJG_model_4.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s036",
+     "key": "BOLTZ2|boltz_out#6BJG_model_40",
+     "label": "s036 boltz_out#6BJG_model_40",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/36_s036_boltz_out_6BJG_model_40.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s037",
+     "key": "BOLTZ2|boltz_out#6BJG_model_41",
+     "label": "s037 boltz_out#6BJG_model_41",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/37_s037_boltz_out_6BJG_model_41.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s038",
+     "key": "BOLTZ2|boltz_out#6BJG_model_42",
+     "label": "s038 boltz_out#6BJG_model_42",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/38_s038_boltz_out_6BJG_model_42.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       11,
+       15,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       46,
+       56,
+       69,
+       109,
+       111,
+       116,
+       118
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       12,
+       13,
+       14,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s039",
+     "key": "BOLTZ2|boltz_out#6BJG_model_43",
+     "label": "s039 boltz_out#6BJG_model_43",
+     "n_contact_pairs": 33,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/39_s039_boltz_out_6BJG_model_43.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       42,
+       43,
+       56,
+       67,
+       69
+      ],
+      "rna": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s040",
+     "key": "BOLTZ2|boltz_out#6BJG_model_44",
+     "label": "s040 boltz_out#6BJG_model_44",
+     "n_contact_pairs": 25,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/40_s040_boltz_out_6BJG_model_44.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       46,
+       56,
+       69
+      ],
+      "rna": [
+       2,
+       3,
+       4,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s041",
+     "key": "BOLTZ2|boltz_out#6BJG_model_45",
+     "label": "s041 boltz_out#6BJG_model_45",
+     "n_contact_pairs": 16,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/41_s041_boltz_out_6BJG_model_45.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       42,
+       53,
+       56,
+       68,
+       69
+      ],
+      "rna": [
+       2,
+       3,
+       4,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s042",
+     "key": "BOLTZ2|boltz_out#6BJG_model_46",
+     "label": "s042 boltz_out#6BJG_model_46",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/42_s042_boltz_out_6BJG_model_46.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       5,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s043",
+     "key": "BOLTZ2|boltz_out#6BJG_model_47",
+     "label": "s043 boltz_out#6BJG_model_47",
+     "n_contact_pairs": 24,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/43_s043_boltz_out_6BJG_model_47.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       16,
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       1,
+       6,
+       7,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s044",
+     "key": "BOLTZ2|boltz_out#6BJG_model_48",
+     "label": "s044 boltz_out#6BJG_model_48",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/44_s044_boltz_out_6BJG_model_48.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       37,
+       38,
+       39,
+       42,
+       43,
+       56,
+       69
+      ],
+      "rna": [
+       3,
+       4,
+       5,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s045",
+     "key": "BOLTZ2|boltz_out#6BJG_model_49",
+     "label": "s045 boltz_out#6BJG_model_49",
+     "n_contact_pairs": 14,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/45_s045_boltz_out_6BJG_model_49.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s046",
+     "key": "BOLTZ2|boltz_out#6BJG_model_5",
+     "label": "s046 boltz_out#6BJG_model_5",
+     "n_contact_pairs": 17,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/46_s046_boltz_out_6BJG_model_5.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       45,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s047",
+     "key": "BOLTZ2|boltz_out#6BJG_model_6",
+     "label": "s047 boltz_out#6BJG_model_6",
+     "n_contact_pairs": 21,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/47_s047_boltz_out_6BJG_model_6.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       41,
+       42,
+       43,
+       45,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s048",
+     "key": "BOLTZ2|boltz_out#6BJG_model_7",
+     "label": "s048 boltz_out#6BJG_model_7",
+     "n_contact_pairs": 22,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/48_s048_boltz_out_6BJG_model_7.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s049",
+     "key": "BOLTZ2|boltz_out#6BJG_model_8",
+     "label": "s049 boltz_out#6BJG_model_8",
+     "n_contact_pairs": 20,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/49_s049_boltz_out_6BJG_model_8.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    },
+    {
+     "chains": {
+      "protein": "A",
+      "rna": "B"
+     },
+     "comparisons": {
+      "V1_mvs_ball_and_stick": {
+       "equal": true
+      },
+      "V1_mvs_cartoon_highlight_layer": {
+       "equal": true
+      },
+      "V2_viewer_manifest": {
+       "equal": true
+      },
+      "V3_side_table": {
+       "equal": true
+      }
+     },
+     "expected": {
+      "protein": [
+       18,
+       19,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       46,
+       53,
+       56,
+       69
+      ],
+      "rna": [
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     "group": null,
+     "id": "s050",
+     "key": "BOLTZ2|boltz_out#6BJG_model_9",
+     "label": "s050 boltz_out#6BJG_model_9",
+     "n_contact_pairs": 18,
+     "structure_copy": {
+      "chains": [
+       "A",
+       "B"
+      ],
+      "file": "structures/50_s050_boltz_out_6BJG_model_9.pdb",
+      "n_protein_residues": 143,
+      "n_rna_residues": 21
+     }
+    }
+   ],
+   "summary": {
+    "all_sets_equal": true,
+    "molstar_compared": false,
+    "n_discrepancies": 0,
+    "n_structures": 50
+   }
+  }
+ ],
+ "record": "rnplens-viewer-highlight-coverage-1"
+}

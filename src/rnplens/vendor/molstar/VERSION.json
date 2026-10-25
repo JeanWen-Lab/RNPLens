@@ -1,0 +1,38 @@
+{
+ "copyright": "Copyright (c) 2017 - now, Mol* contributors",
+ "files": {
+  "LICENSE": {
+   "bytes": 1088,
+   "sha256": "aa42900c6ea7bfcf22d25a4c369025e01a526c66501fd9193f9a8aecee7a0753",
+   "source_path_in_tarball": "package/LICENSE"
+  },
+  "molstar.css": {
+   "bytes": 72904,
+   "sha256": "22fbf73b75c11ef57687d08437c95dbfe8430ea895264f6da2b9b01e28bacc49",
+   "source_path_in_tarball": "package/build/viewer/molstar.css"
+  },
+  "molstar.js": {
+   "bytes": 5268685,
+   "sha256": "4fc6493c2471db8834dcc391151b344d7017e4eb8a4eb76c152be5f9dbd23874",
+   "source_path_in_tarball": "package/build/viewer/molstar.js"
+  }
+ },
+ "homepage": "https://molstar.org",
+ "license": "MIT",
+ "license_file": "LICENSE",
+ "not_included": "source maps (molstar.js.map, molstar.css.map), themes, example pages and images of build/viewer",
+ "package": "molstar",
+ "record": "rnplens-vendored-asset-1",
+ "source": {
+  "dist_tag": "latest (stable) at fetch time",
+  "fetched_utc": "2026-10-16",
+  "published_utc": "2026-10-08T10:00:08.869Z",
+  "registry": "npm",
+  "tarball_integrity_registry": "sha512-iExD98bJN2P4JK6+pVMwdJlPePldBH8oNT0pZhs8ucxOp086NU2b/gThKwYMC3SWkdmv++a1g4fGwKfu4Glx1w==",
+  "tarball_sha1_registry_shasum": "d19b9ceef8cef63d83adf61091d2a3eab5feafa4",
+  "tarball_sha256": "08e9292fb427bbebe9e1ecaef9e1b1066e2323dc4327e83692c4a5c3f14fff4e",
+  "tarball_url": "https://registry.npmjs.org/molstar/-/molstar-5.13.1.tgz"
+ },
+ "use": "prebuilt Mol* Viewer bundle (build/viewer) used unchanged by rnplens.viewer.structure_page; RNPLens does not modify, rebuild or extend it",
+ "version": "5.13.1"
+}

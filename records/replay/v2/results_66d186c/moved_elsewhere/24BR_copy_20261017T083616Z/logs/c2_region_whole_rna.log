@@ -1,0 +1,9 @@
+$ rnplens region project/imports/v0004/main project/analyses/v0004/main --rna 1-4
+rnplens region: existing result reused (recorded inputs unchanged): /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/moved_elsewhere/24BR_copy_20261017T083616Z/project/analyses/v0004/main/region_1-4
+rnplens region: RNA 1-4; 2 run(s) compared (run_A, run_B); 10 structure(s)
+  contacts in range: 32; shared by all runs: 28; present in some runs: 0; not determined somewhere: 0
+  found only in run run_A: 2 (Y252-U3, Q272-U1)
+  found only in run run_B: 2 (R285-U3, H311-U4)
+  shared by all runs: K231-U1, K231-U2, D254-U4, Q258-U4, R260-U3, R260-U4, Q262-U2, P265-U1, P265-U2, E267-U1, P268-U1, H269-U1, S270-U1, S270-U2, F271-U1, F271-U2, Q272-U2, R285-U4, D286-U4, I299-U4, F300-U3, F300-U4, H302-U2, H302-U3, S304-U2, F306-U2, F306-U3, I307-U3
+  Recurrence among predictions is not evidence of correctness.
+  output folder: /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/moved_elsewhere/24BR_copy_20261017T083616Z/project/analyses/v0004/main/region_1-4

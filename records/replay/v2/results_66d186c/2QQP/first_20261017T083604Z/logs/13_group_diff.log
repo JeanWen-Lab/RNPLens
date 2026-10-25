@@ -1,0 +1,4 @@
+$ rnplens group-diff project/analyses/v0004/main 1 2
+rnplens group-diff: group 1 vs group 2 at t=0.5: frequent in both 11; frequent in group 1 only 8; frequent in group 2 only 13; contacts frequent in neither group (not listed) 0
+  A contact distinguishing two predicted groups is a candidate observation for expert review; it does not establish a biological contact. Mutation effects can reflect RNA structural change as well as loss of a contact. No mutation is recommended and no effect is predicted.
+  written: project/analyses/v0004/main/groups/diff_1_2/diff.html

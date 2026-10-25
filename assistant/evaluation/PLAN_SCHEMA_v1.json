@@ -1,0 +1,190 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "properties": {
+  "goal": {
+   "type": "string",
+   "enum": [
+    "AGREEMENT",
+    "REGION_CLAIM",
+    "COMPARE",
+    "WHICH_ANALYSIS",
+    "EXPLAIN_METRIC",
+    "UNSUPPORTED"
+   ]
+  },
+  "reference_supplied": {
+   "type": "boolean"
+  },
+  "requested_capabilities": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "enum": [
+     "contacts_agreement",
+     "region_contacts",
+     "reference_accuracy",
+     "before_after_comparison",
+     "metric_definition",
+     "ranking_or_selection",
+     "diagnose_disagreement",
+     "geometry_decomposition",
+     "new_prediction",
+     "mutation_advice",
+     "grouping",
+     "other"
+    ]
+   }
+  },
+  "clarification_needed": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "steps": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "tool": {
+      "type": "string",
+      "enum": [
+       "import_predictions",
+       "analyse_predictions",
+       "region_contacts",
+       "evaluate_against_reference",
+       "compare_prediction_sets",
+       "explain_metric"
+      ]
+     },
+     "project_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "folders": {
+      "type": [
+       "array",
+       "null"
+      ],
+      "items": {
+       "type": "string"
+      }
+     },
+     "protein_fasta": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "rna_fasta": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "engine": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "enum": [
+       "BOLTZ2",
+       "CHAI1",
+       "AF3",
+       "RF3",
+       "RF2NA",
+       "OTHER",
+       null
+      ]
+     },
+     "accept_offsets": {
+      "type": [
+       "boolean",
+       "null"
+      ]
+     },
+     "before_project_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "after_project_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "reference": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "rna_start": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "rna_end": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "protein_start": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "protein_end": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "metric_name": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "purpose": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "tool",
+     "project_id",
+     "folders",
+     "protein_fasta",
+     "rna_fasta",
+     "engine",
+     "accept_offsets",
+     "before_project_id",
+     "after_project_id",
+     "reference",
+     "rna_start",
+     "rna_end",
+     "protein_start",
+     "protein_end",
+     "metric_name",
+     "purpose"
+    ]
+   }
+  }
+ },
+ "required": [
+  "goal",
+  "reference_supplied",
+  "requested_capabilities",
+  "clarification_needed",
+  "steps"
+ ]
+}

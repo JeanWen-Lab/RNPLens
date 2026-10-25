@@ -1,0 +1,44 @@
+{
+ "record": "rnplens-run-record-1",
+ "rnplens_version": "0.2.0rc3",
+ "implementation": "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)",
+ "created_utc": "2026-10-14T00:09:14+00:00",
+ "command": [
+  "rnplens",
+  "report",
+  "run",
+  "/tmp/RNPLens_example_clone/expected_output/B1_report_contract.json",
+  "--out",
+  "/tmp/RNPLens_example_clone/expected_output/B1_report_7K9D"
+ ],
+ "working_directory": "/tmp/RNPLens_example_clone/examples/reference_based",
+ "inputs": [
+  {
+   "path": "/tmp/RNPLens_example_clone/expected_output/B1_report_contract.json",
+   "sha256": "a7ac8c3ecfaefb76cd5cf627c133ff73b6a9d3f157a57272eb5caec0ff50a478"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/report_7K9D/exec_A/7K9D_model_0.pdb",
+   "sha256": "9c1a6659f60fa28011b4deae449524146aaba822529e2f065a541b0d1a968009"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/report_7K9D/exec_B/7K9D_model_0.pdb",
+   "sha256": "89f54c2af3b97e38858fcb590c5fa55b6755f122a5c28b7b298b377aedd4f049"
+  }
+ ],
+ "outputs": [
+  {
+   "file": "contacts_by_output.json",
+   "sha256": "031d0ac351b149feef712241436c5bf7453f50642a570eba91e6d1cf5079ffa3"
+  },
+  {
+   "file": "report_7K9D_example.html",
+   "sha256": "dfc72319c94d35a4cbe82f28b4b3f39ebec00054b746753a8e505649da15bd09"
+  },
+  {
+   "file": "result.json",
+   "sha256": "b51664dbbcbf4e198b33a0d2d5ba916c4b67a9a29570b93172277b7027868ba2"
+  }
+ ],
+ "note": "written by the rnplens command after the tool finished; the tool's own result files are unchanged"
+}

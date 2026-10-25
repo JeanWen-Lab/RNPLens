@@ -1,0 +1,634 @@
+{
+ "canonical_files": [
+  {
+   "file": ".rnplens/HEAD",
+   "first_sha256": "17ecc39e24ec991c8158858a4218211230135fd30be97ae941442533b84f287e",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "17ecc39e24ec991c8158858a4218211230135fd30be97ae941442533b84f287e"
+  },
+  {
+   "file": ".rnplens/cache/5f315380b704e2bae401ca218fdf2d8a46725d28545332aeaad4eb7c2d089587.json",
+   "first_sha256": "e9ed3213bd1f6fc87e3305f5060806ceef81b2c446ac8cc4a6719d98b497ed76",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "e9ed3213bd1f6fc87e3305f5060806ceef81b2c446ac8cc4a6719d98b497ed76"
+  },
+  {
+   "file": ".rnplens/cache/93d7563d66ecc142d02111e329caefdf223b3af2d0061a223accdb3df0b294e6.json",
+   "first_sha256": "3efef91fa2c9d1ea5356a25810aa3e1fcb1baad1961caad5d3ca109afc43e1c5",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "3efef91fa2c9d1ea5356a25810aa3e1fcb1baad1961caad5d3ca109afc43e1c5"
+  },
+  {
+   "file": ".rnplens/cache/c7681408f595fddcf50a58c03413b5e81a72990cda2f9fe521b4fd6aec46eebc.json",
+   "first_sha256": "41e53245522156fc9b3e0499ce858204db6001c672e5c8897b3ff980c1f44d0d",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "41e53245522156fc9b3e0499ce858204db6001c672e5c8897b3ff980c1f44d0d"
+  },
+  {
+   "file": ".rnplens/state/v0001.json",
+   "first_sha256": "d5a77f90573fbb6115551c6e61b25793c6726334ad8ecc1884aebc6daec84297",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "d5a77f90573fbb6115551c6e61b25793c6726334ad8ecc1884aebc6daec84297"
+  },
+  {
+   "file": ".rnplens/state/v0002.json",
+   "first_sha256": "c541ef7ed02ebc51ea3a4d0cddc5792a0db0f4365e1e3e0789a7138f280dcc6e",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "c541ef7ed02ebc51ea3a4d0cddc5792a0db0f4365e1e3e0789a7138f280dcc6e"
+  },
+  {
+   "file": ".rnplens/state/v0003.json",
+   "first_sha256": "75218353ed601e4719f7d48719978de66af4268b2f19d87b35a0741087bb7f07",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "75218353ed601e4719f7d48719978de66af4268b2f19d87b35a0741087bb7f07"
+  },
+  {
+   "file": ".rnplens/state/v0004.json",
+   "first_sha256": "556b0b39db29a1ceb92a31c5d064cbe8ab69c8487c233ecc80ba06dcb952d82e",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "556b0b39db29a1ceb92a31c5d064cbe8ab69c8487c233ecc80ba06dcb952d82e"
+  },
+  {
+   "file": ".rnplens/state/v0005.json",
+   "first_sha256": "4549844837730c2c54ed6a9f5e14cf51ea2d8cffcd27c20f0abcf40f173070b0",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "4549844837730c2c54ed6a9f5e14cf51ea2d8cffcd27c20f0abcf40f173070b0"
+  },
+  {
+   "file": ".rnplens/state/v0006.json",
+   "first_sha256": "f79cd243374925cb883c73c658842b23fdaa356e1686b5a193b27da60d11d14b",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "f79cd243374925cb883c73c658842b23fdaa356e1686b5a193b27da60d11d14b"
+  },
+  {
+   "file": ".rnplens/state/v0007.json",
+   "first_sha256": "48d5d3701ff12062a8f0db79ad8c8c578ac258d9c73c45cc66d85b336e1d2adf",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "48d5d3701ff12062a8f0db79ad8c8c578ac258d9c73c45cc66d85b336e1d2adf"
+  },
+  {
+   "file": "analyses/v0004/index.json",
+   "first_sha256": "8128c14135f21062b6a7c67c7a297f9363bf4c97fd23d100ab06c9c1c6ef54a7",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "8128c14135f21062b6a7c67c7a297f9363bf4c97fd23d100ab06c9c1c6ef54a7"
+  },
+  {
+   "file": "analyses/v0004/main/region_2-5/region_contacts.tsv",
+   "first_sha256": "fc88a17f81ef79bf6abe8d1cff71ab1077c646090088a5144e41ebf252d04746",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "fc88a17f81ef79bf6abe8d1cff71ab1077c646090088a5144e41ebf252d04746"
+  },
+  {
+   "file": "analyses/v0004/main/report/contacts_by_output.json",
+   "first_sha256": "c6aaa99f567fdcd8794ef57f3d9a5a0b113296cf70d30dfee6d10b3e58a9acfb",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "c6aaa99f567fdcd8794ef57f3d9a5a0b113296cf70d30dfee6d10b3e58a9acfb"
+  },
+  {
+   "file": "analyses/v0004/main/report_runs_BOLTZ2/contacts_by_output.json",
+   "first_sha256": "8b9f3722e72dadcdcfd8bec8659316dfe42cf0bb0f3ada55d6497cbf7b7afe07",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "8b9f3722e72dadcdcfd8bec8659316dfe42cf0bb0f3ada55d6497cbf7b7afe07"
+  },
+  {
+   "file": "analyses/v0005/index.json",
+   "first_sha256": "7b3f0236d0f72edd5d224d2c6dbf24184bf1e59138286566bb54f69ef8fb7182",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "7b3f0236d0f72edd5d224d2c6dbf24184bf1e59138286566bb54f69ef8fb7182"
+  },
+  {
+   "file": "analyses/v0005/update_report.html",
+   "first_sha256": "616e25e252c70f873eeccc27bd285f298e90db47713720efe33eb13b971edc62",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "616e25e252c70f873eeccc27bd285f298e90db47713720efe33eb13b971edc62"
+  },
+  {
+   "file": "analyses/v0005/update_report.json",
+   "first_sha256": "da7a26fe0625f2fa60e351e311b77a6418ece8929296b38b1a17a11de694c63d",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "da7a26fe0625f2fa60e351e311b77a6418ece8929296b38b1a17a11de694c63d"
+  },
+  {
+   "file": "analyses/v0006/index.json",
+   "first_sha256": "2b26ad1fda2762116e81efe71b0e879bbaf589ba39719de4958a29c80872d7d5",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "2b26ad1fda2762116e81efe71b0e879bbaf589ba39719de4958a29c80872d7d5"
+  },
+  {
+   "file": "analyses/v0006/update_report.html",
+   "first_sha256": "35efe35b3dc8e602ec7e5db7b9bc18e87542ec37e5eea4757691d38262ab6fd7",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "35efe35b3dc8e602ec7e5db7b9bc18e87542ec37e5eea4757691d38262ab6fd7"
+  },
+  {
+   "file": "analyses/v0006/update_report.json",
+   "first_sha256": "1ed0cbf7493f8398de3553ccac15f7ee2df27983f1a961e099921f2eaeee0870",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "1ed0cbf7493f8398de3553ccac15f7ee2df27983f1a961e099921f2eaeee0870"
+  },
+  {
+   "file": "analyses/v0007/index.json",
+   "first_sha256": "32bdcf66f8c9077b1cec46c01154aaf573aebfd30f6651e3a5cd8c8bc49cac53",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "32bdcf66f8c9077b1cec46c01154aaf573aebfd30f6651e3a5cd8c8bc49cac53"
+  },
+  {
+   "file": "analyses/v0007/update_report.html",
+   "first_sha256": "279c8026b899820b08e1537949ee237c91ec2243e6ca6790eb78e8b409f9f0ab",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "279c8026b899820b08e1537949ee237c91ec2243e6ca6790eb78e8b409f9f0ab"
+  },
+  {
+   "file": "analyses/v0007/update_report.json",
+   "first_sha256": "e07c942eeaf209536bb686bc473f265ebe8cc6889424638997ce94222705daa0",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "e07c942eeaf209536bb686bc473f265ebe8cc6889424638997ce94222705daa0"
+  },
+  {
+   "file": "imports/v0002/main/construct_protein.fasta",
+   "first_sha256": "e6a6ba852c9088735934f5c3b8e4c7b6c7d394837c3924e3aff9eeec9e36bf3e",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "e6a6ba852c9088735934f5c3b8e4c7b6c7d394837c3924e3aff9eeec9e36bf3e"
+  },
+  {
+   "file": "imports/v0002/main/construct_rna.fasta",
+   "first_sha256": "cdf833a9ab2e6ce17eafc1cb55dc47f52fd816db762f2ff447bcf580c1a44ff5",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "cdf833a9ab2e6ce17eafc1cb55dc47f52fd816db762f2ff447bcf580c1a44ff5"
+  },
+  {
+   "file": "imports/v0004/main/construct_protein.fasta",
+   "first_sha256": "e6a6ba852c9088735934f5c3b8e4c7b6c7d394837c3924e3aff9eeec9e36bf3e",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "e6a6ba852c9088735934f5c3b8e4c7b6c7d394837c3924e3aff9eeec9e36bf3e"
+  },
+  {
+   "file": "imports/v0004/main/construct_rna.fasta",
+   "first_sha256": "cdf833a9ab2e6ce17eafc1cb55dc47f52fd816db762f2ff447bcf580c1a44ff5",
+   "result": "BYTE_IDENTICAL",
+   "second_sha256": "cdf833a9ab2e6ce17eafc1cb55dc47f52fd816db762f2ff447bcf580c1a44ff5"
+  }
+ ],
+ "completed": {
+  "first": "RESULT=COMPLETE, steps=14, unexpected exits=[]",
+  "second": "RESULT=COMPLETE, steps=14, unexpected exits=[]"
+ },
+ "criteria": {
+  "0_completed": true,
+  "i_canonical_byte_identical": true,
+  "ii_scientific_equal": false
+ },
+ "first": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/2Q66/first_20261017T083615Z",
+ "n_canonical": {
+  "first": 28,
+  "second": 28
+ },
+ "scientific": {
+  "derive_error": null,
+  "differing_files": [
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "logs/01_init.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 15
+    },
+    "file": "logs/02_clarify_json.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "logs/03_answer.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 2
+    },
+    "file": "logs/04_update_no_change.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "logs/06_region.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "logs/07_export_methods.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "logs/08_explain_structures.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "TEXT_WITH_HASH:VOLATILE_ONLY": 1,
+     "VOLATILE_TEXT": 3
+    },
+    "file": "logs/09_menu_C_followup_local.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 2
+    },
+    "file": "logs/10_update_after_outputs.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 2
+    },
+    "file": "logs/11_remove_run_C.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "logs/12_versions.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 2
+    },
+    "file": "logs/13_status.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/.rnplens/cache/5f315380b704e2bae401ca218fdf2d8a46725d28545332aeaad4eb7c2d089587.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 6,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/.rnplens/cache/93d7563d66ecc142d02111e329caefdf223b3af2d0061a223accdb3df0b294e6.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/.rnplens/cache/c7681408f595fddcf50a58c03413b5e81a72990cda2f9fe521b4fd6aec46eebc.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/.rnplens/state/v0001.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 1,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/.rnplens/state/v0002.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 1,
+     "TIMESTAMP": 3
+    },
+    "file": "project/.rnplens/run/.rnplens/state/v0003.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 3
+    },
+    "file": "project/.rnplens/run/.rnplens/state/v0004.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 3
+    },
+    "file": "project/.rnplens/run/.rnplens/state/v0005.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 3
+    },
+    "file": "project/.rnplens/run/.rnplens/state/v0006.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 6
+    },
+    "file": "project/.rnplens/run/.rnplens/state/v0007.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/analyses/v0004/index.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/analyses/v0005/index.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 1,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/analyses/v0005/update_report.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/analyses/v0006/index.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 1,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/analyses/v0006/update_report.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/analyses/v0007/index.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 1,
+     "TIMESTAMP": 1
+    },
+    "file": "project/.rnplens/run/analyses/v0007/update_report.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "HASH:VOLATILE_ONLY": 23
+    },
+    "file": "project/.rnplens/run/projection_index.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "project/analyses/v0004/main.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 4
+    },
+    "file": "project/analyses/v0004/main/commands.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 47,
+     "HASH:VOLATILE_ONLY": 7,
+     "TIMESTAMP": 1
+    },
+    "file": "project/analyses/v0004/main/explain/explain_evidence_9a4f5702.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "TEXT_WITH_HASH:VOLATILE_ONLY": 1
+    },
+    "file": "project/analyses/v0004/main/explain/explain_evidence_9a4f5702.txt",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 38,
+     "HASH:VOLATILE_ONLY": 3,
+     "TIMESTAMP": 1
+    },
+    "file": "project/analyses/v0004/main/explain/explain_structures_44136fa3.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "project/analyses/v0004/main/explain/explain_structures_44136fa3.txt",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 30,
+     "COMPOSITE:VOLATILE_ONLY": 4,
+     "HASH:VOLATILE_ONLY": 4
+    },
+    "file": "project/analyses/v0004/main/followup/fu_0001/followup_answer.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "TEXT_WITH_HASH:VOLATILE_ONLY": 1
+    },
+    "file": "project/analyses/v0004/main/followup/fu_0001/followup_answer.md",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 3,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 4
+    },
+    "file": "project/analyses/v0004/main/followup/fu_0001/followup_record.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 5,
+     "HASH:VOLATILE_ONLY": 5,
+     "TIMESTAMP": 1
+    },
+    "file": "project/analyses/v0004/main/methods/methods_sources.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 27,
+     "HASH:VOLATILE_ONLY": 14,
+     "TIMESTAMP": 3
+    },
+    "file": "project/analyses/v0004/main/methods/provenance_manifest.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 41,
+     "HASH:VOLATILE_ONLY": 4,
+     "TIMESTAMP": 1
+    },
+    "file": "project/analyses/v0004/main/region_2-5/region.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "DURATION": 1
+    },
+    "file": "project/analyses/v0004/main/report/result.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 14,
+     "HASH:VOLATILE_ONLY": 2,
+     "TIMESTAMP": 1
+    },
+    "file": "project/analyses/v0004/main/report/rnplens_run.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 6,
+     "HASH:VOLATILE_ONLY": 1,
+     "TIMESTAMP": 1
+    },
+    "file": "project/analyses/v0004/main/report_runs_BOLTZ2/rnplens_run.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 4
+    },
+    "file": "project/analyses/v0004/main/run_repeat_inputs/report_contract_BOLTZ2.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 10,
+     "TIMESTAMP": 1
+    },
+    "file": "project/analyses/v0004/main/summary.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 2
+    },
+    "file": "project/imports/v0002/main.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 60,
+     "TIMESTAMP": 1
+    },
+    "file": "project/imports/v0002/main/manifest.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 20
+    },
+    "file": "project/imports/v0002/main/report_contract.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "VOLATILE_TEXT": 1
+    },
+    "file": "project/imports/v0004/main.log",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 40,
+     "TIMESTAMP": 1
+    },
+    "file": "project/imports/v0004/main/manifest.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 20
+    },
+    "file": "project/imports/v0004/main/report_contract.json",
+    "verdict": "VOLATILE_ONLY"
+   },
+   {
+    "classes": {
+     "ABS_PATH": 2,
+     "HASH:VOLATILE_ONLY": 1,
+     "TIMESTAMP": 1
+    },
+    "file": "region_rule.json",
+    "verdict": "VOLATILE_ONLY"
+   }
+  ],
+  "evidence_hash_recomputation_equal": {
+   "first:project/analyses/v0004/main/followup/fu_0001/followup_record.json": false,
+   "second:project/analyses/v0004/main/followup/fu_0001/followup_record.json": false
+  },
+  "n_byte_identical": 112,
+  "n_files_first": 166,
+  "n_files_second": 166,
+  "not_volatile": [],
+  "unpaired_first": [],
+  "unpaired_second": []
+ },
+ "second": "/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/2Q66/second_copy_20261017T083835Z",
+ "verdict": "FAIL"
+}

@@ -1,0 +1,61 @@
+{
+ "base": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/feature/nt-contacts/out/feature_82deb28/eval/base/a",
+ "feature": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/feature/nt-contacts/out/feature_82deb28/posthoc_eval_control/base_repeat/a",
+ "files": [
+  {
+   "file": "evaluate/s001/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "4b0e4b718103d31bf259d6a386f7da8f5636fde351db5b027e859a51918d504a",
+   "sha256_feature": "23de5aaf604858ae1b25fb3efe3a6aa1bcb9ac529fd948b23506b3d75fd62647",
+   "byte_identical": false,
+   "differing_paths": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "n_differing_paths": 2,
+   "non_environment_differences": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "pass": false
+  },
+  {
+   "file": "evaluate/s002/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "0032b79520dc19935755ae67b7bf2e31691ddd6de4b68c353de81d7ebb09c477",
+   "sha256_feature": "d37630846e0ec2c817a77aaebc3a522ff9b70846678f55712f89da1f397e5af0",
+   "byte_identical": false,
+   "differing_paths": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "n_differing_paths": 2,
+   "non_environment_differences": [
+    "/created_utc",
+    "/rnplens_public_output/frozen_component_output_sha256_before_filtering/result.json/raw_file_sha256"
+   ],
+   "pass": false
+  },
+  {
+   "file": "evaluate/s001/result.csv",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "437023d459e3e40d91fb3e2b520241c180427d85cbceeabddfe004847f39d0c9",
+   "sha256_feature": "437023d459e3e40d91fb3e2b520241c180427d85cbceeabddfe004847f39d0c9",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "evaluate/s001/summary.txt",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "70927d4a82345feda28c428faffa0a4935059d89bf1c2477f4cf8eff6154ad1f",
+   "sha256_feature": "70927d4a82345feda28c428faffa0a4935059d89bf1c2477f4cf8eff6154ad1f",
+   "byte_identical": true,
+   "pass": true
+  }
+ ],
+ "pass": false
+}

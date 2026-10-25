@@ -1,0 +1,58 @@
+{
+ "record": "rnplens-run-record-1",
+ "rnplens_version": "0.2.0rc3",
+ "implementation": "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)",
+ "created_utc": "2026-10-14T00:09:15+00:00",
+ "command": [
+  "rnplens",
+  "diagnose",
+  "run",
+  "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_0.pdb",
+  "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_1.pdb",
+  "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_2.pdb",
+  "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_3.pdb",
+  "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_4.pdb",
+  "--mode",
+  "within_engine",
+  "--engine",
+  "BOLTZ2",
+  "--target",
+  "7K9D",
+  "--out",
+  "/tmp/RNPLens_example_clone/expected_output/B2_diagnose_7K9D"
+ ],
+ "working_directory": "/tmp/RNPLens_example_clone/examples/reference_based",
+ "inputs": [
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_0.pdb",
+   "sha256": "9c1a6659f60fa28011b4deae449524146aaba822529e2f065a541b0d1a968009"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_1.pdb",
+   "sha256": "987524ca93d2f2548ec7e93425fb64da2a428335311a0a63f5bbcd1357d2a762"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_2.pdb",
+   "sha256": "3a19579de4e146b04b67b04ada09ae611172e1092b06011594511a218e428a08"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_3.pdb",
+   "sha256": "82df8075f8f6689707cb65b22b6542649338c25125e38e0dcee65ee451f6b7f7"
+  },
+  {
+   "path": "/tmp/RNPLens_example_clone/examples/reference_free/diagnose_7K9D/7K9D_model_4.pdb",
+   "sha256": "31f37bb13a3d2aa02b0174882f7749f4dce8e2af5705a3f7d55c47a74a3e4b30"
+  }
+ ],
+ "outputs": [
+  {
+   "file": "report.html",
+   "sha256": "b1780af16d9ccb77e85806b18fa735c85600f8241b7cff31eb18e2a69ccccba7"
+  },
+  {
+   "file": "report.json",
+   "sha256": "f03aff048c1eee9c3d5a7c958d10b6c101e59954e81091e29d6666f287328ee8"
+  }
+ ],
+ "note": "written by the rnplens command after the tool finished; the tool's own result files are unchanged"
+}

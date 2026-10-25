@@ -1,0 +1,13 @@
+records/replay/DETERMINISM_CONTRACT_v2.md: OK
+records/replay/v2/check_pair_v2.py: OK
+records/replay/v2/run_retest_v2.sh: OK
+records/replay/v2/retest_case_v2.sh: OK
+records/replay/v2/continue_case_v2.sh: OK
+records/replay/v2/steps_v2.sh: OK
+records/replay/v2/prepare_inputs_v2.sh: OK
+records/replay/v2/canonical_artifacts_v2.json: OK
+records/replay/trace_replay_diffs.py: OK
+records/replay/retest/canonical_artifacts_v1.json: OK
+demos/lib/followup_scripted.py: OK
+demos/lib/region_rule.py: OK
+demos/lib/truncate_rna.py: OK

@@ -1,0 +1,10 @@
+{
+ "receipt": "test_run",
+ "receipt_commit": "cf81acd9fcf998f50a5975ebe11605c9b657a304",
+ "where": "macOS arm64 (macOS-27.0.1-arm64-arm-64bit), local clone of the cf81acd bundle, conda env rnplens (Python 3.11.17, numpy 1.26.4)",
+ "command": "PYTHONPATH=$PWD/src:$PWD/assistant python -m pytest -q tests assistant/tests -p no:cacheprovider --basetemp=<scratch>",
+ "date": "2026-10-16",
+ "result": {"passed": 541, "failed": 1, "skipped": 17},
+ "failed_tests": ["tests/test_workflow_analyse.py::test_report_numbers_equal_the_rc3_expected_output"],
+ "note": "the known macOS last-digit difference (records/release/MACOS_NUMERICAL_DIFFERENCE.md); baseline run of track release-docs before any change"
+}

@@ -1,0 +1,86 @@
+{
+ "rule": {
+  "rule_id": "RNPBENCH_EVALUATE_FIXTURE_RULE_V2",
+  "frozen_utc": "2026-10-10T07:56:52Z",
+  "purpose": "software regression fixtures for rnpbench evaluate; not a scientific selection; no fixture value is reported as a benchmark result",
+  "pool": "released score_v3 stores; scored categories use Boltz-2 exec_A designated outputs (model_0, the engine's rank-0) on the five-engine common population (59 targets), so both the released DockQ row and the frozen four-axis geometry row exist; the no-value category uses the released RF3 rows (the only engine with refusals other than AF3)",
+  "categories_in_assignment_order": {
+   "no_value": "status NO_VALUE in the released store; first by (target, execution, model_idx)",
+   "equivalent_copies": "n_admissible_candidates >= 2 and the reference holds >= 2 chains of the protein entity",
+   "residue_numbering": "a native chain of the selected mapping has a NON-CONSTANT author-vs-construct offset (auth_seq_id - label_seq_id takes more than one value: renumbering, gaps in author numbering) or insertion codes",
+   "partial_reference": "a native chain of the selected mapping has fewer than 60% of its construct positions observed",
+   "short_rna": "RNA construct <= 5 nt, one protein and one RNA chain in the reference, a single admissible candidate",
+   "ordinary": "one protein and one RNA chain in the reference; single admissible candidate; RNA 20-60 nt; >= 90% of construct positions observed in both chains; a constant author-vs-construct offset per chain and no insertion codes; all paired residues in frame"
+  },
+  "selection_within_category": "smallest protein + RNA construct length, ties by target identifier; a target already assigned to an earlier category is skipped",
+  "constructed_negative_controls": "two inputs derived from the ordinary fixture, labelled as constructed: (i) the RNA chain removed from the prediction; (ii) the prediction's residue numbering shifted by +1000. Their expected outputs are whatever the frozen code returns; the test asserts only that each is a no-value state and never DockQ = 0",
+  "values_not_used": [
+   "DockQ",
+   "any geometry value",
+   "structure appearance"
+  ],
+  "supersedes": "V1: its 'ordinary' category required auth_seq_id == label_seq_id, which no candidate satisfies (a constant author-numbering offset is the norm in deposited entries), so it was empty; its 'residue_numbering' category was therefore uninformative. Amended after seeing only category counts and identifiers, no values."
+ },
+ "chosen": {
+  "no_value": {
+   "engine": "RF3",
+   "execution": "exec_A",
+   "target": "6NY2",
+   "model_idx": 0,
+   "checksum": "341447f80bdb0214c0275b23220d76c0f79fea38aebe910054b749af885a616a",
+   "model_path": null,
+   "status": "NO_VALUE",
+   "dockq": null
+  },
+  "equivalent_copies": {
+   "engine": "BOLTZ2",
+   "execution": "exec_A",
+   "target": "6E4P",
+   "model_idx": null,
+   "checksum": "bd6d8dc4493904887ef27f569cc866fc6de3f04bac971b09b72495f5e441b474",
+   "model_path": "/home/jwen/projects/PCfold3D-RNP/outputs/rnpbench/pilot/boltz/exec_A/6E4P/boltz_results_6E4P/predictions/6E4P/6E4P_model_0.pdb",
+   "status": "SCORED",
+   "dockq": 0.349
+  },
+  "residue_numbering": {
+   "engine": "BOLTZ2",
+   "execution": "exec_A",
+   "target": "4PMI",
+   "model_idx": null,
+   "checksum": "f823c136ac7aa1cd8f41a9d82600ec901539750efbdd626742935b95390726d1",
+   "model_path": "/home/jwen/projects/PCfold3D-RNP/outputs/rnpbench/pilot/boltz/exec_A/4PMI/boltz_results_4PMI/predictions/4PMI/4PMI_model_0.pdb",
+   "status": "SCORED",
+   "dockq": 0.738
+  },
+  "partial_reference": {
+   "engine": "BOLTZ2",
+   "execution": "exec_A",
+   "target": "2JEA",
+   "model_idx": null,
+   "checksum": "90572594e639c0bae30cc840eebd3fac31e597b5f4679bbb0df9a33fb26f99a6",
+   "model_path": "/home/jwen/projects/PCfold3D-RNP/outputs/rnpbench/pilot/boltz/exec_A/2JEA/boltz_results_2JEA/predictions/2JEA/2JEA_model_0.pdb",
+   "status": "SCORED",
+   "dockq": 0.07
+  },
+  "short_rna": {
+   "engine": "BOLTZ2",
+   "execution": "exec_A",
+   "target": "4I67",
+   "model_idx": null,
+   "checksum": "502ed04fcc242cec44247d61173baa1498a4dd7e04c983b01334b9a02b8ad601",
+   "model_path": "/home/jwen/projects/PCfold3D-RNP/outputs/rnpbench/pilot/boltz/exec_A/4I67/boltz_results_4I67/predictions/4I67/4I67_model_0.pdb",
+   "status": "SCORED",
+   "dockq": 0.276
+  },
+  "ordinary": {
+   "engine": "BOLTZ2",
+   "execution": "exec_A",
+   "target": "7K9D",
+   "model_idx": null,
+   "checksum": "9c1a6659f60fa28011b4deae449524146aaba822529e2f065a541b0d1a968009",
+   "model_path": "/home/jwen/projects/PCfold3D-RNP/outputs/rnpbench/pilot/boltz/exec_A/7K9D/boltz_results_7K9D/predictions/7K9D/7K9D_model_0.pdb",
+   "status": "SCORED",
+   "dockq": 0.936
+  }
+ }
+}
