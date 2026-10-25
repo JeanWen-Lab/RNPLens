@@ -1,0 +1,77 @@
+run	source	scheme	type	url
+offline	puppeteer	file	document	./viewer.html
+offline	cdp	file	Document	./viewer.html
+offline	puppeteer	file	stylesheet	./assets/molstar.css
+offline	puppeteer	file	script	./assets/molstar.js
+offline	cdp	file	Stylesheet	./assets/molstar.css
+offline	cdp	file	Script	./assets/molstar.js
+offline	puppeteer	data	other	data:application/octet-stream;base64,AGF...(943705 chars)
+offline	cdp	data	Other	data:application/octet-stream;base64,AGF...(943705 chars)
+offline	puppeteer	file	script	./structures/01_s001_exec_A_2JEA_model_0.pdb.js
+offline	cdp	file	Script	./structures/01_s001_exec_A_2JEA_model_0.pdb.js
+offline	puppeteer	file	script	./structures/02_s002_exec_A_2JEA_model_1.pdb.js
+offline	cdp	file	Script	./structures/02_s002_exec_A_2JEA_model_1.pdb.js
+offline	puppeteer	file	script	./structures/03_s003_exec_A_2JEA_model_2.pdb.js
+offline	cdp	file	Script	./structures/03_s003_exec_A_2JEA_model_2.pdb.js
+offline	puppeteer	file	script	./structures/04_s004_exec_A_2JEA_model_3.pdb.js
+offline	cdp	file	Script	./structures/04_s004_exec_A_2JEA_model_3.pdb.js
+offline	puppeteer	file	script	./structures/05_s005_exec_A_2JEA_model_4.pdb.js
+offline	cdp	file	Script	./structures/05_s005_exec_A_2JEA_model_4.pdb.js
+offline	puppeteer	file	script	./structures/06_s006_exec_B_2JEA_model_0.pdb.js
+offline	cdp	file	Script	./structures/06_s006_exec_B_2JEA_model_0.pdb.js
+offline	puppeteer	file	script	./structures/07_s007_exec_B_2JEA_model_1.pdb.js
+offline	cdp	file	Script	./structures/07_s007_exec_B_2JEA_model_1.pdb.js
+offline	puppeteer	file	script	./structures/08_s008_exec_B_2JEA_model_2.pdb.js
+offline	cdp	file	Script	./structures/08_s008_exec_B_2JEA_model_2.pdb.js
+offline	puppeteer	file	script	./structures/09_s009_exec_B_2JEA_model_3.pdb.js
+offline	cdp	file	Script	./structures/09_s009_exec_B_2JEA_model_3.pdb.js
+offline	puppeteer	file	script	./structures/10_s010_exec_B_2JEA_model_4.pdb.js
+offline	cdp	file	Script	./structures/10_s010_exec_B_2JEA_model_4.pdb.js
+offline	puppeteer	file	script	./view_data.js
+offline	cdp	file	Script	./view_data.js
+offline	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(8202 chars)
+offline	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(44294 chars)
+offline	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(174 chars)
+offline	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(8202 chars)
+offline	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(44294 chars)
+offline	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(174 chars)
+offline	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(230 chars)
+offline	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(230 chars)
+netlog	puppeteer	file	document	./viewer.html
+netlog	cdp	file	Document	./viewer.html
+netlog	puppeteer	file	stylesheet	./assets/molstar.css
+netlog	puppeteer	file	script	./assets/molstar.js
+netlog	cdp	file	Stylesheet	./assets/molstar.css
+netlog	cdp	file	Script	./assets/molstar.js
+netlog	puppeteer	data	other	data:application/octet-stream;base64,AGF...(943705 chars)
+netlog	cdp	data	Other	data:application/octet-stream;base64,AGF...(943705 chars)
+netlog	puppeteer	file	script	./structures/01_s001_exec_A_2JEA_model_0.pdb.js
+netlog	cdp	file	Script	./structures/01_s001_exec_A_2JEA_model_0.pdb.js
+netlog	puppeteer	file	script	./structures/02_s002_exec_A_2JEA_model_1.pdb.js
+netlog	cdp	file	Script	./structures/02_s002_exec_A_2JEA_model_1.pdb.js
+netlog	puppeteer	file	script	./structures/03_s003_exec_A_2JEA_model_2.pdb.js
+netlog	cdp	file	Script	./structures/03_s003_exec_A_2JEA_model_2.pdb.js
+netlog	puppeteer	file	script	./structures/04_s004_exec_A_2JEA_model_3.pdb.js
+netlog	cdp	file	Script	./structures/04_s004_exec_A_2JEA_model_3.pdb.js
+netlog	puppeteer	file	script	./structures/05_s005_exec_A_2JEA_model_4.pdb.js
+netlog	cdp	file	Script	./structures/05_s005_exec_A_2JEA_model_4.pdb.js
+netlog	puppeteer	file	script	./structures/06_s006_exec_B_2JEA_model_0.pdb.js
+netlog	cdp	file	Script	./structures/06_s006_exec_B_2JEA_model_0.pdb.js
+netlog	puppeteer	file	script	./structures/07_s007_exec_B_2JEA_model_1.pdb.js
+netlog	cdp	file	Script	./structures/07_s007_exec_B_2JEA_model_1.pdb.js
+netlog	puppeteer	file	script	./structures/08_s008_exec_B_2JEA_model_2.pdb.js
+netlog	cdp	file	Script	./structures/08_s008_exec_B_2JEA_model_2.pdb.js
+netlog	puppeteer	file	script	./structures/09_s009_exec_B_2JEA_model_3.pdb.js
+netlog	cdp	file	Script	./structures/09_s009_exec_B_2JEA_model_3.pdb.js
+netlog	puppeteer	file	script	./structures/10_s010_exec_B_2JEA_model_4.pdb.js
+netlog	cdp	file	Script	./structures/10_s010_exec_B_2JEA_model_4.pdb.js
+netlog	puppeteer	file	script	./view_data.js
+netlog	cdp	file	Script	./view_data.js
+netlog	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(8202 chars)
+netlog	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(44294 chars)
+netlog	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(174 chars)
+netlog	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(8202 chars)
+netlog	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(44294 chars)
+netlog	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(174 chars)
+netlog	puppeteer	data	image	data:image/png;base64,iVBORw0KGgoAAAANSU...(230 chars)
+netlog	cdp	data	Image	data:image/png;base64,iVBORw0KGgoAAAANSU...(230 chars)

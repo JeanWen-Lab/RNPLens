@@ -1,0 +1,35 @@
+{
+ "note": "Demonstration index (track release-docs, 16 Oct 2026). Transcribes the commit that each existing qualification record at cf81acd states for the work it records. Paths are relative to the repository root. The real manifest is produced by the integrator at the final HEAD, with receipts that state that HEAD.",
+ "receipts": [
+  {
+   "path": "records/v04_integration/V04_IMPLEMENTATION_REPORT.md",
+   "kind": "test_run",
+   "claimed_commit": "bdd137f",
+   "claim_source": "section 2 'Tests': every karyon and macOS row is at bdd137f (the real doctor --agent row is at 03a0eab)"
+  },
+  {
+   "path": "records/v04_integration/CLEAN_INSTALL_LINUX.md",
+   "kind": "clean_install",
+   "claimed_commit": "bdd137f",
+   "claim_source": "second run, section 'At bdd137f' (the first run is at 5caccec)"
+  },
+  {
+   "path": "records/v04_integration/DEMOS_REPORT.md",
+   "kind": "demonstration",
+   "claimed_commit": "bdd137f",
+   "claim_source": "section 'Re-run at bdd137f'"
+  },
+  {
+   "path": "assistant/evaluation_v04/FOLLOWUP_SUITE_v1_results/FOLLOWUP_QUALIFICATION_REPORT.md",
+   "kind": "followup_part1",
+   "claimed_commit": "dc9767a",
+   "claim_source": "timeline item 5: Part 1 on karyon in the track clone at dc9767a"
+  },
+  {
+   "path": "records/grouping/GROUPING_QUALIFICATION_REPORT.md",
+   "kind": "grouping_qualification",
+   "claimed_commit": "5f1156f",
+   "claim_source": "'code commit of the reference-free run'"
+  }
+ ]
+}

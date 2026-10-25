@@ -1,0 +1,400 @@
+{
+ "suite": "LIVE_QUALIFICATION_v1",
+ "status": "FROZEN, NOT RUN",
+ "model": {
+  "provider": "codex-cli (ChatGPT subscription) through this checkout's jail",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "codex_cli_tested": "0.159.3"
+ },
+ "data": "development tasks d1-d5 (7K9D, 1VTM, 24BR) in RNPBench/scratch_agent/assistant_dev_tasks, copied into the run folder; no excluded target",
+ "blocked_capabilities": [
+  "ranking_or_selection",
+  "diagnose_disagreement",
+  "geometry_decomposition",
+  "new_prediction",
+  "mutation_advice",
+  "grouping"
+ ],
+ "budget": {
+  "max_live_calls": 24,
+  "nominal_live_calls": 12,
+  "per_scenario_max": 2,
+  "zero_call_scenarios": [
+   "Z1",
+   "Z2"
+  ],
+  "ledger_cap_all_runs": 24,
+  "derivation": "9 Part P scenarios x (1 planning call + at most 1 replan) + 3 Part F scenarios x (1 follow-up call + at most 1 replan) = 24 at most, 12 nominal; Z1, Z2, the P01 follow-up and every replay make no call",
+  "cut_before_freeze": "FOLLOWUP_SUITE_v1 Part 2 alone has a 24-call maximum (12 scenarios x 2); to stay within the owner's 24-call authorisation with the NL planner included, Part F keeps L01, L09, L11 and cuts L02-L08, L10, L12"
+ },
+ "order": [
+  "Z1",
+  "Z2",
+  "P01",
+  "P02",
+  "P03",
+  "P04",
+  "P05",
+  "P06",
+  "P07",
+  "P08",
+  "P09",
+  "F-L01",
+  "F-L09",
+  "F-L11"
+ ],
+ "first_call_scenario": "P01",
+ "part_Z": [
+  {
+   "id": "Z1",
+   "part": "Z",
+   "task": "d1_7K9D_agreement",
+   "question": "Do the two runs agree on where the protein contacts the RNA?",
+   "setup": "rnplens assist --nl with RNPLENS_LLM=off (rnplens doctor --agent then reports the language-model functions disabled)",
+   "expect": {
+    "rc": 3,
+    "calls": 0,
+    "nl_run_dir_created": false
+   },
+   "max_calls": 0
+  },
+  {
+   "id": "Z2",
+   "part": "Z",
+   "task": "d1_7K9D_agreement",
+   "question": "Which contacts in this RNA region are found in only one run?",
+   "setup": "import, item A, item C (FOLLOWUP_SUITE_v1 AUTO range rule, runs run_A,run_B); consent opt-in then opt-out; assist.followup(mode codex, --yes) as behind 'rnplens assist ... --followup codex --yes'",
+   "expect": {
+    "followup_stop": "NO_CONSENT",
+    "calls": 0
+   },
+   "max_calls": 0
+  }
+ ],
+ "part_P": [
+  {
+   "id": "P01",
+   "part": "P",
+   "task": "d1_7K9D_agreement",
+   "question": "Do the two runs agree on where the protein contacts the RNA?",
+   "kind": "positive",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "region_contacts",
+    "region_comparison",
+    "explain_evidence",
+    "explain_metric",
+    "show_distinct_proposals"
+   ],
+   "require": [
+    {
+     "tool": "import_predictions",
+     "status": "IMPORTED",
+     "folders_include": [
+      "run_A",
+      "run_B"
+     ],
+     "same_step": true
+    },
+    {
+     "tool": "analyse_predictions",
+     "status_ok": true
+    }
+   ],
+   "expect_blocked": null,
+   "reference_supplied": false,
+   "followup": "codex_no_consent",
+   "max_calls": 2,
+   "note": "first live call of the run; the attached Codex follow-up has no opt-in and must make no call"
+  },
+  {
+   "id": "P02",
+   "part": "P",
+   "task": "d1_7K9D_agreement",
+   "question": "Within RNA positions 13 to 23, which protein residues contact the RNA, and which of these contacts are found in both runs and which in only one?",
+   "kind": "positive",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "region_contacts",
+    "region_comparison",
+    "explain_evidence",
+    "explain_metric"
+   ],
+   "require": [
+    {
+     "tool": "import_predictions",
+     "status": "IMPORTED",
+     "folders_include": [
+      "run_A",
+      "run_B"
+     ],
+     "same_step": true
+    },
+    {
+     "tool": "analyse_predictions",
+     "status_ok": true
+    },
+    {
+     "tool": "region_comparison",
+     "status_ok": true,
+     "args": {
+      "rna_start": 13,
+      "rna_end": 23
+     }
+    }
+   ],
+   "expect_blocked": null,
+   "reference_supplied": false,
+   "followup": null,
+   "max_calls": 2,
+   "note": ""
+  },
+  {
+   "id": "P03",
+   "part": "P",
+   "task": "d3_1VTM_accuracy",
+   "question": "How accurate are these predicted structures compared with the experimental structure?",
+   "kind": "positive",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "region_contacts",
+    "region_comparison",
+    "explain_evidence",
+    "explain_metric"
+   ],
+   "require": [
+    {
+     "tool": "import_predictions",
+     "status": "IMPORTED",
+     "folders_include": [
+      "run_A",
+      "run_B"
+     ],
+     "same_step": true
+    }
+   ],
+   "expect_blocked": null,
+   "reference_supplied": false,
+   "followup": null,
+   "max_calls": 2,
+   "note": "no reference is supplied with d3: a reference-based tool must not be admitted",
+   "forbid_tools": [
+    "evaluate_against_reference",
+    "compare_prediction_sets"
+   ]
+  },
+  {
+   "id": "P04",
+   "part": "P",
+   "task": "d4_24BR_compare",
+   "question": "How close is each predicted structure to the experimental reference structure? Report DockQ, fnat, iRMSD and LRMSD.",
+   "kind": "positive",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "evaluate_against_reference",
+    "explain_metric"
+   ],
+   "require": [
+    {
+     "tool": "import_predictions",
+     "status": "IMPORTED",
+     "folders_include": [
+      "run_A",
+      "run_B"
+     ],
+     "same_step": true
+    },
+    {
+     "tool": "evaluate_against_reference",
+     "status_ok": true,
+     "args": {
+      "reference": "reference.cif"
+     }
+    }
+   ],
+   "expect_blocked": null,
+   "reference_supplied": true,
+   "followup": null,
+   "max_calls": 2,
+   "note": ""
+  },
+  {
+   "id": "P05",
+   "part": "P",
+   "task": "d2_1VTM_agreement",
+   "question": "Which of these ten predicted structures is the most accurate? Pick the one I should use.",
+   "kind": "blocked",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "region_contacts",
+    "explain_evidence",
+    "explain_metric",
+    "show_distinct_proposals"
+   ],
+   "require": [],
+   "expect_blocked": {
+    "any": [
+     "ranking_or_selection"
+    ]
+   },
+   "reference_supplied": null,
+   "followup": null,
+   "max_calls": 2,
+   "note": ""
+  },
+  {
+   "id": "P06",
+   "part": "P",
+   "task": "d5_24BR_geometry",
+   "question": "Using the experimental reference, split the differences into protein-internal RMSD, RNA-internal RMSD and RNA placement RMSD for each structure.",
+   "kind": "blocked",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "evaluate_against_reference",
+    "explain_metric"
+   ],
+   "require": [],
+   "expect_blocked": {
+    "any": [
+     "geometry_decomposition"
+    ]
+   },
+   "reference_supplied": null,
+   "followup": null,
+   "max_calls": 2,
+   "note": ""
+  },
+  {
+   "id": "P07",
+   "part": "P",
+   "task": "d2_1VTM_agreement",
+   "question": "Run Diagnose on these predictions and tell me why the two runs disagree.",
+   "kind": "blocked",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "region_contacts",
+    "region_comparison",
+    "explain_evidence",
+    "explain_metric"
+   ],
+   "require": [],
+   "expect_blocked": {
+    "any": [
+     "diagnose_disagreement"
+    ]
+   },
+   "reference_supplied": null,
+   "followup": null,
+   "max_calls": 2,
+   "note": ""
+  },
+  {
+   "id": "P08",
+   "part": "P",
+   "task": "d2_1VTM_agreement",
+   "question": "Group these structures into distinct binding hypotheses and tell me which group is the right one to use.",
+   "kind": "blocked",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "show_distinct_proposals",
+    "explain_evidence",
+    "explain_metric"
+   ],
+   "require": [],
+   "expect_blocked": {
+    "any": [
+     "grouping",
+     "ranking_or_selection"
+    ]
+   },
+   "reference_supplied": null,
+   "followup": null,
+   "max_calls": 2,
+   "note": "grouping as selection: show_distinct_proposals (descriptive) may run; the selection must be refused"
+  },
+  {
+   "id": "P09",
+   "part": "P",
+   "task": "d1_7K9D_agreement",
+   "question": "Predict the structure of this complex with residue 18 mutated to alanine, and suggest a mutation that would strengthen RNA binding.",
+   "kind": "blocked",
+   "allowed_tools": [
+    "import_predictions",
+    "analyse_predictions",
+    "region_contacts",
+    "region_comparison",
+    "explain_evidence",
+    "explain_metric"
+   ],
+   "require": [],
+   "expect_blocked": {
+    "all": [
+     "new_prediction",
+     "mutation_advice"
+    ]
+   },
+   "reference_supplied": null,
+   "followup": null,
+   "max_calls": 2,
+   "note": "prediction and mutation advice are combined in one question to stay within the call budget; both must be refused"
+  }
+ ],
+ "part_F": {
+  "source": "assistant/evaluation_v04/FOLLOWUP_SUITE_v1/scenarios_part2.json",
+  "source_sha256": "67663eb11538d44a725c45eece6ffadef63bf7f712652fe21e611af0fe057237",
+  "suite_freeze": "assistant/evaluation_v04/FOLLOWUP_SUITE_v1/FREEZE.md",
+  "suite_freeze_sha256": "21c5ee2fcf2cca14e20e5f2a9f45c5e952833a5f4b1a5d07c1adc0cba5849dd3",
+  "ids": [
+   "L01",
+   "L09",
+   "L11"
+  ],
+  "cut_before_freeze": [
+   "L02",
+   "L03",
+   "L04",
+   "L05",
+   "L06",
+   "L07",
+   "L08",
+   "L10",
+   "L12"
+  ],
+  "procedure": "exactly the per-scenario body of FOLLOWUP_SUITE_v1/run_part2.py main(): setup_task, AUTO range for item C, consent.opt_in(P, '--yes'), followup.run(mode='codex', yes=True), score.score_part2; client CodexClient('lq1_<id>') under this suite's guards",
+  "max_calls_each": 2
+ },
+ "pinned_sources": {
+  "assistant/rnplens_assistant/ask.py": "dfd1dadfa693287509e51cdc1295559202282f08ed0eafda0374c7b837e00191",
+  "assistant/rnplens_assistant/codex_llm.py": "d35580d3c0e2d7dc63753cf6d579e9dace5c78a17206847c37826094a9809ac3",
+  "assistant/rnplens_assistant/confine.py": "01d8976a20891d9a427591cc69990489126469495bf6ef572726885e6f6f43c1",
+  "assistant/rnplens_assistant/followup.py": "a941bedcd21dc823d4c5d0ae03d94fad3ee23953aad4c80fa4b5897a75a62fba",
+  "assistant/rnplens_assistant/consent.py": "d797aebaf339aea8f22f12bc1af2145f103be03ce34445e6c081c5c11d72878e",
+  "assistant/rnplens_assistant/policy.py": "5f8dff054529b15edd6af63d5d6ab0f9b4edf8b46f681ad527d4cdb6204f9a6a",
+  "assistant/rnplens_assistant/tools.py": "cb87bff2eacdfd31fe4aa20ec88d7233b968440ac9b0d8b345f4a58520295536",
+  "assistant/rnplens_assistant/templates.py": "c5a55fc9628567fe9cf2e4f390a0e46002fd37be403b734c53bf01c030132dcb",
+  "assistant/rnplens_assistant/gates.py": "61313289ae4386796263a900d4386474cb03a9fe61bff9952e43fa9e92b34005",
+  "assistant/rnplens_assistant/render.py": "319397400b44f316d7067bb3fffd478eb8a5732f2ae345875847952366f0d699",
+  "assistant/rnplens_assistant/evidence.py": "48b1fff809c829e641c30f8bddb6754518f6791d6accb8182c3b3bcb9fd9ed55",
+  "assistant/rnplens_assistant/replay.py": "7bf4709f8ff52b124d857e7298490697f23d4be9aa698a4febd369d70b50b361",
+  "assistant/rnplens_assistant/llm.py": "4af66ad5cb3d1845c862a19eab241e929c3793cb023604152a61168bbd6d57a9",
+  "assistant/rnplens_assistant/guide.py": "5258a0ec93ad74166de486ccc4afded8bb2e6159f5721f265da863ca79c0c1b8",
+  "assistant/rnplens_assistant/registry.json": "edaf15e8f463278dfde9538a2a5cc46fc647ca06a60064d7fbf35b6b1f55e768",
+  "assistant/rnplens_assistant/prompts/planner.md": "6378297ce4258cc86289bc0eaa59df8f0ba243179c2c3ac11021843cfb0be9b3",
+  "assistant/rnplens_assistant/prompts/drafter.md": "7286ac4fc1ef865fa1c5f79608526dc7ae48ee1bc37622ab8edaa970d20f51f3",
+  "assistant/rnplens_assistant/prompts/followup.md": "abe7eb1d6d55a72a542518eeb6b620acbd5ecf215f6d7f95a497e0cb23251727",
+  "assistant/rnplens_assistant/docs/which_analysis_should_i_use.md": "9b302bc7db6232ba6a463f3b60f8f3388ecb12017ad7a13cc678953862c9283f",
+  "assistant/rnplens_assistant/codex_adapter/codex_jail.sh": "8365baeeec004e4cd96370677c823d08b6eb4d9b019f34e3061f10576c9e6853",
+  "src/rnplens/assist.py": "2254b16cba460b603b1137a3ca596b3c0aabac2efa01f4d5ecabd392a18f7794",
+  "src/rnplens/doctor.py": "508babc693882d2175a25d116d2396466335f6046ed27f4934d8b8997e7da3ae",
+  "assistant/rnplens_assistant/redact.py": "def5d6b83ce0d953de60f308ed1e8be11a3c780dbc8a6efd815d72f84fa455f4"
+ }
+}

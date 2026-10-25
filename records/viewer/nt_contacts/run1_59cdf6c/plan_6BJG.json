@@ -1,0 +1,1162 @@
+{
+ "tag": "6BJG_t05",
+ "page": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/feature/nt-contacts/out/feature_59cdf6c/demos/3_grouping_6BJG/analysis/viewer_representatives_t0.5/viewer.html",
+ "kind": "6BJG_t0.5",
+ "rna_range": null,
+ "structure_ids": [
+  "s013",
+  "s033",
+  "s016",
+  "s039",
+  "s020",
+  "s001"
+ ],
+ "rna_chain": "B",
+ "protein_chain": "A",
+ "steps": [
+  {
+   "id": "00_overall",
+   "do": "load",
+   "shot": true
+  },
+  {
+   "id": "01_R19",
+   "do": "click",
+   "shot": true,
+   "chain": "B",
+   "auth": 19,
+   "ins": "",
+   "require_mouse": true
+  },
+  {
+   "id": "02_next_s033",
+   "do": "next",
+   "shot": true
+  },
+  {
+   "id": "03_next_s016",
+   "do": "next",
+   "shot": true
+  },
+  {
+   "id": "04_next_s039",
+   "do": "next",
+   "shot": true
+  },
+  {
+   "id": "05_next_s020",
+   "do": "next",
+   "shot": true
+  },
+  {
+   "id": "06_next_s001",
+   "do": "next",
+   "shot": true
+  },
+  {
+   "id": "07_last_R20",
+   "do": "click",
+   "shot": true,
+   "chain": "B",
+   "auth": 20,
+   "ins": "",
+   "require_mouse": true
+  },
+  {
+   "id": "08_mode_all",
+   "do": "mode",
+   "shot": true,
+   "m": "all"
+  },
+  {
+   "id": "09_clear",
+   "do": "clear",
+   "shot": true
+  },
+  {
+   "id": "10_mode_focus",
+   "do": "mode",
+   "shot": false,
+   "m": "focus"
+  },
+  {
+   "id": "11_sweep_s013",
+   "do": "show",
+   "shot": false,
+   "k": 0
+  },
+  {
+   "id": "12_sweep_s013_clear",
+   "do": "clear",
+   "shot": false
+  },
+  {
+   "id": "13_sweep_s013_B1",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 1
+  },
+  {
+   "id": "14_sweep_s013_B2",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 2
+  },
+  {
+   "id": "15_sweep_s013_B3",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 3
+  },
+  {
+   "id": "16_sweep_s013_B4",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 4
+  },
+  {
+   "id": "17_sweep_s013_B5",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 5
+  },
+  {
+   "id": "18_sweep_s013_B6",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 6
+  },
+  {
+   "id": "19_sweep_s013_B7",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 7
+  },
+  {
+   "id": "20_sweep_s013_B8",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 8
+  },
+  {
+   "id": "21_sweep_s013_B9",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 9
+  },
+  {
+   "id": "22_sweep_s013_B10",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 10
+  },
+  {
+   "id": "23_sweep_s013_B11",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 11
+  },
+  {
+   "id": "24_sweep_s013_B12",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 12
+  },
+  {
+   "id": "25_sweep_s013_B13",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 13
+  },
+  {
+   "id": "26_sweep_s013_B14",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 14
+  },
+  {
+   "id": "27_sweep_s013_B15",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 15
+  },
+  {
+   "id": "28_sweep_s013_B16",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 16
+  },
+  {
+   "id": "29_sweep_s013_B17",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 17
+  },
+  {
+   "id": "30_sweep_s013_B18",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 18
+  },
+  {
+   "id": "31_sweep_s013_B19",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 19
+  },
+  {
+   "id": "32_sweep_s013_B20",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 20
+  },
+  {
+   "id": "33_sweep_s013_B21",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 21
+  },
+  {
+   "id": "34_sweep_s033",
+   "do": "show",
+   "shot": false,
+   "k": 1
+  },
+  {
+   "id": "35_sweep_s033_clear",
+   "do": "clear",
+   "shot": false
+  },
+  {
+   "id": "36_sweep_s033_B1",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 1
+  },
+  {
+   "id": "37_sweep_s033_B2",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 2
+  },
+  {
+   "id": "38_sweep_s033_B3",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 3
+  },
+  {
+   "id": "39_sweep_s033_B4",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 4
+  },
+  {
+   "id": "40_sweep_s033_B5",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 5
+  },
+  {
+   "id": "41_sweep_s033_B6",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 6
+  },
+  {
+   "id": "42_sweep_s033_B7",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 7
+  },
+  {
+   "id": "43_sweep_s033_B8",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 8
+  },
+  {
+   "id": "44_sweep_s033_B9",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 9
+  },
+  {
+   "id": "45_sweep_s033_B10",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 10
+  },
+  {
+   "id": "46_sweep_s033_B11",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 11
+  },
+  {
+   "id": "47_sweep_s033_B12",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 12
+  },
+  {
+   "id": "48_sweep_s033_B13",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 13
+  },
+  {
+   "id": "49_sweep_s033_B14",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 14
+  },
+  {
+   "id": "50_sweep_s033_B15",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 15
+  },
+  {
+   "id": "51_sweep_s033_B16",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 16
+  },
+  {
+   "id": "52_sweep_s033_B17",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 17
+  },
+  {
+   "id": "53_sweep_s033_B18",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 18
+  },
+  {
+   "id": "54_sweep_s033_B19",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 19
+  },
+  {
+   "id": "55_sweep_s033_B20",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 20
+  },
+  {
+   "id": "56_sweep_s033_B21",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 21
+  },
+  {
+   "id": "57_sweep_s016",
+   "do": "show",
+   "shot": false,
+   "k": 2
+  },
+  {
+   "id": "58_sweep_s016_clear",
+   "do": "clear",
+   "shot": false
+  },
+  {
+   "id": "59_sweep_s016_B1",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 1
+  },
+  {
+   "id": "60_sweep_s016_B2",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 2
+  },
+  {
+   "id": "61_sweep_s016_B3",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 3
+  },
+  {
+   "id": "62_sweep_s016_B4",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 4
+  },
+  {
+   "id": "63_sweep_s016_B5",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 5
+  },
+  {
+   "id": "64_sweep_s016_B6",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 6
+  },
+  {
+   "id": "65_sweep_s016_B7",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 7
+  },
+  {
+   "id": "66_sweep_s016_B8",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 8
+  },
+  {
+   "id": "67_sweep_s016_B9",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 9
+  },
+  {
+   "id": "68_sweep_s016_B10",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 10
+  },
+  {
+   "id": "69_sweep_s016_B11",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 11
+  },
+  {
+   "id": "70_sweep_s016_B12",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 12
+  },
+  {
+   "id": "71_sweep_s016_B13",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 13
+  },
+  {
+   "id": "72_sweep_s016_B14",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 14
+  },
+  {
+   "id": "73_sweep_s016_B15",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 15
+  },
+  {
+   "id": "74_sweep_s016_B16",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 16
+  },
+  {
+   "id": "75_sweep_s016_B17",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 17
+  },
+  {
+   "id": "76_sweep_s016_B18",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 18
+  },
+  {
+   "id": "77_sweep_s016_B19",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 19
+  },
+  {
+   "id": "78_sweep_s016_B20",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 20
+  },
+  {
+   "id": "79_sweep_s016_B21",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 21
+  },
+  {
+   "id": "80_sweep_s039",
+   "do": "show",
+   "shot": false,
+   "k": 3
+  },
+  {
+   "id": "81_sweep_s039_clear",
+   "do": "clear",
+   "shot": false
+  },
+  {
+   "id": "82_sweep_s039_B1",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 1
+  },
+  {
+   "id": "83_sweep_s039_B2",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 2
+  },
+  {
+   "id": "84_sweep_s039_B3",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 3
+  },
+  {
+   "id": "85_sweep_s039_B4",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 4
+  },
+  {
+   "id": "86_sweep_s039_B5",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 5
+  },
+  {
+   "id": "87_sweep_s039_B6",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 6
+  },
+  {
+   "id": "88_sweep_s039_B7",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 7
+  },
+  {
+   "id": "89_sweep_s039_B8",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 8
+  },
+  {
+   "id": "90_sweep_s039_B9",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 9
+  },
+  {
+   "id": "91_sweep_s039_B10",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 10
+  },
+  {
+   "id": "92_sweep_s039_B11",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 11
+  },
+  {
+   "id": "93_sweep_s039_B12",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 12
+  },
+  {
+   "id": "94_sweep_s039_B13",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 13
+  },
+  {
+   "id": "95_sweep_s039_B14",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 14
+  },
+  {
+   "id": "96_sweep_s039_B15",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 15
+  },
+  {
+   "id": "97_sweep_s039_B16",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 16
+  },
+  {
+   "id": "98_sweep_s039_B17",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 17
+  },
+  {
+   "id": "99_sweep_s039_B18",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 18
+  },
+  {
+   "id": "100_sweep_s039_B19",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 19
+  },
+  {
+   "id": "101_sweep_s039_B20",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 20
+  },
+  {
+   "id": "102_sweep_s039_B21",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 21
+  },
+  {
+   "id": "103_sweep_s020",
+   "do": "show",
+   "shot": false,
+   "k": 4
+  },
+  {
+   "id": "104_sweep_s020_clear",
+   "do": "clear",
+   "shot": false
+  },
+  {
+   "id": "105_sweep_s020_B1",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 1
+  },
+  {
+   "id": "106_sweep_s020_B2",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 2
+  },
+  {
+   "id": "107_sweep_s020_B3",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 3
+  },
+  {
+   "id": "108_sweep_s020_B4",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 4
+  },
+  {
+   "id": "109_sweep_s020_B5",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 5
+  },
+  {
+   "id": "110_sweep_s020_B6",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 6
+  },
+  {
+   "id": "111_sweep_s020_B7",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 7
+  },
+  {
+   "id": "112_sweep_s020_B8",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 8
+  },
+  {
+   "id": "113_sweep_s020_B9",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 9
+  },
+  {
+   "id": "114_sweep_s020_B10",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 10
+  },
+  {
+   "id": "115_sweep_s020_B11",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 11
+  },
+  {
+   "id": "116_sweep_s020_B12",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 12
+  },
+  {
+   "id": "117_sweep_s020_B13",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 13
+  },
+  {
+   "id": "118_sweep_s020_B14",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 14
+  },
+  {
+   "id": "119_sweep_s020_B15",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 15
+  },
+  {
+   "id": "120_sweep_s020_B16",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 16
+  },
+  {
+   "id": "121_sweep_s020_B17",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 17
+  },
+  {
+   "id": "122_sweep_s020_B18",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 18
+  },
+  {
+   "id": "123_sweep_s020_B19",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 19
+  },
+  {
+   "id": "124_sweep_s020_B20",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 20
+  },
+  {
+   "id": "125_sweep_s020_B21",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 21
+  },
+  {
+   "id": "126_sweep_s001",
+   "do": "show",
+   "shot": false,
+   "k": 5
+  },
+  {
+   "id": "127_sweep_s001_clear",
+   "do": "clear",
+   "shot": false
+  },
+  {
+   "id": "128_sweep_s001_B1",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 1
+  },
+  {
+   "id": "129_sweep_s001_B2",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 2
+  },
+  {
+   "id": "130_sweep_s001_B3",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 3
+  },
+  {
+   "id": "131_sweep_s001_B4",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 4
+  },
+  {
+   "id": "132_sweep_s001_B5",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 5
+  },
+  {
+   "id": "133_sweep_s001_B6",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 6
+  },
+  {
+   "id": "134_sweep_s001_B7",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 7
+  },
+  {
+   "id": "135_sweep_s001_B8",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 8
+  },
+  {
+   "id": "136_sweep_s001_B9",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 9
+  },
+  {
+   "id": "137_sweep_s001_B10",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 10
+  },
+  {
+   "id": "138_sweep_s001_B11",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 11
+  },
+  {
+   "id": "139_sweep_s001_B12",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 12
+  },
+  {
+   "id": "140_sweep_s001_B13",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 13
+  },
+  {
+   "id": "141_sweep_s001_B14",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 14
+  },
+  {
+   "id": "142_sweep_s001_B15",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 15
+  },
+  {
+   "id": "143_sweep_s001_B16",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 16
+  },
+  {
+   "id": "144_sweep_s001_B17",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 17
+  },
+  {
+   "id": "145_sweep_s001_B18",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 18
+  },
+  {
+   "id": "146_sweep_s001_B19",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 19
+  },
+  {
+   "id": "147_sweep_s001_B20",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 20
+  },
+  {
+   "id": "148_sweep_s001_B21",
+   "do": "api_select",
+   "shot": false,
+   "molecule": "rna",
+   "chain": "B",
+   "pos": 21
+  },
+  {
+   "id": "149_final_clear",
+   "do": "clear",
+   "shot": false
+  }
+ ]
+}

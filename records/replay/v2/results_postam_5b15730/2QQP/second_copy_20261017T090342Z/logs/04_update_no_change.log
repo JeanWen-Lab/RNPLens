@@ -1,0 +1,4 @@
+$ rnplens update project
+project /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/2QQP/second_copy_20261017T090342Z/project: state v0005, COMPLETE
+  main                     COMPLETE  analyses/v0004/main (reused from v0004)
+  before/after report: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/retest_v2_postam_5b15730/2QQP/second_copy_20261017T090342Z/project/analyses/v0005/update_report.html

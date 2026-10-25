@@ -1,0 +1,24 @@
+{
+ "contract": "RNPBENCH_EVALUATE_INPUT_V1",
+ "target_id": "7K9D",
+ "prediction": {
+  "path": "7K9D_prediction.pdb",
+  "sha256": "9c1a6659f60fa28011b4deae449524146aaba822529e2f065a541b0d1a968009",
+  "engine": "Boltz-2",
+  "designated_output": {
+   "rule": "engine rank-0 output (Boltz-2 model_0)",
+   "sample_index": 0
+  }
+ },
+ "reference": {
+  "path": "7K9D_reference.cif",
+  "sha256": "75fa157147f8e721244095aa7141e8c90898d25296d222eae7898f9b10b6ca8e"
+ },
+ "construct": {
+  "protein_sequence": "GPSPEIGQIVKIVKGRDRDQFSVIIKRVDDRFVYIADGDKRKVDRAKRKNMNHLKLIDHISPEVRHSFEETGKVTNGKLRFALKKFLEEHADLLKEGE",
+  "rna_sequence": "GGCCAGUCUGGCGUUUGGUGACAGCGCCAAGUUCUUCGGAAUUGGGAAAUCCUACUGGCC"
+ },
+ "options": {
+  "tolerance": 0
+ }
+}

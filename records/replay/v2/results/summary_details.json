@@ -1,0 +1,423 @@
+{
+"24BR_copy": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 4,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 4,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"24BR_first": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 4,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 4,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"24BR_second": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 4,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 4,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"2QQP_copy": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 4,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 4,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"2QQP_first": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 4,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 4,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"2QQP_second": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 4,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 4,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"2XGJ_copy": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 5,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 5,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"2XGJ_first": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 5,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 5,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"2XGJ_second": {
+"analysis_dir": "analyses/v0004/main",
+"computed_in": "v0004",
+"errors": [],
+"head": "v0008",
+"n_analysis_dirs": 1,
+"region_rule": {
+"region": {
+"end": 5,
+"note": "union of RNA contact positions of the designated structures",
+"start": 1
+},
+"rna_length": 5,
+"rule": "region = [min S, max S], S = RNA positions contacted in the engine-designated structures (Report's contacts_by_output.json)"
+},
+"reused": true
+},
+"check_24BR_first_vs_moved.json": {
+"classes": {
+"ABS_PATH": 39,
+"HASH:VOLATILE_ONLY": 4,
+"TIMESTAMP": 8,
+"VOLATILE_TEXT": 9
+},
+"criteria": {
+"0_completed": true,
+"i_promised_byte_identical": true,
+"ib_projection_coverage": true,
+"ii_scientific_equal": true
+},
+"evidence": {
+"first:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"first:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true
+},
+"iii": {
+"n_non_promised": 33,
+"n_promised": 0
+},
+"n_promised": {
+"first": 113,
+"projections": 53,
+"second": 113
+},
+"raw": {
+"n": 53,
+"n_differing": 4
+},
+"sci_files": [
+252,
+252,
+237
+],
+"skipped": [
+"13_group_diff"
+],
+"verdict": "PASS",
+"verdicts": {
+"VOLATILE_ONLY": 15
+}
+},
+"check_24BR_first_vs_second.json": {
+"classes": {
+"ABS_PATH": 655,
+"COMPOSITE:VOLATILE_ONLY": 7,
+"DURATION": 1,
+"HASH:VOLATILE_ONLY": 144,
+"ID": 3,
+"TEXT_WITH_HASH:VOLATILE_ONLY": 8,
+"TIMESTAMP": 71,
+"VOLATILE_TEXT": 51
+},
+"criteria": {
+"0_completed": true,
+"i_promised_byte_identical": true,
+"ib_projection_coverage": true,
+"ii_scientific_equal": true
+},
+"evidence": {
+"first:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"first:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true
+},
+"iii": {},
+"n_promised": {
+"first": 113,
+"projections": 53,
+"second": 113
+},
+"raw": {
+"n": 53,
+"n_differing": 38
+},
+"sci_files": [
+252,
+252,
+169
+],
+"skipped": [
+"13_group_diff"
+],
+"verdict": "PASS",
+"verdicts": {
+"VOLATILE_ONLY": 83
+}
+},
+"check_2QQP_first_vs_moved.json": {
+"classes": {
+"ABS_PATH": 39,
+"HASH:VOLATILE_ONLY": 4,
+"TIMESTAMP": 8,
+"VOLATILE_TEXT": 9
+},
+"criteria": {
+"0_completed": true,
+"i_promised_byte_identical": true,
+"ib_projection_coverage": true,
+"ii_scientific_equal": true
+},
+"evidence": {
+"first:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"first:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true
+},
+"iii": {
+"n_non_promised": 34,
+"n_promised": 0
+},
+"n_promised": {
+"first": 117,
+"projections": 57,
+"second": 117
+},
+"raw": {
+"n": 57,
+"n_differing": 4
+},
+"sci_files": [
+261,
+261,
+246
+],
+"skipped": [],
+"verdict": "PASS",
+"verdicts": {
+"VOLATILE_ONLY": 15
+}
+},
+"check_2QQP_first_vs_second.json": {
+"classes": {
+"ABS_PATH": 638,
+"COMPOSITE:VOLATILE_ONLY": 7,
+"HASH:VOLATILE_ONLY": 143,
+"ID": 3,
+"TEXT_WITH_HASH:VOLATILE_ONLY": 8,
+"TIMESTAMP": 72,
+"VOLATILE_TEXT": 51
+},
+"criteria": {
+"0_completed": true,
+"i_promised_byte_identical": true,
+"ib_projection_coverage": true,
+"ii_scientific_equal": true
+},
+"evidence": {
+"first:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"first:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true
+},
+"iii": {},
+"n_promised": {
+"first": 117,
+"projections": 57,
+"second": 117
+},
+"raw": {
+"n": 57,
+"n_differing": 38
+},
+"sci_files": [
+261,
+261,
+178
+],
+"skipped": [],
+"verdict": "PASS",
+"verdicts": {
+"VOLATILE_ONLY": 83
+}
+},
+"check_2XGJ_first_vs_moved.json": {
+"classes": {
+"ABS_PATH": 39,
+"HASH:VOLATILE_ONLY": 4,
+"TIMESTAMP": 8,
+"VOLATILE_TEXT": 9
+},
+"criteria": {
+"0_completed": true,
+"i_promised_byte_identical": true,
+"ib_projection_coverage": true,
+"ii_scientific_equal": true
+},
+"evidence": {
+"first:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"first:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true
+},
+"iii": {
+"n_non_promised": 33,
+"n_promised": 0
+},
+"n_promised": {
+"first": 113,
+"projections": 53,
+"second": 113
+},
+"raw": {
+"n": 53,
+"n_differing": 4
+},
+"sci_files": [
+252,
+252,
+237
+],
+"skipped": [
+"13_group_diff"
+],
+"verdict": "PASS",
+"verdicts": {
+"VOLATILE_ONLY": 15
+}
+},
+"check_2XGJ_first_vs_second.json": {
+"classes": {
+"ABS_PATH": 653,
+"COMPOSITE:VOLATILE_ONLY": 9,
+"DURATION": 3,
+"HASH:VOLATILE_ONLY": 159,
+"ID": 3,
+"TEXT_WITH_HASH:VOLATILE_ONLY": 8,
+"TIMESTAMP": 71,
+"VOLATILE_TEXT": 51
+},
+"criteria": {
+"0_completed": true,
+"i_promised_byte_identical": true,
+"ib_projection_coverage": true,
+"ii_scientific_equal": true
+},
+"evidence": {
+"first:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"first:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0001/followup_record.json": true,
+"second:project/analyses/v0004/main/followup/fu_0002/followup_record.json": true
+},
+"iii": {},
+"n_promised": {
+"first": 113,
+"projections": 53,
+"second": 113
+},
+"raw": {
+"n": 53,
+"n_differing": 39
+},
+"sci_files": [
+252,
+252,
+168
+],
+"skipped": [
+"13_group_diff"
+],
+"verdict": "PASS",
+"verdicts": {
+"VOLATILE_ONLY": 84
+}
+}
+}

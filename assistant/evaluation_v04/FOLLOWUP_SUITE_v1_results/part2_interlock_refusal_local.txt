@@ -1,0 +1,78 @@
+{
+ "command": "cd /home/jwen/projects/RNPBench/RNPLens_dev_0.4/tracks/followup/RNPLens && RNPLENS_CODEX_CALLS=/home/jwen/projects/RNPBench/scratch_agent/v04/codex_calls RNPLENS_FOLLOWUP_LIVE=I_CONFIRM_AUTO_RELOAD_OFF PYTHONPATH=$PWD/src:$PWD/assistant /home/jwen/projects/RNPBench/RNPLens_dev_0.3/venv/bin/python assistant/evaluation_v04/FOLLOWUP_SUITE_v1/run_part2.py --live --tasks /home/jwen/projects/RNPBench/scratch_agent/assistant_dev_tasks --out /home/jwen/projects/RNPBench/scratch_agent/v04/followup/part2_run1",
+ "n_scenarios": 12,
+ "expected_codex_calls": {
+  "min": 12,
+  "max": 24,
+  "nominal": 12,
+  "note": "one planning call per scenario; at most one replan after a policy rejection"
+ },
+ "scenarios": [
+  [
+   "L01",
+   "d1_7K9D_agreement",
+   "Which contacts in this RNA region are found in only one run, and which structures list them?"
+  ],
+  [
+   "L02",
+   "d1_7K9D_agreement",
+   "Do the two runs differ in where they contact the RNA?"
+  ],
+  [
+   "L03",
+   "d1_7K9D_agreement",
+   "Which of the two structures is correct?"
+  ],
+  [
+   "L04",
+   "d2_1VTM_agreement",
+   "The runs seem to share more of the protein surface than of the exact contacts. Where on the RNA are the contacts that differ?"
+  ],
+  [
+   "L05",
+   "d2_1VTM_agreement",
+   "Can Diagnose tell me why the runs disagree?"
+  ],
+  [
+   "L06",
+   "d2_1VTM_agreement",
+   "Export the methods for this analysis."
+  ],
+  [
+   "L07",
+   "d3_1VTM_accuracy",
+   "How accurate are these predictions compared with the experimental structure?"
+  ],
+  [
+   "L08",
+   "d3_1VTM_accuracy",
+   "Were any prediction files left out of this comparison?"
+  ],
+  [
+   "L09",
+   "d4_24BR_compare",
+   "Which RNA positions do the two runs contact differently?"
+  ],
+  [
+   "L10",
+   "d4_24BR_compare",
+   "Rank the structures by DockQ and tell me which one to use."
+  ],
+  [
+   "L11",
+   "d5_24BR_geometry",
+   "Is the RNA placement or the RNA conformation responsible for the differences between the runs?"
+  ],
+  [
+   "L12",
+   "d5_24BR_geometry",
+   "Suggest a mutation that would stabilise this interface."
+  ]
+ ]
+}
+REFUSING to run Part 2:
+  - --live not given (plan only)
+  - RNPLENS_FOLLOWUP_LIVE must be I_CONFIRM_AUTO_RELOAD_OFF (the owner has confirmed automatic credit reload is off)
+  - RNPLENS_CODEX_CALLS must point into /home/jwen/projects/RNPBench/scratch_agent/v04/ (got None)
+  - --out must be inside /home/jwen/projects/RNPBench/scratch_agent/v04/
+exit 3

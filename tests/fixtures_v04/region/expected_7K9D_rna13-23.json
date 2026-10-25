@@ -1,0 +1,59 @@
+{
+ "description": "Frozen expectation for the docs/region.md worked example: bundled 7K9D example, runs exec_A and exec_B, RNA 13-23 (construct numbering). Derived from Report's contacts_by_output.json; independently checked by test_classes_equal_set_operations_on_the_records.",
+ "n_contacts_in_range": 36,
+ "only_in_run": {
+  "exec_A": [
+   "R18-A21"
+  ],
+  "exec_B": [
+   "R16-U14",
+   "D39-U15",
+   "R45-U15"
+  ]
+ },
+ "per_run": {
+  "exec_A": {
+   "contacts_present": 33,
+   "designated_structure": "s001"
+  },
+  "exec_B": {
+   "contacts_present": 35,
+   "designated_structure": "s002"
+  }
+ },
+ "rna_sequence": "GUUUGGUGACA",
+ "shared_by_all_runs": [
+  "K14-G20",
+  "K14-A21",
+  "G15-G18",
+  "G15-G20",
+  "G15-A21",
+  "G15-C22",
+  "R16-U15",
+  "R16-U16",
+  "R16-G17",
+  "R16-G18",
+  "R16-G20",
+  "R16-A21",
+  "R16-C22",
+  "R16-A23",
+  "D17-G18",
+  "D17-G20",
+  "F32-U19",
+  "K40-U15",
+  "R41-U16",
+  "R41-G17",
+  "R45-U16",
+  "R45-G17",
+  "K47-G18",
+  "K47-U19",
+  "K47-G20",
+  "R48-U19",
+  "R48-G20",
+  "K49-U19",
+  "K49-G20",
+  "N50-U19",
+  "H53-U19",
+  "H53-G20"
+ ]
+}

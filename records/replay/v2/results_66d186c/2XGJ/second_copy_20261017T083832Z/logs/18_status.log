@@ -1,0 +1,5 @@
+$ rnplens update project --status
+project /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2XGJ/second_copy_20261017T083832Z/project: state v0007, COMPLETE
+  main                     COMPLETE  analyses/v0004/main (reused from v0004)
+  answer invalidated: construct_mismatch:/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2XGJ/second_copy_20261017T083832Z/in/run_C_other_construct (exclude_run): an input it depends on changed
+  before/after report: /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2XGJ/second_copy_20261017T083832Z/project/analyses/v0007/update_report.html

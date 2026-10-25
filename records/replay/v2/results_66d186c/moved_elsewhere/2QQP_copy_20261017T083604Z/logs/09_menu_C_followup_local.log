@@ -1,0 +1,61 @@
+$ rnplens assist --project project/imports/v0004/main --analysis project/analyses/v0004/main --item C --rna 1-4 --runs run_A,run_B --followup local --question Which contacts in RNA 1-4 are found in only one run, and which structures list them? --yes
+rnplens region: existing result reused (recorded inputs unchanged): /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/region_1-4
+
+Compare runs within an RNA region: contacts shared by all runs and contacts found only in one run, designated structures and additional samples shown separately [DESCRIPTIVE]
+  results written to:
+    /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/region_1-4/region.json
+    /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/region_1-4/region_contacts.tsv
+    /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/region_1-4/region.html
+    /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/region_1-4/region_map.png
+  evidence IDs (10):
+    region_1-4/region.json#/summary
+    region_1-4/region.json#/summary/shared_by_all_runs
+    region_1-4/region.json#/summary/present_in_some_runs
+    region_1-4/region.json#/summary/present_in_j_runs
+    region_1-4/region.json#/summary/per_run/run_B
+    region_1-4/region.json#/summary/per_run/run_A
+    region_1-4/region.json#/summary/only_in_run/run_B
+    region_1-4/region.json#/summary/only_in_run/run_A
+    region_1-4/region.json#/summary/not_determined
+    region_1-4/region.json#/summary/n_contacts_in_range
+  limits: Shared and run-specific contacts are listings with counts, not an agreement score; positions not resolved in a structure are 'not observed', never 'no contact'.
+Proposed follow-up: Explain the recorded value region_1-4/region.json#/summary/only_in_run/run_A: the structures, files, definition and limitations it rests on. Why this was suggested (local rule L-4): The existing region comparison lists 21 contact(s) found only in run run_A.
+# RNPLens follow-up
+
+**Question.** Which contacts in RNA 1-4 are found in only one run, and which structures list them?
+
+**Initial result.** capability: region_run_comparison, kind: menu_item.
+**Follow-up chosen.** `inspect_existing_comparison` (local rule, no language model).
+
+- **Follow-up.** Explain the recorded value region_1-4/region.json#/summary/only_in_run/run_A: the structures, files, definition and limitations it rests on.
+- **Follow-up.** Why this was suggested (local rule L-4): The existing region comparison lists 21 contact(s) found only in run run_A. [region_1-4/region.json#/summary/only_in_run/run_A/count]
+- **From the records.** Recorded: value at region_1-4/region.json#/summary/only_in_run/run_A (contacts T22-U1, S24-U1, V25-U1, K27-U4, G28-U3, G28-U4, I29-U3, Q31-U4, Q32-U3, A50-U4, S53-U4, V54-U3, V54-U4, R57-U4, L58-U2, L58-U3, S61-U3, I62-U1, R66-U4, A74-U1, K75-U1; count 21). [region_1-4/region.json#/summary/only_in_run/run_A; explain/explain_evidence_41322a28.json#/statements/0]
+- **From the records.** Recorded: region_contacts output, RNPLens 0.4.0.dev0, code commit 66d186c455f52568c920616c1e7400b0d5d5a921, configuration (protein range not recorded; rna range 1, 4; runs run_A, run_B). [region_1-4/region.json#/provenance; explain/explain_evidence_41322a28.json#/statements/1]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_A/2QQP_model_0.pdb = b88f6585eb7be5ffbcaf6ccbb9925181a2925bf78c8d25824fde209388071e52. [region_1-4/region.json#/provenance/inputs/0; explain/explain_evidence_41322a28.json#/statements/2]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_A/2QQP_model_1.pdb = 25e33e977313ce18662fe526ece90d9f8a685e2fedb2f7d494a425981ae8bfb3. [region_1-4/region.json#/provenance/inputs/1; explain/explain_evidence_41322a28.json#/statements/3]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_A/2QQP_model_2.pdb = 2a982237d28eb87ee31b950500d48cc8f75cb23d7c370e891cc52f7fc6f5123c. [region_1-4/region.json#/provenance/inputs/2; explain/explain_evidence_41322a28.json#/statements/4]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_A/2QQP_model_3.pdb = 9f3b1b674f6169f365e7e4694149d8f1ac5a4f3c4d1b51ab690ea1e0b33c8d75. [region_1-4/region.json#/provenance/inputs/3; explain/explain_evidence_41322a28.json#/statements/5]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_A/2QQP_model_4.pdb = 9938bf9fbf85178faf3302c6930656db4d88605f21bd31d77992a6fdaec98446. [region_1-4/region.json#/provenance/inputs/4; explain/explain_evidence_41322a28.json#/statements/6]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_B/2QQP_model_0.pdb = 5804dc8076ca2379227c639637c14400e6bf34143161ee38f545fb25b8f7333b. [region_1-4/region.json#/provenance/inputs/5; explain/explain_evidence_41322a28.json#/statements/7]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_B/2QQP_model_1.pdb = 9c3aba910f0843e46168b8dab1172fde251abefc7ec4400cd80e61d63ebf797a. [region_1-4/region.json#/provenance/inputs/6; explain/explain_evidence_41322a28.json#/statements/8]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_B/2QQP_model_2.pdb = fc7ac573daa859d2aa404fad828f85030def5144f8264c7a4f1d7d9e7ed5a154. [region_1-4/region.json#/provenance/inputs/7; explain/explain_evidence_41322a28.json#/statements/9]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_B/2QQP_model_3.pdb = 410c29993dfc74ce0ede3c962bd0b32c0d8c66f220b491b92c60c51a546a56cb. [region_1-4/region.json#/provenance/inputs/8; explain/explain_evidence_41322a28.json#/statements/10]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/in/run_B/2QQP_model_4.pdb = afbb7b232b0b4e098000d940c19a78fe2c746ee35791b1f9915eb1d664bf75ff. [region_1-4/region.json#/provenance/inputs/9; explain/explain_evidence_41322a28.json#/statements/11]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/report/contacts_by_output.json = d815ce970f5bd9d7e8a5679a5756d1c0952b0524f9c955d0ab5009f721b72b42. [region_1-4/region.json#/provenance/inputs/10; explain/explain_evidence_41322a28.json#/statements/12]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/report/result.json = f21cca3c425672323948c4d37ec7fca255bb7a85975481be4898c61f52b13e91. [region_1-4/region.json#/provenance/inputs/11; explain/explain_evidence_41322a28.json#/statements/13]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/report/rnplens_run.json = e3b6b0028d16d6f51c59d1a63efe751323295e664bc459244a13946e9eae682a. [region_1-4/region.json#/provenance/inputs/12; explain/explain_evidence_41322a28.json#/statements/14]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/summary.json = 841dcdcd806b5be466716740e873cbbb2446f3e09bfb4018a37699c7cd3294b1. [region_1-4/region.json#/provenance/inputs/13; explain/explain_evidence_41322a28.json#/statements/15]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/imports/v0004/main/construct_protein.fasta = 1dc60790e91770577b62bdb38b64c53bc67806f20ab06224b3daef19cd5bca88. [region_1-4/region.json#/provenance/inputs/14; explain/explain_evidence_41322a28.json#/statements/16]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/imports/v0004/main/construct_rna.fasta = b62c858c3ad3e1123616a1aa72c8a2eab328cd9774708b72799f035788b538f1. [region_1-4/region.json#/provenance/inputs/15; explain/explain_evidence_41322a28.json#/statements/17]
+- **From the records.** Recorded: input /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/imports/v0004/main/manifest.json = 64b0fb9ccc63333a630f31e9526a4021bae8f75807e750e9dc9282297c6f4639. [region_1-4/region.json#/provenance/inputs/16; explain/explain_evidence_41322a28.json#/statements/18]
+- **Limitation.** Recorded limitation: Recurrence among predictions is not evidence of correctness. [region_1-4/region.json#/limits/0]
+- **Limitation.** Recorded limitation: Counts describe how often the supplied predictions list a contact; they are not frequencies in the real complex and not probabilities that a contact exists. [region_1-4/region.json#/limits/1]
+- **Limitation.** Recorded limitation: Predictions from the same model, or from the same run, are not independent; several can share one error. [region_1-4/region.json#/limits/2]
+- **Limitation.** Recorded limitation: A contact listed as 'not observed' could not be checked in that structure (unresolved position or inexact numbering); it is not a negative result. [region_1-4/region.json#/limits/3]
+- **Limitation.** Recorded limitation: No agreement score is computed here. Shared and run-specific contacts are listings with explicit counts, not a measure of how similar the runs are. [region_1-4/region.json#/limits/4]
+- **Limitation.** Recorded limitation: This page does not estimate which structure is closest to the experimental complex, binding affinity, or whether the protein and RNA interact. [region_1-4/region.json#/limits/5]
+- **Limitation.** Explanations are read from execution records; they describe how a value was obtained, not whether it is right.
+
+_Every number above is inserted from an RNPLens record, an approved argument or a declared constant; no language-model text is shown. Agreement among predictions is not evidence that any structure is right: predictions can share the same error._
+
+follow-up record: /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/followup/fu_0001/followup_record.json (replay without any language model: python -m rnplens_assistant replay-followup /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main/followup/fu_0001/followup_plan.json --project /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/imports/v0004/main --analysis /home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v2/2QQP/first_20261017T083604Z/project/analyses/v0004/main)

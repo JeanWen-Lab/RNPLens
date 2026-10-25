@@ -1,0 +1,48 @@
+{
+ "spec_id": "RNPBENCH_REPORT_PUBLIC_SELFTEST_SPEC_V1",
+ "toolkit_version": "0.2.0.dev1",
+ "frozen_utc": "2026-10-10T11:33:42+00:00",
+ "authorised_by": "owner instruction pasted-text-2026-10-10T11-23-03.txt, approved change 2 (public Report self-test runnable from a standalone installation; check installation, input validation and reproducible generation of small example reports using bundled, distributable test data; keep the 888-check acceptance suite and the 9,108-result reproduction as separate internal gates)",
+ "frozen_before": "any execution of the Report public self-test code, and before qualification run 3",
+ "entry_points": [
+  "rnpbench-report selftest",
+  "python -m rnpbench_report selftest",
+  "python -m rnpbench_predict selftest",
+  "rnpbench report selftest (dispatches to the same function)"
+ ],
+ "uses_no_internal_file": true,
+ "checks": {
+  "installation": "every Report module imports (agreement, contract, geometry, native, cli; report when matplotlib is installed); agreement.VERSION == 'rnpbench-predict-1.0.0'; installed versions of numpy, biopython, matplotlib recorded",
+  "input_validation": {
+   "accepted": "the bundled 7K9D example contract (absolute paths and digests written at run time) -> CONTRACT_VALID; `validate` exits 0",
+   "refused (each must raise ContractError whose message contains the stated text; `validate` exits 2)": {
+    "not_an_object": "must be a JSON object",
+    "missing_outputs": "missing required field(s): outputs",
+    "wrong_schema_version": "schema_version must be",
+    "non_positive_length": "must be a positive integer",
+    "unknown_engine": "is not one of",
+    "duplicate_engine_execution": "duplicates engine/execution",
+    "relative_structure_path": "must be absolute",
+    "missing_structure_file": "does not exist",
+    "wrong_extension": "must be .cif, .mmcif or .pdb",
+    "digest_mismatch": "digest mismatch",
+    "other_without_native_confidence": "engine is OTHER, so native_confidence"
+   },
+   "source_of_rules": "rnpbench_report/contract.py (unchanged Predict 1.0.0 code); each case is a minimal edit of the valid example contract"
+  },
+  "example_regression": {
+   "how": "Report's own command line (`run CONTRACT --outdir NEW_DIR`) on the bundled example, two independent Boltz-2 executions of 7K9D",
+   "result.json and contacts_by_output.json": "compared with the outputs of the ORIGINAL RNPBench Predict 1.0.0 (generated 2026-10-10 on karyon, before this spec) under RNPBENCH_TOOLKIT_EXAMPLE_REGRESSION_PROFILE_V1 (sha256 f5ddd3d6e66e84bf..., unchanged; reference: bit-identical floats, portable: 1e-5 absolute on floats, everything else exact); result.wall_s and result.environment removed, as frozen in that profile",
+   "HTML (when matplotlib is installed)": "compared with the original 1.0.0 HTML after two normalisations applied to both: every embedded 'data:image/png;base64,...' URI replaced by one placeholder (rendered pixels depend on platform fonts and libraries), and the text between 'Environment: ' and '. Structure digests' replaced by a placeholder (installed versions). The remaining text must be identical in both profiles; the number of embedded images must be equal. Without matplotlib the HTML check is recorded NOT_RUN and the JSON result is still checked",
+   "expected_files_sha256": {
+    "result.json": "ec0b4bfe5127c4c5d1ea0c010c3fce38847933fa6694de17112172739abf6b09",
+    "contacts_by_output.json": "031d0ac351b149feef712241436c5bf7453f50642a570eba91e6d1cf5079ffa3",
+    "report_7K9D_example.html": "769581ff5795bc0387009a155abe97a44a989b6741c7974454d7a2b58f9f8ba1"
+   }
+  },
+  "output_protection": "re-running into the output directory of the example run is refused with exit 2, and every file in it is unchanged afterwards (bytes and modification time); no file is added"
+ },
+ "verdict": "PASS only if every check passes; any failure stops work for review; tolerances are not widened after seeing results",
+ "exit_codes": "0 PASS, 4 FAIL (Report's documented self-test failure code)",
+ "internal_gates_unchanged": "rnpbench-report selftest --acceptance-store DIR --overlay DIR additionally runs the original 888-check acceptance suite (internal only); the 9,108-result reproduction stays a separate internal tool"
+}

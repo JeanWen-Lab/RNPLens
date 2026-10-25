@@ -1,0 +1,5 @@
+case	verdict	check
+1VTM	PASS	PASS: canonical 28/28 files, 28 byte-identical; scientific: 53 differing files, 0 not volatile, unpaired 0/0
+7K9D	PASS	PASS: canonical 27/27 files, 27 byte-identical; scientific: 51 differing files, 0 not volatile, unpaired 0/0
+2JEA	PASS	PASS: canonical 28/28 files, 28 byte-identical; scientific: 54 differing files, 0 not volatile, unpaired 0/0
+2Q66	PASS	PASS: canonical 28/28 files, 28 byte-identical; scientific: 53 differing files, 0 not volatile, unpaired 0/0

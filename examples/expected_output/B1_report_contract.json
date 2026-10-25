@@ -1,0 +1,24 @@
+{
+ "schema_version": "rnpbench-predict-contract-1",
+ "case_id": "7K9D_example",
+ "construct": {
+  "protein_length": 98,
+  "rna_length": 60,
+  "protein_sequence": "GPSPEIGQIVKIVKGRDRDQFSVIIKRVDDRFVYIADGDKRKVDRAKRKNMNHLKLIDHISPEVRHSFEETGKVTNGKLRFALKKFLEEHADLLKEGE",
+  "rna_sequence": "GGCCAGUCUGGCGUUUGGUGACAGCGCCAAGUUCUUCGGAAUUGGGAAAUCCUACUGGCC"
+ },
+ "outputs": [
+  {
+   "engine": "BOLTZ2",
+   "execution": "exec_A",
+   "structure_path": "/tmp/RNPLens_example_clone/examples/reference_free/report_7K9D/exec_A/7K9D_model_0.pdb",
+   "sha256": "9c1a6659f60fa28011b4deae449524146aaba822529e2f065a541b0d1a968009"
+  },
+  {
+   "engine": "BOLTZ2",
+   "execution": "exec_B",
+   "structure_path": "/tmp/RNPLens_example_clone/examples/reference_free/report_7K9D/exec_B/7K9D_model_0.pdb",
+   "sha256": "89f54c2af3b97e38858fcb590c5fa55b6755f122a5c28b7b298b377aedd4f049"
+  }
+ ]
+}

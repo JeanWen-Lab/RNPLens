@@ -1,0 +1,15 @@
+{
+ "requests": [
+  "file:///home/jwen/projects/RNPBench/scratch_agent/v04/viewer-r2/unzip_fresh/RNPLens_owner_screen_check/index.html"
+ ],
+ "links": [
+  "file:///home/jwen/projects/RNPBench/scratch_agent/v04/viewer-r2/unzip_fresh/RNPLens_owner_screen_check/pages/1_1VTM_RNA_1-3/viewer.html",
+  "file:///home/jwen/projects/RNPBench/scratch_agent/v04/viewer-r2/unzip_fresh/RNPLens_owner_screen_check/pages/1b_2JEA_RNA_26-35/viewer.html",
+  "file:///home/jwen/projects/RNPBench/scratch_agent/v04/viewer-r2/unzip_fresh/RNPLens_owner_screen_check/pages/3_6BJG_representatives_t0.3/viewer.html",
+  "file:///home/jwen/projects/RNPBench/scratch_agent/v04/viewer-r2/unzip_fresh/RNPLens_owner_screen_check/pages/3_6BJG_representatives_t0.5/viewer.html",
+  "file:///home/jwen/projects/RNPBench/scratch_agent/v04/viewer-r2/unzip_fresh/RNPLens_owner_screen_check/pages/3_6BJG_representatives_t0.7/viewer.html",
+  "file:///home/jwen/projects/RNPBench/scratch_agent/v04/viewer-r2/unzip_fresh/RNPLens_owner_screen_check/pages/3_6BJG_all_50/viewer.html"
+ ],
+ "page_errors": [],
+ "text": "RNPLens offline viewer: real-screen check\n\nViewer status: automatically tested, awaiting manual visual confirmation; not fully visually qualified.\n\nSix offline pages written by rnplens view (RNPLens 0.4 development candidate, commit 2677969). Open each page from this folder with networking off. The steps and the result form are in OWNER_SCREEN_CHECK.md; the expected highlighted residues of every structure are in expected_highlights.json.\n\npage\tstructures\tRNA region\n1_1VTM_RNA_1-3\t10\t1-3\n1b_2JEA_RNA_26-35\t10\t26-35\n3_6BJG_representatives_t0.3\t2\tall contacts\n3_6BJG_representatives_t0.5\t5\tall contacts\n3_6BJG_representatives_t0.7\t18\tall contacts\n3_6BJG_all_50\t50\tall contacts\n\nHighlighted residues are Report's per-structure contacts; a highlighted contact is a feature of the prediction, not an observation of the real complex, and nothing here measures correctness."
+}

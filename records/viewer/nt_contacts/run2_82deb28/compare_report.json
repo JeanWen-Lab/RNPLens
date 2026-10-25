@@ -1,0 +1,93 @@
+{
+ "base": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/feature/nt-contacts/out/base_de66a96",
+ "feature": "/home/jwen/projects/RNPBench/RNPLens_dev_0.4/feature/nt-contacts/out/feature_82deb28/demos",
+ "files": [
+  {
+   "file": "1_region_1VTM/analysis/report/contacts_by_output.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "7a9f4913d9d43a6694dd6bf1525c6ca6ce689d67d895e08098f535a1337fce2a",
+   "sha256_feature": "7a9f4913d9d43a6694dd6bf1525c6ca6ce689d67d895e08098f535a1337fce2a",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "1_region_1VTM/analysis/report/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "bc3f066f1fe0558ca8666fb4a3e19b4e2a5bf9b5bb05d092438922fecce2cc96",
+   "sha256_feature": "bc3f066f1fe0558ca8666fb4a3e19b4e2a5bf9b5bb05d092438922fecce2cc96",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "1b_region_subrange/analysis/report/contacts_by_output.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "1ade43dc04374aff85e954e079874a4b89f29763ed81329ba9f798533ad8ebd1",
+   "sha256_feature": "1ade43dc04374aff85e954e079874a4b89f29763ed81329ba9f798533ad8ebd1",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "1b_region_subrange/analysis/report/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "da33c22f5d079d02b909bb9626c35d54affb2de4b5421ebfbb3b68d01c5c1c13",
+   "sha256_feature": "da33c22f5d079d02b909bb9626c35d54affb2de4b5421ebfbb3b68d01c5c1c13",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "3_grouping_6BJG/analysis/report/contacts_by_output.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "f0e94b4d30e2d5ce8a6ec8b9abf65c6bb920c1db7032f9d4339225b9f31e4338",
+   "sha256_feature": "f0e94b4d30e2d5ce8a6ec8b9abf65c6bb920c1db7032f9d4339225b9f31e4338",
+   "byte_identical": true,
+   "pass": true
+  },
+  {
+   "file": "3_grouping_6BJG/analysis/report/result.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "sha256_base": "718ea0e8f67e1c512171f045a68810d5fd8f861dc05cf3370a96624529cb5013",
+   "sha256_feature": "ecc2ff75a2fe36e1ce551fe6052cbe8d354a28005d0eafc98050c976062d0bc1",
+   "byte_identical": false,
+   "differing_paths": [
+    "/wall_s"
+   ],
+   "n_differing_paths": 1,
+   "non_environment_differences": [],
+   "pass": true
+  },
+  {
+   "file": "1_region_1VTM/analysis/viewer_1-3/viewer_manifest.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "compared": "highlighted list",
+   "n": 162,
+   "equal": true,
+   "pass": true
+  },
+  {
+   "file": "1b_region_subrange/analysis/viewer_26-35/viewer_manifest.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "compared": "highlighted list",
+   "n": 264,
+   "equal": true,
+   "pass": true
+  },
+  {
+   "file": "3_grouping_6BJG/analysis/viewer/viewer_manifest.json",
+   "base_exists": true,
+   "feature_exists": true,
+   "compared": "highlighted list",
+   "n": 899,
+   "equal": true,
+   "pass": true
+  }
+ ],
+ "pass": true
+}

@@ -1,0 +1,10 @@
+{
+ "rule_id": "RNPBENCH_REPORT_OUTPUT_PROTECTION_V1",
+ "frozen_utc": "2026-10-10T11:33:42+00:00",
+ "authorised_by": "owner instruction pasted-text-2026-10-10T11-23-03.txt, approved change 1",
+ "rule": "`run` refuses, before reading the contract or computing anything, if the --outdir path already exists (file or directory, empty or not); exit status 2; message 'REFUSED: output directory exists ...' on stderr; nothing is created or modified. No overwrite option.",
+ "where": "rnpbench_report/cli.py (Report itself), so rnpbench-report, python -m rnpbench_report, python -m rnpbench_predict and rnpbench report run behave identically",
+ "not_changed": "the analysis modules and the library functions agreement.write and report.write (used by the internal qualification tools) are unchanged",
+ "difference_from_other_tools_disclosed": "Evaluate and Diagnose refuse when their own output FILES already exist in the directory; this Report rule, as instructed, refuses when the DIRECTORY exists",
+ "regression_tests": "rnpbench-report/tests/test_output_protection.py: pre-populated and empty existing directories, through each entry point; asserts exit 2, identical bytes and mtimes of every pre-existing file, no added file"
+}

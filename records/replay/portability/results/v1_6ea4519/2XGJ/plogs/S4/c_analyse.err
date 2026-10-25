@@ -1,0 +1,7 @@
+PORTABILITY REFUSED (rnplens analyse): 1 required structure file(s) recorded by project/imports/v0004/main cannot be used; nothing was written.
+  MISMATCH: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2XGJ/orig_20261017T074314Z/in/run_A/2XGJ_model_0.pdb  (structure s001; recorded SHA-256 98996b69754d3bcf8050b50d9a0f6b5d05e8b7bd25dc7701592b9b3fb329e7b3, found 8e8ba459cb7ac759109b2e1c1c63309ab7bf45a8aa4eb0693afe1ea0152b0921)
+To restore: put the files back at the paths shown (or copy the prediction folders next to the project, in the same layout), or let RNPLens find them and verify them by SHA-256:
+  rnplens relink /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2XGJ/copies/project_only_S4/project --search DIR        (looks for files with the same name under DIR)
+  rnplens relink /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2XGJ/copies/project_only_S4/project --map OLD=NEW       (replaces the path prefix OLD by NEW)
+A file with the same name but another SHA-256 is never used.
+PORTABILITY REFUSED (rnplens analyse): 1 changed (MISMATCH), 0 missing; fix with 'rnplens relink' or restore the files.

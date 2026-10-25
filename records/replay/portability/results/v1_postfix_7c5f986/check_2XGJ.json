@@ -1,0 +1,413 @@
+{
+ "case": "2XGJ",
+ "checks": [
+  {
+   "check": "infra: no driver error, original restored, S4 file restored",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S0 c_update exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_region exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_view exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_methods exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_group exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_explain exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_replay_fu_0001 exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_replay_fu_0002 exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_analyse exit 0, no portability text",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S0 c_replay_fu_0001 matches",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S0 c_replay_fu_0002 matches",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "B1 fu_0001/followup_record.json evidence_hash_version = rnplens.followup.evidence.2",
+   "detail": "rnplens.followup.evidence.2",
+   "ok": true
+  },
+  {
+   "check": "B1 fu_0001/followup_plan.json evidence_hash_version = rnplens.followup.evidence.2",
+   "detail": "rnplens.followup.evidence.2",
+   "ok": true
+  },
+  {
+   "check": "B1 fu_0002/followup_record.json evidence_hash_version = rnplens.followup.evidence.2",
+   "detail": "rnplens.followup.evidence.2",
+   "ok": true
+  },
+  {
+   "check": "B1 fu_0002/followup_plan.json evidence_hash_version = rnplens.followup.evidence.2",
+   "detail": "rnplens.followup.evidence.2",
+   "ok": true
+  },
+  {
+   "check": "S1 c_update exit 0, self-contained (no notice)",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_region exit 0, self-contained (no notice)",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_view exit 0, self-contained (no notice)",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_methods exit 0, self-contained (no notice)",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_group exit 0, self-contained (no notice)",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_explain exit 0, self-contained (no notice)",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_replay_fu_0001 exit 0 and matches",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_replay_fu_0002 exit 0 and matches",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S1 c_analyse refused (exit 6) with relink/update advice",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S1 region_contacts.tsv byte-identical to the original's",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S1 region.json: every structure file resolved",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S2 c_update refused (exit 6)",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 c_region refused (exit 6), lists 2XGJ_model_0.pdb, says how to relink",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 c_view refused (exit 6), lists 2XGJ_model_0.pdb, says how to relink",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 c_methods refused (exit 6), lists 2XGJ_model_0.pdb, says how to relink",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 c_group refused (exit 6), lists 2XGJ_model_0.pdb, says how to relink",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 c_analyse refused (exit 6), lists 2XGJ_model_0.pdb, says how to relink",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 c_explain exit 0 with a portability warning",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S2 c_replay_fu_0001 does not verify (exit != 0)",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 c_replay_fu_0002 does not verify (exit != 0)",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S2 nothing written except explain outputs and the projection index",
+   "detail": [],
+   "ok": true
+  },
+  {
+   "check": "S2 relink exit 0 and relink.json records file mappings",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_update exit 0",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_region exit 0 and says the project is not self-contained",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_view exit 0 and says the project is not self-contained",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_methods exit 0 and says the project is not self-contained",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_group exit 0 and says the project is not self-contained",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_explain exit 0",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S2b c_replay_fu_0001 exit 0 and matches",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_replay_fu_0002 exit 0 and matches",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S2b c_analyse refused (exit 6)",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S2b region_contacts.tsv byte-identical to the original's",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S3 c_update refused (exit 6), names the original location",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S3 c_region exit 0 and says NOT SELF-CONTAINED naming the original location",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 c_view exit 0 and says NOT SELF-CONTAINED naming the original location",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 c_methods exit 0 and says NOT SELF-CONTAINED naming the original location",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 c_group exit 0 and says NOT SELF-CONTAINED naming the original location",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 c_explain exit 0 and says NOT SELF-CONTAINED naming the original location",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 c_replay_fu_0001 exit 0 and matches",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 c_replay_fu_0002 exit 0 and matches",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 c_analyse exit 0 with NOT SELF-CONTAINED (every file at its recorded original path)",
+   "detail": "exit 0",
+   "ok": true
+  },
+  {
+   "check": "S3 region_contacts.tsv byte-identical to the original's",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S4 the changed file really differs",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S4 c_update refused (exit 6)",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S4 c_region refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S4 c_view refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S4 c_methods refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S4 c_group refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S4 c_analyse refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S4 c_explain exit 0 with a portability warning",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S4 c_replay_fu_0001 does not verify (exit != 0)",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S4 c_replay_fu_0002 does not verify (exit != 0)",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S4 nothing written except explain outputs and the projection index",
+   "detail": [],
+   "ok": true
+  },
+  {
+   "check": "S5 the planted file has the same name and a different SHA-256",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S5 c_region refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S5 c_view refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S5 c_methods refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S5 c_group refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S5 c_analyse refused (exit 6), MISMATCH for 2XGJ_model_0.pdb",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S5 c_replay_fu_0001 does not verify (exit != 0)",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S5 c_replay_fu_0002 does not verify (exit != 0)",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S5 relink refuses (exit 6) and reports the same-name file as rejected",
+   "detail": "exit 6",
+   "ok": true
+  },
+  {
+   "check": "S5 relink.json does not record the planted file",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "S5 nothing written except explain outputs, the projection index and relink.json",
+   "detail": [],
+   "ok": true
+  }
+ ],
+ "measured_S1_written_files_naming_original_location": [
+  "analyses/v0004/main/explain/explain_evidence_0485732d.json",
+  "analyses/v0004/main/explain/explain_evidence_70a54c6a.json",
+  "analyses/v0004/main/methods/provenance_manifest.json"
+ ],
+ "n_checks": 80,
+ "n_failed": 0,
+ "verdict": "PASS"
+}

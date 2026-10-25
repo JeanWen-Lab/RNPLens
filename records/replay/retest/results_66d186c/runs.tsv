@@ -1,0 +1,9 @@
+case	run	case_root	start_utc	end_utc	exit
+1VTM	first	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/1VTM/first_20261017T083604Z	2026-10-17T08:36:04Z	2026-10-17T08:36:08Z	0
+7K9D	first	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/7K9D/first_20261017T083608Z	2026-10-17T08:36:08Z	2026-10-17T08:36:11Z	0
+2JEA	first	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/2JEA/first_20261017T083611Z	2026-10-17T08:36:11Z	2026-10-17T08:36:15Z	0
+2Q66	first	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/2Q66/first_20261017T083615Z	2026-10-17T08:36:15Z	2026-10-17T08:36:19Z	0
+1VTM	second	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/1VTM/second_copy_20261017T083824Z	2026-10-17T08:38:24Z	2026-10-17T08:38:27Z	0
+7K9D	second	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/7K9D/second_copy_20261017T083827Z	2026-10-17T08:38:27Z	2026-10-17T08:38:31Z	0
+2JEA	second	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/2JEA/second_copy_20261017T083831Z	2026-10-17T08:38:31Z	2026-10-17T08:38:35Z	0
+2Q66	second	/home/jwen/projects/RNPBench/scratch_agent/v04/final_66d186c/replay_v1/2Q66/second_copy_20261017T083835Z	2026-10-17T08:38:35Z	2026-10-17T08:38:39Z	0

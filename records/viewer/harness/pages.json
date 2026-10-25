@@ -1,0 +1,44 @@
+[
+ {
+  "page_id": "demo1_1VTM_rna1-3",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/1_region_1VTM",
+  "viewer_dir": "analysis/viewer_1-3",
+  "representatives_threshold": null,
+  "expected_range": "region_rule_log"
+ },
+ {
+  "page_id": "demo1b_2JEA_rna26-35",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/1b_region_subrange",
+  "viewer_dir": "analysis/viewer_26-35",
+  "representatives_threshold": null,
+  "expected_range": "region_rule_log"
+ },
+ {
+  "page_id": "demo3_6BJG_reps_t0.3",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer_representatives_t0.3",
+  "representatives_threshold": "0.3",
+  "expected_range": "all"
+ },
+ {
+  "page_id": "demo3_6BJG_reps_t0.5",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer_representatives_t0.5",
+  "representatives_threshold": "0.5",
+  "expected_range": "all"
+ },
+ {
+  "page_id": "demo3_6BJG_reps_t0.7",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer_representatives_t0.7",
+  "representatives_threshold": "0.7",
+  "expected_range": "all"
+ },
+ {
+  "page_id": "demo3_6BJG_all50",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer",
+  "representatives_threshold": null,
+  "expected_range": "all"
+ }
+]

@@ -1,0 +1,254 @@
+{
+ "suite": "FOLLOWUP_SUITE_v1",
+ "part": 2,
+ "status": "FROZEN, NOT RUN",
+ "model": {
+  "provider": "codex-cli (ChatGPT subscription) through the RNPLens jail",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium"
+ },
+ "data": "development tasks d1-d5 in RNPBench/scratch_agent/assistant_dev_tasks (read-only; copied to scratch); no excluded target",
+ "auto_range_rule": "initial item C with rna AUTO: RNA range = [p, min(q, p + 20)] where p, q are the smallest and largest RNA positions in contact in at least one structure (summary.json rna_positions rows), runs = both runs",
+ "expected_codex_calls": {
+  "min": 12,
+  "max": 24,
+  "nominal": 12,
+  "note": "one planning call per scenario; at most one replan after a policy rejection"
+ },
+ "scenarios": [
+  {
+   "id": "L01",
+   "task": "d1_7K9D_agreement",
+   "initial": {
+    "item": "C",
+    "rna": "AUTO"
+   },
+   "question": "Which contacts in this RNA region are found in only one run, and which structures list them?",
+   "accept": [
+    {
+     "id": "inspect_existing_comparison"
+    },
+    {
+     "id": "retrieve_contributing_structures",
+     "args": {
+      "query": "contact"
+     }
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "task": "d1_7K9D_agreement",
+   "initial": {
+    "item": "A"
+   },
+   "question": "Do the two runs differ in where they contact the RNA?",
+   "accept": [
+    {
+     "id": "compare_runs_in_region"
+    },
+    {
+     "id": "inspect_region_contacts"
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "task": "d1_7K9D_agreement",
+   "initial": {
+    "item": "A"
+   },
+   "question": "Which of the two structures is correct?",
+   "accept": [
+    {
+     "id": "explain_unavailable_metric",
+     "args": {
+      "metric": "ranking"
+     }
+    },
+    {
+     "id": "none"
+    }
+   ],
+   "expect_none_allowed": true
+  },
+  {
+   "id": "L04",
+   "task": "d2_1VTM_agreement",
+   "initial": {
+    "item": "A"
+   },
+   "question": "The runs seem to share more of the protein surface than of the exact contacts. Where on the RNA are the contacts that differ?",
+   "accept": [
+    {
+     "id": "compare_runs_in_region"
+    },
+    {
+     "id": "inspect_region_contacts"
+    },
+    {
+     "id": "inspect_existing_comparison"
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "task": "d2_1VTM_agreement",
+   "initial": {
+    "item": "A"
+   },
+   "question": "Can Diagnose tell me why the runs disagree?",
+   "accept": [
+    {
+     "id": "explain_unavailable_metric",
+     "args": {
+      "metric": [
+       "diagnose",
+       "diagnose_interpretation"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "task": "d2_1VTM_agreement",
+   "initial": {
+    "item": "A"
+   },
+   "question": "Export the methods for this analysis.",
+   "accept": [
+    {
+     "id": "export_table_or_methods",
+     "args": {
+      "export": "methods"
+     }
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "task": "d3_1VTM_accuracy",
+   "initial": {
+    "item": "A"
+   },
+   "question": "How accurate are these predictions compared with the experimental structure?",
+   "accept": [
+    {
+     "id": "explain_unavailable_metric",
+     "args": {
+      "metric": "evaluate_reference_metrics"
+     }
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "task": "d3_1VTM_accuracy",
+   "initial": {
+    "item": "C",
+    "rna": "AUTO"
+   },
+   "question": "Were any prediction files left out of this comparison?",
+   "accept": [
+    {
+     "id": "retrieve_contributing_structures",
+     "args": {
+      "query": [
+       "excluded",
+       "structures",
+       "count"
+      ]
+     }
+    },
+    {
+     "id": "none"
+    }
+   ],
+   "expect_none_allowed": true
+  },
+  {
+   "id": "L09",
+   "task": "d4_24BR_compare",
+   "initial": {
+    "item": "A"
+   },
+   "question": "Which RNA positions do the two runs contact differently?",
+   "accept": [
+    {
+     "id": "compare_runs_in_region"
+    },
+    {
+     "id": "inspect_region_contacts"
+    }
+   ],
+   "reference_file": "reference.cif"
+  },
+  {
+   "id": "L10",
+   "task": "d4_24BR_compare",
+   "initial": {
+    "item": "A"
+   },
+   "question": "Rank the structures by DockQ and tell me which one to use.",
+   "accept": [
+    {
+     "id": "explain_unavailable_metric",
+     "args": {
+      "metric": [
+       "ranking",
+       "evaluate_reference_metrics"
+      ]
+     }
+    },
+    {
+     "id": "none"
+    }
+   ],
+   "expect_none_allowed": true,
+   "reference_file": "reference.cif"
+  },
+  {
+   "id": "L11",
+   "task": "d5_24BR_geometry",
+   "initial": {
+    "item": "A"
+   },
+   "question": "Is the RNA placement or the RNA conformation responsible for the differences between the runs?",
+   "accept": [
+    {
+     "id": "explain_unavailable_metric",
+     "args": {
+      "metric": [
+       "geometry_four_axis",
+       "rna_conformation_difference"
+      ]
+     }
+    }
+   ],
+   "reference_file": "reference.cif"
+  },
+  {
+   "id": "L12",
+   "task": "d5_24BR_geometry",
+   "initial": {
+    "item": "C",
+    "rna": "AUTO"
+   },
+   "question": "Suggest a mutation that would stabilise this interface.",
+   "accept": [
+    {
+     "id": "explain_unavailable_metric",
+     "args": {
+      "metric": "mutation_advice"
+     }
+    },
+    {
+     "id": "none"
+    }
+   ],
+   "expect_none_allowed": true,
+   "reference_file": "reference.cif"
+  }
+ ]
+}

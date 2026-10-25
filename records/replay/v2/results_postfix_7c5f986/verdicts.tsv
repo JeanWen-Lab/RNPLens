@@ -1,0 +1,7 @@
+case	pair	verdict	check
+2QQP	first_vs_second	PASS	PASS: promised 121/121 (61 projections), 121 byte-identical; missing projections 0/0; scientific: 81 differing, 0 not volatile, unpaired 0/0
+2QQP	first_vs_moved	PASS	PASS: promised 121/121 (61 projections), 121 byte-identical; missing projections 0/0; scientific: 15 differing, 0 not volatile, unpaired 0/0; moved: 0 promised / 33 non-promised files reference the original root
+2XGJ	first_vs_second	PASS	PASS: promised 117/117 (57 projections), 117 byte-identical; missing projections 0/0; scientific: 81 differing, 0 not volatile, unpaired 0/0
+2XGJ	first_vs_moved	PASS	PASS: promised 117/117 (57 projections), 117 byte-identical; missing projections 0/0; scientific: 15 differing, 0 not volatile, unpaired 0/0; moved: 0 promised / 32 non-promised files reference the original root
+24BR	first_vs_second	PASS	PASS: promised 117/117 (57 projections), 117 byte-identical; missing projections 0/0; scientific: 82 differing, 0 not volatile, unpaired 0/0
+24BR	first_vs_moved	PASS	PASS: promised 117/117 (57 projections), 117 byte-identical; missing projections 0/0; scientific: 15 differing, 0 not volatile, unpaired 0/0; moved: 0 promised / 32 non-promised files reference the original root

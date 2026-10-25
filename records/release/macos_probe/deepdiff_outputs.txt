@@ -1,0 +1,15 @@
+# macOS arm64 (local, cf81acd, conda env rnplens)
+floats compared 59
+differences 5
+('/environment/platform', 'macOS-27.0.1-arm64-arm-64bit', 'Linux-7.0.0-34-generic-x86_64-with-glibc2.43', None, None)
+('/per_output/0/execution', 'exec_A#7K9D_model_0', 'exec_A', None, None)
+('/per_output/1/execution', 'exec_B#7K9D_model_0', 'exec_B', None, None)
+('/summary/repeat_agreement/BOLTZ2/rna_pose_difference_A', '0.9573833460521571', '0.957383346052161', 3.885780586188048e-15, -35)
+('/wall_s', '0.16', '0.08', 0.08, 4503599627370496)
+# karyon Linux x86-64 (track clone at cf81acd, RNPLens_dev_0.3 venv)
+floats compared 59
+differences 4
+('/environment/python', '3.11.15', '3.11.17', None, None)
+('/per_output/0/execution', 'exec_A#7K9D_model_0', 'exec_A', None, None)
+('/per_output/1/execution', 'exec_B#7K9D_model_0', 'exec_B', None, None)
+('/wall_s', '0.06', '0.08', 0.020000000000000004, -1621295865853379)

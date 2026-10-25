@@ -1,0 +1,613 @@
+{
+ "suite": "FOLLOWUP_SUITE_v1",
+ "part": 1,
+ "n": 21,
+ "passed": 17,
+ "failed": [
+  "P1-13",
+  "P1-14",
+  "P1-15",
+  "P1-16"
+ ],
+ "wall_s": 21.3,
+ "freeze_sha256": "7cf178a838e5840c2c3ef979f4711b6f41efe03a33c9358a7e36be084748451a",
+ "rnplens_version": "0.4.0.dev0",
+ "python": "3.11.17",
+ "platform": "darwin",
+ "results": [
+  {
+   "id": "P1-01",
+   "category": "appropriate follow-up accepted",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": null,
+    "executed": true,
+    "chosen": "inspect_existing_comparison",
+    "rules": [
+     null
+    ],
+    "model_calls": 1,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": false,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": true,
+    "scripted_replies_left": 0,
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true
+   },
+   "record": "P1-01_ja0jwb8s/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-02",
+   "category": "appropriate follow-up accepted (new region comparison)",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": null,
+    "executed": true,
+    "chosen": "compare_runs_in_region",
+    "rules": [
+     null
+    ],
+    "model_calls": 1,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": false,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": true,
+    "scripted_replies_left": 0,
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true
+   },
+   "record": "P1-02_xl2zpv9e/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-03",
+   "category": "irrelevant follow-up rejected",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": "REJECTED",
+    "executed": false,
+    "chosen": null,
+    "rules": [
+     "F9",
+     "F9"
+    ],
+    "model_calls": 2,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": false,
+    "scripted_replies_left": 0
+   },
+   "record": "P1-03__7wst8oi/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-04",
+   "category": "repeated plan refused",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": null,
+    "executed": false,
+    "chosen": "none",
+    "rules": [
+     "F5",
+     null
+    ],
+    "model_calls": 2,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": true,
+    "scripted_replies_left": 0,
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true
+   },
+   "record": "P1-04_v_mm2zix/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-05",
+   "category": "circular plan refused",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": "REJECTED",
+    "executed": false,
+    "chosen": null,
+    "rules": [
+     "F5",
+     "F6"
+    ],
+    "model_calls": 2,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": false,
+    "scripted_replies_left": 1
+   },
+   "record": "P1-05_5aehnluf/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-06",
+   "category": "privacy refusal: no consent, no call",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": false,
+    "stop": "NO_CONSENT",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 0,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-06_xpqnk74i/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-07",
+   "category": "opt-out after opt-in",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": false,
+    "stop": "NO_CONSENT",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 0,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-07_d2qg951y/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-08",
+   "category": "unsupported analysis (blocked tool) refused",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": "REJECTED",
+    "executed": false,
+    "chosen": null,
+    "rules": [
+     "F3",
+     "F3"
+    ],
+    "model_calls": 2,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": false,
+    "scripted_replies_left": 0
+   },
+   "record": "P1-08_vbi34gui/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-09",
+   "category": "result misinterpretation does not reach the answer",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": null,
+    "executed": true,
+    "chosen": "inspect_existing_comparison",
+    "rules": [
+     null
+    ],
+    "model_calls": 1,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": false,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": true,
+    "scripted_replies_left": 0,
+    "answer_excludes": [
+     "proves",
+     "0.97",
+     "most reliable",
+     "best run",
+     "correct and"
+    ],
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true
+   },
+   "record": "P1-09_j5c406qa/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-10",
+   "category": "invalid plans: bad id, out-of-range positions",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": "REJECTED",
+    "executed": false,
+    "chosen": null,
+    "rules": [
+     "F1",
+     "F2"
+    ],
+    "model_calls": 2,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": false,
+    "scripted_replies_left": 0
+   },
+   "record": "P1-10_ekjlbw76/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-11",
+   "category": "invalid plans: unknown run, malformed proposal",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": "REJECTED",
+    "executed": false,
+    "chosen": null,
+    "rules": [
+     "F2",
+     "F8"
+    ],
+    "model_calls": 2,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": false,
+    "scripted_replies_left": 0
+   },
+   "record": "P1-11_6czp9tuy/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-12",
+   "category": "model unavailable (subprocess error)",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": "MODEL_UNAVAILABLE",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 1,
+    "codex_subprocess": 1,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": true,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-12_mj6mgcrp/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-13",
+   "category": "network interruption (timeout)",
+   "passed": false,
+   "mismatches": [
+    "stop: expected 'TIMEOUT', observed 'MODEL_UNAVAILABLE'"
+   ],
+   "facts": {
+    "factory_called": true,
+    "stop": "MODEL_UNAVAILABLE",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 1,
+    "codex_subprocess": 1,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": true,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-13_du77biv5/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-14",
+   "category": "subscription usage exhaustion (UsageGuard)",
+   "passed": false,
+   "mismatches": [
+    "stop: expected 'USAGE_GUARD', observed 'MODEL_UNAVAILABLE'",
+    "usage_recorded: expected True, observed False"
+   ],
+   "facts": {
+    "factory_called": true,
+    "stop": "MODEL_UNAVAILABLE",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 1,
+    "codex_subprocess": 1,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": true,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-14_t3glfwtl/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-15",
+   "category": "credit change stops the run",
+   "passed": false,
+   "mismatches": [
+    "stop: expected 'USAGE_GUARD', observed 'MODEL_UNAVAILABLE'"
+   ],
+   "facts": {
+    "factory_called": true,
+    "stop": "MODEL_UNAVAILABLE",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 1,
+    "codex_subprocess": 1,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": true,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-15_4wx4yvun/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-16",
+   "category": "full jail path with an approved proposal (fake codex)",
+   "passed": false,
+   "mismatches": [
+    "stop: expected None, observed 'MODEL_UNAVAILABLE'",
+    "executed: expected True, observed False",
+    "chosen: expected 'inspect_existing_comparison', observed None",
+    "model_returned: expected 'gpt-6.1-sol', observed None",
+    "replay_matches: expected True, observed '<not observed>'"
+   ],
+   "facts": {
+    "factory_called": true,
+    "stop": "MODEL_UNAVAILABLE",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 1,
+    "codex_subprocess": 1,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": true,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-16_m4k0vw6f/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-17",
+   "category": "LLM-free execution and replay",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": false,
+    "stop": null,
+    "executed": true,
+    "chosen": "inspect_existing_comparison",
+    "rules": [],
+    "model_calls": 0,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": false,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null,
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true
+   },
+   "record": "P1-17_9oh2zpok/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-18",
+   "category": "untraceable numbers detected",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": false,
+    "stop": null,
+    "executed": true,
+    "chosen": "inspect_existing_comparison",
+    "rules": [],
+    "model_calls": 0,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": false,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null,
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true,
+    "control_clean": true,
+    "injected_number_detected": true,
+    "altered_slot_detected": true,
+    "empty_answer_detected": true
+   },
+   "record": "P1-18_u165z2fo/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-19",
+   "category": "one planning round per question",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": false,
+    "stop": "ROUND_USED",
+    "executed": false,
+    "chosen": null,
+    "rules": [],
+    "model_calls": 0,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": null,
+    "rationale_in_record": false,
+    "scripted_replies_left": null
+   },
+   "record": "P1-19__bdi1iu_/a/followup/fu_0002/followup_record.json"
+  },
+  {
+   "id": "P1-20",
+   "category": "tool-call budget enforced",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": null,
+    "executed": false,
+    "chosen": "none",
+    "rules": [
+     "F4",
+     null
+    ],
+    "model_calls": 2,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": false,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": true,
+    "scripted_replies_left": 0,
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true
+   },
+   "record": "P1-20_nx3_e1ej/a/followup/fu_0001/followup_record.json"
+  },
+  {
+   "id": "P1-21",
+   "category": "confirmation required before execution",
+   "passed": true,
+   "mismatches": [],
+   "facts": {
+    "factory_called": true,
+    "stop": "NOT_CONFIRMED",
+    "executed": false,
+    "chosen": "inspect_existing_comparison",
+    "rules": [
+     null
+    ],
+    "model_calls": 1,
+    "codex_subprocess": 0,
+    "traceability_clean": true,
+    "wording_clean": true,
+    "local_suggestions_listed": true,
+    "call_error_recorded": false,
+    "usage_recorded": false,
+    "credit_baseline_unchanged": true,
+    "model_returned": "scripted-fake",
+    "rationale_in_record": true,
+    "scripted_replies_left": 0,
+    "replay_matches": true,
+    "replay_fresh_copy_matches": true
+   },
+   "record": "P1-21_q2pflkm6/a/followup/fu_0001/followup_record.json"
+  }
+ ]
+}

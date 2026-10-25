@@ -1,0 +1,15 @@
+PORTABILITY WARNING (rnplens explain): 10 required structure file(s) recorded by project/imports/v0004/main cannot be used:
+  MISMATCH: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/orig_20261017T092104Z/in/run_A/2XGJ_model_0.pdb  (structure s001; recorded SHA-256 98996b69754d3bcf8050b50d9a0f6b5d05e8b7bd25dc7701592b9b3fb329e7b3, found f72a4438c07938ad0c475d83ad1ab56230d3279c965afb297d82ae99ba652bce)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/orig_20261017T092104Z/in/run_A/2XGJ_model_1.pdb  (structure s002; recorded SHA-256 f72a4438c07938ad0c475d83ad1ab56230d3279c965afb297d82ae99ba652bce)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/orig_20261017T092104Z/in/run_A/2XGJ_model_2.pdb  (structure s003; recorded SHA-256 6b16fa793f78dcbd205cf5f2a3217b1d96739c15c0d0133efddee5124d11b5f0)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/orig_20261017T092104Z/in/run_A/2XGJ_model_3.pdb  (structure s004; recorded SHA-256 c3e2eea23af21b53f7aee0adfa2de143da3cae2c11fd051ad0b36ce90b62e2d9)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/orig_20261017T092104Z/in/run_A/2XGJ_model_4.pdb  (structure s005; recorded SHA-256 bee7cc99ebf71ef6549452e7ac4daac0ab295c5ebe77eae008756ce6c2fb900b)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/orig_20261017T092104Z/in/run_B/2XGJ_model_0.pdb  (structure s006; recorded SHA-256 9f35d33f055b705333c0a1f51b02a250e0e147d329cf631fe725c0a2079383cd)
+  ... and 4 more (all listed by 'rnplens relink <project> --search DIR --dry-run')
+To restore: put the files back at the paths shown (or copy the prediction folders next to the project, in the same layout), or let RNPLens find them and verify them by SHA-256:
+  rnplens relink /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/copies/project_only_S5/project --search DIR        (looks for files with the same name under DIR)
+  rnplens relink /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3b/portability_v1_postfix_7c5f986/2XGJ/copies/project_only_S5/project --map OLD=NEW       (replaces the path prefix OLD by NEW)
+A file with the same name but another SHA-256 is never used.
+PORTABILITY WARNING (rnplens explain): the report above names recorded files that are not available here.
+  written: project/analyses/v0004/main/explain/explain_structures_44136fa3.json
+  written: project/analyses/v0004/main/explain/explain_structures_44136fa3.txt

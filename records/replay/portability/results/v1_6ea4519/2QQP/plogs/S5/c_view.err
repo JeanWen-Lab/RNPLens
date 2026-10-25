@@ -1,0 +1,13 @@
+PORTABILITY REFUSED (rnplens view): 10 required structure file(s) recorded by project/imports/v0004/main cannot be used; nothing was written.
+  MISMATCH: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/orig_20261017T074303Z/in/run_A/2QQP_model_0.pdb  (structure s001; recorded SHA-256 b88f6585eb7be5ffbcaf6ccbb9925181a2925bf78c8d25824fde209388071e52, found 25e33e977313ce18662fe526ece90d9f8a685e2fedb2f7d494a425981ae8bfb3)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/orig_20261017T074303Z/in/run_A/2QQP_model_1.pdb  (structure s002; recorded SHA-256 25e33e977313ce18662fe526ece90d9f8a685e2fedb2f7d494a425981ae8bfb3)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/orig_20261017T074303Z/in/run_A/2QQP_model_2.pdb  (structure s003; recorded SHA-256 2a982237d28eb87ee31b950500d48cc8f75cb23d7c370e891cc52f7fc6f5123c)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/orig_20261017T074303Z/in/run_A/2QQP_model_3.pdb  (structure s004; recorded SHA-256 9f3b1b674f6169f365e7e4694149d8f1ac5a4f3c4d1b51ab690ea1e0b33c8d75)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/orig_20261017T074303Z/in/run_A/2QQP_model_4.pdb  (structure s005; recorded SHA-256 9938bf9fbf85178faf3302c6930656db4d88605f21bd31d77992a6fdaec98446)
+  missing: /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/orig_20261017T074303Z/in/run_B/2QQP_model_0.pdb  (structure s006; recorded SHA-256 5804dc8076ca2379227c639637c14400e6bf34143161ee38f545fb25b8f7333b)
+  ... and 4 more (all listed by 'rnplens relink <project> --search DIR --dry-run')
+To restore: put the files back at the paths shown (or copy the prediction folders next to the project, in the same layout), or let RNPLens find them and verify them by SHA-256:
+  rnplens relink /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/copies/project_only_S5/project --search DIR        (looks for files with the same name under DIR)
+  rnplens relink /home/jwen/projects/RNPBench/scratch_agent/v04/replay-3/portability_v1_6ea4519/2QQP/copies/project_only_S5/project --map OLD=NEW       (replaces the path prefix OLD by NEW)
+A file with the same name but another SHA-256 is never used.
+PORTABILITY REFUSED (rnplens view): 1 changed (MISMATCH), 9 missing; fix with 'rnplens relink' or restore the files.

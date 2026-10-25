@@ -1,0 +1,31 @@
+[build-system]
+# setuptools >= 77 implements PEP 639 (see the root pyproject.toml); this distribution declares the
+# same MIT licence as the rnplens core distribution.
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rnplens-assistant"
+version = "0.1.0.dev0"
+authors = [
+  { name = "Brian J. Parker", email = "Brian.Parker@anu.edu.au" },
+  { name = "Jiayu Wen", email = "Jiayu.Wen@anu.edu.au" },
+]
+description = "Bounded natural-language companion over qualified RNPLens tools (development)"
+requires-python = ">=3.10"
+# assistant/LICENSE is a byte-identical copy of the repository root LICENSE. setuptools resolves
+# license-files relative to the project root, which for this distribution is assistant/, not the
+# repository root, so the file has to exist here.
+license = "MIT"
+license-files = ["LICENSE"]
+# Blocker B2 is closed: the authors below are those of the authoritative manuscript, supplied by the owner. Previously this distribution declared no authors, so its metadata had no
+# Author field. Add the same list as the root pyproject.toml in the same pass; none is invented here.
+dependencies = ["rnplens"]
+# 0.4: no optional "llm" extra. The language-model route is Codex CLI with ChatGPT sign-in only (codex_llm.py); the
+# separately billed API client kept in llm.py for the frozen 2026-10-16 development record is not used by any command.
+
+[tool.setuptools]
+packages = ["rnplens_assistant"]
+
+[tool.setuptools.package-data]
+rnplens_assistant = ["registry.json", "prompts/*.md", "docs/*.md", "codex_adapter/*.sh", "codex_adapter/*.sb"]

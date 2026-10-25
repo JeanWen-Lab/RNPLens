@@ -1,0 +1,7 @@
+$ rnplens group project/imports/v0004/main --analysis project/analyses/v0004/main
+rnplens group: 10 eligible structure(s); t=0.5: 1 group(s) in 1 surface group(s); t=0.3: 1; t=0.7: 1
+  s001: engine-designated structure (member of group 1)
+  s006: engine-designated structure (member of group 1)
+  Group size reflects how often the supplied predictions produced this proposal; repeated samples from one model are not independent evidence.
+  RNA conformation difference: unavailable (blocked correspondence route)
+  written: project/analyses/v0004/main/groups/groups.html

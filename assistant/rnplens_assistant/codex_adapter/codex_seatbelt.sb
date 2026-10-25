@@ -1,0 +1,69 @@
+;; RNPLens: Seatbelt profile for the Codex process (macOS). Filled in by codex_seatbelt.sh; deny by default.
+(version 1)
+(deny default)
+
+;; processes: only the Codex installation may be executed (no shell, no interpreter, no other program)
+(allow process-fork)
+(allow process-exec (subpath "@PKG@"))
+(allow signal (target same-sandbox))
+(allow sysctl-read)
+@TEST_TOOLS@
+
+;; operating-system files needed by the binary, name resolution, time zones and TLS (read-only; no user data)
+(allow file-read*
+  ;; not (subpath "/System"): /System/Volumes/Data is the firmlinked user-data volume (it contains /Users)
+  (subpath "/System/Library")
+  (subpath "/System/Cryptexes")
+  (subpath "/System/Volumes/Preboot/Cryptexes")
+  (subpath "/usr/lib")
+  (subpath "/usr/share")
+  (subpath "/private/var/db/dyld")
+  (subpath "/private/var/db/timezone")
+  (subpath "/private/etc/ssl")
+  (literal "/private/etc/hosts")
+  (literal "/private/etc/resolv.conf")
+  (literal "/private/etc/services")
+  (literal "/private/etc/protocols")
+  (literal "/private/etc/localtime")
+  (literal "/dev/null") (literal "/dev/zero") (literal "/dev/random") (literal "/dev/urandom"))
+(allow file-read-metadata
+  (literal "/") (literal "/etc") (literal "/var") (literal "/tmp") (literal "/private") (literal "/private/etc")
+  (literal "/private/var") (literal "/private/var/run") (literal "/private/var/db") (literal "/dev")
+  (literal "/System") (literal "/System/Volumes") (literal "/System/Volumes/Preboot"))
+(allow file-write-data (literal "/dev/null"))
+
+;; libignition opens / as a directory descriptor for openat during dyld startup
+;; (Apple dyld-support.sb). Nonrecursive: no access to /Users or other children.
+;; Reading the public root directory itself is an explicit runtime exception.
+(allow file-read-data (literal "/"))
+
+;; the Codex installation: read and execute only
+(allow file-read* (subpath "@PKG@"))
+
+;; the call folder: read and write; the login file: read and in-place write only (no replacement of the link)
+(allow file-read* (subpath "@CALL@"))
+(allow file-write* (require-all (subpath "@CALL@") (require-not (literal "@JH@/auth.json"))))
+(allow file-read* file-write-data (literal "@AUTH@"))
+
+;; path metadata (no listing, no content) for the parent folders of the allowed paths only
+(allow file-read-metadata
+@ANCESTORS@
+)
+
+;; network: HTTPS and the system DNS resolver only
+(allow system-socket)
+(allow network-outbound (remote tcp "*:443"))
+(allow network-outbound (literal "/private/var/run/mDNSResponder"))
+
+;; system services: user lookup, notifications, logging, network configuration, certificate trust, DNS
+(allow mach-lookup
+  (global-name "com.apple.system.opendirectoryd.libinfo")
+  (global-name "com.apple.system.notification_center")
+  (global-name "com.apple.system.logger")
+  (global-name "com.apple.logd")
+  (global-name "com.apple.SystemConfiguration.configd")
+  (global-name "com.apple.trustd")
+  (global-name "com.apple.trustd.agent")
+  (global-name "com.apple.ocspd")
+  (global-name "com.apple.dnssd.service"))
+(allow ipc-posix-shm-read-data (ipc-posix-name "apple.shm.notification_center"))

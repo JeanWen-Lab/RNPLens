@@ -1,0 +1,357 @@
+{
+ "followup": {
+  "L01": {
+   "calls": [
+    "followup",
+    "followup_replan"
+   ],
+   "excerpt_summary_sent": "{\"agreement\":[{\"between\":[\"s001\",\"s002\"],\"engine\":\"BOLTZ2\",\"register_agreement\":{\"evidence_id\":\"evidence_029\",\"value\":0.8936170212765957},\"rna_pose_difference_A\":{\"evidence_id\":\"evidence_030\",\"value\":0.957383346052161},\"scope\":\"repeat_agreement\",\"surface_agreement\":{\"evidence_id\":\"evidence_031\",\"value\":0.8823529411764706}}],\"analyses_run\":[{\"kind\":\"region\",\"output\":\"output_001\",\"protein\":null,\"rna\":[14,34],\"runs\":[\"run_001\",\"run_002\"]}],\"categories_version\":\"followup-categories-2\",\"construct\":{\"protein_length\":{\"evidence_id\":\"evidence_013\",\"value\":98},\"rna_length\":{\"evidence_id\":\"evidence_014\"",
+   "followup": {
+    "bytes": 7866,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 19,
+    "real_names_found": [],
+    "sha256": "0efe1e6a92b9123c3f3de2b443292387ef5f758f2cc6ba98b96f2703921d60f1"
+   },
+   "followup_replan": {
+    "bytes": 8257,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 19,
+    "real_names_found": [],
+    "sha256": "393dbed3ea78fab49c9740a363ede4a9cafd8be1215936e4db5bda5aa031c379"
+   },
+   "payloads_equal_record": true,
+   "proposal_rules": [
+    "F9",
+    null
+   ],
+   "replan_feedback_excerpt": "\n{\"args\": {\"contact\": null, \"evidence_id\": null, \"export\": null, \"metric\": null, \"protein_end\": null, \"protein_start\": null, \"query\": null, \"rna_end\": 2, \"rna_start\": 1, \"runs\": [\"run_001\", \"run_002\"]}, \"follow_up\": \"compare_runs_in_region\"}\nThe RNPLens policy rejected it: F9 (no structure lists a contact at RNA positions 1-2). Return a corrected proposal, or none.",
+   "stop": null
+  },
+  "L09": {
+   "calls": [
+    "followup"
+   ],
+   "excerpt_summary_sent": "{\"agreement\":[{\"between\":[\"run_001\",\"run_002\"],\"engine\":\"BOLTZ2\",\"register_agreement\":{\"evidence_id\":\"evidence_022\",\"value\":0.8571428571428571},\"rna_pose_difference_A\":{\"evidence_id\":\"evidence_023\",\"value\":1.3641444817122954},\"scope\":\"run_repeat_agreement\",\"surface_agreement\":{\"evidence_id\":\"evidence_024\",\"value\":0.8947368421052632}}],\"analyses_run\":[],\"categories_version\":\"followup-categories-2\",\"construct\":{\"protein_length\":{\"evidence_id\":\"evidence_007\",\"value\":327},\"rna_length\":{\"evidence_id\":\"evidence_008\",\"value\":4}},\"contact_bands\":[{\"distinct_contacts\":{\"derivation\":\"rows with count > 0",
+   "followup": {
+    "bytes": 7258,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 51,
+    "real_names_found": [],
+    "sha256": "2f2520876abfa08621e285da8ec260b45b264e2887e382437ad8b799d92928a0"
+   },
+   "payloads_equal_record": true,
+   "proposal_rules": [
+    null
+   ],
+   "stop": null
+  },
+  "L11": {
+   "calls": [
+    "followup"
+   ],
+   "excerpt_summary_sent": "{\"agreement\":[{\"between\":[\"run_001\",\"run_002\"],\"engine\":\"BOLTZ2\",\"register_agreement\":{\"evidence_id\":\"evidence_022\",\"value\":0.8571428571428571},\"rna_pose_difference_A\":{\"evidence_id\":\"evidence_023\",\"value\":1.3641444817122954},\"scope\":\"run_repeat_agreement\",\"surface_agreement\":{\"evidence_id\":\"evidence_024\",\"value\":0.8947368421052632}}],\"analyses_run\":[],\"categories_version\":\"followup-categories-2\",\"construct\":{\"protein_length\":{\"evidence_id\":\"evidence_007\",\"value\":327},\"rna_length\":{\"evidence_id\":\"evidence_008\",\"value\":4}},\"contact_bands\":[{\"distinct_contacts\":{\"derivation\":\"rows with count > 0",
+   "followup": {
+    "bytes": 7296,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 51,
+    "real_names_found": [],
+    "sha256": "399ac702a3e1fb0dd57caefcb661fa8aceae9720387d8523c04ee4337b99beda"
+   },
+   "payloads_equal_record": true,
+   "proposal_rules": [
+    null
+   ],
+   "stop": null
+  }
+ },
+ "planner": {
+  "P01": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nDo the two runs agree on where the protein contacts the RNA?\n\nTask inputs (6 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/file_001\nrun_002/candidate_001\nrun_002/file_001\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this task: none\n",
+   "first_call": {
+    "bytes": 18854,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "f6a0b56983887f34cd07930cc4526e986fb77f416bafd8af323b68d8dc546590"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19624,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "d62b9a38eb512223b7f2c50c00c2b04157274f35516373b178a6f93852402303"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "P02": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nWithin RNA positions 13 to 23, which protein residues contact the RNA, and which of these contacts are found in both runs and which in only one?\n\nTask inputs (6 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/file_001\nrun_002/candidate_001\nrun_002/file_001\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this task: none\n",
+   "first_call": {
+    "bytes": 18938,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "b770f57fe3f0c121aa2a26d7ab8980b0daaaa13a986f201b97bb339c7f501def"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19708,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "297a0388ee89c42a54f7a52f43c3df57cc2731bdd1066caab1945977cd23079d"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "P03": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nHow accurate are these predicted structures compared with the experimental structure?\n\nTask inputs (22 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/candidate_002\nrun_001/candidate_003\nrun_001/candidate_004\nrun_001/candidate_005\nrun_001/file_001\nrun_001/file_002\nrun_001/file_003\nrun_001/file_004\nrun_001/file_005\nrun_002/candidate_001\nrun_002/candidate_002\nrun_002/candidate_003\nrun_002/candidate_004\nrun_002/candidate_005\nrun_002/file_001\nrun_002/file_002\nrun_002/file_003\nrun_002/file_004\nrun_002/file_005\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this ta",
+   "first_call": {
+    "bytes": 19192,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "fbc499429414a8bcda35a228ec1941b3e5637da1eb2ab76b7b3785b5839f561f"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19962,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "9f0560897b50ea6fa4514408f1bf77c0b9a5a1ddcf2ce29670921b35f6582e60"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "P04": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nHow close is each predicted structure to the experimental reference structure? Report DockQ, fnat, iRMSD and LRMSD.\n\nTask inputs (22 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/candidate_002\nrun_001/candidate_003\nrun_001/candidate_004\nrun_001/candidate_005\nrun_001/file_001\nrun_001/file_002\nrun_001/file_003\nrun_001/file_004\nrun_001/file_005\nrun_002/candidate_001\nrun_002/candidate_002\nrun_002/candidate_003\nrun_002/candidate_004\nrun_002/candidate_005\nrun_002/file_001\nrun_002/file_002\nrun_002/file_003\nrun_002/file_004\nrun_002/file_005\nprotein_sequence_001\nrna_sequence_001\n\nExperimental r",
+   "first_call": {
+    "bytes": 19276,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 49,
+    "real_names_found": [],
+    "sha256": "32549b422ae2ef4eb53e762a7c429a5674d8363a4287f5bb9a62bbb8ddf013dc"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 20045,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 49,
+    "real_names_found": [],
+    "sha256": "60083e3b4308ad5e4aadf7c89803f07c08ff98e1a6a54bc782774d273763c07c"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": true, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"eviden"
+  },
+  "P05": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nWhich of these ten predicted structures is the most accurate? Pick the one I should use.\n\nTask inputs (22 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/candidate_002\nrun_001/candidate_003\nrun_001/candidate_004\nrun_001/candidate_005\nrun_001/file_001\nrun_001/file_002\nrun_001/file_003\nrun_001/file_004\nrun_001/file_005\nrun_002/candidate_001\nrun_002/candidate_002\nrun_002/candidate_003\nrun_002/candidate_004\nrun_002/candidate_005\nrun_002/file_001\nrun_002/file_002\nrun_002/file_003\nrun_002/file_004\nrun_002/file_005\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this",
+   "first_call": {
+    "bytes": 19195,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "a4296f5b08703eb982448eb064a0df8d451c53845a5e05d0df6ff427185a2ce5"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19965,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "60bc568e6ec661dc12d34a6a71f5965cb584cbec459a53a1f81f56797958cf14"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "P06": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nUsing the experimental reference, split the differences into protein-internal RMSD, RNA-internal RMSD and RNA placement RMSD for each structure.\n\nTask inputs (22 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/candidate_002\nrun_001/candidate_003\nrun_001/candidate_004\nrun_001/candidate_005\nrun_001/file_001\nrun_001/file_002\nrun_001/file_003\nrun_001/file_004\nrun_001/file_005\nrun_002/candidate_001\nrun_002/candidate_002\nrun_002/candidate_003\nrun_002/candidate_004\nrun_002/candidate_005\nrun_002/file_001\nrun_002/file_002\nrun_002/file_003\nrun_002/file_004\nrun_002/file_005\nprotein_sequence_001\nrna",
+   "first_call": {
+    "bytes": 19305,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 49,
+    "real_names_found": [],
+    "sha256": "0f274f365646ffd5b391e7830c552059ec67b51984062839bcf6a871245c7b2b"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 20074,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 49,
+    "real_names_found": [],
+    "sha256": "69472751dbb883e7d334719d811f4c688dd546b85af80b0fc6220192274db613"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": true, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"eviden"
+  },
+  "P07": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nRun Diagnose on these predictions and tell me why the two runs disagree.\n\nTask inputs (22 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/candidate_002\nrun_001/candidate_003\nrun_001/candidate_004\nrun_001/candidate_005\nrun_001/file_001\nrun_001/file_002\nrun_001/file_003\nrun_001/file_004\nrun_001/file_005\nrun_002/candidate_001\nrun_002/candidate_002\nrun_002/candidate_003\nrun_002/candidate_004\nrun_002/candidate_005\nrun_002/file_001\nrun_002/file_002\nrun_002/file_003\nrun_002/file_004\nrun_002/file_005\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this task: none\n",
+   "first_call": {
+    "bytes": 19179,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "2d547b0628d3fcc613bdec8eeba6da3f2a38353ed56244652ada1861c90f4b1b"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19949,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "ffe4b209ff5c66a07dedc6b3369d4d9108bcc6ed5c28622d5488e77ab027459d"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "P08": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nGroup these structures into distinct binding hypotheses and tell me which group is the right one to use.\n\nTask inputs (22 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/candidate_002\nrun_001/candidate_003\nrun_001/candidate_004\nrun_001/candidate_005\nrun_001/file_001\nrun_001/file_002\nrun_001/file_003\nrun_001/file_004\nrun_001/file_005\nrun_002/candidate_001\nrun_002/candidate_002\nrun_002/candidate_003\nrun_002/candidate_004\nrun_002/candidate_005\nrun_002/file_001\nrun_002/file_002\nrun_002/file_003\nrun_002/file_004\nrun_002/file_005\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference su",
+   "first_call": {
+    "bytes": 19211,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "64a1ee6c2de2507801fa557b20c457ccbe0d5fde8b59f08eb5cda7e771e22a4a"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19981,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 48,
+    "real_names_found": [],
+    "sha256": "6f822d3ddadbfefd8f7a0bb47e74dbf9fe3a58f22bf2f3414750f9c21cef9ecb"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "P09": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nPredict the structure of this complex with residue 18 mutated to alanine, and suggest a mutation that would strengthen RNA binding.\n\nTask inputs (6 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/file_001\nrun_002/candidate_001\nrun_002/file_001\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this task: none\n",
+   "first_call": {
+    "bytes": 18925,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "48a843cccf908a81e0cef0cec13bf419d09e1c3585d57be8d5805ae42c39fd39"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19695,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "f573f9b06c7d07b1748b512be73abec8676b907d7c20aa9329010cc5c5e4c06e"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "Z1": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nDo the two runs agree on where the protein contacts the RNA?\n\nTask inputs (6 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/file_001\nrun_002/candidate_001\nrun_002/file_001\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this task: none\n",
+   "first_call": {
+    "bytes": 18854,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "f6a0b56983887f34cd07930cc4526e986fb77f416bafd8af323b68d8dc546590"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19624,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "d62b9a38eb512223b7f2c50c00c2b04157274f35516373b178a6f93852402303"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  },
+  "Z2": {
+   "calls": [
+    "plan",
+    "replan"
+   ],
+   "excerpt_user_message": "Question:\nWhich contacts in this RNA region are found in only one run?\n\nTask inputs (6 files; opaque identifiers, the real names stay on this computer; use these identifiers as the paths in the plan):\nrun_001/candidate_001\nrun_001/file_001\nrun_002/candidate_001\nrun_002/file_001\nprotein_sequence_001\nrna_sequence_001\n\nExperimental reference supplied with this task: none\n",
+   "first_call": {
+    "bytes": 18854,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "e540a93281ed3ef15079e5c49f146594f3330e3d2fff7392a9b6c7d5bfd9e503"
+   },
+   "reconstruction_equals_assistant_payload": true,
+   "replan": {
+    "bytes": 19624,
+    "followup_privacy_check": [],
+    "gate_findings": [],
+    "n_names_checked": 16,
+    "real_names_found": [],
+    "sha256": "0393e3fa8b2e59886aca4d94d8bb69282d3fc62c11abb5caea12921658be978b"
+   },
+   "replan_feedback_excerpt": "\n{\"goal\": \"AGREEMENT\", \"reference_supplied\": false, \"requested_capabilities\": [], \"clarification_needed\": null, \"steps\": [{\"project_id\": \"p\", \"folders\": [\"run_001\", \"run_002\"], \"protein_fasta\": \"protein_sequence_001\", \"rna_fasta\": \"rna_sequence_001\", \"engine\": null, \"accept_offsets\": false, \"before_project_id\": null, \"after_project_id\": null, \"reference\": null, \"rna_start\": null, \"rna_end\": null, \"protein_start\": null, \"protein_end\": null, \"metric_name\": null, \"runs\": null, \"query\": null, \"evide"
+  }
+ },
+ "schema": "lq1.premise_check_r2",
+ "summary": {
+  "all_reconstructions_equal": true,
+  "followup_privacy_check_findings": 0,
+  "gate_findings": 0,
+  "payloads_checked": 26,
+  "real_names_found": 0
+ }
+}

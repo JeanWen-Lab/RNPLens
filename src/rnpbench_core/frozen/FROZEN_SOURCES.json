@@ -1,0 +1,50 @@
+{
+ "manifest": "RNPBENCH_EVALUATE_FROZEN_SOURCES_V1",
+ "origin": "copied byte-for-byte from the RNPBench development host on 2026-10-10; every SHA-256 below was checked against the original file on that host",
+ "configurations": {
+  "dockq": "RNPBENCH_SCORING_V3_CONSTRUCT_POSITION_DOCKQ_2_1_3",
+  "geometry": "four-axis decomposition, CROSS_ENGINE_PROTOCOL.md (2026-09-28)"
+ },
+ "files": {
+  "canonical/pos_adapter.py": {
+   "sha256": "579534631bb6398a22ca3ac24297298ba8a4af29619f7ff9c9df986dcf7bcf19",
+   "origin_on_development_host": "/home/jwen/projects/PCfold3D-RNP/outputs/rnp/jpf/scripts_clean/pos_adapter.py",
+   "role": "released DockQ route: candidate enumeration, admissibility, construct-position correspondence (one_row)"
+  },
+  "canonical/corr_mask_audit.py": {
+   "sha256": "390214d03b964928440cd16f488c270f4ded4797c5bec0e31da231d7746e643e",
+   "origin_on_development_host": "/home/jwen/projects/PCfold3D-RNP/outputs/rnp/jpf/scripts_clean/corr_mask_audit.py",
+   "role": "reference label map (construct positions), construct lengths, model numbering check"
+  },
+  "canonical/rnpbench_score_v2.py": {
+   "sha256": "0871f1f086575b05f9dd8714327493edb41851fee70ef63a70a8fd3190c0a032",
+   "origin_on_development_host": "/home/jwen/projects/PCfold3D-RNP/outputs/rnp/jpf/scripts_clean/rnpbench_score_v2.py",
+   "role": "polymer-class admissibility of DockQ chain mappings"
+  },
+  "canonical/rf2na_scoring.py": {
+   "sha256": "95348a815a0dab1f58482666a81d28be6442c9918b57779381e741f3340d2ada",
+   "origin_on_development_host": "/home/jwen/projects/PCfold3D-RNP/outputs/rnp/jpf/scripts_clean/rf2na_scoring.py",
+   "role": "released selection/reporting convention (select), parity-proven against the released store"
+  },
+  "f1/f1_featurize_mp.py": {
+   "sha256": "b4335e551a5bc771b41bc754f020b464673a006bfd15bf38af364c2451bab541",
+   "origin_on_development_host": "/home/jwen/projects/PCfold3D-RNP/scripts/rnp/f1_featurize_mp.py",
+   "role": "structure loading, contacting protein-RNA chain pair, protein frames"
+  },
+  "f1/f1_b1c_allatom.py": {
+   "sha256": "d9a15b311750c40ca3609169018ab1ac866ece6cb203496d2545829c6bf8bc18",
+   "origin_on_development_host": "/home/jwen/projects/PCfold3D-RNP/scripts/rnp/f1_b1c_allatom.py",
+   "role": "RNA base letter (base1)"
+  },
+  "f1/f1_b2a_matrix.py": {
+   "sha256": "f468c2c45972f221580584ee795b317025702bd3a87fa7e0935a36ca1c442c37",
+   "origin_on_development_host": "/home/jwen/projects/PCfold3D-RNP/scripts/rnp/f1_b2a_matrix.py",
+   "role": "RNA residue correspondence (align_pairs), C4' coordinates"
+  },
+  "decomp/score_decomp.py": {
+   "sha256": "17d2976e9770f81d60369b172bff8d5a16dcfe63a676a9f7c8f47f07db18fb6b",
+   "origin_on_development_host": "/home/jwen/projects/RNPBench/handoff/cross_engine_decomposition_2026-09-28/score_decomp.py",
+   "role": "four-axis geometry (read_pose, four_axes)"
+  }
+ }
+}

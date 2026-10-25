@@ -1,0 +1,164 @@
+{
+ "P": {
+  "P01": {
+   "bytes": 17805,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 29,
+   "n_seqs": [
+    98,
+    60
+   ]
+  },
+  "P02": {
+   "bytes": 17889,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 29,
+   "n_seqs": [
+    98,
+    60
+   ]
+  },
+  "P03": {
+   "bytes": 18295,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 115,
+   "n_seqs": [
+    158,
+    3
+   ]
+  },
+  "P04": {
+   "bytes": 18348,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 359,
+   "n_seqs": [
+    327,
+    4
+   ]
+  },
+  "P05": {
+   "bytes": 18298,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 115,
+   "n_seqs": [
+    158,
+    3
+   ]
+  },
+  "P06": {
+   "bytes": 18377,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 359,
+   "n_seqs": [
+    327,
+    4
+   ]
+  },
+  "P07": {
+   "bytes": 18282,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 115,
+   "n_seqs": [
+    158,
+    3
+   ]
+  },
+  "P08": {
+   "bytes": 18314,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 115,
+   "n_seqs": [
+    158,
+    3
+   ]
+  },
+  "P09": {
+   "bytes": 17876,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 29,
+   "n_seqs": [
+    98,
+    60
+   ]
+  },
+  "Z1": {
+   "bytes": 17805,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 29,
+   "n_seqs": [
+    98,
+    60
+   ]
+  },
+  "Z2": {
+   "bytes": 17805,
+   "findings": [],
+   "reconstruction_equals_ask": true,
+   "followup_privacy_check": [
+    "a reference file name found"
+   ],
+   "n_content_lines": 29,
+   "n_seqs": [
+    98,
+    60
+   ]
+  }
+ },
+ "F": {
+  "L01": {
+   "bytes": 8779,
+   "findings": [],
+   "followup_privacy_check": []
+  },
+  "L09": {
+   "bytes": 7880,
+   "findings": [],
+   "followup_privacy_check": []
+  },
+  "L11": {
+   "bytes": 7918,
+   "findings": [],
+   "followup_privacy_check": []
+  }
+ }
+}

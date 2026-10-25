@@ -1,0 +1,50 @@
+[
+ {
+  "page_id": "demo1_1VTM_rna1-3_a1",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/1_region_1VTM",
+  "viewer_dir": "analysis/viewer_1-3_a1",
+  "range_mode": "region_rule_log",
+  "representatives_threshold": null,
+  "molstar_result": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/results_governed2/demo1_1VTM_rna1-3_a1/result_offline.json"
+ },
+ {
+  "page_id": "demo1b_2JEA_rna26-35_a1",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/1b_region_subrange",
+  "viewer_dir": "analysis/viewer_26-35_a1",
+  "range_mode": "region_rule_log",
+  "representatives_threshold": null,
+  "molstar_result": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/results_governed2/demo1b_2JEA_rna26-35_a1/result_offline.json"
+ },
+ {
+  "page_id": "demo3_6BJG_reps_t0.3_a1",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer_representatives_t0.3_a1",
+  "range_mode": "all",
+  "representatives_threshold": "0.3",
+  "molstar_result": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/results_governed2/demo3_6BJG_reps_t0.3_a1/result_offline.json"
+ },
+ {
+  "page_id": "demo3_6BJG_reps_t0.5_a1",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer_representatives_t0.5_a1",
+  "range_mode": "all",
+  "representatives_threshold": "0.5",
+  "molstar_result": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/results_governed2/demo3_6BJG_reps_t0.5_a1/result_offline.json"
+ },
+ {
+  "page_id": "demo3_6BJG_reps_t0.7_a1",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer_representatives_t0.7_a1",
+  "range_mode": "all",
+  "representatives_threshold": "0.7",
+  "molstar_result": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/results_governed2/demo3_6BJG_reps_t0.7_a1/result_offline.json"
+ },
+ {
+  "page_id": "demo3_6BJG_all50_a1",
+  "package": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/demos/3_grouping_6BJG",
+  "viewer_dir": "analysis/viewer_a1",
+  "range_mode": "all",
+  "representatives_threshold": null,
+  "molstar_result": "/home/jwen/projects/RNPBench/scratch_agent/v04/viewer-2/results_governed2/demo3_6BJG_all50_a1/result_offline.json"
+ }
+]

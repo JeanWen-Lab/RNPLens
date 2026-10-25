@@ -1,0 +1,18 @@
+$ rnplens explain region_mapping --region region_1-5 --analysis project/analyses/v0004/main --project project/imports/v0004/main
+rnplens explain: region_mapping {"region": "region_1-5"}
+(how the RNA region was mapped (numbering, coverage per structure))
+- region_1-5: RNA 1-5 (no protein range), sequence AAAAA; numbering: "construct numbering, 1-based, inclusive (positions of construct_protein.fasta and construct_rna.fasta)"  [region_1-5/region.json#/region]
+- region_1-5: filtering definition "Filter of Report's per-structure contact lists (report/contacts_by_output.json, construct numbering) to the declared RNA range (and protein range, if given); per run, the number of eligible structures listing each contact, the engine-designated structure shown separately; a contact not listed by a structure is 'absent' only where both positions are resolved in that structure's used file, otherwise 'not observed'."  [region_1-5/region.json#/contact_definition/filter]
+- region_1-5: s001 (run run_A, sample 2XGJ_model_0) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/0/structures/0/coverage]
+- region_1-5: s002 (run run_A, sample 2XGJ_model_1) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/0/structures/1/coverage]
+- region_1-5: s003 (run run_A, sample 2XGJ_model_2) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/0/structures/2/coverage]
+- region_1-5: s004 (run run_A, sample 2XGJ_model_3) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/0/structures/3/coverage]
+- region_1-5: s005 (run run_A, sample 2XGJ_model_4) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/0/structures/4/coverage]
+- region_1-5: s006 (run run_B, sample 2XGJ_model_0) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/1/structures/0/coverage]
+- region_1-5: s007 (run run_B, sample 2XGJ_model_1) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/1/structures/1/coverage]
+- region_1-5: s008 (run run_B, sample 2XGJ_model_2) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/1/structures/2/coverage]
+- region_1-5: s009 (run run_B, sample 2XGJ_model_3) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/1/structures/3/coverage]
+- region_1-5: s010 (run run_B, sample 2XGJ_model_4) coverage COMPLETE; RNA chains B "construct numbering in the original file"  [region_1-5/region.json#/runs/1/structures/4/coverage]
+Statements are read from execution records; quoted text is verbatim from the cited field.
+  written: project/analyses/v0004/main/explain/explain_region_mapping_f636c208.json
+  written: project/analyses/v0004/main/explain/explain_region_mapping_f636c208.txt
