@@ -7,10 +7,8 @@ graft tests
 # test_grouping_karyon.py runs only against development-host data and is skipped everywhere else.
 exclude docs/dev/V04_CONTRACTS.md
 exclude tests/test_grouping_karyon.py
-# 0.4 release packaging (B6): docs/images/RNPLens.png carries a signed C2PA manifest recording that it was
+# docs/images/RNPLens.png is the project logo. It carries a signed C2PA manifest recording that it was
 # produced by a generative image model (softwareAgent ChatGPT/gpt-image, digitalSourceType
-# trainedAlgorithmicMedia). Its redistribution status is unresolved, so it is excluded from the proposed
-# public release. In the public release snapshot the file is removed from the repository tree as well, so this
-# directive is a no-op there and is retained for provenance. graft docs above would otherwise sweep it in.
-exclude docs/images/RNPLens.png
+# trainedAlgorithmicMedia). The project owner has decided to include it; it ships in the sdist with the
+# other docs images (graft docs above), and its provenance is documented in NOTICE.
 global-exclude __pycache__ *.py[cod] .DS_Store

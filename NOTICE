@@ -503,8 +503,8 @@ record, and this addendum is the correction.
    53711d496bd7cc6c6b7dfac308f8ba345d4a1df4 (tree 9bc2d086..., 2,540 tracked files).
    This snapshot is derived from the later internal candidate
    27166d065b2689bf3740344f1426aba1a064914e (tree 8b57b42bc4dfb0725392fb3052eef2869ccb2e87)
-   and is published as a single commit with 2,542 tracked files minus the exclusions in
-   item 3. Every third-party membership and digest claim above was re-verified against
+   and is published as a single commit. The rc1 snapshot tracked 2,539 files; this rc2 revision tracks
+   2,540 after restoring the logo described in item 3. Every third-party membership and digest claim above was re-verified against
    this snapshot and holds; only the commit identifier and file count differ.
 
 2. Evidence documents are internal. The closing paragraph above, and items E.5 and E.6,
@@ -514,12 +514,16 @@ record, and this addendum is the correction.
    as the internal evidence base, not as files a reader can open here. The substance a
    public reader needs is restated in item 4 below and in the README.
 
-3. The project logo is excluded. docs/images/RNPLens.png is absent from this snapshot
-   entirely -- from the tree, the working directory and the single-commit history -- not
-   merely excluded from the built distributions. Statements above that the file "remains
-   in the repository tree" describe the internal repository, not this snapshot. It is
-   embedded nowhere: the filename survives only in a MANIFEST.in exclude directive and in
-   item E.6. Three further internal-only files are likewise absent:
+3. The project logo is INCLUDED, by the project owner's explicit decision of 2026-10-25. The
+   file docs/images/RNPLens.png is present in the repository tree and displayed near the top of
+   README.md. It is byte-identical (sha256 eb40f50f...b95b04) to the logo used in earlier RNPLens
+   versions, taken from release branch release/0.2.0rc4. Its own embedded C2PA Content Credentials
+   record that it was produced by a generative image model (softwareAgent ChatGPT / gpt-image,
+   digitalSourceType trainedAlgorithmicMedia); those bytes are preserved unchanged. The owner has
+   chosen to use this AI-generated logo with its provenance disclosed here. This is an origin
+   disclosure, not a third-party notice, and it is not gated on institutional approval. This
+   supersedes item E.6 above and the earlier statements that the logo was excluded. Three
+   internal-only files remain absent from this snapshot:
    records/PROTECTED_STATE_BEFORE_2026-10-16.md, docs/dev/V04_CONTRACTS.md and
    tests/test_grouping_karyon.py.
 
