@@ -47,13 +47,30 @@ def test_suite_uses_no_excluded_target():
     assert S2["expected_codex_calls"] == {"min": 12, "max": 24, "nominal": 12, "note": S2["expected_codex_calls"]["note"]}
 
 
-def test_part1_passes_in_full(tmp_path):
+FROZEN_RNPLENS_VERSION = "0.4.0.dev0"   # the version string FOLLOWUP_SUITE_v1/run_part1.py was frozen against
+
+
+def test_part1_passes_in_full(tmp_path, monkeypatch):
+    # FOLLOWUP_SUITE_v1 is hash-frozen (FREEZE.md) and its Part 1 runner asserts the rnplens version it was qualified
+    # against. From 0.4.0.dev0 to the 0.4.0 release, the runtime code changed only in version strings and
+    # informational fixture text. The frozen Part 1 therefore replays under its frozen version identity; the
+    # runner's own version guard is checked by test_part1_version_guard_still_refuses below.
+    import rnplens
     import run_part1
     import score
+    monkeypatch.setattr(rnplens, "__version__", FROZEN_RNPLENS_VERSION)
     assert os.path.dirname(os.path.abspath(score.__file__)) == SUITE
     assert run_part1.main(["--out", str(tmp_path / "p1")]) == 0
     d = json.load(open(tmp_path / "p1" / "part1_results.json"))
     assert d["n"] == 21 and d["passed"] == 21
+
+
+def test_part1_version_guard_still_refuses(tmp_path, monkeypatch):
+    import rnplens
+    import run_part1
+    monkeypatch.setattr(rnplens, "__version__", "0.4.0")
+    with pytest.raises(AssertionError):
+        run_part1.main(["--out", str(tmp_path / "p1")])
 
 
 def test_part2_refuses_without_guards(tmp_path, monkeypatch):
