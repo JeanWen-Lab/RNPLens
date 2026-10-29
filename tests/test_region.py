@@ -122,7 +122,7 @@ def test_provenance_on_structures_rows_and_definition(ex):
     assert all(row[-1].startswith("region_13-23/region.json#/contacts/") and row[8] in ("exec_A", "exec_B") and row[10]
                for row in tsv)
     assert region.RECURRENCE_LIMIT in doc["limits"]
-    assert doc["provenance"]["kind"] == "region_contacts" and doc["provenance"]["rnplens_version"] == "0.4.0.dev0"
+    assert doc["provenance"]["kind"] == "region_contacts" and doc["provenance"]["rnplens_version"] == "0.4.0"
     ins = {os.path.basename(x["path"]) for x in doc["provenance"]["inputs"]}
     assert {"manifest.json", "contacts_by_output.json", "construct_rna.fasta", "summary.json"} <= ins
 

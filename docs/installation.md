@@ -19,7 +19,7 @@ the source repository. They are not installed and are not part of the source dis
 ## Install from a clone
 
 ```bash
-git clone <repository-url>      # URL to be supplied at release
+git clone https://github.com/JeanWen-Lab/RNPLens.git
 cd RNPLens
 python3.11 -m venv .venv
 source .venv/bin/activate
@@ -32,9 +32,6 @@ the `analyse`, `region` and other 0.4 HTML pages are still written, with a note 
 contact or verdict depends on matplotlib, and Evaluate and Diagnose are unaffected. `[test]` adds pytest. A
 non-editable install
 (`python -m pip install .`) also works.
-
-**Development copies.** If you received the source as a git bundle rather than from a repository URL, use
-`git clone <file>.bundle RNPLens && cd RNPLens && git checkout dev/0.4-interactive`.
 
 ### The optional assistant package (0.4)
 

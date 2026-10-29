@@ -21,8 +21,8 @@ changes), when no receipt is given, when a receipt states no commit, several com
 (it then lists how many commits and which files changed since), when a required kind is missing, or when a package
 build fails or is skipped. Input errors exit 2 and write nothing; existing manifests are never overwritten.
 
-**Conditions.** Institutional IP, licence and distribution approval are always listed, as OPEN unless an approval
-record is supplied; `--require-approvals` turns an OPEN condition into exit 3.
+**Conditions.** Licence and distribution approval are always listed, as OPEN unless an approval record is
+supplied; `--require-approvals` turns an OPEN condition into exit 3.
 
 ## Interpretation limits
 - A passing run shows only that the receipts name HEAD, the tree is clean and the packages were built from HEAD. It

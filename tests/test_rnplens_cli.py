@@ -32,7 +32,7 @@ def run_component(*args):
 
 
 def test_version_is_a_release_candidate_not_stable():
-    assert rnplens.__version__ == "0.4.0.dev0"
+    assert rnplens.__version__ == "0.4.0"
     assert rnplens.IMPLEMENTATION == "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)"
 
 
@@ -75,7 +75,7 @@ def test_argument_errors_exit_2(args, code):
 
 def test_version_lists_components_and_dependencies():
     out = run("--version").stdout
-    assert out.startswith("rnplens 0.4.0.dev0")
+    assert out.startswith("rnplens 0.4.0")
     for s in ("RNPBench toolkit 0.2.0.dev1", "rnpbench_evaluate", "rnpbench_report", "rnpbench_diagnose", "DockQ 2.1.3"):
         assert s in out
 
@@ -84,7 +84,7 @@ def test_provenance_record():
     r = run("provenance")
     assert r.returncode == 0, r.stderr
     rec = json.loads(r.stdout)
-    assert rec["rnplens_version"] == "0.4.0.dev0"
+    assert rec["rnplens_version"] == "0.4.0"
     assert rec["component_module_versions"]["rnpbench_evaluate"] == "0.2.0.dev1"
     assert rec["frozen_sources_sha256"] and all(len(h) == 64 for h in rec["frozen_sources_sha256"].values())
 

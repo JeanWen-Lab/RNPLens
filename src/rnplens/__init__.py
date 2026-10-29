@@ -12,7 +12,7 @@ RNPBench toolkit 0.2.0.dev1 implementation, distributed unchanged as the import 
 ``rnpbench_evaluate``, ``rnpbench_report``, ``rnpbench_diagnose`` and ``rnpbench``;
 their Python APIs are those packages' own.
 """
-__version__ = "0.4.0.dev0"
+__version__ = "0.4.0"
 
 # The implementation this release distributes, byte-for-byte (see docs/reproducibility.md).
 IMPLEMENTATION = "qualified component set 0.2.0.dev1 (internal identifier: RNPBench toolkit 0.2.0.dev1)"

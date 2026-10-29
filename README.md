@@ -4,54 +4,6 @@
 
 **Evaluation and diagnostic tools for protein–RNA complex predictions.**
 
-> ### Status: `v0.4.0-rc1` — source prerelease
->
-> This is a **source prerelease** published so that the accompanying manuscript can cite a public code
-> repository. It is **not** a final production release. Concretely:
->
-> * The **core toolkit** is functionally tested: 709 tests pass in this tree, and `rnplens selftest`
->   reproduces the project's reference values (213/213 Evaluate checks, 296 Report values).
-> * The **AI Assistant is an optional experimental research interface.** Its automated tests pass
->   (242 passed, 16 skipped), but native security qualification (G1–G6) is **incomplete on both
->   platforms** at this commit, and live model calls are **not qualified**. Do not treat it as a
->   production-security-qualified component.
-> * Published artifacts carry the development version strings `rnplens 0.4.0.dev0` and
->   `rnplens-assistant 0.1.0.dev0`, which is what the packaging metadata declares.
->
-> Please keep five different things apart when reading any claim here: **source availability**,
-> **automated functional testing**, **native security qualification**, **live AI validation**, and
-> **blinded comparative scientific evaluation**. Only the first two are established for this prerelease.
->
-> **Capability categories.** Every capability is in exactly one of four categories
-> ([docs/capabilities.md](docs/capabilities.md)):
->
-> 1. **Qualified:** verified Report routes; Evaluate's DockQ-family metrics (DockQ, DockQ class, fnat, iRMSD, LRMSD); `rnplens import` and `compare`; `rnplens analyse`, qualified only for its tested, enabled analysis routes ([docs/workflow.md](docs/workflow.md)); `selftest`, `provenance` and `example-contract`, qualified as tested software infrastructure, not as independent evidence of structural accuracy.
-> 2. **New descriptive functionality:** region contacts (`rnplens region`), evidence lookup (`explain`), Methods export (`export-methods`), clarification and resume (`clarify`), incremental analysis (`update`), tested grouping operations (`group`, `group-diff`), the setup check (`doctor`), the question menu `rnplens assist` (no language model; [docs/assist.md](docs/assist.md)) and the offline viewer `rnplens view`: automatically tested, awaiting manual visual confirmation.
-> 3. **Experimental:** the Codex result-aware follow-up and the natural-language planner (neither is live-qualified; [docs/setup_and_privacy.md](docs/setup_and_privacy.md)); scientific claims about the usefulness of grouping (retrospectively, k = 5 representatives retained an acceptable structure in 0.86 of pool-A cases against 0.94 for confidence order; grouping is never an accuracy selector).
-> 4. **Blocked:** four-axis geometry (`rnplens evaluate run` records geometry status `BLOCKED`, code `GEOMETRY_BLOCKED_IN_0.4`); the affected RNA-conformation measurements; **Diagnose** (`rnplens diagnose run|preflight|validity` and `--with-diagnose` refuse with `DIAGNOSE_BLOCKED`, exit code 5); accuracy-based candidate ranking. Also unavailable: structure prediction and mutation advice; unsupported: a snap-installed Codex, Windows.
->
-> **Platforms.** Linux x86-64 is the reference platform and produced the frozen numerical values. On
-> macOS arm64 the toolkit runs and reproduces every status, class, count and rounded value; a known
-> trailing-digit numerical parity difference is covered by a narrowly scoped tolerance on a single
-> value ([records/release/TOLERANCE_POLICY_AMENDMENT_1.md](records/release/TOLERANCE_POLICY_AMENDMENT_1.md)).
-> The optional Assistant runs natively on either system and one computer is enough: Linux (bubblewrap)
-> [docs/install_linux.md](docs/install_linux.md), macOS (Seatbelt) [docs/install_macos.md](docs/install_macos.md).
->
-> **Records and development-host paths.** Paths beginning `records/` are development and qualification
-> records kept in the repository; they are not installed and are not part of the wheel. They preserve
-> development-host absolute paths (`/home/jwen/...`) and the host nickname verbatim, because recorded
-> SHA-256 digests depend on those exact bytes — rewriting them would break the audit trail they exist
-> to provide.
->
-> **Reproducibility.** Numerical/evidence reproducibility: supported by the reported tests.
-> Canonical-file byte reproducibility: passed in four development cases under the determinism contract
-> ([records/replay/DETERMINISM_CONTRACT_v1.md](records/replay/DETERMINISM_CONTRACT_v1.md)). Complete
-> managed-project byte reproducibility: **not established** — the original pre-registered byte-identical
-> replay check failed, and that verdict stands.
->
-> **Data.** Some bundled example inputs have unresolved third-party redistribution questions, recorded
-> in [NOTICE](NOTICE) and summarised under *Data, licensing and limitations* below.
-
 **New to RNPLens? Start with [Which analysis should I use?](docs/which_analysis_should_i_use.md)**
 
 RNPLens helps researchers examine protein–RNA complex structures that have **already been predicted** (for example by
@@ -71,9 +23,9 @@ structure for you, and gives **no calibrated probability that a structure or an 
 
 Each tool answers a different question, and their outputs are never combined into a single score.
 
-- **Evaluate** reports two independent routes side by side: a DockQ route (DockQ, fnat, iRMSD, LRMSD with construct-position residue correspondence over all admissible chain mappings) and a geometry route (RNA conformation C4′ RMSD, RNA placement after protein superposition, protein Cα RMSD). An output that cannot be scored is reported as **NO VALUE** with the stage and reason — never as zero. **In 0.4 only the DockQ route is qualified**: the geometry route is blocked by a residue-correspondence defect found on 2026-10-14 ([docs/limitations.md](docs/limitations.md)). `rnplens evaluate run` records the geometry status `BLOCKED` and shows no geometry value; `compare`, `analyse` and the menu withhold them too. The DockQ-family values are unchanged from rc3 and are not a replacement for the geometry route.
+- **Evaluate** reports two independent routes side by side: a DockQ route (DockQ, fnat, iRMSD, LRMSD with construct-position residue correspondence over all admissible chain mappings) and a geometry route (RNA conformation C4′ RMSD, RNA placement after protein superposition, protein Cα RMSD). An output that cannot be scored is reported as **NO VALUE** with the stage and reason — never as zero. **In 0.4 only the DockQ route is qualified**: the geometry route is blocked by a residue-correspondence defect found on 2026-10-14 ([docs/limitations.md](docs/limitations.md)). `rnplens evaluate run` records the geometry status `BLOCKED` and shows no geometry value; `compare`, `analyse` and the menu withhold them too. The DockQ-family values are unchanged from 0.2.0rc3 and are not a replacement for the geometry route.
 - **Report** measures agreement on the binding surface, on the exact residue–nucleotide contacts (contact register) and on RNA pose, and groups engines into interface hypotheses. **Agreement among predicted structures is descriptive evidence, not a calibrated probability of structural correctness.** Engines can agree and still be wrong.
-- **Diagnose** separates technically broken files from structural failures from valid outputs, and measures protein-side and RNA-side disagreement among candidates relative to a frozen benchmark reference. Disagreement is a **review flag**, not a correctness score; **low disagreement does not guarantee an accurate structure** (candidates that are all wrong in the same way look consistent). The protein-side signal has been checked out of sample but overlaps substantially with the engine's own confidence (pTM, pLDDT); the RNA-side statement has not been validated out of sample. **In 0.4, Diagnose is BLOCKED in the public interface** until it is re-qualified under the corrected correspondence: `rnplens diagnose run|preflight|validity` and `--with-diagnose` refuse with `DIAGNOSE_BLOCKED` (exit code 5) and write nothing; the frozen rc3 component is unchanged ([docs/diagnose.md](docs/diagnose.md)).
+- **Diagnose** separates technically broken files from structural failures from valid outputs, and measures protein-side and RNA-side disagreement among candidates relative to a frozen benchmark reference. Disagreement is a **review flag**, not a correctness score; **low disagreement does not guarantee an accurate structure** (candidates that are all wrong in the same way look consistent). The protein-side signal has been checked out of sample but overlaps substantially with the engine's own confidence (pTM, pLDDT); the RNA-side statement has not been validated out of sample. **In 0.4, Diagnose is BLOCKED in the public interface** until it is re-qualified under the corrected correspondence: `rnplens diagnose run|preflight|validity` and `--with-diagnose` refuse with `DIAGNOSE_BLOCKED` (exit code 5) and write nothing; the frozen 0.2.0rc3 component is unchanged ([docs/diagnose.md](docs/diagnose.md)).
 
 ## Quick start
 
@@ -81,7 +33,7 @@ Requirements: CPython 3.10, 3.11 or 3.12 on Linux (the tested interactive enviro
 (DockQ 2.1.3, gemmi 0.6.5, biopython 1.84, numpy 1.26.4, scipy 1.13.1; matplotlib only for Report's HTML page).
 
 ```bash
-git clone <repository-url>      # URL to be supplied at release
+git clone https://github.com/JeanWen-Lab/RNPLens.git
 cd RNPLens
 python3.11 -m venv .venv && source .venv/bin/activate
 python -m pip install -e ".[html]"
@@ -163,8 +115,8 @@ rnplens diagnose run examples/reference_free/diagnose_7K9D/*.pdb --mode within_e
 # rnplens diagnose run: DIAGNOSE_BLOCKED: Diagnose is BLOCKED in RNPLens 0.4 until it is re-qualified ...   (exit code 5)
 ```
 
-The rc3 expected output of this example is kept unchanged in `examples/expected_output/B2_diagnose_7K9D/` as a
-historical record; it is not a 0.4 result. The same holds for the rc3 Evaluate output kept in
+The 0.2.0rc3 expected output of this example is kept unchanged in `examples/expected_output/B2_diagnose_7K9D/` as a
+historical record; it is not a 0.4 result. The same holds for the 0.2.0rc3 Evaluate output kept in
 `examples/expected_output/`, which still contains the geometry values. `rnplens selftest` still runs Diagnose's
 internal contract checks (software checks, not evidence about your structures); Diagnose's example statements are
 shown only as `Diagnose interpretation BLOCKED (checked, not shown)`.
@@ -178,7 +130,7 @@ field-by-field walk-through.
 
 ## What the outputs look like
 
-These are the genuine outputs of the two worked examples above. The Evaluate summary is the 0.4 output (geometry `BLOCKED`); the Report and Diagnose pages are from `examples/expected_output/`, produced with rc3, and the Diagnose page is historical, since Diagnose is blocked in 0.4.
+These are the genuine outputs of the two worked examples above. The Evaluate summary is the 0.4 output (geometry `BLOCKED`); the Report and Diagnose pages are from `examples/expected_output/`, produced with 0.2.0rc3, and the Diagnose page is historical, since Diagnose is blocked in 0.4.
 
 | Evaluate (`summary.txt`) | Report (HTML page) | Diagnose (HTML page) |
 |---|---|---|
@@ -212,7 +164,7 @@ Working from engine output folders (0.4): [import, analyse, compare](docs/workfl
 [evidence lookup and Methods export](docs/evidence_and_methods.md) · [managed projects: update, clarify, relink](docs/project_state.md) ·
 [setup check and privacy](docs/setup_and_privacy.md) · [follow-ups](docs/followup.md) ·
 [platforms and the two modes](docs/platforms.md) · [model use and privacy](docs/model_and_privacy.md) ·
-[example data provenance](docs/example_data_provenance.md) · [release conditions](docs/release_conditions.md) ·
+[example data provenance](docs/example_data_provenance.md) · [release status](docs/release_conditions.md) ·
 [code availability (draft)](docs/code_availability.md)
 
 ## Provenance of the implementation
@@ -226,11 +178,27 @@ software version is independent of the manuscript's evidence build identifier. S
 [docs/reproducibility.md](docs/reproducibility.md), and [docs/paper_reproducibility.md](docs/paper_reproducibility.md)
 for what this repository does and does not reproduce of the study.
 
+### Validation and reproducibility
+
+In this source tree the core test suite passes (709 tests), and `rnplens selftest` reproduces the
+project's reference values (213/213 Evaluate checks and 296 Report values); the optional Assistant's
+automated suite passes (242 passed, 16 skipped). Linux x86-64 is the reference platform that produced the
+frozen numerical values; on macOS arm64 the toolkit reproduces every status, class, count and rounded
+value, with a single trailing-digit parity difference covered by a narrowly scoped tolerance
+([records/release/TOLERANCE_POLICY_AMENDMENT_1.md](records/release/TOLERANCE_POLICY_AMENDMENT_1.md)).
+Canonical-file byte reproducibility passed in four development cases under the determinism contract
+([records/replay/DETERMINISM_CONTRACT_v1.md](records/replay/DETERMINISM_CONTRACT_v1.md)); complete
+managed-project byte reproducibility is **not established** — the original pre-registered byte-identical
+replay check failed, and that verdict stands ([docs/reproducibility.md](docs/reproducibility.md),
+[docs/paper_reproducibility.md](docs/paper_reproducibility.md)). The distributions carry development
+versions `rnplens 0.4.0` and `rnplens-assistant 0.1.0`.
+
 ## The optional AI Assistant (experimental)
 
 `rnplens-assistant` is a **separate, optional** distribution. Installing RNPLens does not install it, and
 every scientific capability above works without it. It is an **experimental research interface**, not a
-qualified component.
+qualified component. Its package version, 0.1.0, marks a packaged release of the automatically tested
+implementation; it does not imply completed native security qualification or validation of live model calls.
 
 What it does: interprets a natural-language scientific question, plans a sequence of *already-qualified*
 RNPLens tool calls, admits that plan deterministically (an operation the toolkit cannot perform is
@@ -238,7 +206,7 @@ RNPLens tool calls, admits that plan deterministically (an operation the toolkit
 produced, with a replay path that needs no language model.
 
 ```bash
-pip install rnplens-assistant          # optional; after installing rnplens
+python -m pip install -e ./assistant   # optional; from the repository root, after installing rnplens
 python -m rnplens_assistant --help     # ask | replay | followup | replay-followup | consent
 python -m rnplens_assistant replay ... # the no-language-model route
 ```
@@ -272,16 +240,19 @@ in [NOTICE](NOTICE): the vendored Mol* 5.13.1 viewer bundle (MIT) and the ten co
 and the runtime dependencies resolved by `pip` at install time (not bundled). Experimental coordinates in the
 worked examples are wwPDB depositions under CC0 1.0, with their primary citations recorded.
 
-Two honest caveats about bundled scientific data:
+Bundled scientific data:
 
-* **Engine-generated prediction files** (22 Boltz-2 coordinate files and 6 per-model confidence JSONs) were
-  generated by this project with Boltz-2 2.2.1 on public inputs. Boltz-2's code and weights are MIT and its
-  licence is **silent** about outputs. Silence is not a prohibition, and we do not claim it is one; the
-  precise exact-command provenance of every file is in `examples/DATA_PROVENANCE.tsv`. The redistribution
-  position is stated as an **open question**, not a restriction.
-* **`src/rnpbench_diagnose/reference/cohortE_disagreement.tsv`** carries an **unresolved licensing
-  conflict**: all 59 of its rows are derived in part from RoseTTAFold2NA, and the only RF2NA licence text
-  this project holds reads CC BY-NC-SA 4.0 while other project documentation records MIT. See NOTICE E.5.
+* **Engine-generated prediction files** (22 Boltz-2 coordinate files and 6 per-model confidence JSON files)
+  were generated by the RNPLens authors with Boltz-2 2.2.1 from public wwPDB sequences. Boltz-2's code and
+  model weights are released under the MIT licence, which places no conditions on generated outputs; the
+  multiple sequence alignments used to generate them are not redistributed. The command, inputs, checksum and
+  attribution of every bundled file are in `examples/DATA_PROVENANCE.tsv`; please cite Boltz-2 when reusing
+  these files.
+* **Reference disagreement distributions** (`src/rnpbench_diagnose/reference/`) contain only numerical
+  summaries computed by the RNPLens authors: per-target median pairwise RMSD disagreement values with public
+  PDB identifiers, and no coordinates, sequences or engine output. `cohortP_disagreement.tsv` is derived from
+  Boltz-2 predictions, and `cohortE_disagreement.tsv` from predictions by Boltz-2, Chai-1, RF3 and
+  RoseTTAFold2NA. The licence of each engine is recorded in [NOTICE](NOTICE), Part B.
 
 **What this package does and does not reproduce.** `rnplens selftest` reproduces the project's full
 reference set from the bundled public data. It is **not** a reproduction of the private benchmark study: the
@@ -296,7 +267,11 @@ publication) and the software release. See [`CITATION.cff`](CITATION.cff). No DO
 
 ## Licence
 
-RNPLens is released under the [MIT licence](LICENSE), subject to institutional (ANU) intellectual-property
-approval before public release. Third-party dependencies keep their own licences. Every bundled structure is listed
-with its origin, terms and attribution in [examples/DATA_PROVENANCE.tsv](examples/DATA_PROVENANCE.tsv) (see also
-[docs/dependencies.md](docs/dependencies.md)). Security issues: see [SECURITY.md](SECURITY.md).
+RNPLens — the core toolkit (`rnplens`) and the optional Assistant (`rnplens-assistant`) — is released under
+the [MIT licence](LICENSE) (Copyright (c) 2026 The RNPLens authors); `assistant/LICENSE` carries the same text.
+The MIT licence covers this project's own source code. Third-party components keep their own licences and
+attribution requirements: the vendored Mol* viewer and the components minified inside it are recorded in
+[NOTICE](NOTICE), and runtime dependencies installed by `pip` keep theirs (see
+[docs/dependencies.md](docs/dependencies.md)). Every bundled structure is listed with its origin, terms and
+attribution in [examples/DATA_PROVENANCE.tsv](examples/DATA_PROVENANCE.tsv). Security issues: see
+[SECURITY.md](SECURITY.md).

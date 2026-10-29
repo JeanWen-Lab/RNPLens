@@ -7,8 +7,7 @@ live-qualification reports, each with the commit it was produced at), it writes 
   - every receipt with its file SHA-256 and the commit it claims, compared with HEAD;
   - a wheel and an sdist of every package, built from HEAD (``git archive``) in a temporary directory, with every
     member's SHA-256 and the archives' SHA-256;
-  - the non-technical release conditions (institutional IP, licence, distribution), OPEN unless an approval record
-    is supplied.
+  - the non-technical release conditions (licence, distribution), OPEN unless an approval record is supplied.
 
 It FAILS (exit 1; the files are then named RELEASE_MANIFEST.FAILED.*) when the tree is dirty, when no receipt is
 given, when a receipt states no commit, several commits, or a commit other than HEAD, or when a package build fails
@@ -27,7 +26,7 @@ How a receipt states its commit (exactly one distinct commit per receipt):
     relative to the repository root; every indexed receipt is assessed). A commit declared in
     the file itself must agree with the index.
 
-Approval records (``--approval FILE``, JSON): ``{"condition": "institutional_ip" | "licence" | "distribution",
+Approval records (``--approval FILE``, JSON): ``{"condition": "licence" | "distribution",
 "status": "APPROVED", "approved_by": ..., "date": ..., "reference": ...}``.
 
 ``--require-kind KIND`` (repeatable) fails the run unless a receipt of that kind points at HEAD; without it, the
@@ -64,7 +63,6 @@ TEXT_DECL = re.compile(r"^[\s>*\-]*(?:\*\*)?\s*(receipt[- ]commit|recorded commi
                        r"\s*(?:\*\*)?\s*`?([0-9a-fA-F]{7,40})`?", re.I)
 RECEIPT_EXT = (".json", ".md", ".txt", ".log")
 CONDITIONS = [
-    ("institutional_ip", "Institutional (ANU) intellectual-property approval for public release"),
     ("licence", "Approval of the licence (MIT, as stated in LICENSE) for public distribution"),
     ("distribution", "Approval to distribute publicly (public GitHub release, package index, archive DOI)"),
 ]

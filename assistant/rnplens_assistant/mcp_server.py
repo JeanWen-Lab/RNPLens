@@ -64,7 +64,7 @@ class Server:
                 continue                      # notification
             if method == "initialize":
                 res = {"protocolVersion": params.get("protocolVersion", "2025-06-18"), "capabilities": {"tools": {}},
-                       "serverInfo": {"name": "rnplens", "version": "0.1.0.dev0"}}
+                       "serverInfo": {"name": "rnplens", "version": "0.1.0"}}
             elif method == "tools/list":
                 res = {"tools": self._specs()}
             elif method == "tools/call":

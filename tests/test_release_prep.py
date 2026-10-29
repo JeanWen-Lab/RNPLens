@@ -1,5 +1,7 @@
-"""Owner programme 2026-10-18, section 10: release-candidate preparation files exist, carry placeholders where the
-owner must decide, and state no approval or live result that does not exist."""
+"""Release documentation states established facts: MIT licensing of both distributions, the recorded authors, a
+consistent NOTICE, complete data provenance, and no approval, qualification or live result that does not exist."""
+import csv
+import hashlib
 import os
 import re
 
@@ -38,13 +40,21 @@ def test_release_prep_pages_exist_and_are_linked():
         assert os.path.isfile(os.path.join(DOCS, f)) and ("docs/%s" % f) in readme, f
 
 
-def test_no_claimed_approval_or_live_result():
+IP_GATE = re.compile(r"institutional \(ANU\)|institutional IP|IP clearance|intellectual[- ]property|pending ANU|ANU IP|ANU/owner", re.I)
+
+
+def public_documents():
+    files = ["README.md", "NOTICE", "CITATION.cff", "pyproject.toml", os.path.join("assistant", "pyproject.toml"),
+             os.path.join("examples", "DATA_PROVENANCE.tsv"), os.path.join("src", "rnpbench_evaluate", "fixtures", "fixture_sources.json")]
+    return files + [os.path.join("docs", f) for f in sorted(os.listdir(DOCS)) if f.endswith(".md")]
+
+
+def test_release_status_states_facts_and_claims_no_unperformed_qualification():
     cond = read("docs", "release_conditions.md")
-    for c in ("Institutional IP clearance (ANU) | OPEN",
-              "Redistribution of bundled data | OPEN", "Live qualification of the Assistant | OPEN",
-              "Sealed evaluation of the Assistant | OPEN", "Owner visual checks of the viewer | OPEN"):
-        assert c in cond, c
-    for c in ("Licence | CLOSED", "Authorship and affiliations | CLOSED"):
+    assert "| Licence | MIT for the core toolkit and the optional Assistant" in cond
+    for c in ("| Live qualification of the Assistant | not performed", "| Sealed evaluation of the Assistant | not performed",
+              "| Manual visual checks of the viewer | not performed", "| Diagnose (user-facing) | blocked by design in 0.4",
+              "| Evaluate four-axis geometry | blocked by design in 0.4"):
         assert c in cond, c
     model = read("docs", "model_and_privacy.md")
     assert "no live Codex call has been made for RNPLens 0.4" in model
@@ -52,7 +62,57 @@ def test_no_claimed_approval_or_live_result():
         t = read("docs", f).lower()
         assert not re.search(r"live call passed|live qualification passed|approved by anu|clearance (was )?granted", t), f
         assert all(t[m.start() - 4:m.start()] == "not " for m in re.finditer(r"live(-| )qualified", t)), f
-    assert "unknown" in read("docs", "example_data_provenance.md").lower()
+
+
+def test_no_institutional_ip_gate_in_public_documents():
+    for p in public_documents():
+        if os.path.isfile(os.path.join(ROOT, p)):
+            m = IP_GATE.search(read(p))
+            assert m is None, (p, m and m.group(0))
+
+
+def test_mit_licensing_configuration():
+    lic = read("LICENSE")
+    assert lic.startswith("MIT License\n") and "Copyright (c) 2026 The RNPLens authors" in lic
+    assert read("assistant", "LICENSE") == lic
+    core, asst = read("pyproject.toml"), read("assistant", "pyproject.toml")
+    assert re.search(r'^license = "MIT"$', core, re.M) and re.search(r'^license = "MIT"$', asst, re.M)
+    assert 'license-files = ["LICENSE", "NOTICE"]' in core and 'license-files = ["LICENSE"]' in asst
+    assert re.search(r"^license: MIT$", read("CITATION.cff"), re.M)
+    assert "MIT LICENSE at the repository root" in read("NOTICE")
+
+
+def test_notice_is_consistent_and_its_digests_match_the_files():
+    n = read("NOTICE")
+    for stale in ("UNRESOLVED", "Release blocker", "PUBLIC RELEASE ADDENDUM", "staging/0.4", "release_prep_2026", "is left to legal"):
+        assert stale not in n, stale
+    vendor = os.path.join(ROOT, "src", "rnplens", "vendor", "molstar")
+    ref = os.path.join(ROOT, "src", "rnpbench_diagnose", "reference")
+    for p in [os.path.join(vendor, f) for f in ("molstar.js", "molstar.css", "LICENSE")] + \
+             [os.path.join(ref, f) for f in ("cohortP_disagreement.tsv", "cohortE_disagreement.tsv")]:
+        assert hashlib.sha256(open(p, "rb").read()).hexdigest() in n, p
+    for holder in ("Mol* contributors", "Facebook, Inc. and its affiliates", "Lee Byron", "Equinor",
+                   "Institute for Health Metrics and Evaluation", "Tarek Sherif", "Arseny Kapoulkine", "Simon Rodriguez",
+                   "Inigo Quilez"):
+        assert holder in n, holder
+
+
+def test_data_provenance_covers_every_bundled_structure_and_confidence_file():
+    rows = list(csv.DictReader(open(os.path.join(ROOT, "examples", "DATA_PROVENANCE.tsv"), encoding="utf-8"), delimiter="\t"))
+    listed = {r["file"]: r for r in rows}
+    assert len(listed) == len(rows)
+    for r in rows:
+        p = os.path.join(ROOT, r["file"])
+        assert os.path.isfile(p), r["file"]
+        assert hashlib.sha256(open(p, "rb").read()).hexdigest() == r["sha256"], r["file"]
+    bundled = []
+    for top in ("examples", "src"):
+        for dp, _, fns in os.walk(os.path.join(ROOT, top)):
+            for f in fns:
+                if f.endswith((".pdb", ".cif")) or (f.startswith("confidence_") and f.endswith(".json")):
+                    bundled.append(os.path.relpath(os.path.join(dp, f), ROOT).replace(os.sep, "/"))
+    assert not sorted(set(bundled) - set(listed)), sorted(set(bundled) - set(listed))
+    assert sum(os.path.basename(f).startswith("confidence_") for f in listed) == 6
 
 
 def test_platform_matrix_states_native_single_computer_operation():

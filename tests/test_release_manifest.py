@@ -95,8 +95,8 @@ def test_pass_records_head_receipts_packages_and_open_conditions(repo):
     hc = kinds["sdist"]["head_comparison"]
     assert hc["members_differing_from_head"] == [] and hc["members_identical_to_head"] >= 3
     assert all(len(a["sha256"]) == 64 for a in kinds.values())
-    assert [c["status"] for c in m["conditions"]] == ["OPEN", "OPEN", "OPEN"]
-    assert [c["id"] for c in m["conditions"]] == ["institutional_ip", "licence", "distribution"]
+    assert [c["status"] for c in m["conditions"]] == ["OPEN", "OPEN"]
+    assert [c["id"] for c in m["conditions"]] == ["licence", "distribution"]
     md = open(os.path.join(out, "RELEASE_MANIFEST.md")).read()
     assert repo["head"] in md and "OPEN" in md and init_sha in md
     assert g(repo["root"], "status", "--porcelain", "--untracked-files=all") == ""      # the tool wrote nothing into the repo
@@ -201,16 +201,17 @@ def test_no_receipts_and_missing_required_kind(repo):
 
 
 def test_approval_records(repo, tmp_path):
-    good = tmp_path / "ip.json"
-    good.write_text(json.dumps({"condition": "institutional_ip", "status": "APPROVED", "approved_by": "office",
+    good = tmp_path / "dist.json"
+    good.write_text(json.dumps({"condition": "distribution", "status": "APPROVED", "approved_by": "office",
                                 "date": "2026-11-01", "reference": "ref-1"}))
     bad = tmp_path / "lic.json"
     bad.write_text(json.dumps({"condition": "licence", "status": "PENDING"}))
     rc = receipt(repo["tmp"], "t.json", {"commit": repo["head"]})
     code, m, _, _ = run(repo, "--receipts", rc, "--no-build", "--approval", str(good), "--approval", str(bad))
     st = {c["id"]: c["status"] for c in m["conditions"]}
-    assert st == {"institutional_ip": "APPROVAL RECORD SUPPLIED", "licence": "OPEN", "distribution": "OPEN"}
-    assert m["conditions"][0]["records"][0]["sha256"] == hashlib.sha256(good.read_bytes()).hexdigest()
+    assert st == {"licence": "OPEN", "distribution": "APPROVAL RECORD SUPPLIED"}
+    cond = {c["id"]: c for c in m["conditions"]}
+    assert cond["distribution"]["records"][0]["sha256"] == hashlib.sha256(good.read_bytes()).hexdigest()
     assert m["approval_record_problems"][0]["problems"]
 
 
@@ -220,7 +221,7 @@ def test_require_approvals_exit_code(repo, tmp_path):
     code, m, _, _ = run(repo, "--receipts", rc, "--require-approvals")
     assert code == 3 and m["verdict"] == "PASS"
     recs = []
-    for cid in ("institutional_ip", "licence", "distribution"):
+    for cid in ("licence", "distribution"):
         p = tmp_path / ("%s.json" % cid)
         p.write_text(json.dumps({"condition": cid, "status": "APPROVED", "approved_by": "x", "date": "d", "reference": "r"}))
         recs += ["--approval", str(p)]
@@ -247,7 +248,7 @@ def test_command_line_entry_point(repo):
     out = str(repo["tmp"] / "cli_out")
     r = subprocess.run([sys.executable, TOOL, "--repo", str(repo["root"]), "--receipts", rc, "--no-build", "--out", out],
                        capture_output=True, text=True)
-    assert r.returncode == 1 and "FAIL RECEIPT_COMMIT_MISMATCH" in r.stdout and "OPEN: institutional_ip, licence, distribution" in r.stdout
+    assert r.returncode == 1 and "FAIL RECEIPT_COMMIT_MISMATCH" in r.stdout and "OPEN: licence, distribution" in r.stdout
 
 
 def test_manifest_markdown_passes_the_wording_audit(repo):

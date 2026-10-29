@@ -10,7 +10,8 @@ extra setup in section 2, and nothing in this section contacts a language model.
 
 ```bash
 python3.11 -m venv ~/rnplens-venv && source ~/rnplens-venv/bin/activate
-python -m pip install "rnplens[html]" ./assistant      # from a source checkout: pip install -e ".[html]" -e ./assistant
+git clone https://github.com/JeanWen-Lab/RNPLens.git && cd RNPLens
+python -m pip install ".[html]" ./assistant           # or, editable: pip install -e ".[html]" -e ./assistant
 rnplens selftest                                        # scientific self-test of this installation
 ```
 

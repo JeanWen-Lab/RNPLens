@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rnplens"
-version = "0.4.0.dev0"
+version = "0.4.0"
 description = "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
@@ -16,9 +16,6 @@ license = "MIT"
 # .dist-info/licenses/NOTICE in the wheel. rnplens-assistant bundles no third-party code and does not
 # carry it.
 license-files = ["LICENSE", "NOTICE"]
-# OWNER INPUT REQUIRED (blocker B2, see the block at the top of CITATION.cff): this single entry is a
-# placeholder, not an author. It is what the Author: field of both core artefacts currently states. No
-# name has been invented here; replace it with the agreed list in the same pass as CITATION.cff.
 authors = [
   { name = "Brian J. Parker", email = "Brian.Parker@anu.edu.au" },
   { name = "Jiayu Wen", email = "Jiayu.Wen@anu.edu.au" },

@@ -192,11 +192,11 @@ def test_unrelated_file_redoes_import_but_reuses_analysis(tmp_path):
 
 def test_tool_version_change_recomputes(tmp_path, monkeypatch):
     P, ins, fa = _keyed(tmp_path)
-    monkeypatch.setattr(rnplens, "__version__", "0.4.0.dev0+other")
+    monkeypatch.setattr(rnplens, "__version__", "0.4.0+other")
     I.run_pipeline(P, "new tool", analyse_fn=fa)
     assert len(fa.calls) == 2 and not P.head()["groups"]["main"]["import_reused"] and "tool_version" in _changed(P)
     R = json.load(open(os.path.join(P.root, P.head()["update_report"]["json"])))
-    assert R["iii_analysis_contract_and_tool_version"]["tool_version"] == {"before": "0.4.0.dev0", "after": "0.4.0.dev0+other"}
+    assert R["iii_analysis_contract_and_tool_version"]["tool_version"] == {"before": "0.4.0", "after": "0.4.0+other"}
 
 
 def test_metric_definition_change_recomputes_only_the_analysis(tmp_path, monkeypatch):
@@ -351,7 +351,7 @@ def test_state_records_hashes_construct_correspondence_tool_config_and_selection
     assert all(len(v) == 64 for v in st["inputs"]["files"].values())
     assert st["construct"]["declared"]["protein_sha256"] == C.seq_sha(PS) and st["construct"]["declared"]["rna_length"] == len(RS)
     assert st["correspondence"]["main"][f]["chains"][0][:3] == ["A", "protein", "EXACT"]
-    assert st["tool_version"] == "0.4.0.dev0" and len(st["config_sha256"]) == 64
+    assert st["tool_version"] == "0.4.0" and len(st["config_sha256"]) == 64
     assert st["selection_rules"]["main"]["runs"][0]["designated_rule"] == "only structure of the run"
     assert st["analyses"]["main"]["components"]["definition_sha256"] and st["analyses"]["main"]["summary_sha256"]
 

@@ -1,4 +1,4 @@
-# What RNPLens 0.4 offers, in four categories (development candidate `0.4.0.dev0`)
+# What RNPLens 0.4 offers, in four categories (release `0.4.0`)
 
 RNPLens analyses protein-RNA structures that were **already predicted** by other methods. It does not predict
 structures, it does not rank or select candidates, and agreement or recurrence among predictions is never reported as

@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rnplens-assistant"
-version = "0.1.0.dev0"
+version = "0.1.0"
 authors = [
   { name = "Brian J. Parker", email = "Brian.Parker@anu.edu.au" },
   { name = "Jiayu Wen", email = "Jiayu.Wen@anu.edu.au" },
@@ -18,8 +18,6 @@ requires-python = ">=3.10"
 # repository root, so the file has to exist here.
 license = "MIT"
 license-files = ["LICENSE"]
-# Blocker B2 is closed: the authors below are those of the authoritative manuscript, supplied by the owner. Previously this distribution declared no authors, so its metadata had no
-# Author field. Add the same list as the root pyproject.toml in the same pass; none is invented here.
 dependencies = ["rnplens"]
 # 0.4: no optional "llm" extra. The language-model route is Codex CLI with ChatGPT sign-in only (codex_llm.py); the
 # separately billed API client kept in llm.py for the frozen 2026-10-16 development record is not used by any command.

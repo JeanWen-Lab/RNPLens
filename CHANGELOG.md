@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.0 — 2026-10-30 (first public release; RNPLens Assistant 0.1.0)
+
+- First public source release of the RNPLens toolkit (`rnplens 0.4.0`) and the optional, experimental RNPLens
+  Assistant (`rnplens-assistant 0.1.0`), both under the MIT licence.
+- No computation of Evaluate, Report or Diagnose changed relative to `0.4.0.dev0`. Evaluate's four-axis geometry
+  route and the user-facing Diagnose workflow remain blocked.
+- Documentation: consistent licensing and provenance statements (NOTICE, README, `docs/example_data_provenance.md`,
+  `docs/dependencies.md`, `docs/release_conditions.md`); provenance rows for the six bundled Boltz-2 confidence
+  files; installation from the GitHub source repository; the release-manifest tool no longer lists an
+  institutional-IP condition.
+- The Assistant's package version 0.1.0 does not imply completed native security qualification or validation of
+  live model calls.
+
 ## 0.4.0.dev0 — interactive workflow (branch `dev/0.4-interactive`; not merged, not released)
 
 Built on `0.3.0.dev0` plus the Gate-1 fixes (frozen assistant commit `f998830`). No computation of Evaluate, Report or

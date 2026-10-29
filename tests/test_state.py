@@ -29,7 +29,7 @@ def test_commit_versions_are_immutable_snapshots_with_hash_chain(tmp_path):
     h = P.head()
     assert h["a"] == 1 and h["b"] == 2 and h["parent"] == "v0001" and h["version"] == "v0002"
     assert h["parent_sha256"] == pv.sha256_file(os.path.join(P.state_dir, "v0001.json"))
-    assert h["tool_version"] == S.tool_version() == "0.4.0.dev0"
+    assert h["tool_version"] == S.tool_version() == "0.4.0"
     assert [v["version"] for v in P.versions()] == ["v0001", "v0002"]
     assert P.load("v0001")["a"] == 1 and "b" not in P.load("v0001")
     for v in ("v0001", "v0002"):
@@ -150,7 +150,7 @@ def test_lock_refuses_a_live_holder_and_takes_over_a_dead_one(tmp_path):
 # ---------------------------------------------------------------- cache keys
 BASE = dict(kind="analyse", config={"diagnose": True, "reference": None}, input_hashes={"a": "1", "b": "2"},
             construct_sha="c" * 64, correspondence={"s001": ["A", "B"]}, selection_rule={"run": "highest"},
-            tool_version="0.4.0.dev0")
+            tool_version="0.4.0")
 
 
 def test_analysis_key_is_deterministic_and_order_independent():
