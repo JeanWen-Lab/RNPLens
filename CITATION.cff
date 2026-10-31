@@ -1,8 +1,7 @@
 cff-version: 1.2.0
 message: >-
-  If you use RNPLens, please cite the accompanying manuscript, "From folds to interfaces: Accurate protein-RNA
-  complex prediction requires compatible molecular geometries" (Parker and Wen, in preparation), and this software
-  release.
+  If you use RNPLens, please cite this software release. A citation for the accompanying article will be added when
+  it is published.
 title: "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
 type: software
 version: 0.4.0
@@ -23,7 +22,7 @@ abstract: >-
   (Evaluate), reference-free descriptive agreement and contacts among predictions (Report, region, grouping, an
   offline Mol* viewer) and evidence-traced explanations and Methods records, through explicit commands or an optional
   AI-guided assistant (experimental). It does not predict structures and gives no calibrated probability of
-  correctness. In 0.4, Evaluate's four-axis geometry route and the user-facing Diagnose workflow are blocked.
+  correctness. In 0.4.0, Evaluate's four-axis geometry route and the user-facing Diagnose workflow are not available.
 keywords:
   - protein-RNA complex
   - structure prediction

@@ -92,7 +92,7 @@ rnplens assist --project P --task T --nl "Do the two runs agree on contacts in R
 ```
 
 This mode is **EXPERIMENTAL**: the planner with the 0.4 tools has not been qualified live, and it differs from the
-assistant under sealed evaluation (`f998830`). The question is handed to the existing RNPLens assistant
+earlier frozen assistant (`f998830`) for which a sealed-evaluation protocol was prepared. The question is handed to the existing RNPLens assistant
 (`rnplens_assistant.ask`) only when
 `rnplens doctor --agent` reports every Codex check READY (supported system, tested Codex CLI, ChatGPT sign-in,
 tested model, the system's confinement (bubblewrap on Linux, Seatbelt on macOS), jail script). Otherwise the question is not sent anywhere: the menu says which check failed and offers

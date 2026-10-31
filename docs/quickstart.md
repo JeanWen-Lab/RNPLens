@@ -2,7 +2,7 @@
 
 All commands below were run from a clean installation (see [installation.md](installation.md)); their complete
 outputs are in [`examples/expected_output/`](../examples/expected_output/). `bash examples/run_examples.sh OUT`
-runs all of them.
+runs examples 1 and 2 and records that Diagnose refuses.
 
 Every `run` command refuses an output directory that already holds results and changes nothing in it.
 
@@ -54,27 +54,11 @@ agreement 0.894 and RNA pose difference 0.957 Å. Cross-engine fields are `null`
 `summary.SEMANTICS` states: "agreement is descriptive evidence about convergence of predicted interface hypotheses;
 it is not a probability of structural correctness".
 
-## 3. Validity and candidate disagreement, without a reference (Diagnose: not available in 0.4.0)
+## 3. Diagnose (not available in 0.4.0)
 
-Diagnose is blocked in the public 0.4 interface until it is re-qualified ([diagnose.md](diagnose.md)). The commands
-below refuse with `DIAGNOSE_BLOCKED` and exit code 5, and write nothing. What follows them describes the rc3 tool,
-for reference only.
-
-```bash
-rnplens diagnose validity examples/reference_free/diagnose_7K9D/*.pdb > OUT/B2_diagnose_validity.json   # 0.4: exit 5; the shell redirect leaves an empty file
-rnplens diagnose run examples/reference_free/diagnose_7K9D/*.pdb --mode within_engine --engine BOLTZ2 --target 7K9D --out OUT/B2_diagnose_7K9D
-```
-
-`validity` classifies each file as `VALID`, `TECHNICAL_FAILURE` or `STRUCTURAL_FAILURE` (here 5 of 5 `VALID`).
-`run` writes `report.json` and `report.html` with the protein-side and RNA-side disagreement, where each sits in the
-frozen benchmark reference, the statements it refuses to make, and its limits (see [diagnose.md](diagnose.md)).
-
-For the cross-engine mode give one structure per engine and an `--engine` label for each, in order:
-
-```bash
-rnplens diagnose run boltz.pdb chai.cif rf3.cif rf2na.pdb --mode cross_engine --target MYTARGET \
-    --engine BOLTZ2 --engine CHAI1 --engine RF3 --engine RF2NA --out OUT/cross
-```
+Diagnose is not available in this release. Its commands refuse with `DIAGNOSE_BLOCKED` and exit code 5, and write
+nothing; `examples/run_examples.sh` records this refusal. The 0.2.0rc3 command examples are kept for reference in
+[diagnose.md](diagnose.md#reference-020rc3-command-examples-refused-in-040).
 
 ## Reading the Evaluate summary
 

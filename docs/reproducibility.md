@@ -68,7 +68,7 @@ developed and qualified for the accompanying study:
   output (Evaluate `result.*`, Report `result.json`, Diagnose `report.json`, HTML pages) contains these fields.
   `rnplens provenance` records the component versions by module.
 
-## Release-candidate 1 qualification (2026-10-13)
+## Historical: release-candidate 1 qualification (2026-10-13)
 
 On the reference platform (Linux x86-64), each from a clean environment built with only the wheel or sdist:
 
@@ -102,7 +102,7 @@ installation found the same behaviour.
 The complete qualification records are kept with the release-preparation records; they are not part of the
 repository because they reference internal fixtures and the benchmark's development store.
 
-## Release-candidate 2 parity (display names)
+## Historical: release-candidate 2 parity (display names)
 
 The rc2 outputs were compared with rc1 outputs from the same inputs; the record is kept with the release-preparation
 records. Result: every number, status, class, count, label and JSON key is identical; the only differences are the

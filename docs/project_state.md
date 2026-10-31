@@ -1,6 +1,6 @@
 # Project state, clarifications and incremental updates (`rnplens clarify`, `rnplens update`)
 
-Status: **DESCRIPTIVE** (0.4 development; new and tested; no result here is a qualified measurement of anything new).
+Status: **DESCRIPTIVE** (RNPLens 0.4; new and tested; no result here is a qualified measurement of anything new).
 Capabilities: `clarify_and_resume` (`rnplens.clarify`), `incremental_update` (`rnplens.incremental`).
 
 RNPLens analyses predicted structures that already exist. A *managed project* keeps those analyses over time. You can

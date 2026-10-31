@@ -1,33 +1,34 @@
 # Software availability versus reproducibility of the study
 
-RNPLens accompanies a manuscript in preparation. Two different things need to be available, and they are kept
+RNPLens is the software of the accompanying study. Two different things need to be available, and they are kept
 apart on purpose.
 
 | | what it lets a reader do | where |
 |---|---|---|
-| **The software (this repository)** | run Evaluate, Report and Diagnose on their own predicted complexes; reproduce the bundled examples and regression references exactly | this repository and its archived release (DOI to be added at release) |
-| **The study's evidence** | reproduce the numbers, figures and tables of the manuscript | a separate research-data archive (location and DOI to be added at publication) |
+| **The software (this repository)** | run Evaluate's DockQ route, Report and the analysis workflows on their own predicted complexes; reproduce the bundled examples and regression references exactly | this repository, release `v0.4.0` (no DOI issued) |
+| **The study's evidence** | reproduce the study's numbers, figures and tables | a separate research-data archive, not part of this repository |
 
 ## What this repository reproduces
 
-- The behaviour of the three tools, under frozen scoring rules whose source files are verified by SHA-256 at run
+- The behaviour of Evaluate, Report and Diagnose's internal contract checks, under frozen scoring rules whose source files are verified by SHA-256 at run
   time, on the bundled examples and regression fixtures (`rnplens selftest`, `python -m pytest`,
   `examples/run_examples.sh` against `examples/expected_output/`).
-- Numerical parity of each release candidate with the internally qualified implementation, documented in
+- Numerical parity of the releases with the internally qualified implementation, documented in
   [reproducibility.md](reproducibility.md).
 
 ## What it does not reproduce
 
 - The benchmark itself: its 1,442 complexes, family-disjoint partitions, the predictions of the engines compared in the study and the score
   stores.
-- The manuscript's analyses, statistics, figures and tables, and the frozen protocols that governed them, apart
+- The study's benchmark analyses, statistics, figures and tables, including measurements that use the four-axis
+  geometry route or Diagnose, which are not available in 0.4.0, and the frozen protocols that governed them, apart
   from the validation records in [validation/](validation/) that define Diagnose's statements.
 - Predictions of any engine other than the Boltz-2 examples listed in `examples/DATA_PROVENANCE.tsv`.
 
 ## Planned research-data archive
 
-The following belong in the research-data archive linked from the manuscript, not in this repository. Location,
-licence and DOI will be added here when they exist.
+The following belong in the study's research-data archive, not in this repository. Its location, licence and
+identifier will be added here when the archive exists.
 
 - The benchmark resource: entries, partitions and cluster assignments, with the acquisition records.
 - Predicted structures and score stores, where each engine's terms permit redistribution; where they do not, the
@@ -40,8 +41,8 @@ licence and DOI will be added here when they exist.
 
 ## How the two are linked
 
-The manuscript will cite the RNPLens release used (version and DOI) and the research-data archive (DOI). This file
-will be updated with both identifiers; until then it records the separation only.
+The study uses RNPLens 0.4.0 (Git tag `v0.4.0`). No DOI has been issued for the software. The research-data archive
+will be linked here when it exists; until then this page records the separation only.
 
 ## In brief
 

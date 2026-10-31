@@ -1,6 +1,6 @@
 # `rnplens region`: contacts in an RNA region, compared between runs
 
-Status: **DESCRIPTIVE** (RNPLens 0.4 development). The contact records it reads are Report's own, and the
+Status: **DESCRIPTIVE** (RNPLens 0.4). The contact records it reads are Report's own, and the
 filtering reuses that qualified route unchanged. The way runs are compared and presented is new and has been tested,
 but its output is descriptive only.
 

@@ -52,8 +52,9 @@ def public_documents():
 def test_release_status_states_facts_and_claims_no_unperformed_qualification():
     cond = read("docs", "release_conditions.md")
     assert "| Licence | MIT for the core toolkit and the optional Assistant" in cond
-    for c in ("| Live qualification of the Assistant | not performed", "| Sealed evaluation of the Assistant | not performed",
-              "| Manual visual checks of the viewer | not performed", "| Diagnose (user-facing) | blocked by design in 0.4",
+    for c in ("| Live qualification of the Assistant | not performed",
+              "| Sealed evaluation of the Assistant | not performed for the released implementation",
+              "| Manual visual checks of the viewer | partially performed", "| Diagnose (user-facing) | blocked by design in 0.4",
               "| Evaluate four-axis geometry | blocked by design in 0.4"):
         assert c in cond, c
     model = read("docs", "model_and_privacy.md")

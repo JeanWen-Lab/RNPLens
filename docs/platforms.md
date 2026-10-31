@@ -11,9 +11,9 @@ RNPLens has two modes. Both use the same qualified scientific computations.
   bubblewrap on Linux, Seatbelt on macOS. RNPLens stays fully useful without it.
 
 **One computer is enough.** Each supported system runs both modes on its own: a Linux user needs no Mac, and a Mac
-user needs no Linux server, no SSH and no bubblewrap. There is no second computer in routine use. (The blinded
-evaluation of the Assistant used a separate machine for the sealed answers; that arrangement belongs to the
-evaluation only.)
+user needs no Linux server, no SSH and no bubblewrap. There is no second computer in routine use. (The protocol for a
+blinded evaluation of an earlier, frozen assistant uses a separate machine for the sealed answers; that arrangement
+belongs to the evaluation only.)
 
 ## Platform matrix
 

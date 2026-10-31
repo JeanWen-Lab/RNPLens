@@ -1,6 +1,6 @@
 # `rnplens explain` and `rnplens export-methods`
 
-This page covers two commands in RNPLens 0.4 development. Both have status **DESCRIPTIVE**:
+This page covers two commands in RNPLens 0.4. Both have status **DESCRIPTIVE**:
 
 - **D. Explain a value.** `rnplens explain` traces a reported value back to the files, structures, definitions,
   versions and limitations it rests on.

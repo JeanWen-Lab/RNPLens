@@ -43,7 +43,7 @@ still be wrong.
 | **Report** | Reference-free agreement among predictions of one complex: binding surfaces, residue–nucleotide contacts and RNA poses, with engines grouped into interface hypotheses (descriptive, not a probability) |
 | **Structure viewer** | `rnplens view`: an offline Mol\* page that highlights Report's contacts, with a nucleotide contact explorer |
 | **Analysis workflows** | `import`, `analyse` and `compare` engine output folders; contacts in an RNA region; binding-proposal grouping (never an accuracy selector); evidence lookup and Methods export |
-| **RNPLens Assistant** (optional) | An experimental natural-language interface that plans RNPLens tool calls ([below](#optional-ai-assistant-experimental)) |
+| **RNPLens Assistant** (optional) | An experimental natural-language interface that plans RNPLens tool calls ([below](#rnplens-assistant)) |
 
 What each capability does and does not establish is set out in [docs/capabilities.md](docs/capabilities.md).
 
@@ -101,16 +101,18 @@ Both images are genuine RNPLens 0.4 outputs, cropped but otherwise unedited; the
 
 The full index, including development and qualification records, is in [docs/README.md](docs/README.md).
 
-## Optional AI Assistant (experimental)
+## RNPLens Assistant
 
-`rnplens-assistant` is a separate, optional package (`python -m pip install -e ./assistant`). It translates a
-natural-language question into a sequence of RNPLens tool calls and checks that plan deterministically,
-**refusing** anything the toolkit cannot do. It then answers from the evidence records the tools produced, and a
-replay route needs no language model. Every capability above works without it. It is an **experimental research
-interface**:
+`rnplens-assistant` is a separate, optional package (`python -m pip install -e ./assistant`); every capability
+above works without it and without any language model. You ask a scientific question in natural language. A
+language model proposes a plan made of supported RNPLens operations, and deterministic checks admit the plan or
+**refuse** it. The admitted plan runs, and the answer is written from the evidence records the tools produced. The
+run is recorded and can be replayed without a language model.
 
-- its native security confinement is not fully qualified;
+Its model-dependent operation is **experimental research functionality**, pending live and security
+qualification:
 - live model calls are not qualified;
+- its native security confinement is not fully qualified;
 - a question sent to a hosted model leaves your computer.
 
 Read the [Assistant README](assistant/README.md) and [Setup and privacy](docs/setup_and_privacy.md) before using it.
@@ -123,12 +125,8 @@ ongoing. See [Limitations](docs/limitations.md) for details.
 
 ## Citation
 
-If you use RNPLens, please cite the accompanying manuscript and this software release:
-
-> Brian J. Parker and Jiayu Wen. *From folds to interfaces: Accurate protein–RNA complex prediction requires
-> compatible molecular geometries.* Manuscript in preparation.
-
-Software metadata are in [CITATION.cff](CITATION.cff). No DOI has yet been issued for the paper or the software.
+If you use RNPLens, please cite this software release; its metadata are in [CITATION.cff](CITATION.cff). A citation
+for the accompanying article will be added when it is published. No DOI has yet been issued for the software.
 
 ## Licence and data terms
 

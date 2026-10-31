@@ -1,4 +1,4 @@
-# RNPLens Diagnose — validity and candidate disagreement (BLOCKED in 0.4)
+# RNPLens Diagnose — validity and candidate disagreement (not available in 0.4.0)
 
 Diagnose looks at candidate structures without any experimental reference. It answers two questions: are these
 outputs usable structures at all, and how much do the candidates disagree with each other?
@@ -96,3 +96,25 @@ Outside them Diagnose refuses and lists the reasons. With `--allow-outside-valid
 anyway; `report.json` then records `applicability.status = "outside_validated_domain"` with the reasons and
 `outside_domain_accepted_by_user = true`, and the HTML page opens with an "Outside the validated domain" notice.
 The check changes no computed value.
+
+## Reference: 0.2.0rc3 command examples (refused in 0.4.0)
+
+Diagnose is blocked in the public 0.4 interface until it is re-qualified ([diagnose.md](diagnose.md)). The commands
+below refuse with `DIAGNOSE_BLOCKED` and exit code 5, and write nothing. What follows them describes the rc3 tool,
+for reference only.
+
+```bash
+rnplens diagnose validity examples/reference_free/diagnose_7K9D/*.pdb > OUT/B2_diagnose_validity.json   # 0.4: exit 5; the shell redirect leaves an empty file
+rnplens diagnose run examples/reference_free/diagnose_7K9D/*.pdb --mode within_engine --engine BOLTZ2 --target 7K9D --out OUT/B2_diagnose_7K9D
+```
+
+`validity` classifies each file as `VALID`, `TECHNICAL_FAILURE` or `STRUCTURAL_FAILURE` (here 5 of 5 `VALID`).
+`run` writes `report.json` and `report.html` with the protein-side and RNA-side disagreement, where each sits in the
+frozen benchmark reference, the statements it refuses to make, and its limits (see [diagnose.md](diagnose.md)).
+
+For the cross-engine mode give one structure per engine and an `--engine` label for each, in order:
+
+```bash
+rnplens diagnose run boltz.pdb chai.cif rf3.cif rf2na.pdb --mode cross_engine --target MYTARGET \
+    --engine BOLTZ2 --engine CHAI1 --engine RF3 --engine RF2NA --out OUT/cross
+```

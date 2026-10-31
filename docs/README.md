@@ -1,7 +1,8 @@
 # RNPLens documentation
 
 ## Getting started
-- [Which analysis should I use?](which_analysis_should_i_use.md)
+- [Which analysis should I use?](which_analysis_should_i_use.md). This guide is also the Assistant's frozen
+  reference text; Diagnose, which it describes, is not available in 0.4.0.
 - [Installation](installation.md): [Linux](install_linux.md), [macOS](install_macos.md)
 - [Quick start](quickstart.md): the two worked examples, their outputs and how to read them
 
@@ -23,7 +24,7 @@
 - [Viewer guide and nucleotide contact explorer](viewer.md)
 - [Question menu and viewer commands](assist.md) (`rnplens assist`, `rnplens view`)
 
-## Optional Assistant (experimental)
+## RNPLens Assistant (optional, experimental)
 - [Assistant README](../assistant/README.md): status, limitations and use
 - [Setup, requirements and privacy](setup_and_privacy.md)
 - [Model use and privacy](model_and_privacy.md)
@@ -33,7 +34,7 @@
 ## Interpreting results
 - [Interpretation](interpretation.md)
 - [Limitations](limitations.md)
-- [Capabilities and their status](capabilities.md)
+- [Capabilities](capabilities.md): what each command does, how to interpret it, and the scope of 0.4.0
 
 ## Reproducibility, provenance and release
 - [Reproducibility](reproducibility.md)

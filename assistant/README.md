@@ -1,17 +1,31 @@
-# RNPLens Assistant (optional, experimental)
+# RNPLens Assistant
 
-The assistant answers three kinds of question about **existing** predicted protein–RNA complexes:
-1. what the predictions agree on (binding surface and residue–nucleotide contacts);
-2. matched comparisons against a supplied experimental reference (DockQ, fnat, iRMSD, LRMSD);
-3. which analysis the available evidence justifies, including clarification or refusal.
+The RNPLens Assistant is an optional package that answers natural-language scientific questions about **existing**
+predicted protein–RNA complexes by planning and running supported RNPLens operations. The RNPLens toolkit works
+fully without it and without any language model.
 
-A language model (Codex CLI, signed in with ChatGPT) proposes a plan. Deterministic code checks the plan, runs
-qualified RNPLens functions, records every value, and writes the answer from those records.
+**Workflow.**
+1. **Question.** You ask, for example, whether two runs support the same binding surface and contacts, how a
+   prediction compares with a supplied experimental reference (DockQ, fnat, iRMSD, LRMSD), or which analysis the
+   available evidence justifies.
+2. **Plan.** A language model (Codex CLI, signed in with your own ChatGPT account) proposes a plan made of supported
+   RNPLens operations.
+3. **Admission.** Deterministic code admits or refuses the plan (tool allowlist, step budget, argument and reference
+   rules). An operation the toolkit cannot perform is refused, not approximated, and a question may be answered with
+   a request for clarification.
+4. **Execution and answer.** The admitted plan runs with the qualified RNPLens functions. The answer is written from
+   the recorded evidence, with an evidence table and a list of what was not computed.
+5. **Record and replay.** The plan, every value with its source, and a run record are saved. `replay` re-runs the
+   recorded plan without any language model and checks the evidence hash.
 
 **Not available in this version:** Diagnose, the four-axis geometry decomposition, ranking, grouping, structure
 prediction and mutation advice.
 
 ## Status and limitations (read before use)
+
+The Assistant's model-dependent operation is **experimental research functionality**, pending live and security
+qualification.
+
 
 The Assistant is a **separate, optional** package: installing RNPLens does not install it, and every scientific
 capability of RNPLens works without it. It is an **experimental research interface**, not a qualified component.
@@ -29,6 +43,16 @@ imply completed native security qualification or validation of live model calls.
 - **Sending a question to a hosted model sends data to a third party.** Decide whether that is acceptable for your
   data before you enable it.
 - **It plans and refuses; it does not extend the science.** It cannot make a blocked capability available.
+
+**Evaluation evidence, by implementation.**
+- **Released implementation (`rnplens-assistant` 0.1.0).** Its automated suite (268 passed, 34 skipped on Linux)
+  uses a scripted stand-in for Codex, replay, and paths that make no model call. The scripted part of the follow-up
+  suite passed 21 of 21 (`evaluation_v04/FOLLOWUP_SUITE_v1_results/`). The live part has not run, and the live
+  qualification (`evaluation_v04/LIVE_QUALIFICATION_v1/`) is prepared but not run: no live model call has been made
+  for RNPLens 0.4.
+- **Earlier frozen assistant (`f998830`).** The development runs and the sealed-evaluation protocol in
+  `evaluation/` concern this earlier implementation. They do not qualify the released 0.1.0 implementation, and no
+  sealed-evaluation result is reported in this repository.
 
 **Confinement.** The Assistant needs a working Codex CLI sign-in and a native confinement backend chosen by
 platform: **bubblewrap** on Linux, **Seatbelt** on macOS. It refuses to start a model process outside that
