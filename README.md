@@ -37,17 +37,15 @@ still be wrong.
 
 ## Features
 
-| Capability | Question it answers | Status in 0.4.0 |
-|---|---|---|
-| **Evaluate**: DockQ route | How close is a prediction's interface to the experimental structure? | Available |
-| **Evaluate**: RNA and protein geometry route | RNA conformation, RNA placement on the protein, protein Cα RMSD | **Blocked**: a residue-correspondence defect is being corrected; no value is shown ([limitations](docs/limitations.md)) |
-| **Report** | Do several predictions propose the same interface (surface, contact register, RNA pose)? | Available; descriptive, not a probability |
-| **Engine-folder workflow** | `import`, `analyse` and `compare` engine outputs; contacts in an RNA region; binding-proposal grouping; Methods export | Available; descriptive output (grouping is never an accuracy selector) |
-| **Diagnose** | Are candidate files valid, and how much do the candidates disagree? | **Blocked** pending re-qualification; the commands refuse with `DIAGNOSE_BLOCKED` ([diagnose](docs/diagnose.md)) |
-| **Structure viewer** | `rnplens view`: an offline Mol\* page with a nucleotide contact explorer | Available; automatically tested, manual visual checks incomplete |
-| **Assistant** (optional) | Natural-language questions planned onto RNPLens tools | **Experimental**, separate package ([below](#optional-ai-assistant-experimental)) |
+| Capability | What it provides |
+|---|---|
+| **Evaluate** | Reference-based interface accuracy (DockQ, DockQ class, fnat, iRMSD, LRMSD) under an explicit construct-position residue correspondence, over all admissible chain mappings |
+| **Report** | Reference-free agreement among predictions of one complex: binding surfaces, residue–nucleotide contacts and RNA poses, with engines grouped into interface hypotheses (descriptive, not a probability) |
+| **Structure viewer** | `rnplens view`: an offline Mol\* page that highlights Report's contacts, with a nucleotide contact explorer |
+| **Analysis workflows** | `import`, `analyse` and `compare` engine output folders; contacts in an RNA region; binding-proposal grouping (never an accuracy selector); evidence lookup and Methods export |
+| **RNPLens Assistant** (optional) | An experimental natural-language interface that plans RNPLens tool calls ([below](#optional-ai-assistant-experimental)) |
 
-The full classification, with the reasons for each status, is in [docs/capabilities.md](docs/capabilities.md).
+What each capability does and does not establish is set out in [docs/capabilities.md](docs/capabilities.md).
 
 ## Installation and quick start
 
@@ -60,7 +58,7 @@ cd RNPLens
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[html]"
-rnplens selftest          # prints PASS for Evaluate, Report and Diagnose's internal checks
+rnplens selftest          # checks the installation against the bundled reference values; prints PASS
 ```
 
 **Worked example.** Score the bundled Boltz-2 prediction of PDB 7K9D against the deposited structure:
@@ -117,6 +115,12 @@ interface**:
 
 Read the [Assistant README](assistant/README.md) and [Setup and privacy](docs/setup_and_privacy.md) before using it.
 
+## Scope of this release
+
+RNPLens v0.4.0 supports reference-based interface evaluation and reference-free structural comparison.
+Four-axis geometry assessment and Diagnose are not available in this release; their scientific qualification is
+ongoing. See [Limitations](docs/limitations.md) for details.
+
 ## Citation
 
 If you use RNPLens, please cite the accompanying manuscript and this software release:
@@ -128,8 +132,8 @@ Software metadata are in [CITATION.cff](CITATION.cff). No DOI has yet been issue
 
 ## Licence and data terms
 
-**MIT License — Copyright © 2026 The RNPLens authors.** The licence covers the RNPLens source code: the core toolkit and
-the optional Assistant ([LICENSE](LICENSE), [assistant/LICENSE](assistant/LICENSE)).
+**MIT License — Copyright © 2026 The RNPLens authors.** The licence covers the RNPLens source code: the core
+toolkit and the optional Assistant ([LICENSE](LICENSE), [assistant/LICENSE](assistant/LICENSE)).
 
 Research data and third-party components keep their own terms, which are recorded in [NOTICE](NOTICE) and
 [examples/DATA_PROVENANCE.tsv](examples/DATA_PROVENANCE.tsv):

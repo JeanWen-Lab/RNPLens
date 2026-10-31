@@ -6,7 +6,7 @@
 - [Quick start](quickstart.md): the two worked examples, their outputs and how to read them
 
 ## Reference-based evaluation
-- [Evaluate](evaluate.md): the DockQ route, and the geometry route (blocked in 0.4)
+- [Evaluate](evaluate.md): the DockQ route (the four-axis geometry route is not available in 0.4.0)
 - [Evaluate input contract](INPUT_CONTRACT.md)
 - [Output formats](output_formats.md) and [output schemas](schemas/)
 
@@ -17,7 +17,7 @@
 - [Binding-proposal grouping](grouping.md)
 - [Evidence lookup and Methods export](evidence_and_methods.md)
 - [Managed projects: update, clarify, relink](project_state.md)
-- [Diagnose](diagnose.md) (blocked in 0.4)
+- [Diagnose](diagnose.md) (not available in 0.4.0; qualification ongoing)
 
 ## Viewer and question menu
 - [Viewer guide and nucleotide contact explorer](viewer.md)

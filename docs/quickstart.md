@@ -54,7 +54,7 @@ agreement 0.894 and RNA pose difference 0.957 Å. Cross-engine fields are `null`
 `summary.SEMANTICS` states: "agreement is descriptive evidence about convergence of predicted interface hypotheses;
 it is not a probability of structural correctness".
 
-## 3. Validity and candidate disagreement, without a reference (Diagnose: BLOCKED in 0.4)
+## 3. Validity and candidate disagreement, without a reference (Diagnose: not available in 0.4.0)
 
 Diagnose is blocked in the public 0.4 interface until it is re-qualified ([diagnose.md](diagnose.md)). The commands
 below refuse with `DIAGNOSE_BLOCKED` and exit code 5, and write nothing. What follows them describes the rc3 tool,
