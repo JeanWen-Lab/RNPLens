@@ -75,6 +75,10 @@ jobs:
         run: python -m pytest -q -rs --junitxml="$RUNNER_TEMP/junit-core.xml"
       - name: Assistant test suite
         if: success() || failure()
+        env:
+          # the confinement tests must run, not skip, on the system whose backend they test
+          RNPLENS_REQUIRE_BWRAP: ${{ runner.os == 'Linux' && '1' || '' }}
+          RNPLENS_REQUIRE_SEATBELT: ${{ runner.os == 'macOS' && '1' || '' }}
         run: python -m pytest -q -rs --junitxml="$RUNNER_TEMP/junit-assistant.xml" assistant/tests
       - name: End-to-end examples
         if: success() || failure()
@@ -90,6 +94,13 @@ jobs:
               t, f, e, k = (int(s.get(x, 0)) for x in ("tests", "failures", "errors", "skipped"))
               suite = os.path.basename(path)[len("junit-"):-len(".xml")]
               print("::notice title=%s tests::%d passed, %d skipped, %d failed, %d errors" % (suite, t - f - e - k, k, f, e))
+              reasons = {}
+              for case in root.iter("testcase"):
+                  for sk in case.findall("skipped"):
+                      r = (sk.get("message") or "").split(": ", 1)[-1][:120]
+                      reasons[r] = reasons.get(r, 0) + 1
+              if reasons:
+                  print("::notice title=%s skips::%s" % (suite, " | ".join("%d x %s" % (n, r) for r, n in sorted(reasons.items(), key=lambda x: -x[1]))))
           PY
       - name: Report failing tests as annotations
         if: failure()
