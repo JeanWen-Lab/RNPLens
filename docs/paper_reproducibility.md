@@ -42,3 +42,12 @@ licence and DOI will be added here when they exist.
 
 The manuscript will cite the RNPLens release used (version and DOI) and the research-data archive (DOI). This file
 will be updated with both identifiers; until then it records the separation only.
+
+## In brief
+
+`rnplens selftest` reproduces the project's full reference set from the bundled public data. It is **not** a
+reproduction of the private benchmark study: the RNPLens-Rank corpus, its label files and its holdouts are not in
+this repository and are not published here. Users must acquire or regenerate any benchmark inputs beyond the
+bundled examples. The Boltz-2 commands that produced the bundled predictions are recorded per file in
+`examples/DATA_PROVENANCE.tsv`.
+

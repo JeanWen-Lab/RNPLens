@@ -41,7 +41,7 @@
 - **Known cosmetic issue.** Diagnose prints ordinal percentiles as, for example, "52th"; the text is part of the
   qualified output and is unchanged in this release.
 
-## Known defect and re-qualification status (0.4 development)
+## Known defect and re-qualification status (0.4)
 
 - **Four-axis geometry (Evaluate) is withheld.** On 2026-10-14 a residue-correspondence defect was found in the
   letter-matching step that pairs model and reference residues before Evaluate's four-axis geometry

@@ -1,4 +1,4 @@
-# Supported platforms and the two modes (RNPLens 0.4 release candidate)
+# Supported platforms and the two modes
 
 RNPLens has two modes. Both use the same qualified scientific computations.
 

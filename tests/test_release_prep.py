@@ -73,7 +73,7 @@ def test_no_institutional_ip_gate_in_public_documents():
 
 def test_mit_licensing_configuration():
     lic = read("LICENSE")
-    assert lic.startswith("MIT License\n") and "Copyright (c) 2026 The RNPLens authors" in lic
+    assert lic.startswith("MIT License\n") and "Copyright (c) 2026 The Wen Lab" in lic
     assert read("assistant", "LICENSE") == lic
     core, asst = read("pyproject.toml"), read("assistant", "pyproject.toml")
     assert re.search(r'^license = "MIT"$', core, re.M) and re.search(r'^license = "MIT"$', asst, re.M)

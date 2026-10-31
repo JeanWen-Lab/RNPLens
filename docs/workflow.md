@@ -1,4 +1,4 @@
-# Working from engine output folders: `import`, `analyse`, `compare` (0.3 development)
+# Working from engine output folders: `import`, `analyse`, `compare`
 
 **0.4 status.** `import` and `compare` are qualified operations in 0.4, and `analyse` is the qualified project run of
 Report and (with a reference) Evaluate's DockQ route ([capabilities.md](capabilities.md)). Evaluate's four-axis
@@ -181,7 +181,7 @@ this development version (see section 2, item 6).
   each class.
 - `evaluate/before/<target>/` and `evaluate/after/<target>/`: the unchanged Evaluate outputs.
 
-## Known limitations of this development version
+## Known limitations
 - **Structure viewer.** `summary.html` itself has no structure viewer, and its contact maps are static images.
   `rnplens view` writes a separate offline Mol* page ([assist.md](assist.md); automatically tested, basic use
   confirmed manually on macOS, not fully visually qualified).

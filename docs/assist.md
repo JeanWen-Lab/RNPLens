@@ -1,4 +1,4 @@
-# The question menu: `rnplens assist` (RNPLens 0.4 development)
+# The question menu: `rnplens assist`
 
 `rnplens assist` is a terminal menu over an imported project. Each item runs a deterministic RNPLens function; no
 language model is involved and nothing leaves your computer (see `setup_and_privacy.md`). RNPLens analyses

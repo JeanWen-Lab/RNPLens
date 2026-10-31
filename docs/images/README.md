@@ -22,3 +22,7 @@ cropped. `example_evaluate.png` was drawn as monospaced text (DejaVu Sans Mono, 
 11_prev_to_s005 of plan 2JEA). Each was cropped to the top 848 px (viewer and contact panel) and stored with a
 256-colour palette; nothing else was edited.
 
+`report_7K9D_v040.png` (README) shows the Report page `B1_report_7K9D/report_7K9D_example.html`, written by
+`bash examples/run_examples.sh` with RNPLens 0.4.0 (commit b4132bb1, Linux x86-64, CPython 3.11.15; page SHA-256
+d18bddd50803d1c40f7781e8356e12761424f8310a42f34e84e41dd6b31e5867). It was rendered with headless Firefox at 1100 px width;
+the trailing white space below the content was cropped, and nothing else was edited.

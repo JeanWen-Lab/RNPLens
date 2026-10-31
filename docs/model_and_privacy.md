@@ -1,4 +1,4 @@
-# Model use and privacy (RNPLens 0.4 release candidate)
+# Model use and privacy
 
 Short page; the full description is [setup_and_privacy.md](setup_and_privacy.md).
 

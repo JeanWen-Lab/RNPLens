@@ -75,3 +75,46 @@ For the cross-engine mode give one structure per engine and an `--engine` label 
 rnplens diagnose run boltz.pdb chai.cif rf3.cif rf2na.pdb --mode cross_engine --target MYTARGET \
     --engine BOLTZ2 --engine CHAI1 --engine RF3 --engine RF2NA --out OUT/cross
 ```
+
+## Reading the Evaluate summary
+
+`summary.txt` for the 7K9D example (RNPLens 0.4.0):
+
+```text
+DockQ (frozen RNPLens scoring configuration, construct-position correspondence)
+  DockQ 0.936  [high]   fnat 0.927   iRMSD 0.434 A   LRMSD 1.780 A
+  chain mapping AB:AB (best of 1 admissible); residue pairs in frame 148, out of frame 0, indeterminate 0
+
+Structural geometry: BLOCKED in RNPLens 0.4 (residue-correspondence defect, 2026-10-14); no value is shown.
+...
+  rna construct differs from the reference entity at 1 G/X (X = modified residue in the reference); reported, not corrected
+```
+
+- **DockQ** summarises interface accuracy; **fnat** is the fraction of native residue–nucleotide contacts that the
+  prediction reproduces.
+- **The geometry route is blocked in 0.4.** It covers RNA shape, RNA placement on the protein and protein Cα RMSD.
+  In `result.json` its status is `BLOCKED`, with the code `GEOMETRY_BLOCKED_IN_0.4` and the list of withheld fields;
+  in `result.csv` its value columns are empty. The DockQ-family values do not replace it.
+- **Missing positions.** Positions missing from the experimental structure are unknown, not confirmed
+  non-contacts.
+- **The G/X line.** The bundled reference is a reduced copy of PDB 7K9D. Its RNA sequence record lists the
+  5′-triphosphate guanosine as X, so the construct–reference difference is reported and left uncorrected. With the
+  full RCSB file, the canonical sequence record lists the residue as G, the construct then equals the reference
+  entity, and the scores are identical. Evaluate compares against `_entity_poly.pdbx_seq_one_letter_code_can` when
+  the file has it.
+- **Accuracy, not confidence.** These values measure the accuracy of one prediction; they are not a confidence
+  estimate.
+
+## Run records
+
+Every run also writes `rnplens_run.json` next to its results. It records the RNPLens release, the command, and the
+SHA-256 of every input and output file.
+
+## Historical expected outputs
+
+The rc3 expected outputs in `examples/expected_output/` are kept unchanged as historical records:
+
+- `B2_diagnose_7K9D/` is the 0.2.0rc3 Diagnose output, not a 0.4 result.
+- The rc3 Evaluate output still contains the four-axis geometry values that 0.4 withholds.
+- `docs/images/example_diagnose.png` and `docs/images/example_report.png` were rendered from these rc3 pages.
+

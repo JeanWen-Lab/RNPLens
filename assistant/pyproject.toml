@@ -11,7 +11,7 @@ authors = [
   { name = "Brian J. Parker", email = "Brian.Parker@anu.edu.au" },
   { name = "Jiayu Wen", email = "Jiayu.Wen@anu.edu.au" },
 ]
-description = "Bounded natural-language companion over qualified RNPLens tools (development)"
+description = "Optional, experimental natural-language companion over qualified RNPLens tools"
 requires-python = ">=3.10"
 # assistant/LICENSE is a byte-identical copy of the repository root LICENSE. setuptools resolves
 # license-files relative to the project root, which for this distribution is assistant/, not the

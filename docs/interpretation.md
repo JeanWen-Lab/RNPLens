@@ -53,3 +53,13 @@ experimental structure determination, or identify a universally best prediction 
 - **Groups holding the engine-designated structure are shown first.** This is for orientation only, so that you can
   find the structure the engine itself picked. It is not a priority or a ranking.
 - **"not observed".** A position that is not resolved in a structure. It is never counted as "no contact".
+
+## Quantities RNPLens keeps apart
+
+- structural accuracy (Evaluate) versus physical validity of the file (Diagnose `validity`);
+- RNA conformation versus RNA placement;
+- binding-surface agreement versus exact contact-register agreement;
+- reference-free agreement (Report, Diagnose) versus known accuracy (Evaluate);
+- available structural outputs versus scoreable outputs;
+- the native-informed diagnostics in the manuscript versus the deployable, reference-free tools in this repository.
+

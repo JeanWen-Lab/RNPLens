@@ -1,4 +1,4 @@
-# RNPLens Assistant (development, bounded companion)
+# RNPLens Assistant (optional, experimental)
 
 The assistant answers three kinds of question about **existing** predicted protein–RNA complexes:
 1. what the predictions agree on (binding surface and residue–nucleotide contacts);
@@ -10,6 +10,32 @@ qualified RNPLens functions, records every value, and writes the answer from tho
 
 **Not available in this version:** Diagnose, the four-axis geometry decomposition, ranking, grouping, structure
 prediction and mutation advice.
+
+## Status and limitations (read before use)
+
+The Assistant is a **separate, optional** package: installing RNPLens does not install it, and every scientific
+capability of RNPLens works without it. It is an **experimental research interface**, not a qualified component.
+Its package version, 0.1.0, marks a packaged release of the automatically tested implementation. It does not
+imply completed native security qualification or validation of live model calls.
+
+- **Native security qualification is incomplete** on both Linux and macOS. The historical macOS qualification of
+  an earlier commit does **not** certify the jail wrapper shipped here, which has since changed.
+- **Live model calls are not qualified.** Automated tests exercise the Codex route only through replay and paths
+  that make no model call.
+- **Credential and network isolation is not proven.** The confinement restricts what the model process can read
+  and reach, and the tests check that the toolkit's own output does not echo credential content. This release
+  nevertheless makes **no claim of complete isolation** of credentials or network traffic. Treat any sensitive
+  material on the same machine accordingly.
+- **Sending a question to a hosted model sends data to a third party.** Decide whether that is acceptable for your
+  data before you enable it.
+- **It plans and refuses; it does not extend the science.** It cannot make a blocked capability available.
+
+**Confinement.** The Assistant needs a working Codex CLI sign-in and a native confinement backend chosen by
+platform: **bubblewrap** on Linux, **Seatbelt** on macOS. It refuses to start a model process outside that
+confinement. It also refuses a Codex installed in a location that the installation-location rule rejects, such as
+a Homebrew prefix on macOS or a snap installation on Linux. That refusal is intended behaviour. See
+[docs/install_linux.md](../docs/install_linux.md), [docs/install_macos.md](../docs/install_macos.md) and
+[docs/setup_and_privacy.md](../docs/setup_and_privacy.md).
 
 ## Install (Linux)
 

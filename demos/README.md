@@ -1,5 +1,10 @@
 # RNPLens 0.4 demonstrations and clean-install checks
 
+> **Historical development record.** These scripts were written for, and run against, the development version
+> `0.4.0.dev0`. `lib/common.sh` checks that version, so the scripts refuse to run under the 0.4.0 release. They are
+> kept unchanged because the records in `records/v04_integration/` cite them. To try RNPLens, use the worked
+> examples in the [quick start](../docs/quickstart.md) instead.
+
 These scripts build self-contained demonstration packages over EXISTING predicted structures. They never predict
 structures, rank candidates, or treat recurrence among predictions as confidence or correctness. No script calls a
 language model. Rules were fixed in advance in `records/v04_integration/DEMOS_PLAN.md`; results are in

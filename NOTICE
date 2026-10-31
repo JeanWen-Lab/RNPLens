@@ -12,7 +12,7 @@ obliged to carry, and records the provenance and terms of the bundled data. It i
 factual record of what the files and their upstream licence texts state.
 
 RNPLens itself is covered by the MIT LICENSE at the repository root (Copyright (c) 2026
-The RNPLens authors), and rnplens-assistant by the byte-identical copy at
+The Wen Lab), and rnplens-assistant by the byte-identical copy at
 assistant/LICENSE. Attribution for first-party code rests entirely on those files: no
 source file in the repository carries a licence header or an SPDX-License-Identifier.
 

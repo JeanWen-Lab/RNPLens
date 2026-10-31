@@ -1,4 +1,4 @@
-# Setup, requirements and privacy (RNPLens 0.4 development)
+# Setup, requirements and privacy
 
 RNPLens analyses protein-RNA structures that were already predicted by other methods. It does not predict
 structures, it does not rank candidates, and agreement among predictions is never reported as confidence.
