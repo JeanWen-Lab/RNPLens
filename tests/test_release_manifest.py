@@ -28,14 +28,25 @@ def g(repo, *args):
 
 
 def can_build():
+    """The tool builds in-process with the interpreter's own setuptools; a wheel needs bdist_wheel, which setuptools
+    provides from 70.1 and older setuptools only together with the separate `wheel` package."""
     try:
         import setuptools.build_meta  # noqa: F401
+    except Exception:
+        return False
+    try:
+        from setuptools.command.bdist_wheel import bdist_wheel  # noqa: F401  (setuptools >= 70.1)
+        return True
+    except Exception:
+        pass
+    try:
+        import wheel.bdist_wheel  # noqa: F401
         return True
     except Exception:
         return False
 
 
-needs_build = pytest.mark.skipif(not can_build(), reason="setuptools.build_meta unavailable")
+needs_build = pytest.mark.skipif(not can_build(), reason="setuptools with bdist_wheel unavailable (install the test extra)")
 
 
 @pytest.fixture

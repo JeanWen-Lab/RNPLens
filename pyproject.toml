@@ -44,7 +44,7 @@ dependencies = [
 
 [project.optional-dependencies]
 html = ["matplotlib>=3.8"]   # only for the HTML page of RNPLens Report
-test = ["pytest", "jsonschema>=4.18"]
+test = ["pytest", "jsonschema>=4.18", "setuptools>=70.1"]   # setuptools: the release-manifest tests build wheels (bdist_wheel is built in from 70.1)
 
 [project.scripts]
 rnplens = "rnplens.cli:main"
