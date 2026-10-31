@@ -47,7 +47,7 @@ DockQ versions are refused by default.
 - **Assumptions.** The complex has one protein entity and one RNA entity (any copy number). The construct sequences
   are those used for the prediction.
 
-Evaluate's separate geometry route is not available in 0.4.0 (see [section 7](#7-scope-of-v040)).
+Evaluate's separate geometry route is not available in RNPLens 0.4 (see [section 7](#7-scope-of-rnplens-04)).
 `result.json` records its status as `BLOCKED`, and its value fields are empty. Details:
 [evaluate.md](evaluate.md), [INPUT_CONTRACT.md](INPUT_CONTRACT.md), [output_formats.md](output_formats.md).
 
@@ -147,18 +147,19 @@ it and without any language model. Its workflow:
   is not live-qualified. Its native confinement (bubblewrap on Linux, Seatbelt on macOS) is not security-qualified
   for this release.
 - **The earlier implementation.** The sealed-evaluation protocol in `assistant/evaluation/` concerns an earlier,
-  frozen assistant (`f998830`). Its development results and any evaluation of it do not qualify the released 0.1.0
+  frozen assistant (`f998830`). Its development results and any evaluation of it do not qualify the released 0.1.x
   implementation, and this repository reports no sealed-evaluation result.
 
 Requirements, privacy and the full limitations: [assistant/README.md](../assistant/README.md),
 [setup_and_privacy.md](setup_and_privacy.md), [model_and_privacy.md](model_and_privacy.md).
 
-## 7. Scope of v0.4.0
+## 7. Scope of RNPLens 0.4
 
-RNPLens v0.4.0 supports reference-based interface evaluation and reference-free structural comparison. Four-axis
-geometry assessment and Diagnose are not available in this release; their scientific qualification is ongoing.
+RNPLens 0.4 (releases 0.4.0 and 0.4.1) supports reference-based interface evaluation and reference-free structural
+comparison. Four-axis geometry assessment and Diagnose are not available in these releases; their scientific
+qualification is ongoing.
 
-### Not available in 0.4.0 (blocked in 0.4)
+### Not available in RNPLens 0.4 (blocked in 0.4)
 
 | Capability | Status and reason |
 |---|---|
@@ -188,10 +189,11 @@ DockQ route ran, and records the geometry status `BLOCKED` in its output.
 
 ## 8. Validation and reproducibility
 
-- **Tests of the 0.4.0 release**, run from a clean checkout on Linux x86-64:
-  - core test suite: 713 passed, 13 skipped;
+- **Tests of the 0.4.1 release**, run from a clean checkout on Linux x86-64:
+  - core test suite: 715 passed, 13 skipped;
   - `rnplens selftest`: PASS, with 213/213 Evaluate checks and 296 Report values reproduced;
-  - the Assistant's automated suite: 268 passed, 34 skipped.
+  - the Assistant's automated suite: 269 passed, 34 skipped.
+  - Continuous integration runs both suites on Linux and macOS with Python 3.10–3.12 (`.github/workflows/ci.yml`).
 
   These tests establish that the software reproduces its frozen reference values and behaves as specified. They do
   not, by themselves, establish the scientific accuracy of predictions or the security of the Assistant.
@@ -218,7 +220,7 @@ repository ([paper_reproducibility.md](paper_reproducibility.md)). Details: [rep
 ## 9. Further documentation
 
 - [Which analysis should I use?](which_analysis_should_i_use.md). This guide is also the Assistant's frozen
-  reference text, and it still describes Diagnose, which is not available in 0.4.0.
+  reference text, and it still describes Diagnose, which is not available in RNPLens 0.4.
 - [Quick start](quickstart.md) · [Interpretation](interpretation.md) · [Limitations](limitations.md)
 - [Release status](release_conditions.md) · [Documentation index](README.md)
 - Development and qualification records: `records/` ([index](../records/README.md))

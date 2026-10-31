@@ -1,11 +1,11 @@
-# Release status (RNPLens 0.4.0)
+# Release status (RNPLens 0.4)
 
 What is established for this source tree, and which qualifications have not been performed. Nothing here claims
 a qualification, approval or publication that has not happened.
 
 | item | status |
 |---|---|
-| Public release | RNPLens 0.4.0 and RNPLens Assistant 0.1.0, Git tag `v0.4.0` (commit `859d0c09cd11f03166a3a2fceac1edc073cb29f7`), public on GitHub since 2026-10-31 |
+| Public releases | 0.4.0 (with RNPLens Assistant 0.1.0): Git tag `v0.4.0`, commit `859d0c09cd11f03166a3a2fceac1edc073cb29f7`, public on GitHub since 2026-10-31. 0.4.1 (with Assistant 0.1.1): this version; corrections to documentation, continuous integration and tests; no computation changed |
 | Software DOI | none issued |
 | Licence | MIT for the core toolkit and the optional Assistant ([LICENSE](../LICENSE), `assistant/LICENSE`); copyright: The RNPLens authors |
 | Authorship and affiliations | recorded in `CITATION.cff` and both `pyproject.toml` files; ORCIDs are not recorded |

@@ -5,7 +5,7 @@
 - CPython **3.10, 3.11 or 3.12** (3.13 is not supported: the pinned numpy 1.26.4 and scipy 1.13.1 have no 3.13 wheels).
 - Linux (x86-64) or macOS (arm64). Release candidate 0.2.0rc3 was qualified on both (Linux as the bit-identical
   reference platform, macOS with the portable profile; see [reproducibility.md](reproducibility.md)). For RNPLens
-  0.4.0, **Linux x86-64 is the tested interactive environment**. On macOS arm64 the toolkit runs.
+  0.4, **Linux x86-64 is the tested interactive environment**. On macOS arm64 the toolkit runs.
   Its one known numerical parity difference (3.9 × 10⁻¹⁵ Å in one unrounded RNA pose difference, from a different
   OpenBLAS build of LAPACK `dgesdd`; `records/release/MACOS_NUMERICAL_DIFFERENCE.md`) is covered by an approved,
   narrowly scoped tolerance of 10⁻¹² Å on that single value (`records/release/TOLERANCE_POLICY_AMENDMENT_1.md`);

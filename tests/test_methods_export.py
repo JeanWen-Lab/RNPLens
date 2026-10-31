@@ -112,7 +112,7 @@ def test_refuses_a_directory_that_is_not_an_analysis(tmp_path, capsys):
 def test_text_covers_the_required_topics(ws):
     md = M.build(ws["A"], None, [ws["run"]])[0]
     for phrase in ("A total of 2 predicted structures", "engine-designated structure was identified by the rule",
-                   "SHA-256", "RNPLens 0.4.0", "a contact was defined as a protein residue and RNA nucleotide",
+                   "SHA-256", "RNPLens 0.4.1", "a contact was defined as a protein residue and RNA nucleotide",
                    "no agreement score was computed", "recorded as absent only where", "not observed",
                    "No experimental reference structure was supplied", "reference-free and descriptive",
                    "question-driven assistant", "DRAFT FOR AUTHOR REVIEW"):
@@ -167,7 +167,7 @@ def test_provenance_manifest(ws):
     assert not any(f.startswith("methods/") for f in outs)
     assert any("report run" in " ".join(c["command"]) if isinstance(c["command"], list) else "report run" in c["command"]
                for c in pm["commands"])
-    assert pm["versions"]["rnplens_analysis"] == "0.4.0"
+    assert pm["versions"]["rnplens_analysis"] == "0.4.1"
 
 
 def test_llm_free_and_offline(ws, monkeypatch):

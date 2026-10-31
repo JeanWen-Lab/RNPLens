@@ -1,4 +1,4 @@
-# RNPLens Diagnose — validity and candidate disagreement (not available in 0.4.0)
+# RNPLens Diagnose — validity and candidate disagreement (not available in RNPLens 0.4)
 
 Diagnose looks at candidate structures without any experimental reference. It answers two questions: are these
 outputs usable structures at all, and how much do the candidates disagree with each other?
@@ -167,7 +167,7 @@ recognised, ignoring case, spaces, `-` and `_` (so `Boltz-2` counts as `BOLTZ2`)
 In 0.2.0rc3, exit status 1 meant that Diagnose refused the run (outside the validated domain, too few valid
 structures, an existing report). In RNPLens 0.4 every Diagnose command exits with 5 (`DIAGNOSE_BLOCKED`).
 
-## Reference: 0.2.0rc3 command examples (refused in 0.4.0)
+## Reference: 0.2.0rc3 command examples (refused in RNPLens 0.4)
 
 Diagnose is blocked in the public 0.4 interface until it is re-qualified ([diagnose.md](diagnose.md)). The commands
 below refuse with `DIAGNOSE_BLOCKED` and exit code 5, and write nothing. What follows them describes the rc3 tool,

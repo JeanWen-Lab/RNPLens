@@ -12,7 +12,7 @@
 <p align="center">
   <img alt="Python 3.10–3.12" src="https://img.shields.io/badge/python-3.10%E2%80%933.12-blue">
   <img alt="Licence: MIT" src="https://img.shields.io/badge/license-MIT-green">
-  <img alt="Release 0.4.0" src="https://img.shields.io/badge/release-0.4.0-informational">
+  <img alt="Release 0.4.1" src="https://img.shields.io/badge/release-0.4.1-informational">
 </p>
 
 ## Overview
@@ -116,7 +116,7 @@ Read the [Assistant README](assistant/README.md) and [Setup and privacy](docs/se
 
 ## Scope of this release
 
-RNPLens v0.4.0 supports reference-based interface evaluation and reference-free structural comparison.
+RNPLens v0.4.1 supports reference-based interface evaluation and reference-free structural comparison.
 Four-axis geometry assessment and Diagnose are not available in this release; their scientific qualification is
 ongoing. See [Limitations](docs/limitations.md) for details.
 

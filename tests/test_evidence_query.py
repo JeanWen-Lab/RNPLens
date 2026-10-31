@@ -126,7 +126,7 @@ def test_counts_equal_the_records(ws):
 def test_versions_and_commands(ws):
     doc = EQ.build([ws["A"]], None, [ws["run"]], query="versions")
     txt = EQ.render_text(doc)
-    assert "0.4.0" in txt and "rnplens report run" in txt and "assistant 0.1.0" in txt
+    assert "0.4.1" in txt and "rnplens report run" in txt and "assistant 0.1.1" in txt
 
 
 def test_unavailable_metrics_and_why(ws):

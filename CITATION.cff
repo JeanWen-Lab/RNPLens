@@ -4,8 +4,8 @@ message: >-
   it is published.
 title: "RNPLens: evaluation and diagnostic tools for protein-RNA complex predictions"
 type: software
-version: 0.4.0
-date-released: 2026-10-30
+version: 0.4.1
+date-released: 2026-11-01
 license: MIT
 repository-code: "https://github.com/JeanWen-Lab/RNPLens"
 authors:
@@ -22,7 +22,7 @@ abstract: >-
   (Evaluate), reference-free descriptive agreement and contacts among predictions (Report, region, grouping, an
   offline Mol* viewer) and evidence-traced explanations and Methods records, through explicit commands or an optional
   AI-guided assistant (experimental). It does not predict structures and gives no calibrated probability of
-  correctness. In 0.4.0, Evaluate's four-axis geometry route and the user-facing Diagnose workflow are not available.
+  correctness. In RNPLens 0.4, Evaluate's four-axis geometry route and the user-facing Diagnose workflow are not available.
 keywords:
   - protein-RNA complex
   - structure prediction

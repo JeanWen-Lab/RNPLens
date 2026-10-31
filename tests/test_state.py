@@ -29,7 +29,7 @@ def test_commit_versions_are_immutable_snapshots_with_hash_chain(tmp_path):
     h = P.head()
     assert h["a"] == 1 and h["b"] == 2 and h["parent"] == "v0001" and h["version"] == "v0002"
     assert h["parent_sha256"] == pv.sha256_file(os.path.join(P.state_dir, "v0001.json"))
-    assert h["tool_version"] == S.tool_version() == "0.4.0"
+    assert h["tool_version"] == S.tool_version() == "0.4.1"
     assert [v["version"] for v in P.versions()] == ["v0001", "v0002"]
     assert P.load("v0001")["a"] == 1 and "b" not in P.load("v0001")
     for v in ("v0001", "v0002"):

@@ -77,7 +77,7 @@ Write each to a FASTA file (or pass the string) with `--protein-seq` and `--rna-
 ## Exit status
 
 The exit codes of the public commands, including code 5 for a blocked capability, are listed in
-[capabilities.md](capabilities.md#7-scope-of-v040).
+[capabilities.md](capabilities.md#7-scope-of-rnplens-04).
 
 Nothing is written when a run is refused.
 

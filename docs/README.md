@@ -7,7 +7,7 @@
 - [Quick start](quickstart.md): the two worked examples, their outputs and how to read them
 
 ## Reference-based evaluation
-- [Evaluate](evaluate.md): the DockQ route (the four-axis geometry route is not available in 0.4.0)
+- [Evaluate](evaluate.md): the DockQ route (the four-axis geometry route is not available in RNPLens 0.4)
 - [Evaluate input contract](INPUT_CONTRACT.md)
 - [Output formats](output_formats.md) and [output schemas](schemas/)
 
@@ -18,7 +18,7 @@
 - [Binding-proposal grouping](grouping.md)
 - [Evidence lookup and Methods export](evidence_and_methods.md)
 - [Managed projects: update, clarify, relink](project_state.md)
-- [Diagnose](diagnose.md) (not available in 0.4.0; qualification ongoing)
+- [Diagnose](diagnose.md) (not available in RNPLens 0.4; qualification ongoing)
 
 ## Viewer and question menu
 - [Viewer guide and nucleotide contact explorer](viewer.md)
@@ -34,7 +34,7 @@
 ## Interpreting results
 - [Interpretation](interpretation.md)
 - [Limitations](limitations.md)
-- [Capabilities](capabilities.md): what each command does, how to interpret it, and the scope of 0.4.0
+- [Capabilities](capabilities.md): what each command does, how to interpret it, and the scope of RNPLens 0.4
 
 ## Reproducibility, provenance and release
 - [Reproducibility](reproducibility.md)

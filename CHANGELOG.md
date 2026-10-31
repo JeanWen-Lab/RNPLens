@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.4.1 — 2026-11-01 (RNPLens Assistant 0.1.1)
+
+No computation of Evaluate, Report or Diagnose changed, and no frozen file or record changed.
+
+- **Continuous integration repaired.** Every run since the first public commit failed while collecting tests,
+  because two core tests import the Assistant and the workflow did not install it. The workflow now:
+  - installs the documented full configuration;
+  - runs the core and Assistant suites on Linux and macOS with Python 3.10–3.12, with bubblewrap enabled on Linux
+    so that the confinement tests run instead of skipping;
+  - adds a core-only job that runs without the Assistant;
+  - reports each runner's CPU and OpenBLAS kernel, and annotates failing tests.
+- **Platform-dependent tests corrected.**
+  - Bit-exact assertions now apply only where an OpenBLAS kernel verified to reproduce the reference values is in
+    use (Cooperlake, SkylakeX). With the AVX2 kernels the values differ in trailing digits, within the portable
+    profile (`records/release/BLAS_KERNEL_NUMERICAL_DIFFERENCE.md`).
+  - The release-manifest build tests now declare their setuptools requirement in the `test` extra.
+- **Documentation.**
+  - `docs/capabilities.md` is a reader-oriented capabilities guide.
+  - The user guide (`docs/which_analysis_should_i_use.md`) offers only available analyses. Its Diagnose material
+    moved to `docs/diagnose.md`; the Assistant's packaged, evaluated guide is unchanged.
+  - The quick start keeps runnable examples only.
+  - Release status, viewer verification and Assistant evidence are stated consistently, and the Assistant's
+    evidence is separated by implementation.
+  - `docs/paper_reproducibility.md` maps the study's results to their implementations.
+  - `SECURITY.md` lists the supported versions.
+  - The historical expected outputs are labelled.
+
 ## 0.4.0 — 2026-10-30 (first public release; RNPLens Assistant 0.1.0)
 
 - First public source release of the RNPLens toolkit (`rnplens 0.4.0`) and the optional, experimental RNPLens

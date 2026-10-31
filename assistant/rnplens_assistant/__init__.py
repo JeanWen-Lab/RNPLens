@@ -6,4 +6,4 @@ path allowlist, records every measurement in an evidence store, renders every nu
 draft before an answer is accepted. Diagnose and Evaluate's four-axis geometry route are not available in this
 version.
 """
-__version__ = "0.1.0"
+__version__ = "0.1.1"

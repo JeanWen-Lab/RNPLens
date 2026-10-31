@@ -5,7 +5,7 @@ apart on purpose.
 
 | | what it lets a reader do | where |
 |---|---|---|
-| **The software (this repository)** | run Evaluate's DockQ route, Report and the analysis workflows on their own predicted complexes; reproduce the bundled examples and regression references exactly | this repository, release `v0.4.0` (no DOI issued) |
+| **The software (this repository)** | run Evaluate's DockQ route, Report and the analysis workflows on their own predicted complexes; reproduce the bundled examples and regression references exactly | this repository, releases `v0.4.0` and `v0.4.1` (no DOI issued) |
 | **The study's evidence** | reproduce the study's numbers, figures and tables | a separate research-data archive, not part of this repository |
 
 ## Map from the study to software and data
@@ -37,7 +37,7 @@ checked.
 - The benchmark itself: its 1,442 complexes, family-disjoint partitions, the predictions of the engines compared in the study and the score
   stores.
 - The study's benchmark analyses, statistics, figures and tables, including measurements that use the four-axis
-  geometry route or Diagnose, which are not available in 0.4.0, and the frozen protocols that governed them, apart
+  geometry route or Diagnose, which are not available in RNPLens 0.4, and the frozen protocols that governed them, apart
   from the validation records in [validation/](validation/) that define Diagnose's statements.
 - Predictions of any engine other than the Boltz-2 examples listed in `examples/DATA_PROVENANCE.tsv`.
 
@@ -57,7 +57,8 @@ identifier will be added here when the archive exists.
 
 ## How the two are linked
 
-The study uses RNPLens 0.4.0 (Git tag `v0.4.0`). No DOI has been issued for the software. The research-data archive
+The software release that accompanies the study is RNPLens 0.4 (Git tags `v0.4.0` and `v0.4.1`). No DOI has been
+issued for the software. The research-data archive
 will be linked here when it exists; until then this page records the separation only.
 
 ## In brief

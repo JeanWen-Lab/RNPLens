@@ -79,6 +79,18 @@ jobs:
       - name: End-to-end examples
         if: success() || failure()
         run: bash examples/run_examples.sh "$RUNNER_TEMP/rnplens_examples"
+      - name: Test counts
+        if: always()
+        run: |
+          python - <<'PY'
+          import glob, os, xml.etree.ElementTree as ET
+          for path in sorted(glob.glob(os.path.join(os.environ["RUNNER_TEMP"], "junit-*.xml"))):
+              root = ET.parse(path).getroot()
+              s = root if root.tag == "testsuite" else root.find("testsuite")
+              t, f, e, k = (int(s.get(x, 0)) for x in ("tests", "failures", "errors", "skipped"))
+              suite = os.path.basename(path)[len("junit-"):-len(".xml")]
+              print("::notice title=%s tests::%d passed, %d skipped, %d failed, %d errors" % (suite, t - f - e - k, k, f, e))
+          PY
       - name: Report failing tests as annotations
         if: failure()
         run: |

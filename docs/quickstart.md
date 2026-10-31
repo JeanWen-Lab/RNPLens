@@ -54,15 +54,15 @@ agreement 0.894 and RNA pose difference 0.957 Å. Cross-engine fields are `null`
 `summary.SEMANTICS` states: "agreement is descriptive evidence about convergence of predicted interface hypotheses;
 it is not a probability of structural correctness".
 
-## 3. Diagnose (not available in 0.4.0)
+## 3. Diagnose (not available in RNPLens 0.4)
 
 Diagnose is not available in this release. Its commands refuse with `DIAGNOSE_BLOCKED` and exit code 5, and write
 nothing; `examples/run_examples.sh` records this refusal. The 0.2.0rc3 command examples are kept for reference in
-[diagnose.md](diagnose.md#reference-020rc3-command-examples-refused-in-040).
+[diagnose.md](diagnose.md#reference-020rc3-command-examples-refused-in-rnplens-04).
 
 ## Reading the Evaluate summary
 
-`summary.txt` for the 7K9D example (RNPLens 0.4.0):
+`summary.txt` for the 7K9D example (RNPLens 0.4):
 
 ```text
 DockQ (frozen RNPLens scoring configuration, construct-position correspondence)

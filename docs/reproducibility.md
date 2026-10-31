@@ -4,7 +4,7 @@
 
 | item | identifier |
 |---|---|
-| RNPLens release | `0.4.0` (distribution `rnplens`; optional `rnplens-assistant` 0.1.0) |
+| RNPLens release | `0.4.1` (distribution `rnplens`; optional `rnplens-assistant` 0.1.1); first public release `0.4.0` |
 | qualified component set | `0.2.0.dev1` (internally qualified 2026-10-10 under the internal identifier "RNPBench toolkit"; never released) |
 | components inside it | `rnpbench_core` 0.2.0.dev1, `rnpbench_evaluate` 0.2.0.dev1 (contract `RNPBENCH_EVALUATE_INPUT_V1`, scoring configuration `RNPBENCH_SCORING_V3_CONSTRUCT_POSITION_DOCKQ_2_1_3`), `rnpbench_report` (analysis `rnpbench-predict-1.0.0`, contract `rnpbench-predict-contract-1`), `rnpbench_diagnose` 0.2.1 |
 | manuscript evidence build | a separate identifier of the study's frozen evidence; it is **not** a software version and is not changed by any software release |
@@ -12,16 +12,18 @@
 `rnplens provenance` prints all of these together with the dependency versions and the SHA-256 of each of the
 eight frozen scorer files, which the code verifies at run time.
 
-## Validation of release 0.4.0
+## Validation of release 0.4.1
 
 The tests below were run on Linux x86-64 with CPython 3.11, from a clean checkout of the release source:
 
-- the core test suite: 713 passed and 13 skipped;
+- the core test suite: 715 passed and 13 skipped;
 - `rnplens selftest`: PASS, reproducing the project's reference values (213/213 Evaluate checks and 296 Report
   values);
 - the worked examples: they reproduce the documented values;
-- the optional Assistant's automated suite: 268 passed and 34 skipped; the skipped tests are macOS-only or opt-in;
-- the built wheels and sdists: they install into fresh environments and pass the same self-test.
+- the optional Assistant's automated suite: 269 passed and 34 skipped; the skipped tests are macOS-only or opt-in;
+- the built wheels and sdists: they install into fresh environments and pass the same self-test;
+- continuous integration (`.github/workflows/ci.yml`): both suites on Linux and macOS with Python 3.10–3.12, and a
+  core-only installation without the Assistant.
 
 Platforms:
 

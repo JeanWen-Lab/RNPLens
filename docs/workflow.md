@@ -130,7 +130,7 @@ record, and every command is logged in `commands.log`:
    shown as "measured, not interpreted".
 6. **Evaluate** (with `--reference`): DockQ, its class, fnat, iRMSD and LRMSD per structure, with the run, sample
    and whether the engine designated it. **The four-axis geometry values (protein-internal, RNA-internal and RNA
-   placement RMSD) are withheld in RNPLens 0.4.0**: their residue correspondence has a known defect
+   placement RMSD) are withheld in RNPLens 0.4**: their residue correspondence has a known defect
    (a residue-correspondence defect found on 2026-10-14; see [limitations.md](limitations.md)) and the corrected implementation is not yet qualified here. iRMSD and LRMSD are DockQ's
    own quantities and are not a substitute for the RNA conformation/placement decomposition.
 7. **What the summary does not establish.**
@@ -158,7 +158,7 @@ rnplens compare --before BEFORE.tsv --after AFTER.tsv --references REFS.tsv --ou
 
 **What runs.** Each prediction is evaluated by the unchanged Evaluate. Every target and metric (DockQ, fnat,
 iRMSD and LRMSD, all from the DockQ route) is placed in exactly one class. The geometry route is not compared in
-RNPLens 0.4.0 (see section 2, item 6).
+RNPLens 0.4 (see section 2, item 6).
 
 | class | meaning |
 |---|---|

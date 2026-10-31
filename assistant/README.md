@@ -29,7 +29,7 @@ qualification.
 
 The Assistant is a **separate, optional** package: installing RNPLens does not install it, and every scientific
 capability of RNPLens works without it. It is an **experimental research interface**, not a qualified component.
-Its package version, 0.1.0, marks a packaged release of the automatically tested implementation. It does not
+Its package version, 0.1.x, marks a packaged release of the automatically tested implementation. It does not
 imply completed native security qualification or validation of live model calls.
 
 - **Native security qualification is incomplete** on both Linux and macOS. The historical macOS qualification of
@@ -45,13 +45,13 @@ imply completed native security qualification or validation of live model calls.
 - **It plans and refuses; it does not extend the science.** It cannot make a blocked capability available.
 
 **Evaluation evidence, by implementation.**
-- **Released implementation (`rnplens-assistant` 0.1.0).** Its automated suite (268 passed, 34 skipped on Linux)
+- **Released implementation (`rnplens-assistant` 0.1.1).** Its automated suite (269 passed, 34 skipped on Linux)
   uses a scripted stand-in for Codex, replay, and paths that make no model call. The scripted part of the follow-up
   suite passed 21 of 21 (`evaluation_v04/FOLLOWUP_SUITE_v1_results/`). The live part has not run, and the live
   qualification (`evaluation_v04/LIVE_QUALIFICATION_v1/`) is prepared but not run: no live model call has been made
   for RNPLens 0.4.
 - **Earlier frozen assistant (`f998830`).** The development runs and the sealed-evaluation protocol in
-  `evaluation/` concern this earlier implementation. They do not qualify the released 0.1.0 implementation, and no
+  `evaluation/` concern this earlier implementation. They do not qualify the released 0.1.x implementation, and no
   sealed-evaluation result is reported in this repository.
 
 **Confinement.** The Assistant needs a working Codex CLI sign-in and a native confinement backend chosen by

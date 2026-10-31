@@ -5,8 +5,8 @@ repository https://github.com/JeanWen-Lab/RNPLens under the MIT licence (Copyrig
 
 | item | value |
 |---|---|
-| Version | RNPLens 0.4.0 (Git tag `v0.4.0`); optional RNPLens Assistant 0.1.0 |
-| Source commit | the commit that the tag `v0.4.0` identifies (`git rev-parse v0.4.0^{commit}`) |
+| Version | RNPLens 0.4.1 (Git tag `v0.4.1`; the first public release was 0.4.0, tag `v0.4.0`); optional RNPLens Assistant 0.1.1 |
+| Source commit | the commit that the tag `v0.4.1` identifies (`git rev-parse v0.4.1^{commit}`) |
 | Platforms | Linux x86-64 and macOS arm64, CPython 3.10–3.12; no GPU, web server or language-model account is needed |
 | Optional Assistant | experimental; runs with the user's own Codex (ChatGPT) sign-in and makes no call to a separately billed API |
 | Archive and DOI | none issued yet |

@@ -2,7 +2,7 @@ RNPLens 0.4 — NOTICE
 ====================
 
 This file travels with the two rnplens artefacts: it is named in pyproject's
-license-files, so the wheel carries it as rnplens-0.4.0.dist-info/licenses/NOTICE,
+license-files, so the wheel carries it as rnplens-0.4.1.dist-info/licenses/NOTICE,
 and in MANIFEST.in, so the sdist carries it at the archive root. It is not shipped with
 rnplens-assistant, which bundles no third-party code; Part 0 states, entry by entry, which
 licence obliges a notice to travel.
@@ -17,8 +17,8 @@ assistant/LICENSE. Attribution for first-party code rests entirely on those file
 source file in the repository carries a licence header or an SPDX-License-Identifier.
 
 Two distributions are built from this tree:
-  * rnplens 0.4.0                 — wheel and sdist
-  * rnplens-assistant 0.1.0       — wheel and sdist
+  * rnplens 0.4.1                 — wheel and sdist
+  * rnplens-assistant 0.1.1       — wheel and sdist
 Membership statements below were verified by full member listing of the built artefacts.
 
 
@@ -205,7 +205,7 @@ the project it was adapted from.
   notice to be retained in redistributions. The notices do travel inside molstar.js, which
   RNPLens ships byte-identically, and this file lists them in one place.
   Status: MET, by this file travelling in both rnplens artefacts
-  (rnplens-0.4.0.dist-info/licenses/NOTICE in the wheel, NOTICE at the root of the
+  (rnplens-0.4.1.dist-info/licenses/NOTICE in the wheel, NOTICE at the root of the
   sdist). Verified by member listing of the built artefacts.
 
 
