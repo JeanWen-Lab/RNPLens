@@ -128,7 +128,7 @@ Software metadata are in [CITATION.cff](CITATION.cff). No DOI has yet been issue
 
 ## Licence and data terms
 
-**MIT License — Copyright © 2026 The Wen Lab.** The licence covers the RNPLens source code: the core toolkit and
+**MIT License — Copyright © 2026 The RNPLens authors.** The licence covers the RNPLens source code: the core toolkit and
 the optional Assistant ([LICENSE](LICENSE), [assistant/LICENSE](assistant/LICENSE)).
 
 Research data and third-party components keep their own terms, which are recorded in [NOTICE](NOTICE) and

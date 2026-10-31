@@ -1,7 +1,7 @@
 # Code availability
 
 The RNPLens source code, documentation, tests, bundled example data and reproducibility records are in the GitHub
-repository https://github.com/JeanWen-Lab/RNPLens under the MIT licence (Copyright (c) 2026 The Wen Lab).
+repository https://github.com/JeanWen-Lab/RNPLens under the MIT licence (Copyright (c) 2026 The RNPLens authors).
 
 | item | value |
 |---|---|

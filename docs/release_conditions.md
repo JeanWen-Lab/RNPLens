@@ -5,7 +5,7 @@ a qualification, approval or publication that has not happened.
 
 | item | status |
 |---|---|
-| Licence | MIT for the core toolkit and the optional Assistant ([LICENSE](../LICENSE), `assistant/LICENSE`); copyright: The Wen Lab |
+| Licence | MIT for the core toolkit and the optional Assistant ([LICENSE](../LICENSE), `assistant/LICENSE`); copyright: The RNPLens authors |
 | Authorship and affiliations | recorded in `CITATION.cff` and both `pyproject.toml` files; ORCIDs are not recorded |
 | Bundled data | origin, terms, checksum and attribution of every bundled data file in [examples/DATA_PROVENANCE.tsv](../examples/DATA_PROVENANCE.tsv); summary in [example_data_provenance.md](example_data_provenance.md) |
 | Live qualification of the Assistant | not performed: no live Codex call has been qualified for RNPLens 0.4 |

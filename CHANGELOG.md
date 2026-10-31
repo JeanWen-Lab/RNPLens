@@ -12,10 +12,9 @@
   institutional-IP condition.
 - The Assistant's package version 0.1.0 does not imply completed native security qualification or validation of
   live model calls.
-- Copyright holder of the first-party code: The Wen Lab (MIT licence text unchanged). The README was rewritten as
-  a concise overview; detailed material moved to `docs/` (quick start, interpretation, reproducibility, example
-  data provenance, Assistant README), with a new documentation index (`docs/README.md`) and signposts for the
-  development records (`records/`, `demos/`, `qualification_v04/`).
+- The README was rewritten as a concise overview. Detailed material moved to `docs/` (quick start, interpretation,
+  reproducibility, example data provenance, Assistant README), with a new documentation index (`docs/README.md`)
+  and signposts for the development records (`records/`, `demos/`, `qualification_v04/`).
 
 ## 0.4.0.dev0 — interactive workflow (branch `dev/0.4-interactive`; not merged, not released)
 
