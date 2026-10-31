@@ -17,6 +17,8 @@ import sys
 
 import pytest
 
+import _blas
+
 from rnplens import geometry_block as GB
 from rnplens import importer
 
@@ -145,7 +147,7 @@ def test_dockq_family_is_unchanged(public_run):
           "n_admissible_candidates", "n_interfaces", "pairs_in_frame", "pairs_out_of_frame", "pairs_indeterminate")
     assert [{k: x[k] for k in dq} for x in pc] == [{k: x[k] for k in dq} for x in rc]
     # against the rc3 expected outputs: rounded values, class, mapping and counts exact; unrounded values within the
-    # frozen portable profile (bit-exact on the Linux x86-64 reference platform)
+    # frozen portable profile (bit-exact where a reference OpenBLAS kernel is in use; tests/_blas.py)
     e, g = RC3["dockq"], pub["dockq"]
     for k in ("status", "dockq", "dockq_class", "selected_mapping"):
         assert g.get(k) == e.get(k), k
@@ -155,7 +157,7 @@ def test_dockq_family_is_unchanged(public_run):
         for k, tol in (("iRMSD", 1e-5), ("LRMSD", 1e-5), ("DockQ", 1e-7)):
             assert abs(y[k] - x[k]) <= tol, (iface, k)
     assert abs(g["dockq_unrounded"] - e["dockq_unrounded"]) <= 1e-7
-    if platform.system() == "Linux" and platform.machine() == "x86_64":
+    if _blas.bit_exact_expected():
         assert g == e
     s = open(t / "pub" / "summary.txt").read()
     assert "DockQ 0.936  [high]   fnat 0.927   iRMSD 0.434 A   LRMSD 1.780 A" in s

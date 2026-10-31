@@ -25,7 +25,11 @@ The tests below were run on Linux x86-64 with CPython 3.11, from a clean checkou
 
 Platforms:
 
-- **Linux x86-64** is the reference platform that produced the frozen numerical values.
+- **Linux x86-64** is the reference platform that produced the frozen numerical values (OpenBLAS kernel
+  Cooperlake). Bit-exact reproduction is established for the Cooperlake and SkylakeX kernels. With the AVX2 kernels
+  (Haswell, Zen), unrounded DockQ-route values differ by up to 3.9 × 10⁻⁶ Å, within the portable profile, and every
+  rounded value, status, class and count is identical
+  ([records/release/BLAS_KERNEL_NUMERICAL_DIFFERENCE.md](../records/release/BLAS_KERNEL_NUMERICAL_DIFFERENCE.md)).
 - **macOS arm64:** the toolkit reproduces every status, class, count and rounded value. A single trailing-digit
   parity difference is covered by a narrowly scoped tolerance
   ([records/release/TOLERANCE_POLICY_AMENDMENT_1.md](../records/release/TOLERANCE_POLICY_AMENDMENT_1.md)). The

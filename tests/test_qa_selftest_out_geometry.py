@@ -9,6 +9,8 @@ import re
 import subprocess
 import sys
 
+import _blas
+
 COMPONENT = "import sys; from rnpbench import cli; sys.exit(cli.main(sys.argv[1:]))"
 VALUE_KEYS = ("prot_internal_ca_rmsd", "rna_internal_c4_rmsd", "rna_placement_c4_rmsd")
 COUNT_KEYS = ("n_prot_aligned", "n_prot_native", "n_prot_pose", "n_rna_aligned", "n_rna_native", "n_rna_pose")
@@ -40,11 +42,15 @@ def test_evaluate_selftest_out_writes_no_geometry_value(tmp_path):
     r = subprocess.run([sys.executable, "-m", "rnplens", "evaluate", "selftest", "--out", str(pub)], capture_output=True, text=True,
                        env=dict(os.environ, MPLBACKEND="Agg"))
     c = subprocess.run([sys.executable, "-c", COMPONENT, "evaluate", "selftest", "--out", str(raw)], capture_output=True, text=True)
-    # the wrapper keeps the frozen self-test's exit code; with the bit-exact reference profile that code is 0 on the
-    # qualified Linux platform and 3 on macOS (pre-existing last-digit DockQ deviation, records/release/MACOS_NUMERICAL_DIFFERENCE.md)
+    # the wrapper keeps the frozen self-test's exit code. With the bit-exact reference profile that code is 0 where a
+    # reference OpenBLAS kernel is in use, and 3 elsewhere: a last-digit DockQ-family deviation on macOS
+    # (records/release/MACOS_NUMERICAL_DIFFERENCE.md) or with the AVX2 kernels on Linux
+    # (records/release/BLAS_KERNEL_NUMERICAL_DIFFERENCE.md); the portable profile passes in both cases.
     assert r.returncode == c.returncode
-    if sys.platform.startswith("linux"):
+    if _blas.bit_exact_expected():
         assert r.returncode == 0
+    else:
+        assert r.returncode in (0, 3)
     assert _leaks(str(raw)), "positive control: the frozen component's own --out holds geometry values"
     assert _leaks(str(pub)) == []
     assert str(tmp_path / "pub") not in r.stdout or "rnplens_selftest_private_" not in r.stdout

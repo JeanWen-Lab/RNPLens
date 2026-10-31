@@ -92,7 +92,9 @@ uses the frozen **portable** numerical profile: unrounded floating-point values 
 in their last digits (on macOS arm64 the observed differences were up to a few × 10⁻⁶ Å, in LRMSD values, against
 a frozen tolerance of 10⁻⁵ Å), and every rounded value, class, count and label must match exactly. The line
 `all checks bit-exact: False` is then expected and is not a failure; the verdict is the final `PASS`/`FAIL`. `--profile reference` demands
-bit-identical values and is meaningful only on the reference platform.
+bit-identical values and is meaningful only on the reference platform: Linux x86-64 with the OpenBLAS kernel
+Cooperlake or SkylakeX. Other Linux x86-64 CPUs (AVX2 kernels) differ in trailing digits within the portable profile
+(`records/release/BLAS_KERNEL_NUMERICAL_DIFFERENCE.md`).
 
 ## Commands installed
 

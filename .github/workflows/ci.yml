@@ -36,6 +36,21 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install ".[html,test]" ./assistant
+      - name: Select a reference OpenBLAS kernel where the CPU allows it (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          # The frozen reference values are reproduced bit for bit by the Cooperlake and SkylakeX kernels; AVX2 kernels
+          # (Haswell, Zen) differ in trailing digits within the portable profile
+          # (records/release/BLAS_KERNEL_NUMERICAL_DIFFERENCE.md). On AVX-512 runners, select SkylakeX so that the
+          # bit-exact checks run; elsewhere the tests apply the portable profile.
+          if grep -q avx512f /proc/cpuinfo; then echo "OPENBLAS_CORETYPE=SkylakeX" >> "$GITHUB_ENV"; fi
+      - name: Platform record
+        shell: bash
+        run: |
+          cpu=$( (grep -m1 "model name" /proc/cpuinfo 2>/dev/null || sysctl -n machdep.cpu.brand_string) | sed 's/.*: //')
+          core=$(python -c "import sys; sys.path.insert(0, 'tests'); import _blas; print(_blas.openblas_core())")
+          exact=$(python -c "import sys; sys.path.insert(0, 'tests'); import _blas; print(_blas.bit_exact_expected())")
+          echo "::notice title=Platform::$(uname -sm) | CPU: $cpu | OpenBLAS kernel: $core | bit-exact reference expected: $exact"
       - name: CLI smoke tests
         run: |
           rnplens --version
@@ -46,8 +61,17 @@ jobs:
           rnplens provenance > /dev/null
           python -m rnplens_assistant --help
       - name: Numerical regression (portable profile)
-        run: rnplens selftest --profile portable
+        shell: bash
+        run: |
+          set +e
+          rnplens selftest --profile portable > "$RUNNER_TEMP/selftest.txt" 2>&1; rc=$?
+          cat "$RUNNER_TEMP/selftest.txt"
+          if [ $rc -ne 0 ]; then
+            grep -E "FAIL|deviation" "$RUNNER_TEMP/selftest.txt" | head -20 | while read -r l; do echo "::error title=selftest::$l"; done
+          fi
+          exit $rc
       - name: Core test suite
+        if: success() || failure()
         run: python -m pytest -q -rs --junitxml="$RUNNER_TEMP/junit-core.xml"
       - name: Assistant test suite
         if: success() || failure()
@@ -64,8 +88,10 @@ jobs:
               for case in ET.parse(path).getroot().iter("testcase"):
                   for bad in list(case.findall("failure")) + list(case.findall("error")):
                       name = "%s::%s" % (case.get("classname"), case.get("name"))
-                      msg = (bad.get("message") or "").splitlines()[0][:300] if bad.get("message") else bad.tag
-                      print("::error title=%s::%s" % (name.replace(":", "_")[:200], msg.replace("%", "%25")))
+                      head = (bad.get("message") or bad.tag).splitlines()[0][:300]
+                      tail = [l for l in (bad.text or "").splitlines() if l.strip()][-25:]
+                      msg = "%0A".join([head] + [l.replace("%", "%25")[:240] for l in tail])
+                      print("::error title=%s::%s" % (name.replace(":", "_")[:200], msg))
           PY
 
   core-only:

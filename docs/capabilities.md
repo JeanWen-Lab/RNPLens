@@ -196,7 +196,9 @@ DockQ route ran, and records the geometry status `BLOCKED` in its output.
   These tests establish that the software reproduces its frozen reference values and behaves as specified. They do
   not, by themselves, establish the scientific accuracy of predictions or the security of the Assistant.
 - **Platforms:**
-  - **Linux x86-64** is the reference platform.
+  - **Linux x86-64** is the reference platform. Bit-exact reproduction is established for the OpenBLAS kernels
+    Cooperlake and SkylakeX. With the AVX2 kernels (Haswell, Zen), unrounded values differ in trailing digits (up to
+    3.9 × 10⁻⁶ Å) within the portable profile (`records/release/BLAS_KERNEL_NUMERICAL_DIFFERENCE.md`).
   - **macOS arm64:** every status, class, count and rounded value is reproduced. One unrounded RNA pose difference
     differs by 3.9 × 10⁻¹⁵ Å (a different OpenBLAS build of LAPACK `dgesdd`); a narrowly scoped tolerance of
     10⁻¹² Å covers that single value (`records/release/TOLERANCE_POLICY_AMENDMENT_1.md`). The macOS checks were run
