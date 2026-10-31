@@ -1,4 +1,14 @@
-# Expected outputs of the two worked examples
+# Expected outputs of the two worked examples (historical regression fixtures, 0.2.0rc2)
+
+> **Historical record.** These files were produced with RNPLens 0.2.0rc2 and are kept unchanged as regression
+> fixtures. They are not RNPLens 0.4 outputs. With 0.4:
+> - Evaluate's `summary.txt`, `result.json` and `result.csv` withhold the four-axis geometry values (status
+>   `BLOCKED`), whereas `A_evaluate_7K9D/` still contains them;
+> - Diagnose refuses with `DIAGNOSE_BLOCKED`, so `B2_diagnose_validity.json` and `B2_diagnose_7K9D/` have no 0.4
+>   counterpart;
+> - the Report outputs in `B1_report_7K9D/` are reproduced, apart from run metadata.
+>
+> To generate current outputs, run `bash examples/run_examples.sh OUT` ([docs/quickstart.md](../../docs/quickstart.md)).
 
 Produced by `bash examples/run_examples.sh expected_output` with RNPLens 0.2.0rc2 installed from its wheel, on the
 reference platform (Linux x86-64, CPython 3.11.17; DockQ 2.1.3, gemmi 0.6.5, biopython 1.84, numpy 1.26.4,

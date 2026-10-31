@@ -103,17 +103,14 @@ The full index, including development and qualification records, is in [docs/REA
 
 ## RNPLens Assistant
 
-`rnplens-assistant` is a separate, optional package (`python -m pip install -e ./assistant`); every capability
-above works without it and without any language model. You ask a scientific question in natural language. A
-language model proposes a plan made of supported RNPLens operations, and deterministic checks admit the plan or
-**refuse** it. The admitted plan runs, and the answer is written from the evidence records the tools produced. The
-run is recorded and can be replayed without a language model.
+RNPLens Assistant is an optional AI-assisted interface (`python -m pip install -e ./assistant`). It plans supported
+structural analyses, checks each execution plan deterministically, writes evidence-linked answers and replays
+recorded workflows. Every capability above works without it and without any language model. The current release
+includes automated software tests; live model operation and native security qualification remain under
+evaluation.
 
-Its model-dependent operation is **experimental research functionality**, pending live and security
-qualification:
-- live model calls are not qualified;
-- its native security confinement is not fully qualified;
-- a question sent to a hosted model leaves your computer.
+Its model-dependent operation is therefore **experimental research functionality**. A question sent to a hosted
+model leaves your computer.
 
 Read the [Assistant README](assistant/README.md) and [Setup and privacy](docs/setup_and_privacy.md) before using it.
 

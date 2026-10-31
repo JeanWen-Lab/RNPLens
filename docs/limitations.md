@@ -18,7 +18,7 @@
   target) and for designated outputs of Boltz-2, Chai-1, RF3 and RoseTTAFold2NA, on one-protein-chain,
   one-RNA-chain complexes. Diagnose checks the declared engines, the number of structures and the chain
   composition and refuses otherwise; it cannot check that the declared labels are true, engine versions or
-  sampling settings. See [which_analysis_should_i_use.md](which_analysis_should_i_use.md#when-is-a-diagnose-statement-validated).
+  sampling settings. See [diagnose.md](diagnose.md#when-is-a-diagnose-statement-validated-020rc3).
 - **Overlap with engine confidence.** The protein-side disagreement signal overlaps substantially with protein pTM
   and pLDDT.
 - **Placement attribution refused.** Diagnose does not attribute error to RNA placement separately from RNA shape;

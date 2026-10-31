@@ -6,6 +6,7 @@ on:
 
 jobs:
   test:
+    # The documented full configuration: the toolkit and the optional Assistant, both installed.
     name: ${{ matrix.os }} / Python ${{ matrix.python }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -20,10 +21,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - name: Install (clean environment)
+      - name: Confinement backend for the Assistant tests (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          # The Assistant's Linux jail is bubblewrap. Ubuntu runners do not ship it, and Ubuntu 24.04 restricts
+          # unprivileged user namespaces through AppArmor; without both, the confinement tests would skip.
+          sudo apt-get update -q
+          sudo apt-get install -y -q bubblewrap
+          if [ -e /proc/sys/kernel/apparmor_restrict_unprivileged_userns ]; then
+            sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+          fi
+          bwrap --ro-bind / / --unshare-user --unshare-pid true && echo "bubblewrap usable"
+      - name: Install the toolkit and the optional Assistant
         run: |
           python -m pip install --upgrade pip
-          python -m pip install ".[html,test]"
+          python -m pip install ".[html,test]" ./assistant
       - name: CLI smoke tests
         run: |
           rnplens --version
@@ -32,9 +44,35 @@ jobs:
           rnplens report --help
           rnplens diagnose --help
           rnplens provenance > /dev/null
+          python -m rnplens_assistant --help
       - name: Numerical regression (portable profile)
         run: rnplens selftest --profile portable
-      - name: Test suite
-        run: python -m pytest -q
+      - name: Core test suite
+        run: python -m pytest -q -rs
+      - name: Assistant test suite
+        run: python -m pytest -q -rs assistant/tests
+      - name: End-to-end examples
+        run: bash examples/run_examples.sh "$RUNNER_TEMP/rnplens_examples"
+
+  core-only:
+    # The toolkit alone, without the optional Assistant: it must install, reproduce its reference values and run
+    # the worked examples on its own.
+    name: core only (no Assistant) / ubuntu-latest / Python 3.11
+    runs-on: ubuntu-latest
+    env:
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install the toolkit only
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ".[html]"
+      - name: The Assistant is absent
+        run: python -c "import importlib.util, sys; sys.exit(importlib.util.find_spec('rnplens_assistant') is not None)"
+      - name: Numerical regression (portable profile)
+        run: rnplens selftest --profile portable
       - name: End-to-end examples
         run: bash examples/run_examples.sh "$RUNNER_TEMP/rnplens_examples"

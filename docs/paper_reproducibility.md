@@ -8,6 +8,22 @@ apart on purpose.
 | **The software (this repository)** | run Evaluate's DockQ route, Report and the analysis workflows on their own predicted complexes; reproduce the bundled examples and regression references exactly | this repository, release `v0.4.0` (no DOI issued) |
 | **The study's evidence** | reproduce the study's numbers, figures and tables | a separate research-data archive, not part of this repository |
 
+## Map from the study to software and data
+
+The study's results come from three sources: the RNPLens toolkit in this repository, the study's research
+analysis code, and the study's benchmark data. The research code and the benchmark data are not part of this
+repository. The table states, for each kind of result, which implementation produced it and where it can be
+checked.
+
+| Kind of result in the study | Implementation | Reproducible from this repository? | Where the inputs, code and outputs are |
+|---|---|---|---|
+| Interface accuracy: DockQ, DockQ class, fnat, iRMSD, LRMSD | the frozen RNPLens scorer, which Evaluate's DockQ route runs unchanged (source files verified by SHA-256 at run time) | **the computation, yes**: for any prediction and reference, `rnplens evaluate run` applies the frozen scoring configuration described in [reproducibility.md](reproducibility.md). The benchmark inputs are not bundled | benchmark entries and engine predictions: the study's research-data archive |
+| Reference-free agreement: binding surface, contact register, RNA pose, interface hypotheses | Report's frozen analysis implementation (`rnpbench-predict-1.0.0`) | **the computation, yes**, as above | as above |
+| Joint and four-axis geometry: protein-internal Cα RMSD, RNA-internal C4′ RMSD, RNA placement, and the joint-geometry analyses built on them | the study's research analysis code. Evaluate's geometry route in RNPLens 0.4 is **blocked** (residue-correspondence defect, 2026-10-14) and does not compute these values | **no** | the study's research code and data archive (not yet deposited) |
+| Diagnose statements and their out-of-sample validation | the frozen rc3 Diagnose component and the pre-registered validation | **partly**: the protocol and results are in [validation/](validation/); the user-facing Diagnose is blocked in 0.4 | validation inputs: the research-data archive |
+| Benchmark-level statistics, figures, tables and Source Data | the study's figure and table builders and evidence manifest | **no** | the research-data archive (not yet deposited) |
+| Assistant evaluation | an earlier, frozen assistant (`f998830`); its protocol is in `assistant/evaluation/` | **no**: no evaluation result is reported in this repository, and none validates the released `rnplens-assistant` 0.1.x | not applicable |
+
 ## What this repository reproduces
 
 - The behaviour of Evaluate, Report and Diagnose's internal contract checks, under frozen scoring rules whose source files are verified by SHA-256 at run
